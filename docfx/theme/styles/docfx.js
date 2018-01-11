@@ -17,9 +17,10 @@ $(function () {
   renderAffix();
   //renderFooter();
   renderLogo();
-
+  
   breakText();
   renderTabs();
+  renderGraphQl();
 
   window.refresh = function (article) {
     // Update markup result
@@ -32,6 +33,15 @@ $(function () {
     renderAlerts();
     renderAffix();
     renderTabs();
+    renderGraphQl();
+  }
+
+  function renderGraphQl() {
+    if ($("span#graphql")[0]) {
+        $(".body-content").html('<iframe class="graphql-schema" src="http://localhost:8080/schema/">');
+        $(".body-content").addClass('graphql-container');
+        $("#breadcrumb").hide();
+    }
   }
 
   function breakText() {
@@ -54,15 +64,6 @@ $(function () {
     $('.WARNING').addClass('alert alert-warning');
     $('.IMPORTANT, .CAUTION').addClass('alert alert-danger');
   }
-
-  // Enable anchors for headings.
-  (function () {
-    anchors.options = {
-      placement: 'left',
-      visible: 'touch'
-    };
-    anchors.add('article h2:not(.no-anchor), article h3:not(.no-anchor), article h4:not(.no-anchor)');
-  })();
 
   // Open links to different host in a new window.
   function renderLinks() {

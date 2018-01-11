@@ -3,5 +3,7 @@
 - name: Articles
   href: articles/
   homepage: articles/docfx_getting_started.md
-- name: API Documentation
+- name: C# API
   href: obj/api/
+- name: GraphQL API
+  href: graphql.md

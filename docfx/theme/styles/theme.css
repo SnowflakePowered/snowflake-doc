@@ -5,6 +5,7 @@ body {
 }
 header.navbar {
     position: sticky;
+    top: 0;
 }
 
 #breadcrumb {

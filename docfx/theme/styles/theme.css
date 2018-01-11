@@ -186,3 +186,7 @@ body .toc {
     height: 100%;
     border: none;
 }
+
+header.navbar > .container {
+    flex-direction: column;
+}

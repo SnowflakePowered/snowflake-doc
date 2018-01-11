@@ -38,7 +38,7 @@ $(function () {
 
   function renderGraphQl() {
     if ($("span#graphql")[0]) {
-        $(".body-content").html('<iframe class="graphql-schema" src="https://docs.snowflakepowe.red/schema/">');
+        $(".body-content").html('<iframe class="graphql-schema" src="/schema/">');
         $(".body-content").addClass('graphql-container');
         $("#breadcrumb").hide();
     }

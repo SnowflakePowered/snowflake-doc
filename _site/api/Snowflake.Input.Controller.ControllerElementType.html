@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum ControllerElementType
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum ControllerElementType
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>        
+         <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Snowflake.Input.Controller.ControllerElementType">
+  
+  
+  <h1 id="Snowflake_Input_Controller_ControllerElementType" data-uid="Snowflake.Input.Controller.ControllerElementType" class="text-break">Enum ControllerElementType
+  </h1>
+  <div class="markdown level0 summary"><p>Every Stone controller element can have one of any of the following types.
+This means a face button can be treated as a directional button, etc,
+and serves as hinting outside of the semantic meaning of the element keys themselves to the consumer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Controller.html">Snowflake.Input.Controller</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Input_Controller_ControllerElementType_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum ControllerElementType</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_AxisNegative">AxisNegative</td>
+        <td><p>An axis that decreases in value on the number line.
+For example, analog stick movement towards the left, or towards the backwards direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_AxisPositive">AxisPositive</td>
+        <td><p>An axis that increases in value on the number line.
+For example, analog stick movement towards the right, or towards the forward direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Button">Button</td>
+        <td><p>A button, usually with a switch or dome that can be depressed on the controller, exclusing directional buttons</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Directional">Directional</td>
+        <td><p>A directional button or D-pad button representing one of 8 cardinal directions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Keyboard">Keyboard</td>
+        <td><p>A keyboard of an unspecified amount of keys. Intended for special-case keyboard handling for consumers</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Null">Null</td>
+        <td><p>This element does not exist. Intended for internal use for consumers</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Pointer">Pointer</td>
+        <td><p>A pointing device that can express position in the form of a contiguous set of coordinates on a multi-dimensional cartesian plane.
+Examples include a mouse, or the Wii Remote IR for 2D.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_PointerAxisNegative">PointerAxisNegative</td>
+        <td><p>A pointer axis that increases in value on the number line, where the pointer device itself
+is not limited to axis-based representation. For example, continous left mouse movement.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_PointerAxisPositive">PointerAxisPositive</td>
+        <td><p>A pointer axis that increases in value on the number line, where the pointer device itself is
+not limited to axis-based representation. For example, continous right mouse movement.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Rumble">Rumble</td>
+        <td><p>A rumble motor that shakes the controller</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Touchscreen">Touchscreen</td>
+        <td><p>A touch sensitive surface of unspecified size and precision,
+where input can be expressed as a non-contiguous matrix of coordinates on a
+2 dimentional cartesian plane. However, most touchscreens in video game controllers
+are only concerned with a single matrix due to the lack of multi-touch support.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Controller_ControllerElementType_Trigger">Trigger</td>
+        <td><p>An analog shoulder trigger, able to be depressed smoothly with varying degrees of pressure
+from undepressed (0%) to fully depressed (100%), usually marked L2 or R2</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

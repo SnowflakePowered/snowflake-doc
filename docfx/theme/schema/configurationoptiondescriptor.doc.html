@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -562,7 +562,6 @@
             <span class="slds-text-title--caps">Types<span>
         </button>
         </div>
-        </div>
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
@@ -573,23 +572,11 @@
 </section>
 <section>
     <div class="container">
-        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
-            <a href="#graphql-schema-definition">
-                <i class="material-icons">link</i>
-            </a>
-            GraphQL Schema definition
-        </h2>
         <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ConfigurationOptionDescriptor</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The option description.</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The human readable name of this option.</span></span></li><li><span class="tab"><span class="meta">displayName</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The option name as it is serialized into the configuration.</span></span></li><li><span class="tab"><span class="meta">optionName</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The key name of this option.</span></span></li><li><span class="tab"><span class="meta">optionKey</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not this option is for 'simple' display mode.</span></span></li><li><span class="tab"><span class="meta">simple</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not tihs option should be showed to the user.</span></span></li><li><span class="tab"><span class="meta">private</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not this option is a flag.</span></span></li><li><span class="tab"><span class="meta">flag</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not this option is a file path option.</span></span></li><li><span class="tab"><span class="meta">isPath</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not this option is a selection option.</span></span></li><li><span class="tab"><span class="meta">isSelection</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The minimum value allowed if this option is a numeric option.</span></span></li><li><span class="tab"><span class="meta">min</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The maximum value allowed if this option is a numeric option.</span></span></li><li><span class="tab"><span class="meta">max</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The increment allowed if this option is a numeric option.</span></span></li><li><span class="tab"><span class="meta">increment</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The option value type</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="configurationoptiontypeenum.doc.html">ConfigurationOptionTypeEnum</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Any custom metadata this option may have.</span></span></li><li><span class="tab"><span class="meta">customMetadata</span>: [<a class="support type" href="custommetadata.doc.html">CustomMetadata</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   The default value of this option.</span></span></li><li><span class="tab"><span class="meta">default</span>: <a class="support type" href="primitive.doc.html">Primitive</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The default value of this option, boxed into a union of possible types.</span></span></li><li><span class="tab"><span class="meta">typedDefault</span>: <a class="support type" href="value.doc.html">Value</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of selections if this is a selection option.</span></span></li><li><span class="tab"><span class="meta">selections</span>: [<a class="support type" href="selectionoptiondescriptor.doc.html">SelectionOptionDescriptor</a>] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
     <div class="container">
-        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
-            <a href="#require-by">
-                <i class="material-icons">link</i>
-            </a>
-            Require by
-        </h2>
         <ul class="require-by"><li><a href="configurationsectiondescriptor.doc.html" title="ConfigurationSectionDescriptor - Describes a `ConfigurationSection` with its human readable name and description.">ConfigurationSectionDescriptor<em>Describes a `ConfigurationSection` with its human readable name and description.</em></a><li></ul>
     </div>
 </section>

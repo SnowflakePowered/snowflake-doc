@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILowLevelInputDevice
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILowLevelInputDevice
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>        
+         <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device.ILowLevelInputDevice">
+  
+  
+  <h1 id="Snowflake_Input_Device_ILowLevelInputDevice" data-uid="Snowflake.Input.Device.ILowLevelInputDevice" class="text-break">Interface ILowLevelInputDevice
+  </h1>
+  <div class="markdown level0 summary"><p>A platform agnostic representation of the low-level properties of an input device.
+Implementation is handled by a OS-dependent InputManager implementation.
+Currently this interface supports only the DirectInput/XInput APIs on Windows and udev on Linux. OSX support is not planned.
+Fields that are not used on an OS should be nulled and made unsettable.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Device.html">Snowflake.Input.Device</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Input_Device_ILowLevelInputDevice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILowLevelInputDevice</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_DeviceType_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_DeviceType*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_DeviceType" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_DeviceType">DI_DeviceType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceType DI_DeviceType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.DeviceType.html">DeviceType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_EnumerationNumber_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_EnumerationNumber*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_EnumerationNumber" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_EnumerationNumber">DI_EnumerationNumber</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the order in which this DirectInput gamepad was enumerated.
+This is given in the order that the inputmanager provides and may not be reliable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ? DI_EnumerationNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InstanceGUID_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InstanceGUID*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InstanceGUID" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InstanceGUID">DI_InstanceGUID</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The InstanceGUID of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid DI_InstanceGUID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InstanceName_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InstanceName*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InstanceName" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InstanceName">DI_InstanceName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The InstanceName of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DI_InstanceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InterfacePath_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InterfacePath*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_InterfacePath" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_InterfacePath">DI_InterfacePath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The InterfacePath of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DI_InterfacePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_JoystickID_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_JoystickID*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_JoystickID" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_JoystickID">DI_JoystickID</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The JoystickID of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ? DI_JoystickID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductGUID_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductGUID*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductGUID" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductGUID">DI_ProductGUID</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The ProductGUID of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid DI_ProductGUID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductID_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductID*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductID" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductID">DI_ProductID</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The ProductID of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ? DI_ProductID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductName_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductName*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_ProductName" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_ProductName">DI_ProductName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The ProductName of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DI_ProductName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DI_VendorID_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_VendorID*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DI_VendorID" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DI_VendorID">DI_VendorID</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - The VendorID of a DirectInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ? DI_VendorID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_DiscoveryApi_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DiscoveryApi*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_DiscoveryApi" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.DiscoveryApi">DiscoveryApi</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the API used to discover this device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InputApi DiscoveryApi { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.InputApi.html">InputApi</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_Model_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_Model*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_Model" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_Model">UDEV_Model</h4>
+  <div class="markdown level1 summary"><p>Gets or sets udev - The device model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string UDEV_Model { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_MountPath_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_MountPath*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_MountPath" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_MountPath">UDEV_MountPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets udev - The mount point of the device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string UDEV_MountPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_Vendor_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_Vendor*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_UDEV_Vendor" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.UDEV_Vendor">UDEV_Vendor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets udev - The vendor of the device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string UDEV_Vendor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_XI_GamepadIndex_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_GamepadIndex*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_XI_GamepadIndex" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_GamepadIndex">XI_GamepadIndex</h4>
+  <div class="markdown level1 summary"><p>Gets or sets win32 - An assumed XInput gamepad index for the device. May not be entirely accurate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ? XI_GamepadIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_XI_IsConnected_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_IsConnected*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_XI_IsConnected" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_IsConnected">XI_IsConnected</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether or not the XInput Device is connected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ? XI_IsConnected { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_ILowLevelInputDevice_XI_IsXInput_" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_IsXInput*"></a>
+  <h4 id="Snowflake_Input_Device_ILowLevelInputDevice_XI_IsXInput" data-uid="Snowflake.Input.Device.ILowLevelInputDevice.XI_IsXInput">XI_IsXInput</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether win32 - Whether the device is an XInput device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool XI_IsXInput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

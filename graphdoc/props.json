@@ -1,0 +1,8 @@
+{
+    "name": "Snowflake GraphQL",
+    "description": "Snowflake GraphQL Remoting Schema",
+    "graphdoc": {
+        "schemaFile": "./schema.json",
+        "output": "./schema"
+      }
+}

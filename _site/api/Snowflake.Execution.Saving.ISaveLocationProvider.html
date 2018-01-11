@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISaveLocationProvider
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISaveLocationProvider
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>        
+         <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider">
+  
+  
+  <h1 id="Snowflake_Execution_Saving_ISaveLocationProvider" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider" class="text-break">Interface ISaveLocationProvider
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Execution.Saving.html">Snowflake.Execution.Saving</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Execution_Saving_ISaveLocationProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISaveLocationProvider</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_CreateSaveLocationAsync_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.CreateSaveLocationAsync*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_CreateSaveLocationAsync_Snowflake_Records_Game_IGameRecord_System_String_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.CreateSaveLocationAsync(Snowflake.Records.Game.IGameRecord,System.String)">CreateSaveLocationAsync(IGameRecord, String)</h4>
+  <div class="markdown level1 summary"><p>Provisions a new <a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ISaveLocation&gt; CreateSaveLocationAsync(IGameRecord gameRecord, string saveType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Records.Game.IGameRecord.html">IGameRecord</a></td>
+        <td><span class="parametername">gameRecord</span></td>
+        <td><p>The game to provision this location for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">saveType</span></td>
+        <td><p>The type of save this location contains.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a>&gt;</td>
+        <td><p>The newly created save location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_DeleteSaveLocation_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.DeleteSaveLocation*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_DeleteSaveLocation_System_Guid_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.DeleteSaveLocation(System.Guid)">DeleteSaveLocation(Guid)</h4>
+  <div class="markdown level1 summary"><p>Deletes the save location with the given GUID. Does nothing if the save location does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteSaveLocation(Guid saveLocationGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">saveLocationGuid</span></td>
+        <td><p>The GUID of the desired save location to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_GetAllSaveLocationsAsync_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetAllSaveLocationsAsync*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_GetAllSaveLocationsAsync" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetAllSaveLocationsAsync">GetAllSaveLocationsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all the save locations managed by this provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ISaveLocation&gt;&gt; GetAllSaveLocationsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a>&gt;&gt;</td>
+        <td><p>All the save locations managed by this provider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_GetSaveLocationAsync_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetSaveLocationAsync*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_GetSaveLocationAsync_System_Guid_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetSaveLocationAsync(System.Guid)">GetSaveLocationAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the save location with the given GUID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ISaveLocation&gt; GetSaveLocationAsync(Guid saveLocationGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">saveLocationGuid</span></td>
+        <td><p>The GUID of the desired save location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a>&gt;</td>
+        <td><p>The save location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the save location is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_GetSaveLocationsAsync_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetSaveLocationsAsync*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_GetSaveLocationsAsync_Snowflake_Records_Game_IGameRecord_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.GetSaveLocationsAsync(Snowflake.Records.Game.IGameRecord)">GetSaveLocationsAsync(IGameRecord)</h4>
+  <div class="markdown level1 summary"><p>Gets all save locations that were created for the given <a class="xref" href="Snowflake.Records.Game.IGameRecord.html">IGameRecord</a>.
+It is suggested that the save locations be grouped by type and date created descendingly, but
+this is not required by implementations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ISaveLocation&gt;&gt; GetSaveLocationsAsync(IGameRecord gameRecord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Records.Game.IGameRecord.html">IGameRecord</a></td>
+        <td><span class="parametername">gameRecord</span></td>
+        <td><p>The game associated with the save locations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a>&gt;&gt;</td>
+        <td><p>An enumerable of all the save locationa previously provisioned foe the given game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Execution_Saving_ISaveLocationProvider_UpdateSaveLocation_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.UpdateSaveLocation*"></a>
+  <h4 id="Snowflake_Execution_Saving_ISaveLocationProvider_UpdateSaveLocation_Snowflake_Execution_Saving_ISaveLocation_" data-uid="Snowflake.Execution.Saving.ISaveLocationProvider.UpdateSaveLocation(Snowflake.Execution.Saving.ISaveLocation)">UpdateSaveLocation(ISaveLocation)</h4>
+  <div class="markdown level1 summary"><p>Updates the save location to the registery</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ISaveLocation&gt; UpdateSaveLocation(ISaveLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The location to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Execution.Saving.ISaveLocation.html">ISaveLocation</a>&gt;</td>
+        <td><p>The new location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

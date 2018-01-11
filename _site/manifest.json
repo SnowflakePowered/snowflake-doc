@@ -1,0 +1,3252 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/ronny/coding/snowflake-docs/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/csharp_coding_standards.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/csharp_coding_standards.html",
+          "hash": "VR5z0cZ6vO6Fu46EZiqwFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/docfx_getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/docfx_getting_started.html",
+          "hash": "a5yTfouvTPV9sEa7uWWHZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/engineering_guidelines.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/engineering_guidelines.html",
+          "hash": "IIHvTfzlgCjXIWeUWyOArw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/seed.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/seed.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "qVXHK/CCTI6ZU4wdEwvp1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "graphql.md",
+      "output": {
+        ".html": {
+          "relative_path": "graphql.html",
+          "hash": "8sJQmxBuPccnNV3P01ESQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "37AfrqQI1QNDzKPI5wRGeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Caching.IKeyedImageCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Caching.IKeyedImageCache.html",
+          "hash": "jYqIzrnKJGvRdj5gNUC9KQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Caching.ImageMetadataKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Caching.ImageMetadataKeys.html",
+          "hash": "N4KSEK350dT7VeJNaCZiPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Caching.ImageTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Caching.ImageTypes.html",
+          "hash": "cbYLM6c1s43qCCVBqMpsGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Caching.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Caching.html",
+          "hash": "YJwDs/5bPlY11WSHg562uQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.ConfigurationFileAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html",
+          "hash": "st7DdceDVsADRnfSK4g+mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html",
+          "hash": "nXPRvmDnktN4HuEIYXcjNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.ConfigurationSectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.ConfigurationSectionAttribute.html",
+          "hash": "hJZWUBK2cMXqLwXcZY5ppA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.CustomMetadataAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.CustomMetadataAttribute.html",
+          "hash": "5NZMFIJFQjF0/RAvHh8Q3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.InputTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.InputTemplateAttribute.html",
+          "hash": "oExPgmZwhiOj4GfEOD8q2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.SelectionOptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.SelectionOptionAttribute.html",
+          "hash": "v8rqx9NSpnaDb46UyiiiQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.SerializableSectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.SerializableSectionAttribute.html",
+          "hash": "mKGozH+LYymqjJRWMp2L/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Attributes.html",
+          "hash": "kYRrFh1W6XTxd/GEYf0a3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.ConfigurationOptionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.ConfigurationOptionType.html",
+          "hash": "SNrgI88SwtCJUxYZKdJflQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.ExampleConfigurationSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.ExampleConfigurationSection.html",
+          "hash": "eDHVKyEpBaZGVBmHmqhCLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.FullscreenResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.FullscreenResolution.html",
+          "hash": "N05YJ2QK9V4dzH0iT+V+pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IBooleanMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IBooleanMapping.html",
+          "hash": "sB7Ug8YqQD6Q4Zjus1zrww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationCollection-1.html",
+          "hash": "SB22wWZHFs7JmQ0wsD/SOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationCollection.html",
+          "hash": "AdqY6CPjZO4joiCgL2VNqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationCollectionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationCollectionDescriptor.html",
+          "hash": "ZGeKBLCw+3zFd9C3fU68dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationCollectionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationCollectionStore.html",
+          "hash": "wXIIIOUmtyHdddab+46w+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationFile.html",
+          "hash": "2d8+ZSDUuLQwNc2hjba3NA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationOptionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationOptionDescriptor.html",
+          "hash": "Vy77BoLdUiMQAa4dxpPi5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationProperty.html",
+          "hash": "fmgTKS62FQIybgBjY2EcLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationSection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationSection-1.html",
+          "hash": "ehC4JauRbaBczJYoD9CGsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationSection.html",
+          "hash": "2bVOix30m20X60p2q2rqCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationSectionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationSectionDescriptor.html",
+          "hash": "bcbEbmFd0GtoUffzsAr8xQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationSerializer.html",
+          "hash": "Gmhc50UiAkYeLMX/0SWhmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationTypeMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationTypeMapper.html",
+          "hash": "JPoRTXN3Q824GO03nn+k6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.IConfigurationValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.IConfigurationValue.html",
+          "hash": "rM/h1DyvfyOkH85aqT431w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.ISelectionOptionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.ISelectionOptionDescriptor.html",
+          "hash": "Ppo/ORbhg/RpY2FW15KoUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.IInputMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.IInputMapping.html",
+          "hash": "pqK6Xe0zJhPO0glKIjIx4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.IInputOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.IInputOption.html",
+          "hash": "hzQv/D7pLaatkD7XnzEe9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.IInputSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.IInputSerializer.html",
+          "hash": "9jeKVzTqBYzoM1zf+vx95w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.IInputTemplate-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.IInputTemplate-1.html",
+          "hash": "S4AS98XGJus1ayMI5ib0xQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.IInputTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.IInputTemplate.html",
+          "hash": "DOU3P74ebu0YR8E0N81eig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.InputOptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.InputOptionAttribute.html",
+          "hash": "FK2d/wceDayI3ob2MbP6Hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.InputOptionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.InputOptionType.html",
+          "hash": "rqMBGthmsARGTPPnsMX+OQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Input.html",
+          "hash": "NVIqCcUqxt73n3eZ/8R8og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.ConfigurationCollectionSerializerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.ConfigurationCollectionSerializerTests.html",
+          "hash": "f2+VyIxf/GiHQNfUlfrqXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.ConfigurationCollectionStoreTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.ConfigurationCollectionStoreTests.html",
+          "hash": "oUje+vZIBof1JeNhB5IdqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.ConfigurationCollectionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.ConfigurationCollectionTests.html",
+          "hash": "CpX7ppq7eOnSHDVSDgf5qA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.DynamicProxyInputTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.DynamicProxyInputTests.html",
+          "hash": "R6TCM3Nrgc/EFVH6e84lEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.DynamicProxyTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.DynamicProxyTests.html",
+          "hash": "NbpAYD9iHNdoB76Buss0og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.ExampleConfigurationCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.ExampleConfigurationCollection.html",
+          "hash": "Jg8XKnEL+AaXgsMzjAhr2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.IRetroArchConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.IRetroArchConfig.html",
+          "hash": "AUr16qwXZ0yXqBP9xtlvnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.IRetroArchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.IRetroArchInput.html",
+          "hash": "LPEKtfb7WZr6a/N8Rogh0A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.IVideoConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.IVideoConfiguration.html",
+          "hash": "tTrM6PcBm2qdpefix43VmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.IniConfigurationSerializerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.IniConfigurationSerializerTests.html",
+          "hash": "MKl7SgOVCHL82ql/Z89BGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.InputMapperTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.InputMapperTests.html",
+          "hash": "U10PWDMBlonWckliLFxO0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.KeyValuePairConfigurationSerializerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.KeyValuePairConfigurationSerializerTests.html",
+          "hash": "crJ/5pahg2lorQ68kv+nJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.OrderSensitiveConfigurationCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.OrderSensitiveConfigurationCollection.html",
+          "hash": "FLv1wpsnX/HBzb8ii2K5rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.VideoDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.VideoDriver.html",
+          "hash": "c0sxsgo5khdCz6quI1k8lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.VideoRotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.VideoRotation.html",
+          "hash": "ksy6ENO160hiy32z4KWBKA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.Tests.html",
+          "hash": "l+LlMdU/WILJrb9iYdy2VA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Configuration.html",
+          "hash": "wUMzdwYcqmO8A/VCE1oIig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.ConfigurationFactoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.ConfigurationFactoryTests.html",
+          "hash": "tFMBbooQQHDoAaTVEQFG6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.EmulatorPropertiesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.EmulatorPropertiesTests.html",
+          "hash": "kMq/ibDVXde91pWmZxQ3jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.EmulatorTaskResultTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.EmulatorTaskResultTests.html",
+          "hash": "ZJOJ1lZjoS6TaE39T3Tnmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.EmulatorTaskTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.EmulatorTaskTests.html",
+          "hash": "QVLywECewMPds9HrtR4Xdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.TestTaskResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.TestTaskResult.html",
+          "hash": "zPSKEAgUoNTJjWJzWwpsSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.Tests.EmulatedControllerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.Tests.EmulatedControllerTests.html",
+          "hash": "IuKrohu377serLaawdp5Ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.Tests.html",
+          "hash": "g19DFnHPjWcW/+A9PAxgLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Emulator.Execution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Emulator.Execution.html",
+          "hash": "hnDa3FYjIlApSgCux7QebA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IConfigurationFactory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IConfigurationFactory-2.html",
+          "hash": "iqAOGrPSqz7RGLg0JzZnhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IConfigurationFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IConfigurationFactory.html",
+          "hash": "f7+KChm5msxiFXWW0Y9tcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulatedController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulatedController.html",
+          "hash": "UFPAsH8JUdaj0OzksXfxsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulator.html",
+          "hash": "bN1rLmuj/yh01od4FveChA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulatorProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulatorProperties.html",
+          "hash": "OGzJOwmHsGLMtGkC+V0BPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulatorTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulatorTask.html",
+          "hash": "yIlm/VdUWL9fKLgFYh9Geg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulatorTaskResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulatorTaskResult.html",
+          "hash": "5P8i6aYWKMiEOD0682oeOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.IEmulatorTaskRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.IEmulatorTaskRunner.html",
+          "hash": "Nbzfj/YHJblco2GzV3MSZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Extensibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Extensibility.html",
+          "hash": "+rbPZsvQcRrLVUnBLaq5QA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.IEmulatorExecutable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.IEmulatorExecutable.html",
+          "hash": "ht9dYPmnEE8tQv1GCejP4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.IEmulatorExecutableProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.IEmulatorExecutableProvider.html",
+          "hash": "usvrv2TjnPgAyiac0+wp1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.IEmulatorTaskRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.IEmulatorTaskRoot.html",
+          "hash": "wpa9ew4HhnQvMJyuRt7rYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.IEmulatorTaskRootDirectoryProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.IEmulatorTaskRootDirectoryProvider.html",
+          "hash": "fUT0QbAkBQSV9acrDTH+YA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.IProcessBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.IProcessBuilder.html",
+          "hash": "NKqhDRgTdqpm5PoZbwHtjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Process.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Process.html",
+          "hash": "WR1T/wqVcYcWKnKGJ68pkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.ISaveLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.ISaveLocation.html",
+          "hash": "ypnOTa0VnxUKtT0WBTvBnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.ISaveLocationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.ISaveLocationProvider.html",
+          "hash": "U0/O7B4XmHLpSBJAjPvYdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.SaveLocationProviderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.SaveLocationProviderTests.html",
+          "hash": "mlfujlazydC5gpZVO+P9xg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.Tests.SaveLocationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.Tests.SaveLocationTests.html",
+          "hash": "YpayrNaTInFAbpogcSW6yQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.Tests.html",
+          "hash": "Fns6+i69XR9oWo1L/3QW7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.Saving.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.Saving.html",
+          "hash": "BS6xY2+jLdyQk2Fn96s1Zw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.SystemFIles.ISystemFileProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.SystemFIles.ISystemFileProvider.html",
+          "hash": "n5KZQzU9hfgSj3n880iTMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.SystemFiles.SystemFileProviderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.SystemFiles.SystemFileProviderTests.html",
+          "hash": "q91qtDrgoyOJNwDpA5QHdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.SystemFiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.SystemFiles.html",
+          "hash": "nW6+OH7LGsUKBqELTgy8CQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Execution.SystemFiles_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Execution.SystemFiles_1.html",
+          "hash": "/F1f2nqVAKDWNpUkCf0eTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Configuration.IPluginConfigurationStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Configuration.IPluginConfigurationStore.html",
+          "hash": "ax3VFbJNMALQJxjnyHlAEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Configuration.html",
+          "hash": "96Fu8bMr++LeWzd5FlIvaw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.ILogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.ILogger.html",
+          "hash": "/0HugE9v09m5mvdpZwf1Dw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.IPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.IPlugin.html",
+          "hash": "ru2p2tWtEPLeS75s4Gj+Og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.IPluginCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.IPluginCollection-1.html",
+          "hash": "GFN7ZcGVlzHMytDgSKKaig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.LogLevel.html",
+          "hash": "cAibVVBPOACuKhp5J/XczA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.PluginAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.PluginAttribute.html",
+          "hash": "hmNqaYmvvwtrQiPk2WAo9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.PluginInfoFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.PluginInfoFields.html",
+          "hash": "G76SlbQrrG+/Fxztwf1NBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Provisioning.IPluginProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Provisioning.IPluginProperties.html",
+          "hash": "ftVZtYmhhzhCpsdvlj5f8Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Provisioning.IPluginProvision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Provisioning.IPluginProvision.html",
+          "hash": "VefVj/3pvo917VxKblC83w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Provisioning.IProvisionedPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Provisioning.IProvisionedPlugin.html",
+          "hash": "I8/GXMbuRFEZaFQ4mJQn4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Provisioning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Provisioning.html",
+          "hash": "UpV4e8OKvvx0QjcN5O6Tyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.JsonPluginPropertiesTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.JsonPluginPropertiesTest.html",
+          "hash": "cJd/LBezoRZWUGh0DdC42w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.NonAttributedStandalonePluginImpl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.NonAttributedStandalonePluginImpl.html",
+          "hash": "cw0yTfJQllRnqe4CHmd2VA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.PluginTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.PluginTests.html",
+          "hash": "i+/OvVXVDtnx+ZsBDVDnHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.ProvisionedPluginImpl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.ProvisionedPluginImpl.html",
+          "hash": "ZkUlrVkO0q/+N0anU0S12Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.SqlitePluginConfigurationStoreTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.SqlitePluginConfigurationStoreTests.html",
+          "hash": "OqoyGQle6s/pGnG95O55LQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.StandalonePluginImpl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.StandalonePluginImpl.html",
+          "hash": "KFepLr1t6Byik3z1HP9xag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Tests.html",
+          "hash": "j/mRBrdq7HjHvaa9VzY6BA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.html",
+          "hash": "j71liQH74bmD0LE9qicQsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.html",
+          "hash": "4QavYxTgp4tTHKK6YDKXJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Attributes.FieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Attributes.FieldAttribute.html",
+          "hash": "+PCgeROZC2I5COD2PMLoIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Attributes.MutationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Attributes.MutationAttribute.html",
+          "hash": "1DHdbSTuoMJnxJEI93/Ipg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Attributes.ParameterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Attributes.ParameterAttribute.html",
+          "hash": "DIsE1BPJXbdF7jl+N4UhPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Attributes.html",
+          "hash": "q5BAJkS5EgIvT4u4VrlFQg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.IGraphQlRootSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.IGraphQlRootSchema.html",
+          "hash": "UyMps3ZF19rfexzWFH21GA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Query.QueryBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Query.QueryBuilder.html",
+          "hash": "Aba4j/oOwKt9YKvwLG19nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.Query.html",
+          "hash": "nd0dzghvMfZDKuO/84J5YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Framework.Remoting.GraphQl.html",
+          "hash": "VvyHqY1GUAFtMaMzbn5PMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.BasicQueryBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.BasicQueryBuilder.html",
+          "hash": "PNpAXHNBmpEBC+AykyuYGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.BrokenQueryBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.BrokenQueryBuilder.html",
+          "hash": "TcwO0HtDKC7c0BeURZ9Lwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.QueryBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.QueryBuilderTests.html",
+          "hash": "WBlW+IYikJfXqbhPSdVbuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.TestInputGraphType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.TestInputGraphType.html",
+          "hash": "aq2eexfDufTosKb3EWOphA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.TestInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.TestInputType.html",
+          "hash": "EQrPYrx8seNvXUubqblcQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.GraphQl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.GraphQl.html",
+          "hash": "kWUpH3BVkmBZATsdKft+uQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.ControllerElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.ControllerElement.html",
+          "hash": "z8OvTI0BP6UvZEab/9aGxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.ControllerElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.ControllerElementType.html",
+          "hash": "Px4WMOPJxJfe8wBHzxOtOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.IControllerElementCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.IControllerElementCollection.html",
+          "hash": "cFPFWCKOZ7IK1Mcpa7GxrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.IControllerElementInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.IControllerElementInfo.html",
+          "hash": "psGppbvVCFRyiotgZo1pxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.IControllerLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.IControllerLayout.html",
+          "hash": "mugjp/Jd3173LXs2G4wugQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IMappedControllerElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.IMappedControllerElement.html",
+          "hash": "zDllty1Q4nm5Qr83vRpPug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IMappedControllerElementCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.IMappedControllerElementCollection.html",
+          "hash": "wquEfWI4L3/fpT2wbw+wNw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.html",
+          "hash": "OPDa1K+X2jqPxolFCkegHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.html",
+          "hash": "Bqq9P6ntulmptlu+n4RMCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.DeviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.DeviceType.html",
+          "hash": "Q4CEYi7pzSbnlLliI2kqvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.IInputDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.IInputDevice.html",
+          "hash": "4DUDp9MPPf+7Zv696/hSWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.IInputEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.IInputEnumerator.html",
+          "hash": "e8gyCxj7hXm7nafKRHzY3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.IInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.IInputManager.html",
+          "hash": "Pe9E6nZtc2xwEvFDlX7g6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.ILowLevelInputDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.ILowLevelInputDevice.html",
+          "hash": "YJ0+rwNe+VqAR7BE2LN1aA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.InputApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.InputApi.html",
+          "hash": "ivVtOBDlqQT0X/NHDl5Axg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.html",
+          "hash": "IZS0Zt2nNaFQZ0/LBfLMSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.IMappedControllerElementCollectionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.IMappedControllerElementCollectionStore.html",
+          "hash": "KbUlnqIMpI24PqLXzAmrIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Tests.MappedControllerElementCollectionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Tests.MappedControllerElementCollectionStore.html",
+          "hash": "dmUauFGFV8jwpK405DVtww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Tests.html",
+          "hash": "468RIs0gmwIQfDriVA0IDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.html",
+          "hash": "EyS5atDjCvfrOQAL/GmiKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.IComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.IComposable.html",
+          "hash": "DhzYG+3i2Gq25iX5gxDkfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.IModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.IModule.html",
+          "hash": "ppE1c6F5UHnpSQL6yhlNtQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.IModuleEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.IModuleEnumerator.html",
+          "hash": "kjO//Ug02ldnXUlzwi+UCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.IModuleLoader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.IModuleLoader-1.html",
+          "hash": "chlpu37FMfksx1zRA34Vaw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.IServiceRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.IServiceRepository.html",
+          "hash": "9KyFE19FJjlTjdrCDJyKTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.ImportServiceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.ImportServiceAttribute.html",
+          "hash": "kvpqZTOiOVMY2urZzNtMIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.Tests.AssemblyComposerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.Tests.AssemblyComposerTests.html",
+          "hash": "Nu1DFr1+/McvyFjxF50NCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.Tests.ModuleEnumeratorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.Tests.ModuleEnumeratorTests.html",
+          "hash": "CgPKReYX7vNi3KZN7vlSmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.Tests.html",
+          "hash": "iO8EsQJ3ymyQBvMlMMpgvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Loader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Loader.html",
+          "hash": "4jJJKiYvDhteS0Z3o4PDsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Persistence.ISimpleKeyValueStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Persistence.ISimpleKeyValueStore.html",
+          "hash": "8r41a0OvPCdzLs9AfzabOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Persistence.ISqlDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Persistence.ISqlDatabase.html",
+          "hash": "tf+2pJyRkBOABdUuez7dww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Persistence.SqliteDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Persistence.SqliteDatabase.html",
+          "hash": "tO+7LoveXQWQft2VnNJlhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Persistence.SqliteMemoryDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Persistence.SqliteMemoryDatabase.html",
+          "hash": "2qvUCL25cPfjN94g3O7uow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Persistence.html",
+          "hash": "2HStxNHIDEfVc8s0YEJQiQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Platform.IBiosFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Platform.IBiosFile.html",
+          "hash": "CPzDs8bs3uVkYYhYB5yJ8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Platform.IPlatformInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Platform.IPlatformInfo.html",
+          "hash": "Ona2O85EG+WAOt9ubIGA6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Platform.html",
+          "hash": "igVKyzETliU92JLdTWq9vQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.File.FileMetadataKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.File.FileMetadataKeys.html",
+          "hash": "InoZr9KyzJhMmCLt43ZLaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.File.IFileLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.File.IFileLibrary.html",
+          "hash": "52WgH8aP3HbuDNYclBMjHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.File.IFileRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.File.IFileRecord.html",
+          "hash": "HPwS2y5etgXyrAz9AEStXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.File.html",
+          "hash": "uLQxnRVdSWxFy5FV146Q/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Game.GameMetadataKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Game.GameMetadataKeys.html",
+          "hash": "T73qYe7Du1lksE9jKXZeeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Game.IGameLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Game.IGameLibrary.html",
+          "hash": "Ek74z9pbz2AII9df5fVJvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Game.IGameRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Game.IGameRecord.html",
+          "hash": "XeQp/GISslbohQhK1PbogA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Game.html",
+          "hash": "mF4MlpZ3F/46t/623hJPuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.ILibrary-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.ILibrary-1.html",
+          "hash": "PS/BccOmItSIUzLQoG6DzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.IRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.IRecord.html",
+          "hash": "QWTRqXBdm4/YtAZRNRHYvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.IRecordLibrary-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.IRecordLibrary-1.html",
+          "hash": "f5dIqqKoZI2J7xyZlRsuPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Metadata.IMetadataCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Metadata.IMetadataCollection.html",
+          "hash": "sTRum8Ez7jwRuxfoUMtHig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Metadata.IMetadataLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Metadata.IMetadataLibrary.html",
+          "hash": "LZIAWbmP9XPOcFQE8WZejQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Metadata.IMetadatable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Metadata.IMetadatable-1.html",
+          "hash": "7/Lxgxz9jVc+ayHDYs/HBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Metadata.IRecordMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Metadata.IRecordMetadata.html",
+          "hash": "6EddykeNpZY0anKma91mcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Metadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Metadata.html",
+          "hash": "xEXkpbI5EY8/YTCq0+HgJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.FileRecordTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.FileRecordTests.html",
+          "hash": "dmg+VAw2P70/h26lJ7J7yQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.MetadataCollectionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.MetadataCollectionTests.html",
+          "hash": "8QvLt/X6gYlpkfApPp+mnA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.RecordMetadataTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.RecordMetadataTests.html",
+          "hash": "Snmj7t4kedrif2pbZEmmGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.SqliteFileLibraryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.SqliteFileLibraryTests.html",
+          "hash": "JeFElptHcjvh57B76kyjsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.SqliteGameLibraryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.SqliteGameLibraryTests.html",
+          "hash": "sPD1IyTXIookjXZos9DUCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.SqliteMetadataLibraryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.SqliteMetadataLibraryTests.html",
+          "hash": "VemzwKO91b9jamwe6g1kmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.Tests.html",
+          "hash": "a+iv7DcukwawVOpmrOyjjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Records.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Records.html",
+          "hash": "REuiDWwCh+BhV32C/5+ZEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.IFileSignature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.IFileSignature.html",
+          "hash": "PEsJ8oWMif7+ZgOTSUIzjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.IFileSignatureMatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.IFileSignatureMatcher.html",
+          "hash": "ks36uO0M9HoxqNdrxf69nQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.IRomFileInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.IRomFileInfo.html",
+          "hash": "rtTMPDTFQCNKq3Kn0QaeBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.IStructuredFilename.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.IStructuredFilename.html",
+          "hash": "BnN6kq5/ew3e+SgFF8G/Rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.NamingConvention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.NamingConvention.html",
+          "hash": "asnrMKtKMqLzlqAkn/a/0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.Tests.StructuredFilenameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.Tests.StructuredFilenameTests.html",
+          "hash": "JPCwDkXUCS6wb6b3deILlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.Tests.html",
+          "hash": "VM0RJC9r6A+pyguspoMAGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Romfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Romfile.html",
+          "hash": "i5Bb/xRK+rejPWamav2DJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.ExcludeScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.ExcludeScraper.html",
+          "hash": "b7n7FOEHaBoI9c98yZW97w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.AttachTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.AttachTarget.html",
+          "hash": "ABDh/gIHOtuY0zrMUZOJJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.Directive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.Directive.html",
+          "hash": "mI4gNZUt0yNaZes9+yFeDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.DirectiveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.DirectiveAttribute.html",
+          "hash": "p+oEBS3NWYp7jMb41cKqUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.ICuller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.ICuller.html",
+          "hash": "QzUsByWIl5i7qoi7eghG7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.IScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.IScraper.html",
+          "hash": "6TKd0RHqayJeZJSRgQxz0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.IScraperDirective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.IScraperDirective.html",
+          "hash": "LPo/qIQ3RY8erhTycaPAJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.ITraverser-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.ITraverser-1.html",
+          "hash": "bEMS3JhrkxBD0hBs68+rIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.SeedTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.SeedTree.html",
+          "hash": "77JXekUydGBaUH86XJnoDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.SeedTreeAwaitable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.SeedTreeAwaitable.html",
+          "hash": "eiV4+iSntSR48glgrDUDfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Extensibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Extensibility.html",
+          "hash": "841b417P6RJrWNxpnryX8Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.IScrapeEngine-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.IScrapeEngine-1.html",
+          "hash": "lI43bBWEcYfJ3uZCj+FGRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.IScrapeJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.IScrapeJob.html",
+          "hash": "7yABSuErayFgd0+GE4l06Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.ISeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.ISeed.html",
+          "hash": "JetyjMKSd1ERjRPF7w2rug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.ISeedRootContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.ISeedRootContext.html",
+          "hash": "aFXKVzjnPzceCss7D5i3qw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.SeedContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.SeedContent.html",
+          "hash": "faFSd27WVLfbKkp5PwBSqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.SeedContentEqualityTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.SeedContentEqualityTests.html",
+          "hash": "z+tqYDtg4/bDZJcdbU5AQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.AsyncScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.AsyncScraper.html",
+          "hash": "f6v7DxX7JxTtQCqOQ7m2YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.DependentScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.DependentScraper.html",
+          "hash": "N8wvDqDY+aeFOleLFGpv8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.GroupScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.GroupScraper.html",
+          "hash": "oAA2bpd8VgFatfP0f7QIRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.ScrapeJobTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.ScrapeJobTests.html",
+          "hash": "KDkPMDYPfu6NlfxwhZZi0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.ScraperIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.ScraperIntegrationTests.html",
+          "hash": "rihmV2XtphJcMeh1mVM2sA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.SimpleAsyncScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.SimpleAsyncScraper.html",
+          "hash": "WbCmEtMMTSguSMq3DcgEaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.TrivialScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.TrivialScraper.html",
+          "hash": "st1AFv/OfeY6C3Xj9MK54Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.TrivialScraperTwo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.TrivialScraperTwo.html",
+          "hash": "98fq9mtiCfYL5T6iIUUBkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.Tests.html",
+          "hash": "A+Njclnho3yFSmOu7lPdkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.TraverserTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.TraverserTests.html",
+          "hash": "XqWXjp+BTQfDawaE5GlTuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.TrivialCuller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.TrivialCuller.html",
+          "hash": "ZRbwB7bQ899YyLhUZekvdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Scraping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Scraping.html",
+          "hash": "zmqRLBjCbMHQp2tHiKQTmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.AssemblyLoader.AssemblyComposer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.AssemblyLoader.AssemblyComposer.html",
+          "hash": "GhOKvTEhyLZCDX5JyFnC4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.AssemblyLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.AssemblyLoader.html",
+          "hash": "QSbmgtaFcDidn9A4aI+DJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IContentDirectoryProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IContentDirectoryProvider.html",
+          "hash": "BIcISWyzFUrN9mztMzuOZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.ILocalWebService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.ILocalWebService.html",
+          "hash": "sE121zgMNXuKeftj+PHahw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.ILogProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.ILogProvider.html",
+          "hash": "coMeZluIwo39Lo79xnsxig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IPluginManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IPluginManager.html",
+          "hash": "ehHt1VaIc1JeUyWC1MO/Pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IServiceContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IServiceContainer.html",
+          "hash": "eaTsj82Up3D+1mWwiE76QQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IServiceEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IServiceEnumerator.html",
+          "hash": "hKm9eQcx7Q8vfwoDayn/mQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IServiceRegistrationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IServiceRegistrationProvider.html",
+          "hash": "2HWq79p3Cl93e05wtQbgxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.ISqliteDatabaseProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.ISqliteDatabaseProvider.html",
+          "hash": "ksJj+g/75mbHzmUrmrsSvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IStoneProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IStoneProvider.html",
+          "hash": "O4D90xViMWpD3245m95+1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.IUserInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.IUserInterface.html",
+          "hash": "mXHyjEax7uNPtrWyjo5P7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Persistence.SqliteDatabaseProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Persistence.SqliteDatabaseProvider.html",
+          "hash": "ysHsCpSK6Rs17MiSZ+9YkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Persistence.html",
+          "hash": "iBVUUTeXl0LCjudRTA10TA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.ServiceContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.ServiceContainer.html",
+          "hash": "xdf+/gWWCalOpdU/SwbYrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.BasicProviderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.BasicProviderTests.html",
+          "hash": "srt0A5bmm4+LxkFzjhjMCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.ITestPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.ITestPlugin.html",
+          "hash": "Xb1Y3IID6AMaziBTc0D0RQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.PluginManagerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.PluginManagerTests.html",
+          "hash": "qhAw39mv2gEHvpNV+Wkyxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.ServiceContainerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.ServiceContainerTests.html",
+          "hash": "UAiNnQ1BuzoryIvG2RdV1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.ServiceProviderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.ServiceProviderTests.html",
+          "hash": "yM/0FHe6v1cofHJpxXkqyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.StoneProviderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.StoneProviderTests.html",
+          "hash": "6+JWcfL+S5gnr74Whvhb0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.Tests.html",
+          "hash": "DY3UjjqiYftoCkLZPRHgBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Services.html",
+          "hash": "fnEpJACML66lzOHeEPkfQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.IRomInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.IRomInfo.html",
+          "hash": "RNFtd8VlzMumNroI36gwNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.ISerialInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.ISerialInfo.html",
+          "hash": "WZVynejcZE073x1Ybm37RA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.IShiragameProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.IShiragameProvider.html",
+          "hash": "wbG9gk/6NTazxfHUr4DtmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.Tests.ShiragameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.Tests.ShiragameTests.html",
+          "hash": "VdrgZN+RDNe2BjG+xgfqZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.Tests.html",
+          "hash": "zIJ4jYCFzgiQUsyMW2Z+SQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Shiragame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Shiragame.html",
+          "hash": "Ubv2GUsT9f563IOdoJd5ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.Composable.IDummyComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.Composable.IDummyComposable.html",
+          "hash": "ERELyVnUvqZUAwkdNSQv6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.Composable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.Composable.html",
+          "hash": "zE6576E/mGcm+itC77k6bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.DummyComposable.DummyServiceComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.DummyComposable.DummyServiceComposable.html",
+          "hash": "ek7YyxbKDfiF23deiXORrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.DummyComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.DummyComposable.html",
+          "hash": "pWnmFts8Q8T3jXeq8FLZXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.InvalidComposable.IInvalidService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.InvalidComposable.IInvalidService.html",
+          "hash": "ceteJmgk35zw89ZafYgAZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.InvalidComposable.InvalidDummyServiceComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.InvalidComposable.InvalidDummyServiceComposable.html",
+          "hash": "DBcq+sh/B5qADppDASW8gQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Tests.InvalidComposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Tests.InvalidComposable.html",
+          "hash": "6tNE2iiOZxZ4S6VyN8jIsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "yZw6DBZCkQNrkavV5iPDTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "2NwX6MNb0J0iapU3/Ijbtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

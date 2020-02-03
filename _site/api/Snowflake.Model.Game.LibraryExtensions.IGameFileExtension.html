@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGameFileExtension
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGameFileExtension
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension">
+  
+  
+  <h1 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension" class="text-break">Interface IGameFileExtension
+  </h1>
+  <div class="markdown level0 summary"><p>Provides <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a> managed filesystem access for a <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.html">Snowflake.Model.Game.LibraryExtensions</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGameFileExtension : IGameExtension</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_MediaRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.MediaRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_MediaRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.MediaRoot">MediaRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to store media such as boxarts, trailers, and screenshots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory MediaRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_MiscRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.MiscRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_MiscRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.MiscRoot">MiscRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to store miscellaneous files related to the game. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory MiscRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_ProgramRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.ProgramRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_ProgramRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.ProgramRoot">ProgramRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to store game ROM files and other program data such as assets and game-specific BIOS files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory ProgramRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_ResourceRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.ResourceRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_ResourceRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.ResourceRoot">ResourceRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to store resources required for the game to run.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory ResourceRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RuntimeRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RuntimeRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RuntimeRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RuntimeRoot">RuntimeRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to store temporary files during the execution of the game.
+This directory is cleared before an emulator is run, and the required files
+for the emulator can be copied here.</p>
+<p>Afterwards, saves should be copied out from here into <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html#Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_SavesRoot">SavesRoot</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory RuntimeRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_SavesRoot_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.SavesRoot*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_SavesRoot" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.SavesRoot">SavesRoot</h4>
+  <div class="markdown level1 summary"><p>The directory to persist save files for a game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory SavesRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileInfo_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileInfo*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileInfo_Snowflake_Filesystem_IFile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileInfo(Snowflake.Filesystem.IFile)">GetFileInfo(IFile)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> for a given <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> in this game&apos;s root directory
+if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFileRecord GetFileInfo(IFile file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> to get metadata for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> if it exists, null if it does not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileInfoAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileInfoAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileInfoAsync_Snowflake_Filesystem_IFile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileInfoAsync(Snowflake.Filesystem.IFile)">GetFileInfoAsync(IFile)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously gets the <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> for a given <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> in this game&apos;s root directory
+if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFileRecord&gt; GetFileInfoAsync(IFile file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> to get metadata for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> if it exists, null if it does not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileRecords_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileRecords*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileRecords" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileRecords">GetFileRecords()</h4>
+  <div class="markdown level1 summary"><p>Gets the list of <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s that have been associated with this game.
+Note that <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s are simply files that have metadata associated with them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IFileRecord&gt; GetFileRecords()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileRecordsAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileRecordsAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetFileRecordsAsync" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetFileRecordsAsync">GetFileRecordsAsync()</h4>
+  <div class="markdown level1 summary"><p>Asynchronously gets the list of <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s that have been associated with this game.
+Note that <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s are simply files that have metadata associated with them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;IFileRecord&gt; GetFileRecordsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetRuntimeLocation_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetRuntimeLocation*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_GetRuntimeLocation" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.GetRuntimeLocation">GetRuntimeLocation()</h4>
+  <div class="markdown level1 summary"><p>Gets a working scratch directory for an emulator instance within <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html#Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RuntimeRoot">RuntimeRoot</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory GetRuntimeLocation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><p>A working scratch directory for an emulator running instance. This directory
+is guaranteed to be unique. Emulators are responsible for their own cleanup and are well advised
+to delete this directory after execution completes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RegisterFile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RegisterFile*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RegisterFile_Snowflake_Filesystem_IFile_System_String_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RegisterFile(Snowflake.Filesystem.IFile,System.String)">RegisterFile(IFile, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> as <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>. If this <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>
+already exists as a <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>, the mimetype will be updated with the
+new mimetype, but no other existing metadata will be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFileRecord RegisterFile(IFile file, string mimetype)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> to create a <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimetype</span></td>
+        <td><p>The mimetype of the <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>, required for <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> associated with the provided <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RegisterFileAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RegisterFileAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_RegisterFileAsync_Snowflake_Filesystem_IFile_System_String_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.RegisterFileAsync(Snowflake.Filesystem.IFile,System.String)">RegisterFileAsync(IFile, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously registers a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> as <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>. If this <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>
+already exists as a <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>, the mimetype will be updated with the
+new mimetype, but no other existing metadata will be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFileRecord&gt; RegisterFileAsync(IFile file, string mimetype)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> to create a <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimetype</span></td>
+        <td><p>The mimetype of the <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>, required for <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>s</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Records.File.IFileRecord.html">IFileRecord</a> associated with the provided <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Snowflake.Orchestration.Saving.GameFileExtensionSaveGameManagerExtensions.html#Snowflake_Orchestration_Saving_GameFileExtensionSaveGameManagerExtensions_WithSaves_Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_">GameFileExtensionSaveGameManagerExtensions.WithSaves(IGameFileExtension)</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

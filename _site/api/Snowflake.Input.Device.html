@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Snowflake.Input.Device
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,47 +62,114 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device">
   
   <h1 id="Snowflake_Input_Device" data-uid="Snowflake.Input.Device" class="text-break">Namespace Snowflake.Input.Device
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Snowflake.Input.Device.DeviceCapabilityClasses.html">DeviceCapabilityClasses</a></h4>
+      <section><p>Helper methods for device capability classes</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Input.Device.DeviceCapabilityExtensions.html">DeviceCapabilityExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Input.Device.DeviceLayoutMapping.html">DeviceLayoutMapping</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Input.Device.DirectInputDeviceInstance.html">DirectInputDeviceInstance</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Input.Device.KeyboardDeviceInstance.html">KeyboardDeviceInstance</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Input.Device.PassthroughDeviceInstance.html">PassthroughDeviceInstance</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Input.Device.XInputDeviceInstance.html">XInputDeviceInstance</a></h4>
+      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
+      <h4><a class="xref" href="Snowflake.Input.Device.IDeviceLayoutMapping.html">IDeviceLayoutMapping</a></h4>
+      <section><p>Represents a map from a <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a>
+to a <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a></p>
+</section>
       <h4><a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a></h4>
-      <section><p>A more filtered, usable version of an ILowLevelInputDevice</p>
+      <section><p>Represents the physical instance of a hardware peripheral agnostic of any
+input API. That is to mean that one device may implement multiple device APIs
+(driver instances).</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Input.Device.IInputEnumerator.html">IInputEnumerator</a></h4>
-      <section><p>Enumerates the available devices on the system that implement a certain controller layout</p>
-</section>
-      <h4><a class="xref" href="Snowflake.Input.Device.IInputManager.html">IInputManager</a></h4>
-      <section><p>Manages input devices from the operating system.</p>
-</section>
-      <h4><a class="xref" href="Snowflake.Input.Device.ILowLevelInputDevice.html">ILowLevelInputDevice</a></h4>
-      <section><p>A platform agnostic representation of the low-level properties of an input device.
-Implementation is handled by a OS-dependent InputManager implementation.
-Currently this interface supports only the DirectInput/XInput APIs on Windows and udev on Linux. OSX support is not planned.
-Fields that are not used on an OS should be nulled and made unsettable.</p>
+      <h4><a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a></h4>
+      <section><p>Represents an instance of a device with regards to a specific input driver.</p>
 </section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Snowflake.Input.Device.DeviceType.html">DeviceType</a></h4>
-      <section><p>The type of device</p>
+      <h4><a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a></h4>
+      <section><p>Possible capabilities of a hardware device.</p>
+<p>
+This differs from <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> in semantics;
+whereas <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> semantics are derived from
+the Stone controller layout specification, <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a>
+enumerations semantics come from the <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a> for which
+these capabilities were instantiated.
+</p>
+
+<p>
+These capabilities more or less mirror the union of possible capabilities provided
+by DirectInput, XInput, and evdev. Hence the semantics of each enum differ depending
+on the driver from which the instance was enumerated from.
+</p>
+
+<p>
+However, Snowflake only supports unique mappings up to the set defined
+by Stone, so in practice, the full set of capabilities will not be able to be
+mapped to a controller.
+</p>
+
+<p>
+<a class="xref" href="Snowflake.Input.Device.DeviceCapability.html#Snowflake_Input_Device_DeviceCapability_Button0">Button0</a> and such do not necessary map directly to <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html#Snowflake_Input_Controller_ControllerElement_Button0">Button0</a>.
+Commonly, <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html#Snowflake_Input_Device_DeviceCapability_Button0">Button0</a> map instead map to <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html#Snowflake_Input_Controller_ControllerElement_ButtonA">ButtonA</a> and such,
+depending on the driver.
+</p>
+
+<p>
+Axes have entries that are triplicated with the following semantics.
+<p>
+* Positive means the partition of the axis from 0.50 to 1.00, mapped to the interval [0, 1],
+that is 0 approaches 1 as 0.50 approaches 0.
+</p>
+<p>
+* Negative means the partition of the axis from 0.00 to 0.50, mapped to the interval [-1, 0],
+that is, 0 approaches -1 as 0.50 approaches 0.00
+</p>
+<p>
+* Without either qualifier means the entire axis from 0.00 to 1.00, mapped to the interval [-1, 1],
+that is -1 approaches 1 as 0.00 approaches 1.00.
+</p>
+
+<p>An enumerated axis enumerated may have all three capabilities enumerated, particularly if 
+it is an analog stick. Some drivers may not have support for all three capabilities, such as
+XInput triggers only exposing [0.00, 1.00] for triggers.
+</p></p>
+<p>
+Mouse cursor capabilities are also triplicated with the same semantics as axis, except for
+absolute values. Relative mouse movement is mapped to Axis0 by convention. 
+</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Input.Device.InputApi.html">InputApi</a></h4>
-      <section><p>The input API of a device</p>
+      <h4><a class="xref" href="Snowflake.Input.Device.DeviceCapabilityClass.html">DeviceCapabilityClass</a></h4>
+      <section><p>Classes of device capabilities</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Input.Device.InputDriverType.html">InputDriverType</a></h4>
+      <section><p>The type of input driver for a <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a>.</p>
 </section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IServiceRegistrationProvider
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,17 +62,18 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Services.IServiceRegistrationProvider">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Services.IServiceRegistrationProvider">
   
   
   <h1 id="Snowflake_Services_IServiceRegistrationProvider" data-uid="Snowflake.Services.IServiceRegistrationProvider" class="text-break">Interface IServiceRegistrationProvider
   </h1>
   <div class="markdown level0 summary"><p>Provides facilities to register a service.
 <p>
-When registering a service, your service must implement an interface in an assembly
-outside of the plugin composable.
-Otherwise, your service will never be accessible by any consumer.
+A service must implement an interface that resides outside of its implementing assembly. A service that implements
+an interface in its own assembly will not be accessible by any consumer due to resolution rules. This is true even
+for a service that only exposes a private API. In such case, it is advisable to expose an internal API, and use
+<span class="xref">System.Runtime.CompilerServices.InternalsVisibleToAttribute</span> to expose the interface.
 </p></p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -85,12 +87,20 @@ Otherwise, your service will never be accessible by any consumer.
   </h3>
   <a id="Snowflake_Services_IServiceRegistrationProvider_RegisterService_" data-uid="Snowflake.Services.IServiceRegistrationProvider.RegisterService*"></a>
   <h4 id="Snowflake_Services_IServiceRegistrationProvider_RegisterService__1___0_" data-uid="Snowflake.Services.IServiceRegistrationProvider.RegisterService``1(``0)">RegisterService&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"><p>Registers a service with the current service singleton</p>
+  <div class="markdown level1 summary"><p>Registers a singleton service with the service container.
+<p>
+A service must implement an interface that resides outside of its implementing assembly. A service that implements
+an interface in its own assembly will not be accessible by any consumer due to resolution rules. This is true even
+for a service that only exposes a private API. In such case, it is advisable to expose an internal API, and use
+<span class="xref">System.Runtime.CompilerServices.InternalsVisibleToAttribute</span> to expose the interface.
+</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RegisterService&lt;T&gt;(T serviceInstance)where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">void RegisterService&lt;T&gt;(T serviceInstance)
+
+    where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -105,7 +115,7 @@ Otherwise, your service will never be accessible by any consumer.
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">serviceInstance</span></td>
-        <td><p>The instance of the service</p>
+        <td><p>The instance of the service to register.</p>
 </td>
       </tr>
     </tbody>
@@ -121,19 +131,41 @@ Otherwise, your service will never be accessible by any consumer.
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type of service to register</p>
+        <td><p>The type of the service to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown when a service of the same type was already registered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Thrown when a service and its implementing type reside in the same assembly.</p>
 </td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IReadOnlyDirectory
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IReadOnlyDirectory
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Filesystem.IReadOnlyDirectory">
+  
+  
+  <h1 id="Snowflake_Filesystem_IReadOnlyDirectory" data-uid="Snowflake.Filesystem.IReadOnlyDirectory" class="text-break">Interface IReadOnlyDirectory
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a readonly view over the root of a Directory, where each file that is access through a directory is
+associated with a GUID in the directory&apos;s manifest.</p>
+<p>When files are moved between IDirectories, the files GUID is preserved. 
+Thus, metadata can be preserved throughout.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Filesystem_IReadOnlyDirectory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IReadOnlyDirectory</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_ContainsDirectory_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.ContainsDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_ContainsDirectory_System_String_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.ContainsDirectory(System.String)">ContainsDirectory(String)</h4>
+  <div class="markdown level1 summary"><p>Whether or not this directory contains directory as a direct child.
+full path, this will truncate the path using <span class="xref">System.IO.Path.GetDirectoryName(System.String)</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsDirectory(string directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The name of the directory to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not this directory contains the given directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_ContainsFile_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.ContainsFile*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_ContainsFile_System_String_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.ContainsFile(System.String)">ContainsFile(String)</h4>
+  <div class="markdown level1 summary"><p>Whether or not this directory contains a file in its manifest. If provided a
+full path, this will truncate the path using <span class="xref">System.IO.Path.GetFileName(System.String)</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The name of the file to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not this directory contains the given file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateDirectories_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateDirectories*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateDirectories" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateDirectories">EnumerateDirectories()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all direct child directories of this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IReadOnlyDirectory&gt; EnumerateDirectories()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a>&gt;</td>
+        <td><p>All direct children directories.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateFiles_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateFiles*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateFiles" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateFiles">EnumerateFiles()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all files in this directory,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IReadOnlyFile&gt; EnumerateFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a>&gt;</td>
+        <td><p>All direct children files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateFilesRecursive_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateFilesRecursive*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_EnumerateFilesRecursive" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.EnumerateFilesRecursive">EnumerateFilesRecursive()</h4>
+  <div class="markdown level1 summary"><p>Recursively enumerates all files that are contained in this directory.</p>
+<p>This method is usually implemented as a Breadth-first search, but no order is guaranteed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IReadOnlyFile&gt; EnumerateFilesRecursive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a>&gt;</td>
+        <td><p>All files contained within this directory, including descendant subfolders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenDirectory(System.String)">OpenDirectory(String)</h4>
+  <div class="markdown level1 summary"><p>Opens an existing descendant directory with the given name.
+If the directory does not exist, throws IOException.
+You can open a nested directory using &apos;/&apos; as the path separator, and it 
+will be created relative to this current directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory OpenDirectory(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the existing directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
+        <td><p>The directory if it exists, or null if it does not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_System_Boolean_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenDirectory(System.String,System.Boolean)">OpenDirectory(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Opens an existing descendant directory with the given name.
+If the directory does not exist, throws IOException.
+You can open a nested directory using &apos;/&apos; as the path separator, and it 
+will be created relative to this current directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory OpenDirectory(string name, bool createIfNotExists)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the existing directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">createIfNotExists</span></td>
+        <td><p>If the directory does not exist, will create the directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
+        <td><p>The directory if it exists, or null if it does not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenFile*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_System_String_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenFile(System.String)">OpenFile(String)</h4>
+  <div class="markdown level1 summary"><p>Opens a file if it exists. If the file does not exist, will throw an FileNotFoundException.</p>
+<p>Unlike <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a>, you can not use the path separator to
+open a nested file. Paths will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span>.</p>
+<p>Instead, use <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a> to open the directory of the desired file,
+then call <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_System_String_">OpenFile(String)</a> on the returned instance.</p>
+<p>Keep in mind this does not actually create a file on the underlying file system. 
+However, you can use <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> and friends to create the file
+if it does not yet exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyFile OpenFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The name of the file. If this is a path, will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><p>An object that associates a given file with a with a unique <span class="xref">System.Guid</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenFile*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_System_String_System_Boolean_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.OpenFile(System.String,System.Boolean)">OpenFile(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Opens a file if it exists.</p>
+<p>Unlike <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a>, you can not use the path separator to
+open a nested file. Paths will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span>.</p>
+<p>Instead, use <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a> to open the directory of the desired file,
+then call <a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html#Snowflake_Filesystem_IReadOnlyDirectory_OpenFile_System_String_">OpenFile(String)</a> on the returned instance.</p>
+<p>Keep in mind this does not actually create a file on the underlying file system. 
+However, you can use <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> and friends to create the file
+if it does not yet exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyFile OpenFile(string file, bool createIfNotExists)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The name of the file. If this is a path, will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">createIfNotExists</span></td>
+        <td><p>If true, then the handle will be created for the file if it does not exists.
+No actual file will be created but the filename will receive an entry in the
+manifest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><p>An object that associates a given file with a with a unique <span class="xref">System.Guid</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_UnsafeGetPath_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.UnsafeGetPath*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_UnsafeGetPath" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.UnsafeGetPath">UnsafeGetPath()</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying <span class="xref">System.IO.DirectoryInfo</span> where files are contained.</p>
+<p>This is very rarely necessary, and most IO tasks can be done efficiently and safely using the
+provided API. Manipulating the underlying file system will potentially desync the manifest,
+and cause loss of associated metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Avoid accessing the underlying file path, and use the object methods instead.&quot;)]
+DirectoryInfo UnsafeGetPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><p>The underlying <span class="xref">System.IO.DirectoryInfo</span> where files are contained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

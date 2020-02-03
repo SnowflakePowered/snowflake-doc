@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IStoneProvider
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Services.IStoneProvider">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Services.IStoneProvider">
   
   
   <h1 id="Snowflake_Services_IStoneProvider" data-uid="Snowflake.Services.IStoneProvider" class="text-break">Interface IStoneProvider
@@ -85,7 +86,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, IControllerLayout&gt; Controllers { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IDictionary&lt;ControllerId, IControllerLayout&gt; Controllers { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -97,7 +98,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Input.Controller.IControllerLayout.html">IControllerLayout</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a>, <a class="xref" href="Snowflake.Input.Controller.IControllerLayout.html">IControllerLayout</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -109,7 +110,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, IPlatformInfo&gt; Platforms { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IDictionary&lt;PlatformId, IPlatformInfo&gt; Platforms { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,7 +122,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Platform.IPlatformInfo.html">IPlatformInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a>, <a class="xref" href="Snowflake.Model.Game.IPlatformInfo.html">IPlatformInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -150,14 +151,216 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Services_IStoneProvider_GetFileSignature_" data-uid="Snowflake.Services.IStoneProvider.GetFileSignature*"></a>
+  <h4 id="Snowflake_Services_IStoneProvider_GetFileSignature_System_String_System_IO_Stream_" data-uid="Snowflake.Services.IStoneProvider.GetFileSignature(System.String,System.IO.Stream)">GetFileSignature(String, Stream)</h4>
+  <div class="markdown level1 summary"><p>Attempts to get a the filesignature for the given mimetype and ROM stream, preserving the
+position of the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFileSignature GetFileSignature(string mimetype, Stream romStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimetype</span></td>
+        <td><p>The mimetype of the ROM. Use <a class="xref" href="Snowflake.Services.IStoneProvider.html#Snowflake_Services_IStoneProvider_GetStoneMimetype_Snowflake_Model_Game_PlatformId_System_IO_Stream_System_String_">GetStoneMimetype(PlatformId, Stream, String)</a>
+to determine this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">romStream</span></td>
+        <td><p>A stream containing the ROM file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Romfile.IFileSignature.html">IFileSignature</a></td>
+        <td><p>A <a class="xref" href="Snowflake.Romfile.IFileSignature.html">IFileSignature</a> compatible with this mimetype and file, or null if none is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Services_IStoneProvider_GetSignatures_" data-uid="Snowflake.Services.IStoneProvider.GetSignatures*"></a>
+  <h4 id="Snowflake_Services_IStoneProvider_GetSignatures_System_String_" data-uid="Snowflake.Services.IStoneProvider.GetSignatures(System.String)">GetSignatures(String)</h4>
+  <div class="markdown level1 summary"><p>If a filesignature is known for a mimetype, returns the filesignature object. Otherwise, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IFileSignature&gt; GetSignatures(string mimetype)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimetype</span></td>
+        <td><p>A stone mimetype</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Romfile.IFileSignature.html">IFileSignature</a>&gt;</td>
+        <td><p>A list of possible signatures for the mimetype.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Services_IStoneProvider_GetStoneMimetype_" data-uid="Snowflake.Services.IStoneProvider.GetStoneMimetype*"></a>
+  <h4 id="Snowflake_Services_IStoneProvider_GetStoneMimetype_Snowflake_Model_Game_PlatformId_System_IO_Stream_System_String_" data-uid="Snowflake.Services.IStoneProvider.GetStoneMimetype(Snowflake.Model.Game.PlatformId,System.IO.Stream,System.String)">GetStoneMimetype(PlatformId, Stream, String)</h4>
+  <div class="markdown level1 summary"><p>Attempts to get a Stone mimetype from a file stream by reading the file headers provided, if
+the platform is known. </p>
+<p>If a mimetype can not be found through the inbuilt file signatures, it will rely on the extension fallback,
+which may be a filename or the known extension of the file. If extensionFallback is null or empty, 
+or is unable to be found in the platform, then the miemtype is unknown, and will return an empty string.</p>
+<p>This method will preserve the stream position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetStoneMimetype(PlatformId knownPlatform, Stream romStream, string extensionFallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">knownPlatform</span></td>
+        <td><p>The platform that the provided ROM is for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">romStream</span></td>
+        <td><p>A stream containing the ROM file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionFallback</span></td>
+        <td><p>A fallback extension to look up for in case the stream analysis fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A Stone mimetype if the file format is known, or the empty string otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Services_IStoneProvider_GetStoneMimetype_" data-uid="Snowflake.Services.IStoneProvider.GetStoneMimetype*"></a>
+  <h4 id="Snowflake_Services_IStoneProvider_GetStoneMimetype_System_IO_Stream_" data-uid="Snowflake.Services.IStoneProvider.GetStoneMimetype(System.IO.Stream)">GetStoneMimetype(Stream)</h4>
+  <div class="markdown level1 summary"><p>Attempts to discover the mimetype from all known file signatures. No fallback is available for this method,
+so if the file does not match a known file signature, this method will return the empty string.</p>
+<p>This method will preserve the stream position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetStoneMimetype(Stream romStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">romStream</span></td>
+        <td><p>A stream containing the ROM file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A stone mimetype if the file format is known, or the empty string otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

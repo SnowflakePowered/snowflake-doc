@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IFileSignature
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Romfile.IFileSignature">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Romfile.IFileSignature">
   
   
   <h1 id="Snowflake_Romfile_IFileSignature" data-uid="Snowflake.Romfile.IFileSignature" class="text-break">Interface IFileSignature
@@ -107,8 +108,7 @@ Usually the first 1024 bytes.</p>
   </h3>
   <a id="Snowflake_Romfile_IFileSignature_GetInternalName_" data-uid="Snowflake.Romfile.IFileSignature.GetInternalName*"></a>
   <h4 id="Snowflake_Romfile_IFileSignature_GetInternalName_System_IO_Stream_" data-uid="Snowflake.Romfile.IFileSignature.GetInternalName(System.IO.Stream)">GetInternalName(Stream)</h4>
-  <div class="markdown level1 summary"><p>Gets the internal name of the ROM if possible
-<param name="fileContents">The contents of the ROM</p>
+  <div class="markdown level1 summary"><p>Gets the internal name of the ROM if possible</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -128,7 +128,8 @@ Usually the first 1024 bytes.</p>
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">fileContents</span></td>
-        <td></td>
+        <td><p>The contents of the ROM</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,13 +149,12 @@ Usually the first 1024 bytes.</p>
     </tbody>
   </table>
   <h5 id="Snowflake_Romfile_IFileSignature_GetInternalName_System_IO_Stream__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>. Exceptions can be thrown freely without being handled,
-and will be treated as an invalid result (null).</p>
+  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>. </p>
+<p>This method may not throw if <a class="xref" href="Snowflake.Romfile.IFileSignature.html#Snowflake_Romfile_IFileSignature_HeaderSignatureMatches_System_IO_Stream_">HeaderSignatureMatches(Stream)</a> is true.</p>
 </div>
   <a id="Snowflake_Romfile_IFileSignature_GetSerial_" data-uid="Snowflake.Romfile.IFileSignature.GetSerial*"></a>
   <h4 id="Snowflake_Romfile_IFileSignature_GetSerial_System_IO_Stream_" data-uid="Snowflake.Romfile.IFileSignature.GetSerial(System.IO.Stream)">GetSerial(Stream)</h4>
-  <div class="markdown level1 summary"><p>Gets the game serial from the file signature if possible
-<param name="fileContents">The contents of the ROM</p>
+  <div class="markdown level1 summary"><p>Gets the game serial from the file signature if possible</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -174,7 +174,8 @@ and will be treated as an invalid result (null).</p>
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">fileContents</span></td>
-        <td></td>
+        <td><p>The contents of the ROM</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,8 +195,8 @@ and will be treated as an invalid result (null).</p>
     </tbody>
   </table>
   <h5 id="Snowflake_Romfile_IFileSignature_GetSerial_System_IO_Stream__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>. Exceptions can be thrown freely without being handled,
-and will be treated as an invalid result (null).</p>
+  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>.</p>
+<p>This method may not throw if <a class="xref" href="Snowflake.Romfile.IFileSignature.html#Snowflake_Romfile_IFileSignature_HeaderSignatureMatches_System_IO_Stream_">HeaderSignatureMatches(Stream)</a> is true.</p>
 </div>
   <a id="Snowflake_Romfile_IFileSignature_HeaderSignatureMatches_" data-uid="Snowflake.Romfile.IFileSignature.HeaderSignatureMatches*"></a>
   <h4 id="Snowflake_Romfile_IFileSignature_HeaderSignatureMatches_System_IO_Stream_" data-uid="Snowflake.Romfile.IFileSignature.HeaderSignatureMatches(System.IO.Stream)">HeaderSignatureMatches(Stream)</h4>
@@ -242,17 +243,18 @@ To handle multiple types of ROMs, use a series of ifs or an switch.</p>
     </tbody>
   </table>
   <h5 id="Snowflake_Romfile_IFileSignature_HeaderSignatureMatches_System_IO_Stream__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>. Exceptions can be thrown freely without being handled,
-and will be treated as an invalid result (false).</p>
+  <div class="markdown level1 remarks"><p>Never close <code data-dev-comment-type="paramref" class="paramref">fileContents</code>.
+This method must never throw. Return false if an exception occurs.</p>
 </div>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

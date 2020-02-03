@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IConfigurationSection
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationSection">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationSection">
   
   
   <h1 id="Snowflake_Configuration_IConfigurationSection" data-uid="Snowflake.Configuration.IConfigurationSection" class="text-break">Interface IConfigurationSection
@@ -159,18 +160,17 @@ in an untyped and unsafe manner.</p>
   <div class="markdown level1 remarks"><p>Only use this if you know what you are doing. The safe manner to access configuration values is
 through the <a class="xref" href="Snowflake.Configuration.IConfigurationSection-1.html#Snowflake_Configuration_IConfigurationSection_1_Configuration">Configuration</a> property.</p>
 </div>
-  <a id="Snowflake_Configuration_IConfigurationSection_Values_" data-uid="Snowflake.Configuration.IConfigurationSection.Values*"></a>
-  <h4 id="Snowflake_Configuration_IConfigurationSection_Values" data-uid="Snowflake.Configuration.IConfigurationSection.Values">Values</h4>
-  <div class="markdown level1 summary"><p>Gets the read only mapping of property names to configuration values
-Enumerating over the values key is not guaranteed to be in the same
-order as the order the properties were defined.</p>
-<p>The implementation is responsible for ensuring this mapping synced with the
-values stored in the object and ensuring this mapping is immutable.</p>
+  <a id="Snowflake_Configuration_IConfigurationSection_ValueCollection_" data-uid="Snowflake.Configuration.IConfigurationSection.ValueCollection*"></a>
+  <h4 id="Snowflake_Configuration_IConfigurationSection_ValueCollection" data-uid="Snowflake.Configuration.IConfigurationSection.ValueCollection">ValueCollection</h4>
+  <div class="markdown level1 summary"><p>Gets the values backing this configuration section,
+as well as those in the parent configuration collection.</p>
+<p>It is well recommended to use <a class="xref" href="Snowflake.Configuration.IConfigurationSection.html#Snowflake_Configuration_IConfigurationSection_Values">Values</a> instead,
+however direct access to the value collection may be useful in some cases.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, IConfigurationValue&gt; Values { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IConfigurationValueCollection ValueCollection { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,19 +182,48 @@ values stored in the object and ensuring this mapping is immutable.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>&gt;</td>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationValueCollection.html">IConfigurationValueCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Configuration_IConfigurationSection_Values_" data-uid="Snowflake.Configuration.IConfigurationSection.Values*"></a>
+  <h4 id="Snowflake_Configuration_IConfigurationSection_Values" data-uid="Snowflake.Configuration.IConfigurationSection.Values">Values</h4>
+  <div class="markdown level1 summary"><p>Gets the read only mapping of property names to configuration values
+Enumerating over the values key is not guaranteed to be in the same
+order as the order the properties were defined.</p>
+<p>The implementation is responsible for ensuring this mapping synced with the
+values stored in the object and ensuring this mapping is immutable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, IConfigurationValue&gt; Values { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

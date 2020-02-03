@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum Directive
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.Extensibility.Directive">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.Extensibility.Directive">
   
   
   <h1 id="Snowflake_Scraping_Extensibility_Directive" data-uid="Snowflake.Scraping.Extensibility.Directive" class="text-break">Enum Directive
@@ -92,9 +93,13 @@ deciding if a <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.ht
         <td><p>Indicates that a child of the specified type on the specified <a class="xref" href="Snowflake.Scraping.Extensibility.AttachTarget.html">AttachTarget</a>
 MUST NOT exist before this scraper is run. Allows for fallbacks and exclusions on multiple but
 similar scrapers that can take advantage of pre-existing data.
-Note that an exclusion applies once when all <a class="xref" href="Snowflake.Scraping.Extensibility.Directive.html#Snowflake_Scraping_Extensibility_Directive_Requires">Requires</a> have been fulfilled.
+All scrapers are <em>eager</em> to run, and will run immediately after their <a class="xref" href="Snowflake.Scraping.Extensibility.Directive.html#Snowflake_Scraping_Extensibility_Directive_Requires">Requires</a>
+are fulfilled. That means that exclusions apply only to seeds that exist on the previous seed state,
+before this scraper is run. In order words, if the <a class="xref" href="Snowflake.Scraping.Extensibility.Directive.html#Snowflake_Scraping_Extensibility_Directive_Requires">Requires</a> of a scraper is fulfilled
+before all possible <a class="xref" href="Snowflake.Scraping.Extensibility.Directive.html#Snowflake_Scraping_Extensibility_Directive_Excludes">Excludes</a> may have appeared, the scraper will run regardless of any
+<a class="xref" href="Snowflake.Scraping.Extensibility.Directive.html#Snowflake_Scraping_Extensibility_Directive_Excludes">Excludes</a>.
 If the state of the seed tree excludes this scraper after it has already been run,
-the result will exist for the remainder of the <a class="xref" href="Snowflake.Scraping.IScrapeJob.html">IScrapeJob</a> unless it is
+the result will exist for the remainder of the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html">IScrapeContext</a> unless it is
 culled by an <a class="xref" href="Snowflake.Scraping.Extensibility.ICuller.html">ICuller</a>.</p>
 </td>
       </tr>
@@ -108,13 +113,14 @@ be available when this scraper is run.</p>
     </tbody>
   </thead></thead></table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

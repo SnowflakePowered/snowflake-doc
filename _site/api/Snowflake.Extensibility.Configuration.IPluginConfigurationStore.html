@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPluginConfigurationStore
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore">
   
   
   <h1 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore" class="text-break">Interface IPluginConfigurationStore
@@ -92,7 +93,9 @@ properties initialized.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConfigurationSection&lt;T&gt; Get&lt;T&gt;()where T : class, IConfigurationSection&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">IConfigurationSection&lt;T&gt; Get&lt;T&gt;()
+
+    where T : class, IConfigurationSection&lt;T&gt;</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -126,9 +129,55 @@ properties initialized.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_GetAsync_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.GetAsync*"></a>
+  <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_GetAsync__1" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.GetAsync``1">GetAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the configuration collection associated with this game record.
+This method is guaranteed to return a usable instance of the configuration collection.
+If a prior configuration has not been set, it should return a default instance with all
+properties initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IConfigurationSection&lt;T&gt;&gt; GetAsync&lt;T&gt;()
+
+    where T : class, IConfigurationSection&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Configuration.IConfigurationSection-1.html">IConfigurationSection</a>&lt;T&gt;&gt;</td>
+        <td><p>The configuration collection associated with this game record. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of configuration collection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_Set_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.Set*"></a>
   <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_Set_Snowflake_Configuration_IConfigurationValue_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.Set(Snowflake.Configuration.IConfigurationValue)">Set(IConfigurationValue)</h4>
-  <div class="markdown level1 summary"><p>Updates a single <em>existing</em> configuration value, this will error if the GUID is not found in
+  <div class="markdown level1 summary"><p>Updates a single <em>existing</em> configuration value, this will do nothing if the GUID is not found in
 the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -156,7 +205,7 @@ the database.</p>
   </table>
   <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_Set_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.Set*"></a>
   <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_Set_System_Collections_Generic_IEnumerable_Snowflake_Configuration_IConfigurationValue__" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.Set(System.Collections.Generic.IEnumerable{Snowflake.Configuration.IConfigurationValue})">Set(IEnumerable&lt;IConfigurationValue&gt;)</h4>
-  <div class="markdown level1 summary"><p>Updates multiple <em>existing</em> configuration values, this will error if the GUID is not found in
+  <div class="markdown level1 summary"><p>Updates multiple <em>existing</em> configuration values, this will do nothing for the GUID is not found in
 the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -189,7 +238,9 @@ the database.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Set&lt;T&gt;(IConfigurationSection&lt;T&gt; configuration)where T : class, IConfigurationSection&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">void Set&lt;T&gt;(IConfigurationSection&lt;T&gt; configuration)
+
+    where T : class, IConfigurationSection&lt;T&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -225,14 +276,161 @@ the database.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync*"></a>
+  <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync_Snowflake_Configuration_IConfigurationValue_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync(Snowflake.Configuration.IConfigurationValue)">SetAsync(IConfigurationValue)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously updates a single <em>existing</em> configuration value, this will do nothing if the GUID is not found in
+the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetAsync(IConfigurationValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The configuration value with valid GUID and updated data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync*"></a>
+  <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync_System_Collections_Generic_IEnumerable_Snowflake_Configuration_IConfigurationValue__" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync(System.Collections.Generic.IEnumerable{Snowflake.Configuration.IConfigurationValue})">SetAsync(IEnumerable&lt;IConfigurationValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously updates multiple <em>existing</em> configuration values, this will do nothing for the GUID is not found in
+the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetAsync(IEnumerable&lt;IConfigurationValue&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The configuration value with valid GUID and updated data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync_" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync*"></a>
+  <h4 id="Snowflake_Extensibility_Configuration_IPluginConfigurationStore_SetAsync__1_Snowflake_Configuration_IConfigurationSection___0__" data-uid="Snowflake.Extensibility.Configuration.IPluginConfigurationStore.SetAsync``1(Snowflake.Configuration.IConfigurationSection{``0})">SetAsync&lt;T&gt;(IConfigurationSection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Saves and persists a configuration collection to the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetAsync&lt;T&gt;(IConfigurationSection&lt;T&gt; configuration)
+
+    where T : class, IConfigurationSection&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationSection-1.html">IConfigurationSection</a>&lt;T&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration to save to the store</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of configuration collection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

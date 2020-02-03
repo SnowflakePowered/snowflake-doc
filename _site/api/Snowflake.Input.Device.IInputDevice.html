@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IInputDevice
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,13 +62,15 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device.IInputDevice">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device.IInputDevice">
   
   
   <h1 id="Snowflake_Input_Device_IInputDevice" data-uid="Snowflake.Input.Device.IInputDevice" class="text-break">Interface IInputDevice
   </h1>
-  <div class="markdown level0 summary"><p>A more filtered, usable version of an ILowLevelInputDevice</p>
+  <div class="markdown level0 summary"><p>Represents the physical instance of a hardware peripheral agnostic of any
+input API. That is to mean that one device may implement multiple device APIs
+(driver instances).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Device.html">Snowflake.Input.Device</a></h6>
@@ -78,14 +81,14 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Snowflake_Input_Device_IInputDevice_ControllerName_" data-uid="Snowflake.Input.Device.IInputDevice.ControllerName*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_ControllerName" data-uid="Snowflake.Input.Device.IInputDevice.ControllerName">ControllerName</h4>
-  <div class="markdown level1 summary"><p>Gets a friendly name for the controller (Xbox Controller, or Wii Remote, etc etc)</p>
+  <a id="Snowflake_Input_Device_IInputDevice_DeviceName_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceName*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceName" data-uid="Snowflake.Input.Device.IInputDevice.DeviceName">DeviceName</h4>
+  <div class="markdown level1 summary"><p>The name of the device.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string ControllerName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string DeviceName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,38 +105,16 @@
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Input_Device_IInputDevice_DeviceApi_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceApi*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceApi" data-uid="Snowflake.Input.Device.IInputDevice.DeviceApi">DeviceApi</h4>
-  <div class="markdown level1 summary"><p>Gets the API this controller uses</p>
+  <a id="Snowflake_Input_Device_IInputDevice_DevicePath_" data-uid="Snowflake.Input.Device.IInputDevice.DevicePath*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_DevicePath" data-uid="Snowflake.Input.Device.IInputDevice.DevicePath">DevicePath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to this device instance.</p>
+<p>On Windows, this usually begins with \?\HID
+whereas on Linux, this usually begins with /dev/input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">InputApi DeviceApi { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.InputApi.html">InputApi</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Snowflake_Input_Device_IInputDevice_DeviceId_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceId*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceId" data-uid="Snowflake.Input.Device.IInputDevice.DeviceId">DeviceId</h4>
-  <div class="markdown level1 summary"><p>Gets a unique name assigned to this type of device</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string DeviceId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string DevicePath { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,17 +131,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Input_Device_IInputDevice_DeviceIndex_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceIndex*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceIndex" data-uid="Snowflake.Input.Device.IInputDevice.DeviceIndex">DeviceIndex</h4>
-  <div class="markdown level1 summary"><p>Gets the device index differs from the enumeration number that it is the index in a set
-of the device rather than all devices.
-For example, if the device is an Xinput device and is the 3rd input device, this index would be
-2 in the set of input devices.</p>
+  <a id="Snowflake_Input_Device_IInputDevice_FriendlyName_" data-uid="Snowflake.Input.Device.IInputDevice.FriendlyName*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_FriendlyName" data-uid="Snowflake.Input.Device.IInputDevice.FriendlyName">FriendlyName</h4>
+  <div class="markdown level1 summary"><p>A user-friendly label to give to this device.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int ? DeviceIndex { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string FriendlyName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,19 +150,26 @@ For example, if the device is an Xinput device and is the 3rd input device, this
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Input_Device_IInputDevice_DeviceInfo_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceInfo*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceInfo" data-uid="Snowflake.Input.Device.IInputDevice.DeviceInfo">DeviceInfo</h4>
-  <div class="markdown level1 summary"><p>Gets the device this wrapper belongs to</p>
+  <a id="Snowflake_Input_Device_IInputDevice_InstanceGuid_" data-uid="Snowflake.Input.Device.IInputDevice.InstanceGuid*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_InstanceGuid" data-uid="Snowflake.Input.Device.IInputDevice.InstanceGuid">InstanceGuid</h4>
+  <div class="markdown level1 summary"><p>A GUID that uniquely identifies the device.</p>
+<p>In general, this GUID is opaque and arbitrary, but must be consistent with the 
+<a class="xref" href="Snowflake.Services.IDeviceEnumerator.html">IDeviceEnumerator</a> that produced this device.</p>
+<p>On Windows, this will be the device instance GUID as enumerated from DirectInput, and
+on Linux, this GUID will be in SDL2 format. The passthrough and keyboard instances
+will always have the GUIDs <a class="xref" href="Snowflake.Services.IDeviceEnumerator.html#Snowflake_Services_IDeviceEnumerator_PassthroughInstanceGuid">PassthroughInstanceGuid</a> and
+<a class="xref" href="Snowflake.Services.IDeviceEnumerator.html#Snowflake_Services_IDeviceEnumerator_KeyboardInstanceGuid">KeyboardInstanceGuid</a>
+in particular.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILowLevelInputDevice DeviceInfo { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">Guid InstanceGuid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,19 +181,19 @@ For example, if the device is an Xinput device and is the 3rd input device, this
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.ILowLevelInputDevice.html">ILowLevelInputDevice</a></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Input_Device_IInputDevice_DeviceLayout_" data-uid="Snowflake.Input.Device.IInputDevice.DeviceLayout*"></a>
-  <h4 id="Snowflake_Input_Device_IInputDevice_DeviceLayout" data-uid="Snowflake.Input.Device.IInputDevice.DeviceLayout">DeviceLayout</h4>
-  <div class="markdown level1 summary"><p>Gets the device layout this input device implements</p>
+  <a id="Snowflake_Input_Device_IInputDevice_Instances_" data-uid="Snowflake.Input.Device.IInputDevice.Instances*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_Instances" data-uid="Snowflake.Input.Device.IInputDevice.Instances">Instances</h4>
+  <div class="markdown level1 summary"><p>Gets the device driver instances for which this device implements.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IControllerLayout DeviceLayout { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IInputDeviceInstance&gt; Instances { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,19 +205,69 @@ For example, if the device is an Xinput device and is the 3rd input device, this
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Controller.IControllerLayout.html">IControllerLayout</a></td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_IInputDevice_ProductID_" data-uid="Snowflake.Input.Device.IInputDevice.ProductID*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_ProductID" data-uid="Snowflake.Input.Device.IInputDevice.ProductID">ProductID</h4>
+  <div class="markdown level1 summary"><p>The USB PID of this device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ProductID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Device_IInputDevice_VendorID_" data-uid="Snowflake.Input.Device.IInputDevice.VendorID*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDevice_VendorID" data-uid="Snowflake.Input.Device.IInputDevice.VendorID">VendorID</h4>
+  <div class="markdown level1 summary"><p>The USB VID of this device.</p>
+<p>May not be accurate for Keyboard and Passthrough devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int VendorID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

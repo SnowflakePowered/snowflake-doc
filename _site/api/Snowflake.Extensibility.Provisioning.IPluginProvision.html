@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPluginProvision
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision">
   
   
   <h1 id="Snowflake_Extensibility_Provisioning_IPluginProvision" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision" class="text-break">Interface IPluginProvision
@@ -104,12 +105,13 @@
   </table>
   <a id="Snowflake_Extensibility_Provisioning_IPluginProvision_CommonResourceDirectory_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.CommonResourceDirectory*"></a>
   <h4 id="Snowflake_Extensibility_Provisioning_IPluginProvision_CommonResourceDirectory" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.CommonResourceDirectory">CommonResourceDirectory</h4>
-  <div class="markdown level1 summary"><p>Gets the resource directory common to the plugin&apos;s module.</p>
+  <div class="markdown level1 summary"><p>Gets the resource directory common to the plugin&apos;s module. The common resource directory is intended for static
+files that are shared between all plugins in the current module, and should not be modified after install.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DirectoryInfo CommonResourceDirectory { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory CommonResourceDirectory { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -152,7 +154,10 @@
   </table>
   <a id="Snowflake_Extensibility_Provisioning_IPluginProvision_ContentDirectory_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.ContentDirectory*"></a>
   <h4 id="Snowflake_Extensibility_Provisioning_IPluginProvision_ContentDirectory" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.ContentDirectory">ContentDirectory</h4>
-  <div class="markdown level1 summary"><p>Gets this plugin&apos;s content directory</p>
+  <div class="markdown level1 summary"><p>Gets this plugin&apos;s content directory, or the root location of the plugin.</p>
+<p>This should only be used for discretionary or informational purposes. Consider
+using <a class="xref" href="Snowflake.Extensibility.Provisioning.IPluginProvision.html#Snowflake_Extensibility_Provisioning_IPluginProvision_DataDirectory">DataDirectory</a>, <a class="xref" href="Snowflake.Extensibility.Provisioning.IPluginProvision.html#Snowflake_Extensibility_Provisioning_IPluginProvision_ResourceDirectory">ResourceDirectory</a>,
+or  <a class="xref" href="Snowflake.Extensibility.Provisioning.IPluginProvision.html#Snowflake_Extensibility_Provisioning_IPluginProvision_CommonResourceDirectory">CommonResourceDirectory</a> instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -170,6 +175,33 @@
     <tbody>
       <tr>
         <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Extensibility_Provisioning_IPluginProvision_DataDirectory_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.DataDirectory*"></a>
+  <h4 id="Snowflake_Extensibility_Provisioning_IPluginProvision_DataDirectory" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.DataDirectory">DataDirectory</h4>
+  <div class="markdown level1 summary"><p>Gets the plugin&apos;s data directory. The data directory should be used for temporary or
+generated data that may change or be updated frequently, such as auxillary configurations files
+or temporary files.</p>
+<p>For configuration specifically, consider using <a class="xref" href="Snowflake.Extensibility.Provisioning.IPluginProvision.html#Snowflake_Extensibility_Provisioning_IPluginProvision_ConfigurationStore">ConfigurationStore</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory DataDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -272,12 +304,13 @@
   </table>
   <a id="Snowflake_Extensibility_Provisioning_IPluginProvision_ResourceDirectory_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.ResourceDirectory*"></a>
   <h4 id="Snowflake_Extensibility_Provisioning_IPluginProvision_ResourceDirectory" data-uid="Snowflake.Extensibility.Provisioning.IPluginProvision.ResourceDirectory">ResourceDirectory</h4>
-  <div class="markdown level1 summary"><p>Gets the plugin&apos;s resource directory</p>
+  <div class="markdown level1 summary"><p>Gets the plugin&apos;s resource directory. The resource directory is intended for static
+files that are required only by this plugin, and should not be modified after install.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DirectoryInfo ResourceDirectory { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory ResourceDirectory { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -289,7 +322,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -319,13 +352,14 @@
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

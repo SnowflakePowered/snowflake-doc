@@ -1,0 +1,1551 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum DeviceCapability
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum DeviceCapability
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Input.Device.DeviceCapability">
+  
+  
+  <h1 id="Snowflake_Input_Device_DeviceCapability" data-uid="Snowflake.Input.Device.DeviceCapability" class="text-break">Enum DeviceCapability
+  </h1>
+  <div class="markdown level0 summary"><p>Possible capabilities of a hardware device.</p>
+<p>
+This differs from <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> in semantics;
+whereas <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> semantics are derived from
+the Stone controller layout specification, <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a>
+enumerations semantics come from the <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a> for which
+these capabilities were instantiated.
+</p>
+
+<p>
+These capabilities more or less mirror the union of possible capabilities provided
+by DirectInput, XInput, and evdev. Hence the semantics of each enum differ depending
+on the driver from which the instance was enumerated from.
+</p>
+
+<p>
+However, Snowflake only supports unique mappings up to the set defined
+by Stone, so in practice, the full set of capabilities will not be able to be
+mapped to a controller.
+</p>
+
+<p>
+<a class="xref" href="Snowflake.Input.Device.DeviceCapability.html#Snowflake_Input_Device_DeviceCapability_Button0">Button0</a> and such do not necessary map directly to <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html#Snowflake_Input_Controller_ControllerElement_Button0">Button0</a>.
+Commonly, <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html#Snowflake_Input_Device_DeviceCapability_Button0">Button0</a> map instead map to <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html#Snowflake_Input_Controller_ControllerElement_ButtonA">ButtonA</a> and such,
+depending on the driver.
+</p>
+
+<p>
+Axes have entries that are triplicated with the following semantics.
+<p>
+* Positive means the partition of the axis from 0.50 to 1.00, mapped to the interval [0, 1],
+that is 0 approaches 1 as 0.50 approaches 0.
+</p>
+<p>
+* Negative means the partition of the axis from 0.00 to 0.50, mapped to the interval [-1, 0],
+that is, 0 approaches -1 as 0.50 approaches 0.00
+</p>
+<p>
+* Without either qualifier means the entire axis from 0.00 to 1.00, mapped to the interval [-1, 1],
+that is -1 approaches 1 as 0.00 approaches 1.00.
+</p>
+
+<p>An enumerated axis enumerated may have all three capabilities enumerated, particularly if 
+it is an analog stick. Some drivers may not have support for all three capabilities, such as
+XInput triggers only exposing [0.00, 1.00] for triggers.
+</p></p>
+<p>
+Mouse cursor capabilities are also triplicated with the same semantics as axis, except for
+absolute values. Relative mouse movement is mapped to Axis0 by convention. 
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Device.html">Snowflake.Input.Device</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Input_Device_DeviceCapability_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum DeviceCapability</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis0">Axis0</td>
+        <td><p>Axis 0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis0Negative">Axis0Negative</td>
+        <td><p>Axis 0 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis0Positive">Axis0Positive</td>
+        <td><p>Axis 0 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis1">Axis1</td>
+        <td><p>Axis 1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis1Negative">Axis1Negative</td>
+        <td><p>Axis 1 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis1Positive">Axis1Positive</td>
+        <td><p>Axis 1 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis2">Axis2</td>
+        <td><p>Axis 2</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis2Negative">Axis2Negative</td>
+        <td><p>Axis 2 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis2Positive">Axis2Positive</td>
+        <td><p>Axis 2 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis3">Axis3</td>
+        <td><p>Axis 3</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis3Negative">Axis3Negative</td>
+        <td><p>Axis 3 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis3Positive">Axis3Positive</td>
+        <td><p>Axis 3 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis4">Axis4</td>
+        <td><p>Axis 4</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis4Negative">Axis4Negative</td>
+        <td><p>Axis 4 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis4Positive">Axis4Positive</td>
+        <td><p>Axis 4 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis5">Axis5</td>
+        <td><p>Axis 5</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis5Negative">Axis5Negative</td>
+        <td><p>Axis 5 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis5Positive">Axis5Positive</td>
+        <td><p>Axis 5 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis6">Axis6</td>
+        <td><p>Axis 6</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis6Negative">Axis6Negative</td>
+        <td><p>Axis 6 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis6Positive">Axis6Positive</td>
+        <td><p>Axis 6 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis7">Axis7</td>
+        <td><p>Axis 7</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis7Negative">Axis7Negative</td>
+        <td><p>Axis 7 Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Axis7Positive">Axis7Positive</td>
+        <td><p>Axis 7 Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button0">Button0</td>
+        <td><p>Button 0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button1">Button1</td>
+        <td><p>Button 1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button10">Button10</td>
+        <td><p>Button 10</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button100">Button100</td>
+        <td><p>Button 100</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button101">Button101</td>
+        <td><p>Button 101</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button102">Button102</td>
+        <td><p>Button 102</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button103">Button103</td>
+        <td><p>Button 103</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button104">Button104</td>
+        <td><p>Button 104</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button105">Button105</td>
+        <td><p>Button 105</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button106">Button106</td>
+        <td><p>Button 106</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button107">Button107</td>
+        <td><p>Button 107</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button108">Button108</td>
+        <td><p>Button 108</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button109">Button109</td>
+        <td><p>Button 109</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button11">Button11</td>
+        <td><p>Button 11</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button110">Button110</td>
+        <td><p>Button 110</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button111">Button111</td>
+        <td><p>Button 111</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button112">Button112</td>
+        <td><p>Button 112</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button113">Button113</td>
+        <td><p>Button 113</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button114">Button114</td>
+        <td><p>Button 114</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button115">Button115</td>
+        <td><p>Button 115</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button116">Button116</td>
+        <td><p>Button 116</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button117">Button117</td>
+        <td><p>Button 117</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button118">Button118</td>
+        <td><p>Button 118</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button119">Button119</td>
+        <td><p>Button 119</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button12">Button12</td>
+        <td><p>Button 12</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button120">Button120</td>
+        <td><p>Button 120</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button121">Button121</td>
+        <td><p>Button 121</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button122">Button122</td>
+        <td><p>Button 122</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button123">Button123</td>
+        <td><p>Button 123</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button124">Button124</td>
+        <td><p>Button 124</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button125">Button125</td>
+        <td><p>Button 125</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button126">Button126</td>
+        <td><p>Button 126</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button127">Button127</td>
+        <td><p>Button 127</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button13">Button13</td>
+        <td><p>Button 13</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button14">Button14</td>
+        <td><p>Button 14</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button15">Button15</td>
+        <td><p>Button 15</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button16">Button16</td>
+        <td><p>Button 16</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button17">Button17</td>
+        <td><p>Button 17</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button18">Button18</td>
+        <td><p>Button 18</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button19">Button19</td>
+        <td><p>Button 19</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button2">Button2</td>
+        <td><p>Button 2</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button20">Button20</td>
+        <td><p>Button 20</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button21">Button21</td>
+        <td><p>Button 21</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button22">Button22</td>
+        <td><p>Button 22</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button23">Button23</td>
+        <td><p>Button 23</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button24">Button24</td>
+        <td><p>Button 24</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button25">Button25</td>
+        <td><p>Button 25</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button26">Button26</td>
+        <td><p>Button 26</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button27">Button27</td>
+        <td><p>Button 27</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button28">Button28</td>
+        <td><p>Button 28</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button29">Button29</td>
+        <td><p>Button 29</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button3">Button3</td>
+        <td><p>Button 3</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button30">Button30</td>
+        <td><p>Button 30</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button31">Button31</td>
+        <td><p>Button 31</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button32">Button32</td>
+        <td><p>Button 32</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button33">Button33</td>
+        <td><p>Button 33</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button34">Button34</td>
+        <td><p>Button 34</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button35">Button35</td>
+        <td><p>Button 35</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button36">Button36</td>
+        <td><p>Button 36</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button37">Button37</td>
+        <td><p>Button 37</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button38">Button38</td>
+        <td><p>Button 38</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button39">Button39</td>
+        <td><p>Button 39</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button4">Button4</td>
+        <td><p>Button 4</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button40">Button40</td>
+        <td><p>Button 40</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button41">Button41</td>
+        <td><p>Button 41</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button42">Button42</td>
+        <td><p>Button 42</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button43">Button43</td>
+        <td><p>Button 43</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button44">Button44</td>
+        <td><p>Button 44</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button45">Button45</td>
+        <td><p>Button 45</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button46">Button46</td>
+        <td><p>Button 46</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button47">Button47</td>
+        <td><p>Button 47</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button48">Button48</td>
+        <td><p>Button 48</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button49">Button49</td>
+        <td><p>Button 49</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button5">Button5</td>
+        <td><p>Button 5</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button50">Button50</td>
+        <td><p>Button 50</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button51">Button51</td>
+        <td><p>Button 51</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button52">Button52</td>
+        <td><p>Button 52</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button53">Button53</td>
+        <td><p>Button 53</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button54">Button54</td>
+        <td><p>Button 54</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button55">Button55</td>
+        <td><p>Button 55</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button56">Button56</td>
+        <td><p>Button 56</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button57">Button57</td>
+        <td><p>Button 57</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button58">Button58</td>
+        <td><p>Button 58</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button59">Button59</td>
+        <td><p>Button 59</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button6">Button6</td>
+        <td><p>Button 6</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button60">Button60</td>
+        <td><p>Button 60</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button61">Button61</td>
+        <td><p>Button 61</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button62">Button62</td>
+        <td><p>Button 62</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button63">Button63</td>
+        <td><p>Button 63</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button64">Button64</td>
+        <td><p>Button 64</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button65">Button65</td>
+        <td><p>Button 65</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button66">Button66</td>
+        <td><p>Button 66</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button67">Button67</td>
+        <td><p>Button 67</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button68">Button68</td>
+        <td><p>Button 68</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button69">Button69</td>
+        <td><p>Button 69</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button7">Button7</td>
+        <td><p>Button 7</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button70">Button70</td>
+        <td><p>Button 70</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button71">Button71</td>
+        <td><p>Button 71</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button72">Button72</td>
+        <td><p>Button 72</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button73">Button73</td>
+        <td><p>Button 73</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button74">Button74</td>
+        <td><p>Button 74</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button75">Button75</td>
+        <td><p>Button 75</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button76">Button76</td>
+        <td><p>Button 76</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button77">Button77</td>
+        <td><p>Button 77</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button78">Button78</td>
+        <td><p>Button 78</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button79">Button79</td>
+        <td><p>Button 79</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button8">Button8</td>
+        <td><p>Button 8</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button80">Button80</td>
+        <td><p>Button 80</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button81">Button81</td>
+        <td><p>Button 81</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button82">Button82</td>
+        <td><p>Button 82</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button83">Button83</td>
+        <td><p>Button 83</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button84">Button84</td>
+        <td><p>Button 84</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button85">Button85</td>
+        <td><p>Button 85</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button86">Button86</td>
+        <td><p>Button 86</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button87">Button87</td>
+        <td><p>Button 87</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button88">Button88</td>
+        <td><p>Button 88</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button89">Button89</td>
+        <td><p>Button 89</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button9">Button9</td>
+        <td><p>Button 9</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button90">Button90</td>
+        <td><p>Button 90</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button91">Button91</td>
+        <td><p>Button 91</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button92">Button92</td>
+        <td><p>Button 92</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button93">Button93</td>
+        <td><p>Button 93</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button94">Button94</td>
+        <td><p>Button 94</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button95">Button95</td>
+        <td><p>Button 95</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button96">Button96</td>
+        <td><p>Button 96</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button97">Button97</td>
+        <td><p>Button 97</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button98">Button98</td>
+        <td><p>Button 98</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Button99">Button99</td>
+        <td><p>Button 99</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorX">CursorX</td>
+        <td><p>Absolute Cursor X </p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorXNegative">CursorXNegative</td>
+        <td><p>Absolute Cursor X Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorXPositive">CursorXPositive</td>
+        <td><p>Absolute Cursor X Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorY">CursorY</td>
+        <td><p>Absolute Cursor Y </p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorYNegative">CursorYNegative</td>
+        <td><p>Absolute Cursor Y Negative</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_CursorYPositive">CursorYPositive</td>
+        <td><p>Absolute Cursor Y Positive</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat0E">Hat0E</td>
+        <td><p>Hat 0 East</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat0N">Hat0N</td>
+        <td><p>Hat 0 North</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat0S">Hat0S</td>
+        <td><p>Hat 0 South</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat0W">Hat0W</td>
+        <td><p>Hat 0 West</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat1E">Hat1E</td>
+        <td><p>Hat 1 East</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat1N">Hat1N</td>
+        <td><p>Hat 1 North</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat1S">Hat1S</td>
+        <td><p>Hat 1 South</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat1W">Hat1W</td>
+        <td><p>Hat 1 West</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat2E">Hat2E</td>
+        <td><p>Hat 2 East</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat2N">Hat2N</td>
+        <td><p>Hat 2 North</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat2S">Hat2S</td>
+        <td><p>Hat 2 South</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat2W">Hat2W</td>
+        <td><p>Hat 2 West</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat3E">Hat3E</td>
+        <td><p>Hat 3 East</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat3N">Hat3N</td>
+        <td><p>Hat 3 North</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat3S">Hat3S</td>
+        <td><p>Hat 3 South</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Hat3W">Hat3W</td>
+        <td><p>Hat 3 West</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key0">Key0</td>
+        <td><p>The 0 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key1">Key1</td>
+        <td><p>The 1 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key2">Key2</td>
+        <td><p>The 2 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key3">Key3</td>
+        <td><p>The 3 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key4">Key4</td>
+        <td><p>The 4 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key5">Key5</td>
+        <td><p>The 5 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key6">Key6</td>
+        <td><p>The 6 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key7">Key7</td>
+        <td><p>The 7 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key8">Key8</td>
+        <td><p>The 8 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Key9">Key9</td>
+        <td><p>The 9 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyA">KeyA</td>
+        <td><p>The A Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyAlt">KeyAlt</td>
+        <td><p>The Alt Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyB">KeyB</td>
+        <td><p>The B Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyBackslash">KeyBackslash</td>
+        <td><p>The Backslash () Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyBackspace">KeyBackspace</td>
+        <td><p>The Backspace Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyBracketLeft">KeyBracketLeft</td>
+        <td><p>The Left Bracket ([)Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyBracketRight">KeyBracketRight</td>
+        <td><p>The Right Brackey (]) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyC">KeyC</td>
+        <td><p>The C Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyComma">KeyComma</td>
+        <td><p>The Comma (:) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyCtrl">KeyCtrl</td>
+        <td><p>The Ctrl Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyD">KeyD</td>
+        <td><p>The D Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyDelete">KeyDelete</td>
+        <td><p>The Delete Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyDown">KeyDown</td>
+        <td><p>The Down Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyE">KeyE</td>
+        <td><p>The E Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyEnd">KeyEnd</td>
+        <td><p>The End Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyEnter">KeyEnter</td>
+        <td><p>The Enter Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyEquals">KeyEquals</td>
+        <td><p>The Equals (=) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyEscape">KeyEscape</td>
+        <td><p>The Escape Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF">KeyF</td>
+        <td><p>The F Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF1">KeyF1</td>
+        <td><p>The F1 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF10">KeyF10</td>
+        <td><p>The F10 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF11">KeyF11</td>
+        <td><p>The F11 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF12">KeyF12</td>
+        <td><p>The F12 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF2">KeyF2</td>
+        <td><p>The F2 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF3">KeyF3</td>
+        <td><p>The F3 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF4">KeyF4</td>
+        <td><p>The F4 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF5">KeyF5</td>
+        <td><p>The F5 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF6">KeyF6</td>
+        <td><p>The F6 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF7">KeyF7</td>
+        <td><p>The F7 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF8">KeyF8</td>
+        <td><p>The F8 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyF9">KeyF9</td>
+        <td><p>The F9 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyG">KeyG</td>
+        <td><p>The G Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyH">KeyH</td>
+        <td><p>The H Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyHome">KeyHome</td>
+        <td><p>The Home Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyI">KeyI</td>
+        <td><p>The I Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyInsert">KeyInsert</td>
+        <td><p>The Insert Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyJ">KeyJ</td>
+        <td><p>The J Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyK">KeyK</td>
+        <td><p>The K Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyL">KeyL</td>
+        <td><p>The L Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyLeft">KeyLeft</td>
+        <td><p>The Left Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyM">KeyM</td>
+        <td><p>The M Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyMinus">KeyMinus</td>
+        <td><p>The Minus (-) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyN">KeyN</td>
+        <td><p>The N Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum0">KeyNum0</td>
+        <td><p>The Num0 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum1">KeyNum1</td>
+        <td><p>The Num1 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum2">KeyNum2</td>
+        <td><p>The Num2 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum3">KeyNum3</td>
+        <td><p>The Num3 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum4">KeyNum4</td>
+        <td><p>The Num4 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum5">KeyNum5</td>
+        <td><p>The Num5 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum6">KeyNum6</td>
+        <td><p>The Num6 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum7">KeyNum7</td>
+        <td><p>The Num7 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum8">KeyNum8</td>
+        <td><p>The Num8 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNum9">KeyNum9</td>
+        <td><p>The Num9 Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNumEnter">KeyNumEnter</td>
+        <td><p>The NumEnter Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNumMinus">KeyNumMinus</td>
+        <td><p>The NumMinus Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNumPeriod">KeyNumPeriod</td>
+        <td><p>The NumPeriod Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyNumPlus">KeyNumPlus</td>
+        <td><p>The NumPlus Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyO">KeyO</td>
+        <td><p>The O Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyP">KeyP</td>
+        <td><p>The P Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyPageDown">KeyPageDown</td>
+        <td><p>The PageDown Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyPageUp">KeyPageUp</td>
+        <td><p>The PageUp Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyPeriod">KeyPeriod</td>
+        <td><p>The Period (.) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyQ">KeyQ</td>
+        <td><p>The Q Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyQuote">KeyQuote</td>
+        <td><p>The Quote (&apos;) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyR">KeyR</td>
+        <td><p>The R Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyRight">KeyRight</td>
+        <td><p>The Right Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyRightAlt">KeyRightAlt</td>
+        <td><p>The Right Alt Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyRightCtrl">KeyRightCtrl</td>
+        <td><p>The Right Ctrl Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyRightShift">KeyRightShift</td>
+        <td><p>The Right Shift Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyS">KeyS</td>
+        <td><p>The S Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeySemicolon">KeySemicolon</td>
+        <td><p>The Semicolon (;) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyShift">KeyShift</td>
+        <td><p>The Shift Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeySlash">KeySlash</td>
+        <td><p>The Slash (/) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeySpacebar">KeySpacebar</td>
+        <td><p>The Spacebar Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyT">KeyT</td>
+        <td><p>The T Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyTab">KeyTab</td>
+        <td><p>The Tab Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyTilde">KeyTilde</td>
+        <td><p>The Tilde (~) Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyU">KeyU</td>
+        <td><p>The U Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyUp">KeyUp</td>
+        <td><p>The Up Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyV">KeyV</td>
+        <td><p>The V Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyW">KeyW</td>
+        <td><p>The W Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyX">KeyX</td>
+        <td><p>The X Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyY">KeyY</td>
+        <td><p>The Y Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_KeyZ">KeyZ</td>
+        <td><p>The Z Key</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Mouse0">Mouse0</td>
+        <td><p>Left mouse button</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Mouse1">Mouse1</td>
+        <td><p>Right mouse button</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Mouse2">Mouse2</td>
+        <td><p>Middle mouse button</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Mouse3">Mouse3</td>
+        <td><p>Side forward mouse button</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Mouse4">Mouse4</td>
+        <td><p>Side backward mouse button</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_None">None</td>
+        <td><p>No capability.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Rumble0">Rumble0</td>
+        <td><p>Left rumble motor</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Snowflake_Input_Device_DeviceCapability_Rumble1">Rumble1</td>
+        <td><p>Right rumble motor</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Snowflake.Input.Device.DeviceCapabilityExtensions.html#Snowflake_Input_Device_DeviceCapabilityExtensions_GetClass_Snowflake_Input_Device_DeviceCapability_">DeviceCapabilityExtensions.GetClass()</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

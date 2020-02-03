@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class QueryBuilder
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,20 +62,25 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQl.Query.QueryBuilder">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder">
   
   
-  <h1 id="Snowflake_Framework_Remoting_GraphQl_Query_QueryBuilder" data-uid="Snowflake.Framework.Remoting.GraphQl.Query.QueryBuilder" class="text-break">Class QueryBuilder
+  <h1 id="Snowflake_Framework_Remoting_GraphQL_Query_QueryBuilder" data-uid="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder" class="text-break">Class QueryBuilder
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A class that provides GraphQL Schema access through <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.IGraphQLService.html#Snowflake_Framework_Remoting_GraphQL_IGraphQLService_Register_Snowflake_Framework_Remoting_GraphQL_Query_QueryBuilder_">Register(QueryBuilder)</a> must
+inherit from <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html">QueryBuilder</a>. While no extra properties are made visible, <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html">QueryBuilder</a>
+uses some behind-the-scenes reflection access to rewrite properly marked methods of the inheriting class into
+GraphQL-accessible functions.
+<br>
+See <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.QueryAttribute.html">QueryAttribute</a>, <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.html">ConnectionAttribute</a>, and <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.MutationAttribute.html">MutationAttribute</a> for
+how to mark a method as a GraphQL query.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">QueryBuilder</span></div>
-      <div class="level2"><a class="xref" href="Snowflake.GraphQl.BasicQueryBuilder.html">BasicQueryBuilder</a></div>
-      <div class="level2"><a class="xref" href="Snowflake.GraphQl.BrokenQueryBuilder.html">BrokenQueryBuilder</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -100,20 +106,21 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Framework.Remoting.GraphQl.Query.html">Snowflake.Framework.Remoting.GraphQl.Query</a></h6>
-  <h6><strong>Assembly</strong>: Snowflake.Framework.Remoting.GraphQl.dll</h6>
-  <h5 id="Snowflake_Framework_Remoting_GraphQl_Query_QueryBuilder_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.html">Snowflake.Framework.Remoting.GraphQL.Query</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Remoting.dll</h6>
+  <h5 id="Snowflake_Framework_Remoting_GraphQL_Query_QueryBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class QueryBuilder</code></pre>
   </div>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

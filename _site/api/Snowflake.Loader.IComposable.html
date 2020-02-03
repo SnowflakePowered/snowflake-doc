@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IComposable
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,13 +62,13 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Loader.IComposable">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Loader.IComposable">
   
   
   <h1 id="Snowflake_Loader_IComposable" data-uid="Snowflake.Loader.IComposable" class="text-break">Interface IComposable
   </h1>
-  <div class="markdown level0 summary"><p>A container for plugins to initialize in.
+  <div class="markdown level0 summary"><p>A container for modules and plugins to initialize in.
 All composable objects must implement this interface, and register their plugins inside the
 Compose method.</p>
 </div>
@@ -83,12 +84,17 @@ Compose method.</p>
   <a id="Snowflake_Loader_IComposable_Compose_" data-uid="Snowflake.Loader.IComposable.Compose*"></a>
   <h4 id="Snowflake_Loader_IComposable_Compose_Snowflake_Loader_IModule_Snowflake_Loader_IServiceRepository_" data-uid="Snowflake.Loader.IComposable.Compose(Snowflake.Loader.IModule,Snowflake.Loader.IServiceRepository)">Compose(IModule, IServiceRepository)</h4>
   <div class="markdown level1 summary"><p>This method is called upon initialization of your plugin assembly.
-In this method, initialize your plugin objects and register them to the plugin manager to expose access to Snowflake.</p>
+In this method, initialize your plugin objects and register them to the plugin manager to expose access to Snowflake.
+<p>
+Access to various services in the <a class="xref" href="Snowflake.Loader.IServiceRepository.html">IServiceRepository</a> must be negotiated for using
+<a class="xref" href="Snowflake.Loader.ImportServiceAttribute.html">ImportServiceAttribute</a>. Some important services are <a class="xref" href="Snowflake.Services.IPluginManager.html">IPluginManager</a>,
+as well as <a class="xref" href="Snowflake.Services.IServiceRegistrationProvider.html">IServiceRegistrationProvider</a> to register your own services.
+</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Compose(IModule composableModule, IServiceRepository serviceContainer)</code></pre>
+    <pre><code class="lang-csharp hljs">void Compose(IModule composableModule, IServiceRepository serviceRepository)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -108,20 +114,21 @@ In this method, initialize your plugin objects and register them to the plugin m
       </tr>
       <tr>
         <td><a class="xref" href="Snowflake.Loader.IServiceRepository.html">IServiceRepository</a></td>
-        <td><span class="parametername">serviceContainer</span></td>
-        <td><p>The core instance that is injected by the plugin manager</p>
+        <td><span class="parametername">serviceRepository</span></td>
+        <td><p>The services that are injected by the module compositor.</p>
 </td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

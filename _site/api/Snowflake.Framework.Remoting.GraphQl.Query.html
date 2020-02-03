@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Snowflake.Framework.Remoting.GraphQl.Query
+    <title>Namespace Snowflake.Framework.Remoting.GraphQL.Query
    | Snowflake Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Snowflake.Framework.Remoting.GraphQl.Query
+    <meta name="title" content="Namespace Snowflake.Framework.Remoting.GraphQL.Query
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,26 +62,34 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQl.Query">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQL.Query">
   
-  <h1 id="Snowflake_Framework_Remoting_GraphQl_Query" data-uid="Snowflake.Framework.Remoting.GraphQl.Query" class="text-break">Namespace Snowflake.Framework.Remoting.GraphQl.Query
+  <h1 id="Snowflake_Framework_Remoting_GraphQL_Query" data-uid="Snowflake.Framework.Remoting.GraphQL.Query" class="text-break">Namespace Snowflake.Framework.Remoting.GraphQL.Query
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Snowflake.Framework.Remoting.GraphQl.Query.QueryBuilder.html">QueryBuilder</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html">QueryBuilder</a></h4>
+      <section><p>A class that provides GraphQL Schema access through <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.IGraphQLService.html#Snowflake_Framework_Remoting_GraphQL_IGraphQLService_Register_Snowflake_Framework_Remoting_GraphQL_Query_QueryBuilder_">Register(QueryBuilder)</a> must
+inherit from <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html">QueryBuilder</a>. While no extra properties are made visible, <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html">QueryBuilder</a>
+uses some behind-the-scenes reflection access to rewrite properly marked methods of the inheriting class into
+GraphQL-accessible functions.
+<br>
+See <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.QueryAttribute.html">QueryAttribute</a>, <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.html">ConnectionAttribute</a>, and <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.MutationAttribute.html">MutationAttribute</a> for
+how to mark a method as a GraphQL query.</p>
+</section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

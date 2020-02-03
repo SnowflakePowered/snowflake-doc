@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Snowflake.Configuration.Attributes
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes">
   
   <h1 id="Snowflake_Configuration_Attributes" data-uid="Snowflake.Configuration.Attributes" class="text-break">Namespace Snowflake.Configuration.Attributes
   </h1>
@@ -71,9 +72,6 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html">ConfigurationFileAttribute</a></h4>
-      <section><p>Defines an alias to an output configuration file for a given configuration collection.</p>
-</section>
       <h4><a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html">ConfigurationOptionAttribute</a></h4>
       <section><p>Represents one option in an emulator configuration inside a configuration section.
 Typically configuration options must be a double, bool, integer or an enum value in order to be safe,
@@ -81,6 +79,12 @@ type information may be lost when serializing into a wire format.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationSectionAttribute.html">ConfigurationSectionAttribute</a></h4>
       <section><p>Marks an interface as a configuration section that is serializable into valid configuration.</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationTargetAttribute.html">ConfigurationTargetAttribute</a></h4>
+      <section><p>Defines a target context to create a read-only AST.</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationTargetMemberAttribute.html">ConfigurationTargetMemberAttribute</a></h4>
+      <section><p>Defines a target context to create a read-only AST</p>
 </section>
       <h4><a class="xref" href="Snowflake.Configuration.Attributes.CustomMetadataAttribute.html">CustomMetadataAttribute</a></h4>
       <section><p>Represents a custom metadata on a selection option or a configuration property.</p>
@@ -91,17 +95,15 @@ type information may be lost when serializing into a wire format.</p>
       <h4><a class="xref" href="Snowflake.Configuration.Attributes.SelectionOptionAttribute.html">SelectionOptionAttribute</a></h4>
       <section><p>Represents a selection inside an enum that represents valid values for a configuration option</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Configuration.Attributes.SerializableSectionAttribute.html">SerializableSectionAttribute</a></h4>
-      <section><p>Marks a configuration section property as serializable to configuration</p>
-</section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

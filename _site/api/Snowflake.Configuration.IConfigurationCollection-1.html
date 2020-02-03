@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IConfigurationCollection&lt;T&gt;
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,17 +62,15 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationCollection`1">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationCollection`1">
   
   
   <h1 id="Snowflake_Configuration_IConfigurationCollection_1" data-uid="Snowflake.Configuration.IConfigurationCollection`1" class="text-break">Interface IConfigurationCollection&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"><p>A configuration collection represents a single file of configuration.
 One file can have one single serializer for every section, and multiple
-filename for the configuration collection.
-A configuration collection must be marked with one or more <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html">ConfigurationFileAttribute</a>,
-and all seriazable properties marked with a <a class="xref" href="Snowflake.Configuration.Attributes.SerializableSectionAttribute.html">SerializableSectionAttribute</a> that matches one or more configuration files.</p>
+filename for the configuration collection.</p>
 <p>The enumeration is guaranteed to enumerate in the order in which the section properties were described.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -82,6 +81,9 @@ and all seriazable properties marked with a <a class="xref" href="Snowflake.Conf
     </div>
     <div>
       <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html#Snowflake_Configuration_IConfigurationCollection_Item_System_String_">IConfigurationCollection.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html#Snowflake_Configuration_IConfigurationCollection_ValueCollection">IConfigurationCollection.ValueCollection</a>
     </div>
     <div>
       <span class="xref">System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String, Snowflake.Configuration.IConfigurationSection&gt;&gt;.GetEnumerator()</span>
@@ -139,13 +141,14 @@ and all seriazable properties marked with a <a class="xref" href="Snowflake.Conf
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Snowflake.Scraping.Extensibility
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.Extensibility">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.Extensibility">
   
   <h1 id="Snowflake_Scraping_Extensibility" data-uid="Snowflake.Scraping.Extensibility" class="text-break">Namespace Snowflake.Scraping.Extensibility
   </h1>
@@ -71,17 +72,36 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.Culler.html">Culler</a></h4>
+      <section></section>
       <h4><a class="xref" href="Snowflake.Scraping.Extensibility.DirectiveAttribute.html">DirectiveAttribute</a></h4>
       <section><p>Specifies a directive on a <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> that determines
 when and what information it must have access to before it is run.</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.SeedTreeAwaitable.html">SeedTreeAwaitable</a></h4>
-      <section><p>Represents an awaitable that returns a <a class="xref" href="Snowflake.Scraping.Extensibility.SeedTree.html">SeedTree</a>.
-Required for SeedBuilder syntax and asynchronous scraping, but
-should never be used directly. There is no way to instantiate
-a <a class="xref" href="Snowflake.Scraping.Extensibility.SeedTreeAwaitable.html">SeedTreeAwaitable</a> apart from implicitly coercing a
-<a class="xref" href="Snowflake.Scraping.Extensibility.SeedTree.html">SeedTree</a> or a <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.FileInstallationTraverserBase.html">FileInstallationTraverserBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.GameMetadataTraverserBase.html">GameMetadataTraverserBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.Scraper.html">Scraper</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.SeedBuilder.html">SeedBuilder</a></h4>
+      <section><p>
+Provides helper methods for building <a class="xref" href="Snowflake.Scraping.Extensibility.SeedTree.html">SeedTree</a>
+for use in <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> implementations.
+</p>
+<p>
+Enables use of underscore methods for &quot;SeedBuilder syntax&quot;.
+Import this class with a <pre><code>using static</code></pre> directive.
+</p>
+<p>
+<a class="xref" href="Snowflake.Scraping.Extensibility.SeedBuilder.html#Snowflake_Scraping_Extensibility_SeedBuilder___Snowflake_Scraping_Extensibility_SeedTree___">_(SeedTree[])</a> to continue for nested seeds.
+</p>
+<p>
+Remember that top-level seeds can be <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span> and other awaitables.
+</p>
 </section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.Traverser-2.html">Traverser&lt;TProducts, TEffectTarget&gt;</a></h4>
+      <section></section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="Snowflake.Scraping.Extensibility.SeedTree.html">SeedTree</a></h4>
@@ -98,6 +118,14 @@ implement <span class="xref">System.IEquatable&lt;T&gt;</span>, and thus is not 
       <section><p>A <a class="xref" href="Snowflake.Scraping.Extensibility.ICuller.html">ICuller</a> filters seeds that remain in consideration
 when the <a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a> is traversed to produce a result.</p>
 </section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.IFileInstallationTraverser.html">IFileInstallationTraverser</a></h4>
+      <section><p>A FileInstallationTraverser is a specialized traverser that installs additional files to a game,
+such as images and videos, yielding them much in the same way as <a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html">IGameInstaller</a>.</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.IGameMetadataTraverser.html">IGameMetadataTraverser</a></h4>
+      <section><p>A GameMetadataTraverser is a specialized traverser that yields metadata for a game given
+a seed root context.</p>
+</section>
       <h4><a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a></h4>
       <section><p>A <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> specifies a type of <a class="xref" href="Snowflake.Scraping.ISeed.html">ISeed</a>
 and some restrictions on the seed, and uses the value of the seed to
@@ -107,10 +135,11 @@ return a resultant tree of new seeds.</p>
       <section><p>Specifies a directive on a <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> that determines
 when and what information it must have access to before it is run.</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.ITraverser-1.html">ITraverser&lt;T&gt;</a></h4>
+      <h4><a class="xref" href="Snowflake.Scraping.Extensibility.ITraverser-2.html">ITraverser&lt;TProducts, TEffectTarget&gt;</a></h4>
       <section><p>A traverser traverses the resultant <a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a>,
-or rather sub-trees relative to a given seed in the context,
-and produces a list of <see cref="!:T"></see> given the information available in the seed tree.</p>
+or rather sub-trees relative to a given seed in the context, and applies side effects
+according to the final seed tree, producing a list of <code data-dev-comment-type="typeparamref" class="typeparamref">TProducts</code> given the 
+information available in the seed tree.</p>
 </section>
     <h3 id="enums">Enums
   </h3>
@@ -124,13 +153,14 @@ seed with which the directive applies to.</p>
 deciding if a <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> is run or not.</p>
 </section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

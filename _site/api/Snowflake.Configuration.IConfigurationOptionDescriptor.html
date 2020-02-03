@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IConfigurationOptionDescriptor
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor">
   
   
   <h1 id="Snowflake_Configuration_IConfigurationOptionDescriptor" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor" class="text-break">Interface IConfigurationOptionDescriptor
@@ -392,6 +393,30 @@ If a flag affects the configuration, it should be placed in the same section it 
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Configuration_IConfigurationOptionDescriptor_PathType_" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.PathType*"></a>
+  <h4 id="Snowflake_Configuration_IConfigurationOptionDescriptor_PathType" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.PathType">PathType</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="Snowflake.Configuration.IConfigurationOptionDescriptor.html#Snowflake_Configuration_IConfigurationOptionDescriptor_IsPath">IsPath</a> is true, the type of the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PathType PathType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.PathType.html">PathType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Configuration_IConfigurationOptionDescriptor_Private_" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.Private*"></a>
   <h4 id="Snowflake_Configuration_IConfigurationOptionDescriptor_Private" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.Private">Private</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether whether or not this option is private (not ever displayed to the user)</p>
@@ -488,14 +513,40 @@ If a flag affects the configuration, it should be placed in the same section it 
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Configuration_IConfigurationOptionDescriptor_Unset_" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.Unset*"></a>
+  <h4 id="Snowflake_Configuration_IConfigurationOptionDescriptor_Unset" data-uid="Snowflake.Configuration.IConfigurationOptionDescriptor.Unset">Unset</h4>
+  <div class="markdown level1 summary"><p>For string options, when the option is set to null, it is serialized as
+this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Unset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

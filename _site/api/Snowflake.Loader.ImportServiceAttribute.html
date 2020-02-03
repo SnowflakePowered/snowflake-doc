@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ImportServiceAttribute
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,13 +62,16 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Loader.ImportServiceAttribute">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Loader.ImportServiceAttribute">
   
   
   <h1 id="Snowflake_Loader_ImportServiceAttribute" data-uid="Snowflake.Loader.ImportServiceAttribute" class="text-break">Class ImportServiceAttribute
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Requests for a service to be available during composition in an <a class="xref" href="Snowflake.Loader.IComposable.html">IComposable</a>.
+Once all services that are requested are available to be fulfilled,
+<a class="xref" href="Snowflake.Loader.IComposable.html#Snowflake_Loader_IComposable_Compose_Snowflake_Loader_IModule_Snowflake_Loader_IServiceRepository_">Compose(IModule, IServiceRepository)</a> will be called.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -79,15 +83,6 @@
     <h5>Inherited Members</h5>
     <div>
       <span class="xref">System.Attribute.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)</span>
@@ -162,6 +157,12 @@
       <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)</span>
     </div>
     <div>
@@ -184,6 +185,9 @@
     </div>
     <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.TypeId</span>
@@ -215,7 +219,8 @@ public sealed class ImportServiceAttribute : Attribute</code></pre>
   </h3>
   <a id="Snowflake_Loader_ImportServiceAttribute__ctor_" data-uid="Snowflake.Loader.ImportServiceAttribute.#ctor*"></a>
   <h4 id="Snowflake_Loader_ImportServiceAttribute__ctor_System_Type_" data-uid="Snowflake.Loader.ImportServiceAttribute.#ctor(System.Type)">ImportServiceAttribute(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Requests for a service to be available during composition in an <a class="xref" href="Snowflake.Loader.IComposable.html">IComposable</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,7 +239,8 @@ public sealed class ImportServiceAttribute : Attribute</code></pre>
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">service</span></td>
-        <td></td>
+        <td><p>The type of the service to request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -242,7 +248,8 @@ public sealed class ImportServiceAttribute : Attribute</code></pre>
   </h3>
   <a id="Snowflake_Loader_ImportServiceAttribute_Service_" data-uid="Snowflake.Loader.ImportServiceAttribute.Service*"></a>
   <h4 id="Snowflake_Loader_ImportServiceAttribute_Service" data-uid="Snowflake.Loader.ImportServiceAttribute.Service">Service</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type of the service to request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,13 +271,14 @@ public sealed class ImportServiceAttribute : Attribute</code></pre>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

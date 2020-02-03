@@ -1,9 +1,0 @@
-﻿- name: Introduction
-  href: index.md
-- name: Articles
-  href: articles/
-  homepage: articles/docfx_getting_started.md
-- name: C# API
-  href: obj/api/
-- name: GraphQL API
-  href: graphql.md

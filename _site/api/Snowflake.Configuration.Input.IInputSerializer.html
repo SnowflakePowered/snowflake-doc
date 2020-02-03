@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IInputSerializer
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Input.IInputSerializer">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Input.IInputSerializer">
   
   
   <h1 id="Snowflake_Configuration_Input_IInputSerializer" data-uid="Snowflake.Configuration.Input.IInputSerializer" class="text-break">Interface IInputSerializer
@@ -79,13 +80,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Snowflake_Configuration_Input_IInputSerializer_Serialize_" data-uid="Snowflake.Configuration.Input.IInputSerializer.Serialize*"></a>
-  <h4 id="Snowflake_Configuration_Input_IInputSerializer_Serialize_Snowflake_Configuration_Input_IInputTemplate_Snowflake_Configuration_Input_IInputMapping_" data-uid="Snowflake.Configuration.Input.IInputSerializer.Serialize(Snowflake.Configuration.Input.IInputTemplate,Snowflake.Configuration.Input.IInputMapping)">Serialize(IInputTemplate, IInputMapping)</h4>
+  <h4 id="Snowflake_Configuration_Input_IInputSerializer_Serialize_Snowflake_Configuration_Input_IInputTemplate_Snowflake_Configuration_Input_IDeviceInputMapping_" data-uid="Snowflake.Configuration.Input.IInputSerializer.Serialize(Snowflake.Configuration.Input.IInputTemplate,Snowflake.Configuration.Input.IDeviceInputMapping)">Serialize(IInputTemplate, IDeviceInputMapping)</h4>
   <div class="markdown level1 summary"><p>Serializes the specified input template.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Serialize(IInputTemplate inputTemplate, IInputMapping inputMapping)</code></pre>
+    <pre><code class="lang-csharp hljs">string Serialize(IInputTemplate inputTemplate, IDeviceInputMapping inputMapping)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -104,7 +105,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Configuration.Input.IInputMapping.html">IInputMapping</a></td>
+        <td><a class="xref" href="Snowflake.Configuration.Input.IDeviceInputMapping.html">IDeviceInputMapping</a></td>
         <td><span class="parametername">inputMapping</span></td>
         <td><p>The input mapping to serialize with</p>
 </td>
@@ -128,13 +129,13 @@
     </tbody>
   </table>
   <a id="Snowflake_Configuration_Input_IInputSerializer_SerializeInput_" data-uid="Snowflake.Configuration.Input.IInputSerializer.SerializeInput*"></a>
-  <h4 id="Snowflake_Configuration_Input_IInputSerializer_SerializeInput_System_String_Snowflake_Input_Controller_ControllerElement_Snowflake_Configuration_Input_IInputMapping_" data-uid="Snowflake.Configuration.Input.IInputSerializer.SerializeInput(System.String,Snowflake.Input.Controller.ControllerElement,Snowflake.Configuration.Input.IInputMapping)">SerializeInput(String, ControllerElement, IInputMapping)</h4>
+  <h4 id="Snowflake_Configuration_Input_IInputSerializer_SerializeInput_System_String_Snowflake_Input_Controller_ControllerElement_Snowflake_Configuration_Input_IDeviceInputMapping_" data-uid="Snowflake.Configuration.Input.IInputSerializer.SerializeInput(System.String,Snowflake.Input.Controller.ControllerElement,Snowflake.Configuration.Input.IDeviceInputMapping)">SerializeInput(String, ControllerElement, IDeviceInputMapping)</h4>
   <div class="markdown level1 summary"><p>Serializes a controller element line using the provided input mapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string SerializeInput(string key, ControllerElement element, IInputMapping inputMapping)</code></pre>
+    <pre><code class="lang-csharp hljs">string SerializeInput(string key, ControllerElement element, IDeviceInputMapping inputMapping)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +160,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Configuration.Input.IInputMapping.html">IInputMapping</a></td>
+        <td><a class="xref" href="Snowflake.Configuration.Input.IDeviceInputMapping.html">IDeviceInputMapping</a></td>
         <td><span class="parametername">inputMapping</span></td>
         <td><p>The input mapping to serialize with</p>
 </td>
@@ -182,13 +183,14 @@
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

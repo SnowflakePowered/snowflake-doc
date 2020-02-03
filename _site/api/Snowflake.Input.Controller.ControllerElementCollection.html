@@ -1,0 +1,2000 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ControllerElementCollection
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ControllerElementCollection
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Input.Controller.ControllerElementCollection">
+  
+  
+  <h1 id="Snowflake_Input_Controller_ControllerElementCollection" data-uid="Snowflake.Input.Controller.ControllerElementCollection" class="text-break">Class ControllerElementCollection
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ControllerElementCollection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Snowflake.Input.Controller.IControllerElementCollection.html">IControllerElementCollection</a></div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a>, <a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Controller.html">Snowflake.Input.Controller</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.dll</h6>
+  <h5 id="Snowflake_Input_Controller_ControllerElementCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ControllerElementCollection : IControllerElementCollection, IEnumerable&lt;KeyValuePair&lt;ControllerElement, IControllerElementInfo&gt;&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection__ctor_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.#ctor*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection__ctor" data-uid="Snowflake.Input.Controller.ControllerElementCollection.#ctor">ControllerElementCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerElementCollection()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogNegativeX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogNegativeX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogNegativeX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogNegativeX">AxisLeftAnalogNegativeX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisLeftAnalogNegativeX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogNegativeY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogNegativeY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogNegativeY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogNegativeY">AxisLeftAnalogNegativeY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisLeftAnalogNegativeY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogPositiveX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogPositiveX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogPositiveX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogPositiveX">AxisLeftAnalogPositiveX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisLeftAnalogPositiveX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogPositiveY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogPositiveY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisLeftAnalogPositiveY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisLeftAnalogPositiveY">AxisLeftAnalogPositiveY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisLeftAnalogPositiveY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogNegativeX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogNegativeX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogNegativeX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogNegativeX">AxisRightAnalogNegativeX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisRightAnalogNegativeX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogNegativeY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogNegativeY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogNegativeY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogNegativeY">AxisRightAnalogNegativeY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisRightAnalogNegativeY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogPositiveX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogPositiveX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogPositiveX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogPositiveX">AxisRightAnalogPositiveX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisRightAnalogPositiveX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogPositiveY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogPositiveY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_AxisRightAnalogPositiveY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.AxisRightAnalogPositiveY">AxisRightAnalogPositiveY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo AxisRightAnalogPositiveY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button0_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button0*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button0" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button0">Button0</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button0 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button1_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button1*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button1" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button1">Button1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button1 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button10_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button10*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button10" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button10">Button10</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button10 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button11_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button11*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button11" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button11">Button11</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button11 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button12_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button12*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button12" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button12">Button12</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button12 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button13_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button13*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button13" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button13">Button13</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button13 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button14_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button14*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button14" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button14">Button14</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button14 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button15_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button15*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button15" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button15">Button15</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button15 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button16_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button16*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button16" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button16">Button16</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button16 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button17_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button17*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button17" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button17">Button17</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button17 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button18_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button18*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button18" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button18">Button18</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button18 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button19_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button19*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button19" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button19">Button19</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button19 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button2_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button2*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button2" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button2">Button2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button2 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button20_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button20*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button20" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button20">Button20</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button20 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button21_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button21*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button21" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button21">Button21</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button21 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button22_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button22*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button22" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button22">Button22</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button22 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button23_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button23*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button23" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button23">Button23</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button23 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button24_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button24*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button24" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button24">Button24</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button24 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button25_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button25*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button25" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button25">Button25</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button25 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button26_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button26*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button26" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button26">Button26</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button26 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button27_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button27*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button27" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button27">Button27</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button27 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button28_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button28*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button28" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button28">Button28</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button28 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button29_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button29*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button29" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button29">Button29</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button29 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button3_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button3*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button3" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button3">Button3</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button3 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button30_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button30*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button30" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button30">Button30</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button30 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button31_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button31*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button31" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button31">Button31</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button31 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button4_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button4*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button4" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button4">Button4</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button4 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button5_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button5*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button5" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button5">Button5</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button5 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button6_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button6*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button6" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button6">Button6</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button6 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button7_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button7*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button7" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button7">Button7</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button7 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button8_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button8*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button8" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button8">Button8</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button8 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Button9_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button9*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Button9" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Button9">Button9</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Button9 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonA_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonA*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonA" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonA">ButtonA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonB_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonB*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonB" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonB">ButtonB</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonC_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonC*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonC" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonC">ButtonC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonC { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonClickL_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonClickL*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonClickL" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonClickL">ButtonClickL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonClickL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonClickR_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonClickR*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonClickR" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonClickR">ButtonClickR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonClickR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonGuide_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonGuide*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonGuide" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonGuide">ButtonGuide</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonGuide { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonL_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonL*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonL" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonL">ButtonL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonR_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonR*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonR" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonR">ButtonR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonSelect_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonSelect*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonSelect" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonSelect">ButtonSelect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonSelect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonStart_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonStart*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonStart" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonStart">ButtonStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonStart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonX">ButtonX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonY">ButtonY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_ButtonZ_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonZ*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_ButtonZ" data-uid="Snowflake.Input.Controller.ControllerElementCollection.ButtonZ">ButtonZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo ButtonZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalE_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalE*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalE" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalE">DirectionalE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalN_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalN*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalN" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalN">DirectionalN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalN { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalNE_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalNE*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalNE" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalNE">DirectionalNE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalNE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalNW_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalNW*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalNW" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalNW">DirectionalNW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalNW { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalS_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalS*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalS" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalS">DirectionalS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalS { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalSE_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalSE*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalSE" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalSE">DirectionalSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalSE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalSW_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalSW*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalSW" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalSW">DirectionalSW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalSW { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalW_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalW*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_DirectionalW" data-uid="Snowflake.Input.Controller.ControllerElementCollection.DirectionalW">DirectionalW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo DirectionalW { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Gyroscope_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Gyroscope*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Gyroscope" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Gyroscope">Gyroscope</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Gyroscope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Item_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Item*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Item_Snowflake_Input_Controller_ControllerElement_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Item(Snowflake.Input.Controller.ControllerElement)">Item[ControllerElement]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo this[ControllerElement element] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Keyboard_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Keyboard*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Keyboard" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Keyboard">Keyboard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Keyboard { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Pointer2D_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Pointer2D*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Pointer2D" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Pointer2D">Pointer2D</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Pointer2D { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Pointer3D_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Pointer3D*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Pointer3D" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Pointer3D">Pointer3D</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Pointer3D { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeX">PointerAxisNegativeX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisNegativeX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeY">PointerAxisNegativeY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisNegativeY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeZ_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeZ*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisNegativeZ" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisNegativeZ">PointerAxisNegativeZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisNegativeZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveX_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveX*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveX" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveX">PointerAxisPositiveX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisPositiveX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveY_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveY*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveY" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveY">PointerAxisPositiveY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisPositiveY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveZ_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveZ*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_PointerAxisPositiveZ" data-uid="Snowflake.Input.Controller.ControllerElementCollection.PointerAxisPositiveZ">PointerAxisPositiveZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo PointerAxisPositiveZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_RumbleBig_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.RumbleBig*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_RumbleBig" data-uid="Snowflake.Input.Controller.ControllerElementCollection.RumbleBig">RumbleBig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo RumbleBig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_RumbleSmall_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.RumbleSmall*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_RumbleSmall" data-uid="Snowflake.Input.Controller.ControllerElementCollection.RumbleSmall">RumbleSmall</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo RumbleSmall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_Touchscreen_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Touchscreen*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_Touchscreen" data-uid="Snowflake.Input.Controller.ControllerElementCollection.Touchscreen">Touchscreen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo Touchscreen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_TriggerLeft_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.TriggerLeft*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_TriggerLeft" data-uid="Snowflake.Input.Controller.ControllerElementCollection.TriggerLeft">TriggerLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo TriggerLeft { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_TriggerRight_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.TriggerRight*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_TriggerRight" data-uid="Snowflake.Input.Controller.ControllerElementCollection.TriggerRight">TriggerRight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControllerElementInfo TriggerRight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_GetEnumerator_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.GetEnumerator*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_GetEnumerator" data-uid="Snowflake.Input.Controller.ControllerElementCollection.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;ControllerElement, IControllerElementInfo&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a>, <a class="xref" href="Snowflake.Input.Controller.IControllerElementInfo.html">IControllerElementInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="Snowflake_Input_Controller_ControllerElementCollection_System_Collections_IEnumerable_GetEnumerator_" data-uid="Snowflake.Input.Controller.ControllerElementCollection.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Snowflake_Input_Controller_ControllerElementCollection_System_Collections_IEnumerable_GetEnumerator" data-uid="Snowflake.Input.Controller.ControllerElementCollection.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Snowflake.Input.Controller.IControllerElementCollection.html">IControllerElementCollection</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

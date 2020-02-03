@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConnectionAttribute
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,13 +62,23 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute">
   
   
-  <h1 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute" class="text-break">Class ConnectionAttribute
+  <h1 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute" class="text-break">Class ConnectionAttribute
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>
+A Connection is a common idiom in GraphQL that implements cursor-based pagination for enumerable objects.
+Methods marked with <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.html">ConnectionAttribute</a> must return <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.
+if the returned <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> is impure, cursors may become
+potentialy meaningless, since nothing is cached between calls of the same method.
+</p>
+<p>
+A method can only be marked with one of <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.html">ConnectionAttribute</a>, <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.QueryAttribute.html">QueryAttribute</a>, or <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.MutationAttribute.html">MutationAttribute</a>,
+never more than one.
+</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -79,15 +90,6 @@
     <h5>Inherited Members</h5>
     <div>
       <span class="xref">System.Attribute.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)</span>
@@ -162,6 +164,12 @@
       <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)</span>
     </div>
     <div>
@@ -186,6 +194,9 @@
       <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.Match(System.Object)</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.TypeId</span>
     </div>
     <div>
@@ -204,18 +215,19 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Framework.Remoting.GraphQl.Attributes.html">Snowflake.Framework.Remoting.GraphQl.Attributes</a></h6>
-  <h6><strong>Assembly</strong>: Snowflake.Framework.Remoting.GraphQl.dll</h6>
-  <h5 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Framework.Remoting.GraphQL.Attributes.html">Snowflake.Framework.Remoting.GraphQL.Attributes</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Remoting.dll</h6>
+  <h5 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
 public sealed class ConnectionAttribute : Attribute</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute__ctor_" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.#ctor*"></a>
-  <h4 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute__ctor_System_String_System_String_System_Type_" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.#ctor(System.String,System.String,System.Type)">ConnectionAttribute(String, String, Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute__ctor_" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.#ctor*"></a>
+  <h4 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute__ctor_System_String_System_String_System_Type_" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.#ctor(System.String,System.String,System.Type)">ConnectionAttribute(String, String, Type)</h4>
+  <div class="markdown level1 summary"><p>Marks a method as a GraphQL Connection. Connection methods must return <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,25 +246,29 @@ public sealed class ConnectionAttribute : Attribute</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fieldName</span></td>
-        <td></td>
+        <td><p>The name of the GraphQL field to expose.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">description</span></td>
-        <td></td>
+        <td><p>The description of the field.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">graphType</span></td>
-        <td></td>
+        <td><p>The <span class="xref">GraphQL.Types.ObjectGraphType</span> conversion of the type that is contained with the enumerable return type.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_Description_" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.Description*"></a>
-  <h4 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_Description" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.Description">Description</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_Description_" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.Description*"></a>
+  <h4 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_Description" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.Description">Description</h4>
+  <div class="markdown level1 summary"><p>The description of the field.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,9 +289,10 @@ public sealed class ConnectionAttribute : Attribute</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_FieldName_" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.FieldName*"></a>
-  <h4 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_FieldName" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.FieldName">FieldName</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_FieldName_" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.FieldName*"></a>
+  <h4 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_FieldName" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.FieldName">FieldName</h4>
+  <div class="markdown level1 summary"><p>The name of the GraphQL field to expose.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,9 +313,10 @@ public sealed class ConnectionAttribute : Attribute</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_GraphType_" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.GraphType*"></a>
-  <h4 id="Snowflake_Framework_Remoting_GraphQl_Attributes_ConnectionAttribute_GraphType" data-uid="Snowflake.Framework.Remoting.GraphQl.Attributes.ConnectionAttribute.GraphType">GraphType</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_GraphType_" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.GraphType*"></a>
+  <h4 id="Snowflake_Framework_Remoting_GraphQL_Attributes_ConnectionAttribute_GraphType" data-uid="Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.GraphType">GraphType</h4>
+  <div class="markdown level1 summary"><p>The <span class="xref">GraphQL.Types.ObjectGraphType</span> conversion of the type that is contained with the enumerable return type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,13 +338,14 @@ public sealed class ConnectionAttribute : Attribute</code></pre>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

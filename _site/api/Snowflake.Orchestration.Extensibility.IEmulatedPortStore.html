@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IEmulatedPortStore
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IEmulatedPortStore
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore">
+  
+  
+  <h1 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore" class="text-break">Interface IEmulatedPortStore
+  </h1>
+  <div class="markdown level0 summary"><p>A global store that persists controller settings for a set of emulated ports. </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Orchestration.Extensibility.html">Snowflake.Orchestration.Extensibility</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IEmulatedPortStore</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_ClearPort_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.ClearPort*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_ClearPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.ClearPort(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId,System.Int32)">ClearPort(IEmulatorOrchestrator, PlatformId, Int32)</h4>
+  <div class="markdown level1 summary"><p>Clears the given port for the given <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a> for the given platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearPort(IEmulatorOrchestrator orchestrator, PlatformId platform, int portNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a></td>
+        <td><span class="parametername">orchestrator</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a> to clear the port for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platform</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a> of the platform to clear the port for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">portNumber</span></td>
+        <td><p>The port number to clear.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_EnumeratePorts_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.EnumeratePorts*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_EnumeratePorts_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.EnumeratePorts(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId)">EnumeratePorts(IEmulatorOrchestrator, PlatformId)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a> for a given <a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a>,
+for a given <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IEmulatedPortDeviceEntry&gt; EnumeratePorts(IEmulatorOrchestrator orchestrator, PlatformId platform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a></td>
+        <td><span class="parametername">orchestrator</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a> to retrieve the set of port entries for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platform</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a> of the platform to retrieve the set of port entries for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a>&gt;</td>
+        <td><p>All <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a> relevant for the given orchestrator and platform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_GetPort_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.GetPort*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_GetPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.GetPort(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId,System.Int32)">GetPort(IEmulatorOrchestrator, PlatformId, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the saved <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a> for the given <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a>,
+platform, and port number combination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEmulatedPortDeviceEntry GetPort(IEmulatorOrchestrator orchestrator, PlatformId platform, int portNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a></td>
+        <td><span class="parametername">orchestrator</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a> for the entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platform</span></td>
+        <td><p>The Stone <a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a> that specifies the platform for this set of ports.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">portNumber</span></td>
+        <td><p>The port number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_SetPort_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.SetPort*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_SetPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_Snowflake_Input_Controller_ControllerId_Snowflake_Input_Device_IInputDevice_Snowflake_Input_Device_IInputDeviceInstance_System_String_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.SetPort(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId,System.Int32,Snowflake.Input.Controller.ControllerId,Snowflake.Input.Device.IInputDevice,Snowflake.Input.Device.IInputDeviceInstance,System.String)">SetPort(IEmulatorOrchestrator, PlatformId, Int32, ControllerId, IInputDevice, IInputDeviceInstance, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the saved <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a> for the given <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a>,
+platform, and port number combination.</p>
+<p>Only connected devices can be set to a port. Use <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.html#Snowflake_Orchestration_Extensibility_IEmulatedPortStore_ClearPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_">ClearPort(IEmulatorOrchestrator, PlatformId, Int32)</a> to
+&quot;disconnect&quot; or unassign a port entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPort(IEmulatorOrchestrator orchestrator, PlatformId platform, int portNumber, ControllerId controller, IInputDevice device, IInputDeviceInstance instance, string inputProfile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a></td>
+        <td><span class="parametername">orchestrator</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a> to save this port entry for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platform</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a> to assign this port to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">portNumber</span></td>
+        <td><p>The port number to assign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a> of the virtual controller to assign this port to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The real <a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a> that this port originates from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a> of the device to use for this port.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inputProfile</span></td>
+        <td><p>The name of the input profile to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

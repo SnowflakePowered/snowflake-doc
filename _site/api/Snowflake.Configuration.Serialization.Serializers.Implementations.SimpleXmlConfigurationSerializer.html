@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SimpleXmlConfigurationSerializer
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SimpleXmlConfigurationSerializer
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer">
+  
+  
+  <h1 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer" class="text-break">Class SimpleXmlConfigurationSerializer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html">ConfigurationSerializer</a>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div class="level2"><a class="xref" href="Snowflake.Configuration.Serialization.Serializers.AbstractStringConfigurationSerializer.html">AbstractStringConfigurationSerializer</a></div>
+    <div class="level3"><span class="xref">SimpleXmlConfigurationSerializer</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationTransformer-1.html">IConfigurationTransformer</a>&lt;<span class="xref">System.String</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.AbstractStringConfigurationSerializer.html#Snowflake_Configuration_Serialization_Serializers_AbstractStringConfigurationSerializer_Transform_Snowflake_Configuration_Serialization_IAbstractConfigurationNode_">AbstractStringConfigurationSerializer.Transform(IAbstractConfigurationNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_IAbstractConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(IAbstractConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_ListConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(ListConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_StringConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(StringConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_BooleanConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(BooleanConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_IntegralConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(IntegralConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_DecimalConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(DecimalConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_EnumConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(EnumConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer-1.html#Snowflake_Configuration_Serialization_Serializers_ConfigurationSerializer_1_SerializeNode_Snowflake_Configuration_Serialization_DeviceCapabilityElementConfigurationNode_Snowflake_Configuration_Serialization_IConfigurationSerializationContext__0__System_Int32_">ConfigurationSerializer&lt;String&gt;.SerializeNode(DeviceCapabilityElementConfigurationNode, IConfigurationSerializationContext&lt;String&gt;, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Configuration.Serialization.Serializers.Implementations.html">Snowflake.Configuration.Serialization.Serializers.Implementations</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.dll</h6>
+  <h5 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimpleXmlConfigurationSerializer : AbstractStringConfigurationSerializer, IConfigurationTransformer&lt;string&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer__ctor_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.#ctor*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer__ctor_System_String_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.#ctor(System.String)">SimpleXmlConfigurationSerializer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleXmlConfigurationSerializer(string rootElementName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rootElementName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeBlockBegin_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeBlockBegin*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeBlockBegin_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeBlockBegin(Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeBlockBegin(IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeBlockBegin(IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeBlockBegin(Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeBlockEnd_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeBlockEnd*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeBlockEnd_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeBlockEnd(Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeBlockEnd(IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeBlockEnd(IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeBlockEnd(Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeFooter_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeFooter*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeFooter_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeFooter(Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String})">SerializeFooter(IConfigurationSerializationContext&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeFooter(IConfigurationSerializationContext&lt;string&gt; context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeFooter(Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeHeader_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeHeader*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeHeader_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeHeader(Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String})">SerializeHeader(IConfigurationSerializationContext&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeHeader(IConfigurationSerializationContext&lt;string&gt; context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeHeader(Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_System_Boolean_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue(System.Boolean,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeNodeValue(Boolean, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeNodeValue(bool value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeNodeValue(System.Boolean, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_System_Double_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue(System.Double,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeNodeValue(Double, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeNodeValue(double value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeNodeValue(System.Double, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_System_Enum_System_String_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue(System.Enum,System.String,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeNodeValue(Enum, String, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeNodeValue(Enum enumValue, string value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Enum</span></td>
+        <td><span class="parametername">enumValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeNodeValue(System.Enum, System.String, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_System_Int64_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue(System.Int64,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeNodeValue(Int64, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeNodeValue(long value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeNodeValue(System.Int64, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializeNodeValue_System_String_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializeNodeValue(System.String,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializeNodeValue(String, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeNodeValue(string value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializeNodeValue(System.String, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <a id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializerNodeValue_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializerNodeValue*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_Serializers_Implementations_SimpleXmlConfigurationSerializer_SerializerNodeValue_Snowflake_Input_Controller_ControllerElement_System_String_System_String_Snowflake_Configuration_Serialization_IConfigurationSerializationContext_System_String__System_Int32_" data-uid="Snowflake.Configuration.Serialization.Serializers.Implementations.SimpleXmlConfigurationSerializer.SerializerNodeValue(Snowflake.Input.Controller.ControllerElement,System.String,System.String,Snowflake.Configuration.Serialization.IConfigurationSerializationContext{System.String},System.Int32)">SerializerNodeValue(ControllerElement, String, String, IConfigurationSerializationContext&lt;String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializerNodeValue(ControllerElement controllerElementValue, string value, string key, IConfigurationSerializationContext&lt;string&gt; context, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a></td>
+        <td><span class="parametername">controllerElementValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationSerializationContext-1.html">IConfigurationSerializationContext</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Configuration.Serialization.Serializers.ConfigurationSerializer&lt;System.String&gt;.SerializerNodeValue(Snowflake.Input.Controller.ControllerElement, System.String, System.String, Snowflake.Configuration.Serialization.IConfigurationSerializationContext&lt;System.String&gt;, System.Int32)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Snowflake.Configuration.Serialization.IConfigurationTransformer-1.html">IConfigurationTransformer&lt;TOutput&gt;</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

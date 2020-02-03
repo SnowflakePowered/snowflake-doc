@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConfigurationOptionAttribute
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute">
   
   
   <h1 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute" class="text-break">Class ConfigurationOptionAttribute
@@ -82,15 +83,6 @@ type information may be lost when serializing into a wire format.</p>
     <h5>Inherited Members</h5>
     <div>
       <span class="xref">System.Attribute.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)</span>
@@ -165,6 +157,12 @@ type information may be lost when serializing into a wire format.</p>
       <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)</span>
     </div>
     <div>
@@ -187,6 +185,9 @@ type information may be lost when serializing into a wire format.</p>
     </div>
     <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.TypeId</span>
@@ -358,7 +359,7 @@ type information may be lost when serializing into a wire format.</p>
   </table>
   <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor*"></a>
   <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_System_String_System_String_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor(System.String,System.String)">ConfigurationOptionAttribute(String, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html">ConfigurationOptionAttribute</a> class.
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html">ConfigurationOptionAttribute</a>.
 Represents one option in an emulator configuration inside a configuration section.
 Typically configuration options must be a double, bool, integer or an enum value in order to be safe,
 type information may be lost when serializing into a wire format.</p>
@@ -389,6 +390,90 @@ type information may be lost when serializing into a wire format.</p>
         <td><span class="parametername">default</span></td>
         <td><p>The default value of the option. Note that only strings, enums and primitive types are supported.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor*"></a>
+  <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_System_String_System_String_Snowflake_Configuration_PathType_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor(System.String,System.String,Snowflake.Configuration.PathType)">ConfigurationOptionAttribute(String, String, PathType)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html">ConfigurationOptionAttribute</a> that represents a path.
+Represents one option in an emulator configuration inside a configuration section.
+Typically configuration options must be a double, bool, integer or an enum value in order to be safe,
+type information may be lost when serializing into a wire format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationOptionAttribute(string optionName, string default, PathType pathType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">optionName</span></td>
+        <td><p>The name of the option</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">default</span></td>
+        <td><p>The default value of the option. Note that only strings, enums and primitive types are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.PathType.html">PathType</a></td>
+        <td><span class="parametername">pathType</span></td>
+        <td><p>The type of the path this points to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor*"></a>
+  <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute__ctor_System_String_System_String_System_String_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.#ctor(System.String,System.String,System.String)">ConfigurationOptionAttribute(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.html">ConfigurationOptionAttribute</a> with a non default unset.
+This must be used if the default value is null.</p>
+<p>Represents one option in an emulator configuration inside a configuration section.
+Typically configuration options must be a double, bool, integer or an enum value in order to be safe,
+type information may be lost when serializing into a wire format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationOptionAttribute(string optionName, string default, string unset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">optionName</span></td>
+        <td><p>The name of the option</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">default</span></td>
+        <td><p>The default value of the option. Note that only strings, enums and primitive types are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">unset</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -516,30 +601,6 @@ If a flag affects the configuration, it should be placed in the same section it 
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_IsPath_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.IsPath*"></a>
-  <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_IsPath" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.IsPath">IsPath</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether whether or not this string is a file path.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPath { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Max_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Max*"></a>
   <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Max" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Max">Max</h4>
   <div class="markdown level1 summary"><p>Gets or sets the maximum value allowable for a number value</p>
@@ -612,6 +673,30 @@ If a flag affects the configuration, it should be placed in the same section it 
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_PathType_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.PathType*"></a>
+  <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_PathType" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.PathType">PathType</h4>
+  <div class="markdown level1 summary"><p>If this option is a path, specifies the type of the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathType PathType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.PathType.html">PathType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Private_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Private*"></a>
   <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Private" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Private">Private</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether whether or not this option is private (not ever displayed to the user)</p>
@@ -660,18 +745,44 @@ If a flag affects the configuration, it should be placed in the same section it 
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Unset_" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Unset*"></a>
+  <h4 id="Snowflake_Configuration_Attributes_ConfigurationOptionAttribute_Unset" data-uid="Snowflake.Configuration.Attributes.ConfigurationOptionAttribute.Unset">Unset</h4>
+  <div class="markdown level1 summary"><p>A serialization of the null string. If a string option type is set to null,
+then when serialized will be set to this unset. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Unset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><span class="xref">System.Attribute</span></div>
   </div>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

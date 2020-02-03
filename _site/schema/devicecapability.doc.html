@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>DeviceCapability</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+            
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="BigInt">
+            <a href="bigint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BigInt
+            </a>
+        </li>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Byte">
+            <a href="byte.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Byte
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="DateTimeOffset">
+            <a href="datetimeoffset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTimeOffset
+            </a>
+        </li>
+        <li  title="Decimal">
+            <a href="decimal.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Decimal
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="Guid">
+            <a href="guid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Guid
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="Long">
+            <a href="long.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Long
+            </a>
+        </li>
+        <li  title="Milliseconds">
+            <a href="milliseconds.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Milliseconds
+            </a>
+        </li>
+        <li  title="Primitive">
+            <a href="primitive.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Primitive
+            </a>
+        </li>
+        <li  title="SByte">
+            <a href="sbyte.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SByte
+            </a>
+        </li>
+        <li  title="Seconds">
+            <a href="seconds.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Seconds
+            </a>
+        </li>
+        <li  title="Short">
+            <a href="short.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Short
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+        <li  title="UInt">
+            <a href="uint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UInt
+            </a>
+        </li>
+        <li  title="ULong">
+            <a href="ulong.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ULong
+            </a>
+        </li>
+        <li  title="Uri">
+            <a href="uri.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Uri
+            </a>
+        </li>
+        <li  title="UShort">
+            <a href="ushort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UShort
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ConfigurationOptionPathTypeEnum">
+            <a href="configurationoptionpathtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationOptionPathTypeEnum
+            </a>
+        </li>
+        <li  title="ConfigurationOptionTypeEnum">
+            <a href="configurationoptiontypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationOptionTypeEnum
+            </a>
+        </li>
+        <li  title="ControllerElement">
+            <a href="controllerelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElement
+            </a>
+        </li>
+        <li class="slds-is-active" title="DeviceCapability">
+            <a href="devicecapability.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapability
+            </a>
+        </li>
+        <li  title="InputDriver">
+            <a href="inputdriver.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDriver
+            </a>
+        </li>
+        <li  title="InputDriverType">
+            <a href="inputdrivertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDriverType
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="PluginInterface">
+            <a href="plugininterface.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PluginInterface
+            </a>
+        </li>
+        <li  title="Record">
+            <a href="record.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Record
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
+    <ul>
+        <li  title="Value">
+            <a href="value.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Value
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="BooleanValue">
+            <a href="booleanvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BooleanValue
+            </a>
+        </li>
+        <li  title="ConfigurationCollection">
+            <a href="configurationcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationCollection
+            </a>
+        </li>
+        <li  title="ConfigurationCollectionDescriptor">
+            <a href="configurationcollectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationCollectionDescriptor
+            </a>
+        </li>
+        <li  title="ConfigurationOptionDescriptor">
+            <a href="configurationoptiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationOptionDescriptor
+            </a>
+        </li>
+        <li  title="ConfigurationSection">
+            <a href="configurationsection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationSection
+            </a>
+        </li>
+        <li  title="ConfigurationSectionDescriptor">
+            <a href="configurationsectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationSectionDescriptor
+            </a>
+        </li>
+        <li  title="ConfigurationValue">
+            <a href="configurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationValue
+            </a>
+        </li>
+        <li  title="ControllerElementMappings">
+            <a href="controllerelementmappings.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMappings
+            </a>
+        </li>
+        <li  title="CustomMetadata">
+            <a href="custommetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CustomMetadata
+            </a>
+        </li>
+        <li  title="ElectronPackage">
+            <a href="electronpackage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ElectronPackage
+            </a>
+        </li>
+        <li  title="ElectronPackageConnection">
+            <a href="electronpackageconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ElectronPackageConnection
+            </a>
+        </li>
+        <li  title="ElectronPackageEdge">
+            <a href="electronpackageedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ElectronPackageEdge
+            </a>
+        </li>
+        <li  title="EmulatorOrchestrator">
+            <a href="emulatororchestrator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatorOrchestrator
+            </a>
+        </li>
+        <li  title="EmulatorOrchestratorConnection">
+            <a href="emulatororchestratorconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatorOrchestratorConnection
+            </a>
+        </li>
+        <li  title="EmulatorOrchestratorEdge">
+            <a href="emulatororchestratoredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatorOrchestratorEdge
+            </a>
+        </li>
+        <li  title="EnumIntValue">
+            <a href="enumintvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EnumIntValue
+            </a>
+        </li>
+        <li  title="File">
+            <a href="file.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                File
+            </a>
+        </li>
+        <li  title="FileRecord">
+            <a href="filerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileRecord
+            </a>
+        </li>
+        <li  title="FileType">
+            <a href="filetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileType
+            </a>
+        </li>
+        <li  title="FloatValue">
+            <a href="floatvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FloatValue
+            </a>
+        </li>
+        <li  title="Game">
+            <a href="game.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Game
+            </a>
+        </li>
+        <li  title="GameConfigurations">
+            <a href="gameconfigurations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameConfigurations
+            </a>
+        </li>
+        <li  title="GameConnection">
+            <a href="gameconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameConnection
+            </a>
+        </li>
+        <li  title="GameEdge">
+            <a href="gameedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEdge
+            </a>
+        </li>
+        <li  title="GameFiles">
+            <a href="gamefiles.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameFiles
+            </a>
+        </li>
+        <li  title="GameRecord">
+            <a href="gamerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameRecord
+            </a>
+        </li>
+        <li  title="InputDevice">
+            <a href="inputdevice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDevice
+            </a>
+        </li>
+        <li  title="InputDeviceConnection">
+            <a href="inputdeviceconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDeviceConnection
+            </a>
+        </li>
+        <li  title="InputDeviceEdge">
+            <a href="inputdeviceedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDeviceEdge
+            </a>
+        </li>
+        <li  title="InputDeviceInstance">
+            <a href="inputdeviceinstance.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDeviceInstance
+            </a>
+        </li>
+        <li  title="Installable">
+            <a href="installable.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Installable
+            </a>
+        </li>
+        <li  title="InstallableConnection">
+            <a href="installableconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallableConnection
+            </a>
+        </li>
+        <li  title="InstallableEdge">
+            <a href="installableedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallableEdge
+            </a>
+        </li>
+        <li  title="IntValue">
+            <a href="intvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IntValue
+            </a>
+        </li>
+        <li  title="MappedControllerElement">
+            <a href="mappedcontrollerelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MappedControllerElement
+            </a>
+        </li>
+        <li  title="MappedControllerElementCollectionConnection">
+            <a href="mappedcontrollerelementcollectionconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MappedControllerElementCollectionConnection
+            </a>
+        </li>
+        <li  title="MappedControllerElementCollectionEdge">
+            <a href="mappedcontrollerelementcollectionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MappedControllerElementCollectionEdge
+            </a>
+        </li>
+        <li  title="Metadata">
+            <a href="metadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Metadata
+            </a>
+        </li>
+        <li  title="Module">
+            <a href="module.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Module
+            </a>
+        </li>
+        <li  title="ModuleConnection">
+            <a href="moduleconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ModuleConnection
+            </a>
+        </li>
+        <li  title="ModuleEdge">
+            <a href="moduleedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ModuleEdge
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PlatformInfo">
+            <a href="platforminfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfo
+            </a>
+        </li>
+        <li  title="PlatformInfoConnection">
+            <a href="platforminfoconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfoConnection
+            </a>
+        </li>
+        <li  title="PlatformInfoEdge">
+            <a href="platforminfoedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfoEdge
+            </a>
+        </li>
+        <li  title="Plugin">
+            <a href="plugin.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Plugin
+            </a>
+        </li>
+        <li  title="PluginConnection">
+            <a href="pluginconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PluginConnection
+            </a>
+        </li>
+        <li  title="PluginEdge">
+            <a href="pluginedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PluginEdge
+            </a>
+        </li>
+        <li  title="RawConfigurationValue">
+            <a href="rawconfigurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RawConfigurationValue
+            </a>
+        </li>
+        <li  title="RecordMetadata">
+            <a href="recordmetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecordMetadata
+            </a>
+        </li>
+        <li  title="Scraper">
+            <a href="scraper.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Scraper
+            </a>
+        </li>
+        <li  title="ScraperConnection">
+            <a href="scraperconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScraperConnection
+            </a>
+        </li>
+        <li  title="ScraperEdge">
+            <a href="scraperedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScraperEdge
+            </a>
+        </li>
+        <li  title="Seed">
+            <a href="seed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Seed
+            </a>
+        </li>
+        <li  title="SeedContent">
+            <a href="seedcontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedContent
+            </a>
+        </li>
+        <li  title="SelectionOptionDescriptor">
+            <a href="selectionoptiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SelectionOptionDescriptor
+            </a>
+        </li>
+        <li  title="StringConnection">
+            <a href="stringconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringConnection
+            </a>
+        </li>
+        <li  title="StringEdge">
+            <a href="stringedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringEdge
+            </a>
+        </li>
+        <li  title="StringValue">
+            <a href="stringvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringValue
+            </a>
+        </li>
+        <li  title="SystemFile">
+            <a href="systemfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SystemFile
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="ConfigurationValueInput">
+            <a href="configurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationValueInput
+            </a>
+        </li>
+        <li  title="DefaultMappedControllerElementCollectionInput">
+            <a href="defaultmappedcontrollerelementcollectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DefaultMappedControllerElementCollectionInput
+            </a>
+        </li>
+        <li  title="GameRecordInput">
+            <a href="gamerecordinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameRecordInput
+            </a>
+        </li>
+        <li  title="MappedControllerElementCollectionInput">
+            <a href="mappedcontrollerelementcollectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MappedControllerElementCollectionInput
+            </a>
+        </li>
+        <li  title="MappedControllerElementInput">
+            <a href="mappedcontrollerelementinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MappedControllerElementInput
+            </a>
+        </li>
+        <li  title="RecordMetadataInput">
+            <a href="recordmetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecordMetadataInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">DeviceCapability</h1>
+        <div class="slds-text-body--regular"><p>Capabilities offered by the input device instance</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">enum</span> <span class="identifier">DeviceCapability</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   No capability.</span></span></li><li><span class="tab"><span class="meta">NONE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 0</span></span></li><li><span class="tab"><span class="meta">BUTTON_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 1</span></span></li><li><span class="tab"><span class="meta">BUTTON_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 2</span></span></li><li><span class="tab"><span class="meta">BUTTON_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 3</span></span></li><li><span class="tab"><span class="meta">BUTTON_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 4</span></span></li><li><span class="tab"><span class="meta">BUTTON_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 5</span></span></li><li><span class="tab"><span class="meta">BUTTON_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 6</span></span></li><li><span class="tab"><span class="meta">BUTTON_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 7</span></span></li><li><span class="tab"><span class="meta">BUTTON_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 8</span></span></li><li><span class="tab"><span class="meta">BUTTON_8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 9</span></span></li><li><span class="tab"><span class="meta">BUTTON_9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 10</span></span></li><li><span class="tab"><span class="meta">BUTTON_10</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 11</span></span></li><li><span class="tab"><span class="meta">BUTTON_11</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 12</span></span></li><li><span class="tab"><span class="meta">BUTTON_12</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 13</span></span></li><li><span class="tab"><span class="meta">BUTTON_13</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 14</span></span></li><li><span class="tab"><span class="meta">BUTTON_14</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 15</span></span></li><li><span class="tab"><span class="meta">BUTTON_15</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 16</span></span></li><li><span class="tab"><span class="meta">BUTTON_16</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 17</span></span></li><li><span class="tab"><span class="meta">BUTTON_17</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 18</span></span></li><li><span class="tab"><span class="meta">BUTTON_18</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 19</span></span></li><li><span class="tab"><span class="meta">BUTTON_19</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 20</span></span></li><li><span class="tab"><span class="meta">BUTTON_20</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 21</span></span></li><li><span class="tab"><span class="meta">BUTTON_21</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 22</span></span></li><li><span class="tab"><span class="meta">BUTTON_22</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 23</span></span></li><li><span class="tab"><span class="meta">BUTTON_23</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 24</span></span></li><li><span class="tab"><span class="meta">BUTTON_24</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 25</span></span></li><li><span class="tab"><span class="meta">BUTTON_25</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 26</span></span></li><li><span class="tab"><span class="meta">BUTTON_26</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 27</span></span></li><li><span class="tab"><span class="meta">BUTTON_27</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 28</span></span></li><li><span class="tab"><span class="meta">BUTTON_28</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 29</span></span></li><li><span class="tab"><span class="meta">BUTTON_29</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 30</span></span></li><li><span class="tab"><span class="meta">BUTTON_30</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 31</span></span></li><li><span class="tab"><span class="meta">BUTTON_31</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 32</span></span></li><li><span class="tab"><span class="meta">BUTTON_32</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 33</span></span></li><li><span class="tab"><span class="meta">BUTTON_33</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 34</span></span></li><li><span class="tab"><span class="meta">BUTTON_34</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 35</span></span></li><li><span class="tab"><span class="meta">BUTTON_35</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 36</span></span></li><li><span class="tab"><span class="meta">BUTTON_36</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 37</span></span></li><li><span class="tab"><span class="meta">BUTTON_37</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 38</span></span></li><li><span class="tab"><span class="meta">BUTTON_38</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 39</span></span></li><li><span class="tab"><span class="meta">BUTTON_39</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 40</span></span></li><li><span class="tab"><span class="meta">BUTTON_40</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 41</span></span></li><li><span class="tab"><span class="meta">BUTTON_41</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 42</span></span></li><li><span class="tab"><span class="meta">BUTTON_42</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 43</span></span></li><li><span class="tab"><span class="meta">BUTTON_43</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 44</span></span></li><li><span class="tab"><span class="meta">BUTTON_44</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 45</span></span></li><li><span class="tab"><span class="meta">BUTTON_45</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 46</span></span></li><li><span class="tab"><span class="meta">BUTTON_46</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 47</span></span></li><li><span class="tab"><span class="meta">BUTTON_47</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 48</span></span></li><li><span class="tab"><span class="meta">BUTTON_48</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 49</span></span></li><li><span class="tab"><span class="meta">BUTTON_49</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 50</span></span></li><li><span class="tab"><span class="meta">BUTTON_50</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 51</span></span></li><li><span class="tab"><span class="meta">BUTTON_51</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 52</span></span></li><li><span class="tab"><span class="meta">BUTTON_52</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 53</span></span></li><li><span class="tab"><span class="meta">BUTTON_53</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 54</span></span></li><li><span class="tab"><span class="meta">BUTTON_54</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 55</span></span></li><li><span class="tab"><span class="meta">BUTTON_55</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 56</span></span></li><li><span class="tab"><span class="meta">BUTTON_56</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 57</span></span></li><li><span class="tab"><span class="meta">BUTTON_57</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 58</span></span></li><li><span class="tab"><span class="meta">BUTTON_58</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 59</span></span></li><li><span class="tab"><span class="meta">BUTTON_59</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 60</span></span></li><li><span class="tab"><span class="meta">BUTTON_60</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 61</span></span></li><li><span class="tab"><span class="meta">BUTTON_61</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 62</span></span></li><li><span class="tab"><span class="meta">BUTTON_62</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 63</span></span></li><li><span class="tab"><span class="meta">BUTTON_63</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 64</span></span></li><li><span class="tab"><span class="meta">BUTTON_64</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 65</span></span></li><li><span class="tab"><span class="meta">BUTTON_65</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 66</span></span></li><li><span class="tab"><span class="meta">BUTTON_66</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 67</span></span></li><li><span class="tab"><span class="meta">BUTTON_67</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 68</span></span></li><li><span class="tab"><span class="meta">BUTTON_68</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 69</span></span></li><li><span class="tab"><span class="meta">BUTTON_69</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 70</span></span></li><li><span class="tab"><span class="meta">BUTTON_70</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 71</span></span></li><li><span class="tab"><span class="meta">BUTTON_71</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 72</span></span></li><li><span class="tab"><span class="meta">BUTTON_72</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 73</span></span></li><li><span class="tab"><span class="meta">BUTTON_73</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 74</span></span></li><li><span class="tab"><span class="meta">BUTTON_74</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 75</span></span></li><li><span class="tab"><span class="meta">BUTTON_75</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 76</span></span></li><li><span class="tab"><span class="meta">BUTTON_76</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 77</span></span></li><li><span class="tab"><span class="meta">BUTTON_77</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 78</span></span></li><li><span class="tab"><span class="meta">BUTTON_78</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 79</span></span></li><li><span class="tab"><span class="meta">BUTTON_79</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 80</span></span></li><li><span class="tab"><span class="meta">BUTTON_80</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 81</span></span></li><li><span class="tab"><span class="meta">BUTTON_81</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 82</span></span></li><li><span class="tab"><span class="meta">BUTTON_82</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 83</span></span></li><li><span class="tab"><span class="meta">BUTTON_83</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 84</span></span></li><li><span class="tab"><span class="meta">BUTTON_84</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 85</span></span></li><li><span class="tab"><span class="meta">BUTTON_85</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 86</span></span></li><li><span class="tab"><span class="meta">BUTTON_86</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 87</span></span></li><li><span class="tab"><span class="meta">BUTTON_87</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 88</span></span></li><li><span class="tab"><span class="meta">BUTTON_88</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 89</span></span></li><li><span class="tab"><span class="meta">BUTTON_89</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 90</span></span></li><li><span class="tab"><span class="meta">BUTTON_90</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 91</span></span></li><li><span class="tab"><span class="meta">BUTTON_91</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 92</span></span></li><li><span class="tab"><span class="meta">BUTTON_92</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 93</span></span></li><li><span class="tab"><span class="meta">BUTTON_93</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 94</span></span></li><li><span class="tab"><span class="meta">BUTTON_94</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 95</span></span></li><li><span class="tab"><span class="meta">BUTTON_95</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 96</span></span></li><li><span class="tab"><span class="meta">BUTTON_96</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 97</span></span></li><li><span class="tab"><span class="meta">BUTTON_97</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 98</span></span></li><li><span class="tab"><span class="meta">BUTTON_98</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 99</span></span></li><li><span class="tab"><span class="meta">BUTTON_99</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 100</span></span></li><li><span class="tab"><span class="meta">BUTTON_100</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 101</span></span></li><li><span class="tab"><span class="meta">BUTTON_101</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 102</span></span></li><li><span class="tab"><span class="meta">BUTTON_102</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 103</span></span></li><li><span class="tab"><span class="meta">BUTTON_103</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 104</span></span></li><li><span class="tab"><span class="meta">BUTTON_104</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 105</span></span></li><li><span class="tab"><span class="meta">BUTTON_105</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 106</span></span></li><li><span class="tab"><span class="meta">BUTTON_106</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 107</span></span></li><li><span class="tab"><span class="meta">BUTTON_107</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 108</span></span></li><li><span class="tab"><span class="meta">BUTTON_108</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 109</span></span></li><li><span class="tab"><span class="meta">BUTTON_109</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 110</span></span></li><li><span class="tab"><span class="meta">BUTTON_110</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 111</span></span></li><li><span class="tab"><span class="meta">BUTTON_111</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 112</span></span></li><li><span class="tab"><span class="meta">BUTTON_112</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 113</span></span></li><li><span class="tab"><span class="meta">BUTTON_113</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 114</span></span></li><li><span class="tab"><span class="meta">BUTTON_114</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 115</span></span></li><li><span class="tab"><span class="meta">BUTTON_115</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 116</span></span></li><li><span class="tab"><span class="meta">BUTTON_116</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 117</span></span></li><li><span class="tab"><span class="meta">BUTTON_117</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 118</span></span></li><li><span class="tab"><span class="meta">BUTTON_118</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 119</span></span></li><li><span class="tab"><span class="meta">BUTTON_119</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 120</span></span></li><li><span class="tab"><span class="meta">BUTTON_120</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 121</span></span></li><li><span class="tab"><span class="meta">BUTTON_121</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 122</span></span></li><li><span class="tab"><span class="meta">BUTTON_122</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 123</span></span></li><li><span class="tab"><span class="meta">BUTTON_123</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 124</span></span></li><li><span class="tab"><span class="meta">BUTTON_124</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 125</span></span></li><li><span class="tab"><span class="meta">BUTTON_125</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 126</span></span></li><li><span class="tab"><span class="meta">BUTTON_126</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Button 127</span></span></li><li><span class="tab"><span class="meta">BUTTON_127</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 0 North</span></span></li><li><span class="tab"><span class="meta">HAT_0_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 0 South</span></span></li><li><span class="tab"><span class="meta">HAT_0_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 0 East</span></span></li><li><span class="tab"><span class="meta">HAT_0_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 0 West</span></span></li><li><span class="tab"><span class="meta">HAT_0_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 1 North</span></span></li><li><span class="tab"><span class="meta">HAT_1_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 1 South</span></span></li><li><span class="tab"><span class="meta">HAT_1_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 1 East</span></span></li><li><span class="tab"><span class="meta">HAT_1_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 1 West</span></span></li><li><span class="tab"><span class="meta">HAT_1_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 2 North</span></span></li><li><span class="tab"><span class="meta">HAT_2_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 2 South</span></span></li><li><span class="tab"><span class="meta">HAT_2_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 2 East</span></span></li><li><span class="tab"><span class="meta">HAT_2_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 2 West</span></span></li><li><span class="tab"><span class="meta">HAT_2_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 3 North</span></span></li><li><span class="tab"><span class="meta">HAT_3_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 3 South</span></span></li><li><span class="tab"><span class="meta">HAT_3_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 3 East</span></span></li><li><span class="tab"><span class="meta">HAT_3_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Hat 3 West</span></span></li><li><span class="tab"><span class="meta">HAT_3_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 0 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_0_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 0 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_0_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 0</span></span></li><li><span class="tab"><span class="meta">AXIS_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 1 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_1_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 1 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_1_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 1</span></span></li><li><span class="tab"><span class="meta">AXIS_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 2 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_2_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 2 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_2_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 2</span></span></li><li><span class="tab"><span class="meta">AXIS_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 3 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_3_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 3 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_3_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 3</span></span></li><li><span class="tab"><span class="meta">AXIS_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 4 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_4_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 4 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_4_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 4</span></span></li><li><span class="tab"><span class="meta">AXIS_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 5 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_5_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 5 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_5_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 5</span></span></li><li><span class="tab"><span class="meta">AXIS_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 6 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_6_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 6 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_6_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 6</span></span></li><li><span class="tab"><span class="meta">AXIS_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 7 Positive</span></span></li><li><span class="tab"><span class="meta">AXIS_7_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 7 Negative</span></span></li><li><span class="tab"><span class="meta">AXIS_7_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Axis 7</span></span></li><li><span class="tab"><span class="meta">AXIS_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The A Key</span></span></li><li><span class="tab"><span class="meta">KEY_A</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The B Key</span></span></li><li><span class="tab"><span class="meta">KEY_B</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The C Key</span></span></li><li><span class="tab"><span class="meta">KEY_C</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The D Key</span></span></li><li><span class="tab"><span class="meta">KEY_D</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The E Key</span></span></li><li><span class="tab"><span class="meta">KEY_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F Key</span></span></li><li><span class="tab"><span class="meta">KEY_F</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The G Key</span></span></li><li><span class="tab"><span class="meta">KEY_G</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The H Key</span></span></li><li><span class="tab"><span class="meta">KEY_H</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The I Key</span></span></li><li><span class="tab"><span class="meta">KEY_I</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The J Key</span></span></li><li><span class="tab"><span class="meta">KEY_J</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The K Key</span></span></li><li><span class="tab"><span class="meta">KEY_K</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The L Key</span></span></li><li><span class="tab"><span class="meta">KEY_L</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The M Key</span></span></li><li><span class="tab"><span class="meta">KEY_M</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The N Key</span></span></li><li><span class="tab"><span class="meta">KEY_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The O Key</span></span></li><li><span class="tab"><span class="meta">KEY_O</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The P Key</span></span></li><li><span class="tab"><span class="meta">KEY_P</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Q Key</span></span></li><li><span class="tab"><span class="meta">KEY_Q</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The R Key</span></span></li><li><span class="tab"><span class="meta">KEY_R</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The S Key</span></span></li><li><span class="tab"><span class="meta">KEY_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The T Key</span></span></li><li><span class="tab"><span class="meta">KEY_T</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The U Key</span></span></li><li><span class="tab"><span class="meta">KEY_U</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The V Key</span></span></li><li><span class="tab"><span class="meta">KEY_V</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The W Key</span></span></li><li><span class="tab"><span class="meta">KEY_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The X Key</span></span></li><li><span class="tab"><span class="meta">KEY_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Y Key</span></span></li><li><span class="tab"><span class="meta">KEY_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Z Key</span></span></li><li><span class="tab"><span class="meta">KEY_Z</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 0 Key</span></span></li><li><span class="tab"><span class="meta">KEY_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 1 Key</span></span></li><li><span class="tab"><span class="meta">KEY_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 2 Key</span></span></li><li><span class="tab"><span class="meta">KEY_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 3 Key</span></span></li><li><span class="tab"><span class="meta">KEY_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 4 Key</span></span></li><li><span class="tab"><span class="meta">KEY_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 5 Key</span></span></li><li><span class="tab"><span class="meta">KEY_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 6 Key</span></span></li><li><span class="tab"><span class="meta">KEY_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 7 Key</span></span></li><li><span class="tab"><span class="meta">KEY_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 8 Key</span></span></li><li><span class="tab"><span class="meta">KEY_8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 9 Key</span></span></li><li><span class="tab"><span class="meta">KEY_9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Equals (=) Key</span></span></li><li><span class="tab"><span class="meta">KEY_EQUALS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Minus (-) Key</span></span></li><li><span class="tab"><span class="meta">KEY_MINUS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Backspace Key</span></span></li><li><span class="tab"><span class="meta">KEY_BACKSPACE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Spacebar Key</span></span></li><li><span class="tab"><span class="meta">KEY_SPACEBAR</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Enter Key</span></span></li><li><span class="tab"><span class="meta">KEY_ENTER</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Up Key</span></span></li><li><span class="tab"><span class="meta">KEY_UP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Down Key</span></span></li><li><span class="tab"><span class="meta">KEY_DOWN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Left Key</span></span></li><li><span class="tab"><span class="meta">KEY_LEFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Right Key</span></span></li><li><span class="tab"><span class="meta">KEY_RIGHT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Tab Key</span></span></li><li><span class="tab"><span class="meta">KEY_TAB</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Insert Key</span></span></li><li><span class="tab"><span class="meta">KEY_INSERT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Delete Key</span></span></li><li><span class="tab"><span class="meta">KEY_DELETE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Home Key</span></span></li><li><span class="tab"><span class="meta">KEY_HOME</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The End Key</span></span></li><li><span class="tab"><span class="meta">KEY_END</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The PageUp Key</span></span></li><li><span class="tab"><span class="meta">KEY_PAGE_UP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The PageDown Key</span></span></li><li><span class="tab"><span class="meta">KEY_PAGE_DOWN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Shift Key</span></span></li><li><span class="tab"><span class="meta">KEY_SHIFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Ctrl Key</span></span></li><li><span class="tab"><span class="meta">KEY_CTRL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Alt Key</span></span></li><li><span class="tab"><span class="meta">KEY_ALT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Escape Key</span></span></li><li><span class="tab"><span class="meta">KEY_ESCAPE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Tilde (~) Key</span></span></li><li><span class="tab"><span class="meta">KEY_TILDE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Quote (') Key</span></span></li><li><span class="tab"><span class="meta">KEY_QUOTE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Semicolon (;) Key</span></span></li><li><span class="tab"><span class="meta">KEY_SEMICOLON</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Comma (:) Key</span></span></li><li><span class="tab"><span class="meta">KEY_COMMA</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Period (.) Key</span></span></li><li><span class="tab"><span class="meta">KEY_PERIOD</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Slash (/) Key</span></span></li><li><span class="tab"><span class="meta">KEY_SLASH</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Left Bracket ([)Key</span></span></li><li><span class="tab"><span class="meta">KEY_BRACKET_LEFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Right Brackey (]) Key</span></span></li><li><span class="tab"><span class="meta">KEY_BRACKET_RIGHT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Backslash (\) Key</span></span></li><li><span class="tab"><span class="meta">KEY_BACKSLASH</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Right Alt Key</span></span></li><li><span class="tab"><span class="meta">KEY_RIGHT_ALT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Right Ctrl Key</span></span></li><li><span class="tab"><span class="meta">KEY_RIGHT_CTRL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Right Shift Key</span></span></li><li><span class="tab"><span class="meta">KEY_RIGHT_SHIFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num0 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num1 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num2 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num3 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num4 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num5 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num6 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num7 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num8 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The Num9 Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The NumPeriod Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_PERIOD</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The NumPlus Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_PLUS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The NumMinus Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_MINUS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The NumEnter Key</span></span></li><li><span class="tab"><span class="meta">KEY_NUM_ENTER</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F1 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F2 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F3 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F4 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F5 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F6 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F7 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F8 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F9 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F10 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_10</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F11 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_11</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The F12 Key</span></span></li><li><span class="tab"><span class="meta">KEY_F_12</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Left mouse button</span></span></li><li><span class="tab"><span class="meta">MOUSE_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Right mouse button</span></span></li><li><span class="tab"><span class="meta">MOUSE_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Middle mouse button</span></span></li><li><span class="tab"><span class="meta">MOUSE_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Side forward mouse button</span></span></li><li><span class="tab"><span class="meta">MOUSE_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Side backward mouse button</span></span></li><li><span class="tab"><span class="meta">MOUSE_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor X Positive</span></span></li><li><span class="tab"><span class="meta">CURSOR_X_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor X Negative</span></span></li><li><span class="tab"><span class="meta">CURSOR_X_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor X</span></span></li><li><span class="tab"><span class="meta">CURSOR_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor Y Positive</span></span></li><li><span class="tab"><span class="meta">CURSOR_Y_POSITIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor Y Negative</span></span></li><li><span class="tab"><span class="meta">CURSOR_Y_NEGATIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Absolute Cursor Y</span></span></li><li><span class="tab"><span class="meta">CURSOR_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Left rumble motor</span></span></li><li><span class="tab"><span class="meta">RUMBLE_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Right rumble motor</span></span></li><li><span class="tab"><span class="meta">RUMBLE_1</span></span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <ul class="require-by"><li><a href="inputdeviceinstance.doc.html" title="InputDeviceInstance - An instance of an enumerated input device as exposed by an input driver.">InputDeviceInstance<em>An instance of an enumerated input device as exposed by an input driver.</em></a><li><li><a href="mappedcontrollerelement.doc.html" title="MappedControllerElement - Decribes a mapping between a capability on a real input device to an element on an emulated controller.">MappedControllerElement<em>Decribes a mapping between a capability on a real input device to an element on an emulated controller.</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>

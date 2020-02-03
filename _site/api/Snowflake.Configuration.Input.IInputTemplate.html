@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IInputTemplate
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Input.IInputTemplate">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Input.IInputTemplate">
   
   
   <h1 id="Snowflake_Configuration_Input_IInputTemplate" data-uid="Snowflake.Configuration.Input.IInputTemplate" class="text-break">Interface IInputTemplate
@@ -75,6 +76,9 @@ can be serialized.</p>
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Snowflake.Configuration.IConfigurationSection.html#Snowflake_Configuration_IConfigurationSection_Descriptor">IConfigurationSection.Descriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="Snowflake.Configuration.IConfigurationSection.html#Snowflake_Configuration_IConfigurationSection_ValueCollection">IConfigurationSection.ValueCollection</a>
     </div>
     <div>
       <a class="xref" href="Snowflake.Configuration.IConfigurationSection.html#Snowflake_Configuration_IConfigurationSection_Item_System_String_">IConfigurationSection.Item[String]</a>
@@ -97,11 +101,14 @@ can be serialized.</p>
   <a id="Snowflake_Configuration_Input_IInputTemplate_Item_" data-uid="Snowflake.Configuration.Input.IInputTemplate.Item*"></a>
   <h4 id="Snowflake_Configuration_Input_IInputTemplate_Item_Snowflake_Input_Controller_ControllerElement_" data-uid="Snowflake.Configuration.Input.IInputTemplate.Item(Snowflake.Input.Controller.ControllerElement)">Item[ControllerElement]</h4>
   <div class="markdown level1 summary"><p>Gets or sets the real device element that has been mapped to a virtual element.</p>
+<p>This will set all matching options for every <a class="xref" href="Snowflake.Configuration.Input.IInputOption.html">IInputOption</a> that matches the provided
+<a class="xref" href="Snowflake.Configuration.Input.IInputOption.html#Snowflake_Configuration_Input_IInputOption_TargetElement">TargetElement</a> and the provided <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a>,
+depending on the <a class="xref" href="Snowflake.Input.Device.DeviceCapabilityClass.html">DeviceCapabilityClass</a> of the option.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ControllerElement this[ControllerElement virtualElement] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">DeviceCapability this[ControllerElement targetElement] { set; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -115,7 +122,7 @@ can be serialized.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a></td>
-        <td><span class="parametername">virtualElement</span></td>
+        <td><span class="parametername">targetElement</span></td>
         <td><p>The virtual element on the controller definition</p>
 </td>
       </tr>
@@ -131,7 +138,7 @@ can be serialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a></td>
+        <td><a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -190,13 +197,13 @@ This is zero indexed, Player 1 for example is index 0.</p>
   <a id="Snowflake_Configuration_Input_IInputTemplate_Values_" data-uid="Snowflake.Configuration.Input.IInputTemplate.Values*"></a>
   <h4 id="Snowflake_Configuration_Input_IInputTemplate_Values" data-uid="Snowflake.Configuration.Input.IInputTemplate.Values">Values</h4>
   <div class="markdown level1 summary"><p>Gets the mapped controller elements of the input configuration.
-The implementation of this properly should require this be immutable.
+A proper implementation should require this be immutable.
 This dictionary is keyed on the property names of the input template interface.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, ControllerElement&gt; Values { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, DeviceCapability&gt; Values { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,19 +215,20 @@ This dictionary is keyed on the property names of the input template interface.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

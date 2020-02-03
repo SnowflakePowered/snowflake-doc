@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IConfigurationCollectionDescriptor
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor">
   
   
   <h1 id="Snowflake_Configuration_IConfigurationCollectionDescriptor" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor" class="text-break">Interface IConfigurationCollectionDescriptor
@@ -78,33 +79,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Snowflake_Configuration_IConfigurationCollectionDescriptor_Outputs_" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.Outputs*"></a>
-  <h4 id="Snowflake_Configuration_IConfigurationCollectionDescriptor_Outputs" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.Outputs">Outputs</h4>
-  <div class="markdown level1 summary"><p>Gets the file outputs keyed on the file reference key to the file name
-The implementation should ensure this is immutable.
-<a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html">ConfigurationFileAttribute</a>
-<a class="xref" href="Snowflake.Configuration.IConfigurationFile.html">IConfigurationFile</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, IConfigurationFile&gt; Outputs { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.IConfigurationFile.html">IConfigurationFile</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Snowflake_Configuration_IConfigurationCollectionDescriptor_SectionKeys_" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.SectionKeys*"></a>
   <h4 id="Snowflake_Configuration_IConfigurationCollectionDescriptor_SectionKeys" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.SectionKeys">SectionKeys</h4>
   <div class="markdown level1 summary"><p>Gets the list of names of property section names.
@@ -131,63 +105,15 @@ as the properties were described in the collection type.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="Snowflake_Configuration_IConfigurationCollectionDescriptor_GetDestination_" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.GetDestination*"></a>
-  <h4 id="Snowflake_Configuration_IConfigurationCollectionDescriptor_GetDestination_System_String_" data-uid="Snowflake.Configuration.IConfigurationCollectionDescriptor.GetDestination(System.String)">GetDestination(String)</h4>
-  <div class="markdown level1 summary"><p>Gets the destination file reference key for a section</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetDestination(string sectionKey)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sectionKey</span></td>
-        <td><p>The property name of the section</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The file reference key</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Snowflake_Configuration_IConfigurationCollectionDescriptor_GetDestination_System_String__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Snowflake.Configuration.IConfigurationCollectionDescriptor.html#Snowflake_Configuration_IConfigurationCollectionDescriptor_Outputs">Outputs</a></div>
-  </div>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

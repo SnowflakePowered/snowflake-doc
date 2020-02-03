@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct SeedContent
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.SeedContent">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.SeedContent">
   
   
   <h1 id="Snowflake_Scraping_SeedContent" data-uid="Snowflake.Scraping.SeedContent" class="text-break">Struct SeedContent
@@ -140,7 +141,7 @@ Two <a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a> w
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string NullSeedType = &quot;__null&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly string NullSeedType</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +165,7 @@ has a type __root.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string RootSeedType = &quot;__root&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly string RootSeedType</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -400,14 +401,14 @@ has a type __root.</p>
     </tbody>
   </table>
   <a id="Snowflake_Scraping_SeedContent_op_Implicit_" data-uid="Snowflake.Scraping.SeedContent.op_Implicit*"></a>
-  <h4 id="Snowflake_Scraping_SeedContent_op_Implicit_Snowflake_Scraping_SeedContent__System_ValueTuple_System_String_System_String_" data-uid="Snowflake.Scraping.SeedContent.op_Implicit(Snowflake.Scraping.SeedContent)~System.ValueTuple{System.String,System.String}">Implicit(SeedContent to )</h4>
+  <h4 id="Snowflake_Scraping_SeedContent_op_Implicit_Snowflake_Scraping_SeedContent__System_ValueTuple_System_String_System_String_" data-uid="Snowflake.Scraping.SeedContent.op_Implicit(Snowflake.Scraping.SeedContent)~System.ValueTuple{System.String,System.String}">Implicit(SeedContent to (String type, String value))</h4>
   <div class="markdown level1 summary"><p>A <a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a> is polymorphically equivalent to a
 <span class="xref">System.ValueTuple`2</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator (SeedContent seedContent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator (string type, string value)(SeedContent seedContent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,20 +438,20 @@ has a type __root.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.</span></td>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Snowflake_Scraping_SeedContent_op_Implicit_" data-uid="Snowflake.Scraping.SeedContent.op_Implicit*"></a>
-  <h4 id="Snowflake_Scraping_SeedContent_op_Implicit_System_ValueTuple_System_String_System_String___Snowflake_Scraping_SeedContent" data-uid="Snowflake.Scraping.SeedContent.op_Implicit(System.ValueTuple{System.String,System.String})~Snowflake.Scraping.SeedContent">Implicit( to SeedContent)</h4>
+  <h4 id="Snowflake_Scraping_SeedContent_op_Implicit_System_ValueTuple_System_String_System_String___Snowflake_Scraping_SeedContent" data-uid="Snowflake.Scraping.SeedContent.op_Implicit(System.ValueTuple{System.String,System.String})~Snowflake.Scraping.SeedContent">Implicit((String type, String value) to SeedContent)</h4>
   <div class="markdown level1 summary"><p>A <a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a> is polymorphically equivalent to a
 <span class="xref">System.ValueTuple`2</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator SeedContent(contentTuple)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator SeedContent((string type, string value) contentTuple)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,7 +464,7 @@ has a type __root.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.</span></td>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">contentTuple</span></td>
         <td><p>The <span class="xref">System.ValueTuple`2</span> to coerce.</p>
 </td>
@@ -539,13 +540,14 @@ has a type __root.</p>
       <span class="xref">System.IEquatable&lt;T&gt;</span>
   </div>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IServiceContainer
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,13 +62,17 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Services.IServiceContainer">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Services.IServiceContainer">
   
   
   <h1 id="Snowflake_Services_IServiceContainer" data-uid="Snowflake.Services.IServiceContainer" class="text-break">Interface IServiceContainer
   </h1>
-  <div class="markdown level0 summary"><p>The core frontend service that handles all the functions of the frontend core.</p>
+  <div class="markdown level0 summary"><p>The core frontend service that handles all the functions of the frontend core.
+Acts as a dependency injection container for all <a class="xref" href="Snowflake.Loader.IComposable.html">IComposable</a> modules.
+An instance of <a class="xref" href="Snowflake.Services.IServiceContainer.html">IServiceContainer</a> can not be directly obtained. Instead,
+services within it must be requested using <a class="xref" href="Snowflake.Loader.ImportServiceAttribute.html">ImportServiceAttribute</a>, and
+new services can be registered using the <a class="xref" href="Snowflake.Services.IServiceRegistrationProvider.html">IServiceRegistrationProvider</a> service.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -178,7 +183,7 @@ The <a class="xref" href="Snowflake.Loader.IModuleEnumerator.html">IModuleEnumer
   </table>
   <a id="Snowflake_Services_IServiceContainer_RegisterService_" data-uid="Snowflake.Services.IServiceContainer.RegisterService*"></a>
   <h4 id="Snowflake_Services_IServiceContainer_RegisterService__1___0_" data-uid="Snowflake.Services.IServiceContainer.RegisterService``1(``0)">RegisterService&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"><p>Register a service with this coreservice</p>
+  <div class="markdown level1 summary"><p>Register a new singleton service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -198,7 +203,8 @@ The <a class="xref" href="Snowflake.Loader.IModuleEnumerator.html">IModuleEnumer
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">serviceInstance</span></td>
-        <td></td>
+        <td><p>The instance of the service.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -213,18 +219,36 @@ The <a class="xref" href="Snowflake.Loader.IModuleEnumerator.html">IModuleEnumer
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown when a service of the same type already exists.</p>
+</td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

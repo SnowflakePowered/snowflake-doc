@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CustomMetadataAttribute
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes.CustomMetadataAttribute">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Attributes.CustomMetadataAttribute">
   
   
   <h1 id="Snowflake_Configuration_Attributes_CustomMetadataAttribute" data-uid="Snowflake.Configuration.Attributes.CustomMetadataAttribute" class="text-break">Class CustomMetadataAttribute
@@ -80,15 +81,6 @@
     <h5>Inherited Members</h5>
     <div>
       <span class="xref">System.Attribute.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
-    </div>
-    <div>
-      <span class="xref">System.Attribute.Match(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)</span>
@@ -163,6 +155,12 @@
       <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)</span>
     </div>
     <div>
@@ -187,6 +185,9 @@
       <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">System.Attribute.Match(System.Object)</span>
+    </div>
+    <div>
       <span class="xref">System.Attribute.TypeId</span>
     </div>
     <div>
@@ -209,14 +210,17 @@
   <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
   <h5 id="Snowflake_Configuration_Attributes_CustomMetadataAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = true)]
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true)]
 public class CustomMetadataAttribute : Attribute</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Snowflake_Configuration_Attributes_CustomMetadataAttribute__ctor_" data-uid="Snowflake.Configuration.Attributes.CustomMetadataAttribute.#ctor*"></a>
   <h4 id="Snowflake_Configuration_Attributes_CustomMetadataAttribute__ctor_System_String_System_Object_" data-uid="Snowflake.Configuration.Attributes.CustomMetadataAttribute.#ctor(System.String,System.Object)">CustomMetadataAttribute(String, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Mark a selection option or configuration property as custom metadata.
+Custom metadata is never serialized to file, and is only readable
+by the emulator bridge plugin.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -235,12 +239,14 @@ public class CustomMetadataAttribute : Attribute</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">metadataKey</span></td>
-        <td></td>
+        <td><p>The key of the metadata.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The metadata value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -295,13 +301,14 @@ public class CustomMetadataAttribute : Attribute</code></pre>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

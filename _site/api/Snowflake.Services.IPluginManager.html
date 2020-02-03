@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPluginManager
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Services.IPluginManager">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Services.IPluginManager">
   
   
   <h1 id="Snowflake_Services_IPluginManager" data-uid="Snowflake.Services.IPluginManager" class="text-break">Interface IPluginManager
@@ -137,7 +138,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; Get&lt;T&gt;()where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; Get&lt;T&gt;()
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,8 +169,7 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The plugin type category to register under.
-Examples include <see cref="!:IEmulatorAdapter"></see></p>
+        <td><p>The plugin type category to register under.</p>
 </td>
       </tr>
     </tbody>
@@ -179,7 +181,9 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(string pluginName)where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(string pluginName)
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,8 +230,7 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The plugin type category to register under.
-Examples include <see cref="!:IEmulatorAdapter"></see></p>
+        <td><p>The plugin type category to register under.</p>
 </td>
       </tr>
     </tbody>
@@ -239,7 +242,9 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPluginCollection&lt;T&gt; GetCollection&lt;T&gt;()where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">IPluginCollection&lt;T&gt; GetCollection&lt;T&gt;()
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,8 +273,7 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The plugin type category to register under.
-Examples include <see cref="!:IEmulatorAdapter"></see></p>
+        <td><p>The plugin type category to register under.</p>
 </td>
       </tr>
     </tbody>
@@ -281,7 +285,9 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPluginProvision GetProvision&lt;T&gt;(IModule module)where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">IPluginProvision GetProvision&lt;T&gt;(IModule module)
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -383,7 +389,9 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsRegistered&lt;T&gt;(string pluginName)where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsRegistered&lt;T&gt;(string pluginName)
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -430,8 +438,7 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The plugin type category to register under.
-Examples include <see cref="!:IEmulatorAdapter"></see></p>
+        <td><p>The plugin type category to register under.</p>
 </td>
       </tr>
     </tbody>
@@ -443,7 +450,9 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Register&lt;T&gt;(T plugin)where T : IPlugin</code></pre>
+    <pre><code class="lang-csharp hljs">void Register&lt;T&gt;(T plugin)
+
+    where T : class, IPlugin</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,20 +483,20 @@ Examples include <see cref="!:IEmulatorAdapter"></see></p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The plugin type category to register under.
-Examples include <see cref="!:IEmulatorAdapter"></see></p>
+        <td><p>The plugin type category to register under.</p>
 </td>
       </tr>
     </tbody>
   </table>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

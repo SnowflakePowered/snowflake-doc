@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGameConfigurationExtensionProvider
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGameConfigurationExtensionProvider
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider">
+  
+  
+  <h1 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider" class="text-break">Interface IGameConfigurationExtensionProvider
+  </h1>
+  <div class="markdown level0 summary"><p>Provides the <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtension.html">IGameConfigurationExtension</a> for a
+<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>, and exposes database-level methods that are not
+specific to a certain <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a> instance.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameExtensionProvider-1.html#Snowflake_Model_Game_LibraryExtensions_IGameExtensionProvider_1_MakeExtension_Snowflake_Model_Records_Game_IGameRecord_">IGameExtensionProvider&lt;IGameConfigurationExtension&gt;.MakeExtension(IGameRecord)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.html">Snowflake.Model.Game.LibraryExtensions</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGameConfigurationExtensionProvider : IGameExtensionProvider&lt;IGameConfigurationExtension&gt;, IGameExtensionProvider</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_DeleteProfile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.DeleteProfile*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_DeleteProfile_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.DeleteProfile(System.Guid)">DeleteProfile(Guid)</h4>
+  <div class="markdown level1 summary"><p>Deletes the profile with the given <code data-dev-comment-type="paramref" class="paramref">valueCollectionGuid</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteProfile(Guid valueCollectionGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueCollectionGuid</span></td>
+        <td><p>The unique GUID of the configuration profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_DeleteProfileAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.DeleteProfileAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_DeleteProfileAsync_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.DeleteProfileAsync(System.Guid)">DeleteProfileAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously deletes the profile with the given <code data-dev-comment-type="paramref" class="paramref">valueCollectionGuid</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteProfileAsync(Guid valueCollectionGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueCollectionGuid</span></td>
+        <td><p>The unique GUID of the configuration profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfile*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfile__1_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfile``1(System.Guid)">GetProfile&lt;T&gt;(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a> configuration profile
+with the given <code data-dev-comment-type="paramref" class="paramref">valueCollectionGuid</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IConfigurationCollection&lt;T&gt; GetProfile&lt;T&gt;(Guid valueCollectionGuid)
+
+    where T : class, IConfigurationCollection&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueCollectionGuid</span></td>
+        <td><p>The unique GUID of the configuration profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection</a>&lt;T&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a> with the given GUID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The configuration collection prototype.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfileAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfileAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfileAsync__1_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfileAsync``1(System.Guid)">GetProfileAsync&lt;T&gt;(Guid)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously gets the <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a> configuration profile
+with the given <code data-dev-comment-type="paramref" class="paramref">valueCollectionGuid</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IConfigurationCollection&lt;T&gt;&gt; GetProfileAsync&lt;T&gt;(Guid valueCollectionGuid)
+
+    where T : class, IConfigurationCollection&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueCollectionGuid</span></td>
+        <td><p>The unique GUID of the configuration profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection</a>&lt;T&gt;&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a> with the given GUID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The configuration collection prototype.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateProfile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateProfile*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateProfile_Snowflake_Configuration_IConfigurationCollection_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateProfile(Snowflake.Configuration.IConfigurationCollection)">UpdateProfile(IConfigurationCollection)</h4>
+  <div class="markdown level1 summary"><p>Updates the entire <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a>.
+Notice this method is type-agnostic and ignores the prototype of the <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateProfile(IConfigurationCollection profile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a></td>
+        <td><span class="parametername">profile</span></td>
+        <td><p>The configuration collection to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateProfileAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateProfileAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateProfileAsync_Snowflake_Configuration_IConfigurationCollection_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateProfileAsync(Snowflake.Configuration.IConfigurationCollection)">UpdateProfileAsync(IConfigurationCollection)</h4>
+  <div class="markdown level1 summary"><p>Updates the entire <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a>.
+Notice this method is type-agnostic and ignores the prototype of the <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateProfileAsync(IConfigurationCollection profile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a></td>
+        <td><span class="parametername">profile</span></td>
+        <td><p>The configuration collection to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValue_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValue*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValue_Snowflake_Configuration_IConfigurationValue_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValue(Snowflake.Configuration.IConfigurationValue)">UpdateValue(IConfigurationValue)</h4>
+  <div class="markdown level1 summary"><p>Updates the given <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateValue(IConfigurationValue newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>.
+A value with the same <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html#Snowflake_Configuration_IConfigurationValue_Guid">Guid</a> must be present in the database,
+this is ensured if the value came from an existing <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValue_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValue*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValue_System_Guid_System_Object_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValue(System.Guid,System.Object)">UpdateValue(Guid, Object)</h4>
+  <div class="markdown level1 summary"><p>Updates the <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a> in the database with the given
+<code data-dev-comment-type="paramref" class="paramref">valueGuid</code> and gives it the value <code data-dev-comment-type="paramref" class="paramref">newValue</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateValue(Guid valueGuid, object newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueGuid</span></td>
+        <td><p>The unique GUID of the configuration value to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new value of the configuration value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValueAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValueAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValueAsync_Snowflake_Configuration_IConfigurationValue_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValueAsync(Snowflake.Configuration.IConfigurationValue)">UpdateValueAsync(IConfigurationValue)</h4>
+  <div class="markdown level1 summary"><p>Asychronously updates the given <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateValueAsync(IConfigurationValue newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a>.
+A value with the same <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html#Snowflake_Configuration_IConfigurationValue_Guid">Guid</a> must be present in the database,
+this is ensured if the value came from an existing <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValueAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValueAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_UpdateValueAsync_System_Guid_System_Object_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.UpdateValueAsync(System.Guid,System.Object)">UpdateValueAsync(Guid, Object)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously updates the <a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a> in the database with the given
+<code data-dev-comment-type="paramref" class="paramref">valueGuid</code> and gives it the value <code data-dev-comment-type="paramref" class="paramref">newValue</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateValueAsync(Guid valueGuid, object newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueGuid</span></td>
+        <td><p>The unique GUID of the configuration value to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new value of the configuration value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

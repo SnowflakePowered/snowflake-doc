@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Snowflake.Services
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,25 +62,43 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Services">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Services">
   
   <h1 id="Snowflake_Services" data-uid="Snowflake.Services" class="text-break">Namespace Snowflake.Services
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="Snowflake.Services.ServiceContainer.html">ServiceContainer</a></h4>
-      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Snowflake.Services.IContentDirectoryProvider.html">IContentDirectoryProvider</a></h4>
-      <section><p>Provides the application content directory.</p>
+      <section><p>Provides the application content directory.
+<p>
+Often this is unneeded. Prefer the Snowflake <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a> API if possible.
+If you are writing a provisioned <a class="xref" href="Snowflake.Extensibility.IPlugin.html">IPlugin</a>, a working directory has already been provided to you through the
+Filesystem API through <a class="xref" href="Snowflake.Extensibility.Provisioning.IPluginProvision.html">IPluginProvision</a>.
+</p>
+<p>
+If you are writing a service, you may also be interested in the Zio.IFileSystem service for safer filesystem access.
+</p></p>
 </section>
-      <h4><a class="xref" href="Snowflake.Services.ILocalWebService.html">ILocalWebService</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Snowflake.Services.IDeviceEnumerator.html">IDeviceEnumerator</a></h4>
+      <section><p>Enumerates input devices and produces <a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a> for each 
+enumerated hardware device, alongside their supported device.</p>
+<p>
+There is only one <a class="xref" href="Snowflake.Services.IDeviceEnumerator.html">IDeviceEnumerator</a> service per instance,
+which is unique to the OS, and must enumerate all devices and their input drivers (API)
+for that operating system.
+</p>
+
+<p>
+All <a class="xref" href="Snowflake.Services.IDeviceEnumerator.html">IDeviceEnumerator</a> must provide a keyboard device that implements the
+driver instance for <a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Keyboard">Keyboard</a> and a passthrough device that
+implements the <a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Passthrough">Passthrough</a> driver instance at a minimum, otherwise
+emulators will be unable to map inputs.
+</p>
+</section>
       <h4><a class="xref" href="Snowflake.Services.ILogProvider.html">ILogProvider</a></h4>
       <section><p>Provides logging services</p>
 </section>
@@ -87,7 +106,11 @@
       <section><p>The IPluginManager manages all plugins.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Services.IServiceContainer.html">IServiceContainer</a></h4>
-      <section><p>The core frontend service that handles all the functions of the frontend core.</p>
+      <section><p>The core frontend service that handles all the functions of the frontend core.
+Acts as a dependency injection container for all <a class="xref" href="Snowflake.Loader.IComposable.html">IComposable</a> modules.
+An instance of <a class="xref" href="Snowflake.Services.IServiceContainer.html">IServiceContainer</a> can not be directly obtained. Instead,
+services within it must be requested using <a class="xref" href="Snowflake.Loader.ImportServiceAttribute.html">ImportServiceAttribute</a>, and
+new services can be registered using the <a class="xref" href="Snowflake.Services.IServiceRegistrationProvider.html">IServiceRegistrationProvider</a> service.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Services.IServiceEnumerator.html">IServiceEnumerator</a></h4>
       <section><p>Enumerates all available services.</p>
@@ -95,29 +118,24 @@
       <h4><a class="xref" href="Snowflake.Services.IServiceRegistrationProvider.html">IServiceRegistrationProvider</a></h4>
       <section><p>Provides facilities to register a service.
 <p>
-When registering a service, your service must implement an interface in an assembly
-outside of the plugin composable.
-Otherwise, your service will never be accessible by any consumer.
+A service must implement an interface that resides outside of its implementing assembly. A service that implements
+an interface in its own assembly will not be accessible by any consumer due to resolution rules. This is true even
+for a service that only exposes a private API. In such case, it is advisable to expose an internal API, and use
+<span class="xref">System.Runtime.CompilerServices.InternalsVisibleToAttribute</span> to expose the interface.
 </p></p>
-</section>
-      <h4><a class="xref" href="Snowflake.Services.ISqliteDatabaseProvider.html">ISqliteDatabaseProvider</a></h4>
-      <section><p>Providers access to creation of databases</p>
 </section>
       <h4><a class="xref" href="Snowflake.Services.IStoneProvider.html">IStoneProvider</a></h4>
       <section><p>Provides Stone platform and controller layout data</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Services.IUserInterface.html">IUserInterface</a></h4>
-      <section><p>Represents a user interface that is started by the Snowflake shell.
-There can only be one interface at a time.</p>
-</section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

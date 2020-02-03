@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Snowflake.Configuration
    | Snowflake Documentation ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -46,13 +46,14 @@
                 </ul>
             </div>
            </div>
-        </header>        
-         <div class="container hide-when-search" id="breadcrumb">
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
-          </div>      </header>
-      <div role="main" class="container body-content hide-when-search">
+          </div>      <div class="container-fluid" style="display: flex;">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -61,46 +62,50 @@
           </div>
         </div>
         <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Snowflake.Configuration">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration">
   
   <h1 id="Snowflake_Configuration" data-uid="Snowflake.Configuration" class="text-break">Namespace Snowflake.Configuration
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationCollection-1.html">ConfigurationCollection&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationCollectionDescriptor-1.html">ConfigurationCollectionDescriptor&lt;T&gt;</a></h4>
+      <section><p>Default implementation for <a class="xref" href="Snowflake.Configuration.IConfigurationCollectionDescriptor.html">IConfigurationCollectionDescriptor</a></p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationOptionDescriptor.html">ConfigurationOptionDescriptor</a></h4>
+      <section><p>Default constructor for <a class="xref" href="Snowflake.Configuration.IConfigurationOptionDescriptor.html">IConfigurationOptionDescriptor</a></p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationSection-1.html">ConfigurationSection&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationSectionDescriptor-1.html">ConfigurationSectionDescriptor&lt;T&gt;</a></h4>
+      <section><p>Default constructor for <a class="xref" href="Snowflake.Configuration.IConfigurationSectionDescriptor.html">IConfigurationSectionDescriptor</a></p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.ConfigurationValueCollection.html">ConfigurationValueCollection</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Snowflake.Configuration.SelectionOptionDescriptor.html">SelectionOptionDescriptor</a></h4>
+      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Snowflake.Configuration.ExampleConfigurationSection.html">ExampleConfigurationSection</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Snowflake.Configuration.IBooleanMapping.html">IBooleanMapping</a></h4>
-      <section><p>Maps the value of true and false to how an emulator configuration file stores booleans</p>
-</section>
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a></h4>
       <section><p>A configuration collection represents a single file of configuration.
 One file can have one single serializer for every section, and multiple
-filename for the configuration collection.
-A configuration collection must be marked with one or more <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html">ConfigurationFileAttribute</a>,
-and all seriazable properties marked with a <a class="xref" href="Snowflake.Configuration.Attributes.SerializableSectionAttribute.html">SerializableSectionAttribute</a> that matches one or more configuration files.</p>
+filename for the configuration collection.</p>
 <p>The enumeration is guaranteed to enumerate in the order in which the section properties were described.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a></h4>
       <section><p>A configuration collection represents a single file of configuration.
 One file can have one single serializer for every section, and multiple
-filename for the configuration collection.
-A configuration collection must be marked with one or more <a class="xref" href="Snowflake.Configuration.Attributes.ConfigurationFileAttribute.html">ConfigurationFileAttribute</a>,
-and all seriazable properties marked with a <a class="xref" href="Snowflake.Configuration.Attributes.SerializableSectionAttribute.html">SerializableSectionAttribute</a> that matches one or more configuration files.</p>
+filename for the configuration collection.</p>
 <p>The enumeration is guaranteed to enumerate in the order in which the section properties were described.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationCollectionDescriptor.html">IConfigurationCollectionDescriptor</a></h4>
       <section><p>Describes a configuration collection.</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Configuration.IConfigurationCollectionStore.html">IConfigurationCollectionStore</a></h4>
-      <section><p>Represents a store that can save and retrieve an aribtrary configuration
-collection representing a single emulator configuration file, associated with a game record</p>
-</section>
-      <h4><a class="xref" href="Snowflake.Configuration.IConfigurationFile.html">IConfigurationFile</a></h4>
-      <section></section>
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationOptionDescriptor.html">IConfigurationOptionDescriptor</a></h4>
       <section><p>Describes a configuration option.</p>
 </section>
@@ -116,12 +121,6 @@ collection representing a single emulator configuration file, associated with a 
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationSectionDescriptor.html">IConfigurationSectionDescriptor</a></h4>
       <section><p>Describes a configuration section</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Configuration.IConfigurationSerializer.html">IConfigurationSerializer</a></h4>
-      <section><p>A configuration serializer serializes a ConfigurationSection into valid emulator configuration.
-If an emulator uses a different syle of configuration, re-implement ConfigurationSerializer for that emulator instead of
-manually using string templates.
-<a class="xref" href="Snowflake.Configuration.IConfigurationSerializer.html">IConfigurationSerializer</a></p>
-</section>
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationTypeMapper.html">IConfigurationTypeMapper</a></h4>
       <section><p>Maps types to a correct string value that can be interpreted by the emulator configuration.
 Convention requires that there be a default converver for Enum types implemented by default</p>
@@ -129,22 +128,30 @@ Convention requires that there be a default converver for Enum types implemented
       <h4><a class="xref" href="Snowflake.Configuration.IConfigurationValue.html">IConfigurationValue</a></h4>
       <section><p>Represents a unique configuration value.</p>
 </section>
+      <h4><a class="xref" href="Snowflake.Configuration.IConfigurationValueCollection.html">IConfigurationValueCollection</a></h4>
+      <section><p>Represents a enumerable collection of configuration values.</p>
+</section>
       <h4><a class="xref" href="Snowflake.Configuration.ISelectionOptionDescriptor.html">ISelectionOptionDescriptor</a></h4>
-      <section></section>
+      <section><p>An option descriptor for options with type <a class="xref" href="Snowflake.Configuration.ConfigurationOptionType.html#Snowflake_Configuration_ConfigurationOptionType_Selection">Selection</a>
+Describes the available options by introspecting the backing <a class="xref" href="Snowflake.Configuration.ISelectionOptionDescriptor.html#Snowflake_Configuration_ISelectionOptionDescriptor_EnumType">EnumType</a>.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="Snowflake.Configuration.ConfigurationOptionType.html">ConfigurationOptionType</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Snowflake.Configuration.FullscreenResolution.html">FullscreenResolution</a></h4>
-      <section></section>
+      <section><p>The types of configuration options.</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Configuration.PathType.html">PathType</a></h4>
+      <section><p>The type of the configuration path if isPath is true.</p>
+</section>
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
             </div>
           </div>
         </div>

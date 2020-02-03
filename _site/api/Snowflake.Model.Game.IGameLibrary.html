@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGameLibrary
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGameLibrary
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Model.Game.IGameLibrary">
+  
+  
+  <h1 id="Snowflake_Model_Game_IGameLibrary" data-uid="Snowflake.Model.Game.IGameLibrary" class="text-break">Interface IGameLibrary
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an extendable Game library. An instance of <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html">IGameLibrary</a> is one of the core services
+that are always available when Snowflake starts, and handles all information related to games, including
+files and configuration.</p>
+<p>Implements the repository pattern for <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Model.Game.html">Snowflake.Model.Game</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Model_Game_IGameLibrary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGameLibrary</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Model_Game_IGameLibrary_AddExtension_" data-uid="Snowflake.Model.Game.IGameLibrary.AddExtension*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_AddExtension__2___0_" data-uid="Snowflake.Model.Game.IGameLibrary.AddExtension``2(``0)">AddExtension&lt;TExtensionProvider, TExtension&gt;(TExtensionProvider)</h4>
+  <div class="markdown level1 summary"><p>Registers an extension to the game library.</p>
+<p>Extensions are responsible for their own data, and are created using a factory of type <code data-dev-comment-type="typeparamref" class="typeparamref">TExtensionProvider</code>.
+Extensions are local to a given <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a> that exists in this library, and are responsible for managing their
+own data. It is also idiomatic to create an extension method WithExtension to allow fluent access to the extension. </p>
+<p>See <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.GameFileExtensionExtensions.html">GameFileExtensionExtensions</a> for an example of how such extension methods are implemented.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddExtension&lt;TExtensionProvider, TExtension&gt;(TExtensionProvider extension)
+
+    where TExtensionProvider : IGameExtensionProvider&lt;TExtension&gt; where TExtension : class, IGameExtension</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TExtensionProvider</span></td>
+        <td><span class="parametername">extension</span></td>
+        <td><p>An instance of the extension factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TExtensionProvider</span></td>
+        <td><p>The type of the extension provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TExtension</span></td>
+        <td><p>The extension instance that is produced for a game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_CreateGame_" data-uid="Snowflake.Model.Game.IGameLibrary.CreateGame*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_CreateGame_Snowflake_Model_Game_PlatformId_" data-uid="Snowflake.Model.Game.IGameLibrary.CreateGame(Snowflake.Model.Game.PlatformId)">CreateGame(PlatformId)</h4>
+  <div class="markdown level1 summary"><p>Creates a game in the game library.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGame CreateGame(PlatformId platformId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platformId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_CreateGameAsync_" data-uid="Snowflake.Model.Game.IGameLibrary.CreateGameAsync*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_CreateGameAsync_Snowflake_Model_Game_PlatformId_" data-uid="Snowflake.Model.Game.IGameLibrary.CreateGameAsync(Snowflake.Model.Game.PlatformId)">CreateGameAsync(PlatformId)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously creates a game in the game library.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGame&gt; CreateGameAsync(PlatformId platformId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.PlatformId.html">PlatformId</a></td>
+        <td><span class="parametername">platformId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetAllGames_" data-uid="Snowflake.Model.Game.IGameLibrary.GetAllGames*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetAllGames" data-uid="Snowflake.Model.Game.IGameLibrary.GetAllGames">GetAllGames()</h4>
+  <div class="markdown level1 summary"><p>Retrieves all games in the library. See <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecord_System_Boolean___">GetGames(Expression&lt;Func&lt;IGameRecord, Boolean&gt;&gt;)</a> instead, 
+instead of enumerating all possible games.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IGame&gt; GetAllGames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>All games in the library.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetAllGamesAsync_" data-uid="Snowflake.Model.Game.IGameLibrary.GetAllGamesAsync*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetAllGamesAsync" data-uid="Snowflake.Model.Game.IGameLibrary.GetAllGamesAsync">GetAllGamesAsync()</h4>
+  <div class="markdown level1 summary"><p>Asynchronously retrieves all games in the library. See <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecord_System_Boolean___">GetGames(Expression&lt;Func&lt;IGameRecord, Boolean&gt;&gt;)</a> instead, 
+instead of enumerating all possible games.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;IGame&gt; GetAllGamesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>All games in the library.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetExtension_" data-uid="Snowflake.Model.Game.IGameLibrary.GetExtension*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetExtension__1" data-uid="Snowflake.Model.Game.IGameLibrary.GetExtension``1">GetExtension&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets a registered extension provider of the given type.
+If no extension of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> is 
+registered, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T GetExtension&lt;T&gt;()
+
+    where T : class, IGameExtensionProvider</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The regsitered instance of the requested extension provider. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the extension provider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetGame_" data-uid="Snowflake.Model.Game.IGameLibrary.GetGame*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetGame_System_Guid_" data-uid="Snowflake.Model.Game.IGameLibrary.GetGame(System.Guid)">GetGame(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets a game that was created in the library by its unique GUID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGame GetGame(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The unique GUID of the game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a></td>
+        <td><p>The game with the provided GUID, or null if it does not exist</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetGameAsync_" data-uid="Snowflake.Model.Game.IGameLibrary.GetGameAsync*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetGameAsync_System_Guid_" data-uid="Snowflake.Model.Game.IGameLibrary.GetGameAsync(System.Guid)">GetGameAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously gets a game that was created in the library by its unique GUID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGame&gt; GetGameAsync(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The unique GUID of the game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>The game with the provided GUID, or null if it does not exist</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_GetGames_" data-uid="Snowflake.Model.Game.IGameLibrary.GetGames*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_GetGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecord_System_Boolean___" data-uid="Snowflake.Model.Game.IGameLibrary.GetGames(System.Linq.Expressions.Expression{System.Func{Snowflake.Model.Records.Game.IGameRecord,System.Boolean}})">GetGames(Expression&lt;Func&lt;IGameRecord, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all games in the library that fulfill the provided predicate. The default implementation
+executes this predicate in client code. Use <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_QueryGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecordQuery_System_Boolean___">QueryGames(Expression&lt;Func&lt;IGameRecordQuery, Boolean&gt;&gt;)</a>
+instead if possible for more performant queries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IGame&gt; GetGames(Expression&lt;Func&lt;IGameRecord, bool&gt;&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;<a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate to filter on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>All games in the library that fulfill the provided predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_QueryGames_" data-uid="Snowflake.Model.Game.IGameLibrary.QueryGames*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_QueryGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecordQuery_System_Boolean___" data-uid="Snowflake.Model.Game.IGameLibrary.QueryGames(System.Linq.Expressions.Expression{System.Func{Snowflake.Model.Records.Game.IGameRecordQuery,System.Boolean}})">QueryGames(Expression&lt;Func&lt;IGameRecordQuery, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all games in the library that fulfill the provided predicate. The default implementation
+executes the predicate on the database than in client code, thus is much faster than 
+using <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetAllGames">GetAllGames()</a> or <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecord_System_Boolean___">GetGames(Expression&lt;Func&lt;IGameRecord, Boolean&gt;&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IGame&gt; QueryGames(Expression&lt;Func&lt;IGameRecordQuery, bool&gt;&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;<a class="xref" href="Snowflake.Model.Records.Game.IGameRecordQuery.html">IGameRecordQuery</a>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate to filter on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>All games in the library that fulfill the provided predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_QueryGamesAsync_" data-uid="Snowflake.Model.Game.IGameLibrary.QueryGamesAsync*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_QueryGamesAsync_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecordQuery_System_Boolean___" data-uid="Snowflake.Model.Game.IGameLibrary.QueryGamesAsync(System.Linq.Expressions.Expression{System.Func{Snowflake.Model.Records.Game.IGameRecordQuery,System.Boolean}})">QueryGamesAsync(Expression&lt;Func&lt;IGameRecordQuery, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all games in the library that fulfill the provided predicate asynchronously. The default implementation
+executes this predicate on the database rather than in client code, thus is much faster than 
+using <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetAllGamesAsync">GetAllGamesAsync()</a> or <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Model_Game_IGameLibrary_GetGames_System_Linq_Expressions_Expression_System_Func_Snowflake_Model_Records_Game_IGameRecord_System_Boolean___">GetGames(Expression&lt;Func&lt;IGameRecord, Boolean&gt;&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;IGame&gt; QueryGamesAsync(Expression&lt;Func&lt;IGameRecordQuery, bool&gt;&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;<a class="xref" href="Snowflake.Model.Records.Game.IGameRecordQuery.html">IGameRecordQuery</a>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate to filter on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><p>All games in the library that fulfill the provided predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_UpdateGameRecord_" data-uid="Snowflake.Model.Game.IGameLibrary.UpdateGameRecord*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_UpdateGameRecord_Snowflake_Model_Records_Game_IGameRecord_" data-uid="Snowflake.Model.Game.IGameLibrary.UpdateGameRecord(Snowflake.Model.Records.Game.IGameRecord)">UpdateGameRecord(IGameRecord)</h4>
+  <div class="markdown level1 summary"><p>Updates a <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a> that exists in the database by providing the changed <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateGameRecord(IGameRecord game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The updated <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_IGameLibrary_UpdateGameRecordAsync_" data-uid="Snowflake.Model.Game.IGameLibrary.UpdateGameRecordAsync*"></a>
+  <h4 id="Snowflake_Model_Game_IGameLibrary_UpdateGameRecordAsync_Snowflake_Model_Records_Game_IGameRecord_" data-uid="Snowflake.Model.Game.IGameLibrary.UpdateGameRecordAsync(Snowflake.Model.Records.Game.IGameRecord)">UpdateGameRecordAsync(IGameRecord)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously updates a <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a> that exists in the database by providing the changed <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateGameRecordAsync(IGameRecord game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The updated <a class="xref" href="Snowflake.Model.Records.Game.IGameRecord.html">IGameRecord</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.GameConfigurationExtensionExtensions.html#Snowflake_Model_Game_LibraryExtensions_GameConfigurationExtensionExtensions_WithConfigurationLibrary_Snowflake_Model_Game_IGameLibrary_">GameConfigurationExtensionExtensions.WithConfigurationLibrary(IGameLibrary)</a>
+  </div>
+  <div>
+      <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.GameFileExtensionExtensions.html#Snowflake_Model_Game_LibraryExtensions_GameFileExtensionExtensions_WithFileLibrary_Snowflake_Model_Game_IGameLibrary_">GameFileExtensionExtensions.WithFileLibrary(IGameLibrary)</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

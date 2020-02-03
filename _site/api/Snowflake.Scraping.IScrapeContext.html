@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IScrapeContext
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IScrapeContext
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Scraping.IScrapeContext">
+  
+  
+  <h1 id="Snowflake_Scraping_IScrapeContext" data-uid="Snowflake.Scraping.IScrapeContext" class="text-break">Interface IScrapeContext
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a job to produce a seed tree that can be traversed to yield usable
+records or other metadata.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.IAsyncEnumerable&lt;System.Collections.Generic.IEnumerable&lt;Snowflake.Scraping.ISeed&gt;&gt;.GetAsyncEnumerator(System.Threading.CancellationToken)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Scraping.html">Snowflake.Scraping</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Scraping_IScrapeContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IScrapeContext : IAsyncEnumerable&lt;IEnumerable&lt;ISeed&gt;&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Snowflake_Scraping_IScrapeContext_ClientSeedSource" data-uid="Snowflake.Scraping.IScrapeContext.ClientSeedSource">ClientSeedSource</h4>
+  <div class="markdown level1 summary"><p>The default source for a Client-provided seed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ClientSeedSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Scraping_IScrapeContext_Context_" data-uid="Snowflake.Scraping.IScrapeContext.Context*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Context" data-uid="Snowflake.Scraping.IScrapeContext.Context">Context</h4>
+  <div class="markdown level1 summary"><p>Gets the seed root context local to this job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISeedRootContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Scraping_IScrapeContext_Cullers_" data-uid="Snowflake.Scraping.IScrapeContext.Cullers*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Cullers" data-uid="Snowflake.Scraping.IScrapeContext.Cullers">Cullers</h4>
+  <div class="markdown level1 summary"><p>Gets the list of <a class="xref" href="Snowflake.Scraping.Extensibility.ICuller.html">ICuller</a> that will be used to cull the resultant seed tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ICuller&gt; Cullers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Scraping.Extensibility.ICuller.html">ICuller</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Scraping_IScrapeContext_Scrapers_" data-uid="Snowflake.Scraping.IScrapeContext.Scrapers*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Scrapers" data-uid="Snowflake.Scraping.IScrapeContext.Scrapers">Scrapers</h4>
+  <div class="markdown level1 summary"><p>Gets the list of <a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a> that will be used to produce the resultant seed tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IScraper&gt; Scrapers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Scraping.Extensibility.IScraper.html">IScraper</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Scraping_IScrapeContext_Cull_" data-uid="Snowflake.Scraping.IScrapeContext.Cull*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Cull" data-uid="Snowflake.Scraping.IScrapeContext.Cull">Cull()</h4>
+  <div class="markdown level1 summary"><p>Culls the seed tree with the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Cullers">Cullers</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Cull()</code></pre>
+  </div>
+  <a id="Snowflake_Scraping_IScrapeContext_Cull_" data-uid="Snowflake.Scraping.IScrapeContext.Cull*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Cull_System_Collections_Generic_IEnumerable_System_Guid__" data-uid="Snowflake.Scraping.IScrapeContext.Cull(System.Collections.Generic.IEnumerable{System.Guid})">Cull(IEnumerable&lt;Guid&gt;)</h4>
+  <div class="markdown level1 summary"><p>Culls the given seeds before additionally culling the seed tree with the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Cullers">Cullers</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Cull(IEnumerable&lt;Guid&gt; manualCull)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><span class="parametername">manualCull</span></td>
+        <td><p>The seeds to manually cull</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Scraping_IScrapeContext_GetAwaiter_" data-uid="Snowflake.Scraping.IScrapeContext.GetAwaiter*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_GetAwaiter" data-uid="Snowflake.Scraping.IScrapeContext.GetAwaiter">GetAwaiter()</h4>
+  <div class="markdown level1 summary"><p>Automatically gets the awaiter for the final, automatically culled, flattened seed tree state.
+Use the <span class="xref">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</span> API if you want finer control over the seed tree state, or
+directly call the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Proceed">Proceed()</a> methods for even finer control over the tree state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConfiguredTaskAwaitable&lt;IEnumerable&lt;ISeed&gt;&gt;.ConfiguredTaskAwaiter GetAwaiter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter</span>&lt;&gt;</td>
+        <td><p>The final, automatically culled, flattened seed tree state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Scraping_IScrapeContext_Proceed_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed" data-uid="Snowflake.Scraping.IScrapeContext.Proceed">Proceed()</h4>
+  <div class="markdown level1 summary"><p>Proceed with populating the seed tree using the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>Whether or not all possible seeds have been added with the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Scraping_IScrapeContext_Proceed_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed*"></a>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed_System_Collections_Generic_IEnumerable_Snowflake_Scraping_SeedContent__" data-uid="Snowflake.Scraping.IScrapeContext.Proceed(System.Collections.Generic.IEnumerable{Snowflake.Scraping.SeedContent})">Proceed(IEnumerable&lt;SeedContent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Proceed with populating the seed tree using the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed(IEnumerable&lt;SeedContent&gt; seedsToAdd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a>&gt;</td>
+        <td><span class="parametername">seedsToAdd</span></td>
+        <td><p>Adds seeds to the root of the tree before running scrapers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>Whether or not all possible seeds have been added with the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

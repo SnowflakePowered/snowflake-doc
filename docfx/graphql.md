@@ -1,3 +1,0 @@
-# GraphQL
-
-<span id="graphql">

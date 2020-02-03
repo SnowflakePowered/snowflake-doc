@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IConfigurationTraversalContext
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IConfigurationTraversalContext
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext">
+  
+  
+  <h1 id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext" class="text-break">Interface IConfigurationTraversalContext
+  </h1>
+  <div class="markdown level0 summary"><p>The context under which a <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> or <a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a>
+may be traversed to yield an abstract syntax tree.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Configuration.Serialization.html">Snowflake.Configuration.Serialization</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IConfigurationTraversalContext</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseCollection_" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseCollection*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseCollection_Snowflake_Configuration_IConfigurationCollection_" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseCollection(Snowflake.Configuration.IConfigurationCollection)">TraverseCollection(IConfigurationCollection)</h4>
+  <div class="markdown level1 summary"><p>Traverses a <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> to yield a mapping of
+targets to ASTs formed by <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>.</p>
+<p>The special target #null is ignored and never traversed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, IAbstractConfigurationNode&lt;IReadOnlyList&lt;IAbstractConfigurationNode&gt;&gt;&gt; TraverseCollection(IConfigurationCollection collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a></td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> with targets specified to
+traverse in order to yield an AST.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode-1.html">IAbstractConfigurationNode</a>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>&gt;&gt;&gt;</td>
+        <td><p>A mapping of targets to <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode-1.html">IAbstractConfigurationNode&lt;T&gt;</a> that represent the
+syntax tree that the target forms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseCollection_" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseCollection*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseCollection_Snowflake_Configuration_IConfigurationCollection_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_Snowflake_Configuration_Serialization_IAbstractConfigurationNode___" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseCollection(Snowflake.Configuration.IConfigurationCollection,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,Snowflake.Configuration.Serialization.IAbstractConfigurationNode}})">TraverseCollection(IConfigurationCollection, IEnumerable&lt;(String targetName, IAbstractConfigurationNode node)&gt;)</h4>
+  <div class="markdown level1 summary"><p>Traverses a <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> to yield a mapping of
+targets to ASTs formed by <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>.</p>
+<p>The special target #null is ignored and never traversed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, IAbstractConfigurationNode&lt;IReadOnlyList&lt;IAbstractConfigurationNode&gt;&gt;&gt; TraverseCollection(IConfigurationCollection collection, IEnumerable&lt;(string targetName, IAbstractConfigurationNode node)&gt; extraNodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a></td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> with targets specified to
+traverse in order to yield an AST.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>&gt;&gt;</td>
+        <td><span class="parametername">extraNodes</span></td>
+        <td><p>Extra nodes to attach to a specified target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode-1.html">IAbstractConfigurationNode</a>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>&gt;&gt;&gt;</td>
+        <td><p>A mapping of targets to <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode-1.html">IAbstractConfigurationNode&lt;T&gt;</a> that represent the
+syntax tree that the target forms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseInputTemplate_" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseInputTemplate*"></a>
+  <h4 id="Snowflake_Configuration_Serialization_IConfigurationTraversalContext_TraverseInputTemplate_Snowflake_Configuration_Input_IInputTemplate_Snowflake_Configuration_Input_IDeviceInputMapping_System_Int32_System_String_" data-uid="Snowflake.Configuration.Serialization.IConfigurationTraversalContext.TraverseInputTemplate(Snowflake.Configuration.Input.IInputTemplate,Snowflake.Configuration.Input.IDeviceInputMapping,System.Int32,System.String)">TraverseInputTemplate(IInputTemplate, IDeviceInputMapping, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Traverses a <a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a> under the context of an <a class="xref" href="Snowflake.Configuration.Input.IDeviceInputMapping.html">IDeviceInputMapping</a>
+to yield an AST formed by <a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAbstractConfigurationNode&lt;IReadOnlyList&lt;IAbstractConfigurationNode&gt;&gt; TraverseInputTemplate(IInputTemplate template, IDeviceInputMapping mapping, int index, string indexer = &quot;{N}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a> to traverse in order to yield an AST.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Input.IDeviceInputMapping.html">IDeviceInputMapping</a></td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The string mappings for each valid <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> in the
+<a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a>, which will be used in accordance to produce the AST.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The player index that the input template is intended for. This player index is zero-indexed,
+so Player 1 will have an index of 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indexer</span></td>
+        <td><p>The special string that will be replaced with the player index as an integer.
+By default it is the string {N}, but can be overridden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode-1.html">IAbstractConfigurationNode</a>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Snowflake.Configuration.Serialization.IAbstractConfigurationNode.html">IAbstractConfigurationNode</a>&gt;&gt;</td>
+        <td><p>The syntax tree that the given <a class="xref" href="Snowflake.Configuration.Input.IInputTemplate.html">IInputTemplate</a> forms, relative to the provided
+<a class="xref" href="Snowflake.Configuration.Input.IDeviceInputMapping.html">IDeviceInputMapping</a>s.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

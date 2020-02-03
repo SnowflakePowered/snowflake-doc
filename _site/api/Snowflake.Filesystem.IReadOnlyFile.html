@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IReadOnlyFile
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IReadOnlyFile
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Filesystem.IReadOnlyFile">
+  
+  
+  <h1 id="Snowflake_Filesystem_IReadOnlyFile" data-uid="Snowflake.Filesystem.IReadOnlyFile" class="text-break">Interface IReadOnlyFile
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a read only view over a file contained within an <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> that could have
+metadata potentially attached to it by a unique <span class="xref">System.Guid</span> that tracks the file
+within the file system, as long as the <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a> API methods
+are used.</p>
+<p>Prefer using the <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a> interface if no writes are guaranteed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Filesystem_IReadOnlyFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IReadOnlyFile</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_Created_" data-uid="Snowflake.Filesystem.IReadOnlyFile.Created*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_Created" data-uid="Snowflake.Filesystem.IReadOnlyFile.Created">Created</h4>
+  <div class="markdown level1 summary"><p>Whether or not this file has been created or currently exists.</p>
+<p>Keep in mind that <a class="xref" href="Snowflake.Filesystem.IDirectory.html#Snowflake_Filesystem_IDirectory_OpenFile_System_String_">OpenFile(String)</a> does not actually
+create a file on the file system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Created { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_FileGuid_" data-uid="Snowflake.Filesystem.IReadOnlyFile.FileGuid*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_FileGuid" data-uid="Snowflake.Filesystem.IReadOnlyFile.FileGuid">FileGuid</h4>
+  <div class="markdown level1 summary"><p>The unique ID identifying this file in the directory manifest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid FileGuid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_IsLink_" data-uid="Snowflake.Filesystem.IReadOnlyFile.IsLink*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_IsLink" data-uid="Snowflake.Filesystem.IReadOnlyFile.IsLink">IsLink</h4>
+  <div class="markdown level1 summary"><p>Whether or not this file is a link.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsLink { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_Length_" data-uid="Snowflake.Filesystem.IReadOnlyFile.Length*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_Length" data-uid="Snowflake.Filesystem.IReadOnlyFile.Length">Length</h4>
+  <div class="markdown level1 summary"><p>The length of the file in bytes. If the file does not yet exist, this value is -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_Name_" data-uid="Snowflake.Filesystem.IReadOnlyFile.Name*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_Name" data-uid="Snowflake.Filesystem.IReadOnlyFile.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_ParentDirectory_" data-uid="Snowflake.Filesystem.IReadOnlyFile.ParentDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_ParentDirectory" data-uid="Snowflake.Filesystem.IReadOnlyFile.ParentDirectory">ParentDirectory</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> under which this file is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory ParentDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_RootedPath_" data-uid="Snowflake.Filesystem.IReadOnlyFile.RootedPath*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_RootedPath" data-uid="Snowflake.Filesystem.IReadOnlyFile.RootedPath">RootedPath</h4>
+  <div class="markdown level1 summary"><p>The path of this file, relative to the root of the directory provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RootedPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_OpenReadStream_" data-uid="Snowflake.Filesystem.IReadOnlyFile.OpenReadStream*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_OpenReadStream" data-uid="Snowflake.Filesystem.IReadOnlyFile.OpenReadStream">OpenReadStream()</h4>
+  <div class="markdown level1 summary"><p>Opens a read-only stream to the file. If it does not currently exist,
+<span class="xref">System.IO.FileNotFoundException</span> will be thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream OpenReadStream()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>A read-write stream to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyFile_UnsafeGetFilePath_" data-uid="Snowflake.Filesystem.IReadOnlyFile.UnsafeGetFilePath*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyFile_UnsafeGetFilePath" data-uid="Snowflake.Filesystem.IReadOnlyFile.UnsafeGetFilePath">UnsafeGetFilePath()</h4>
+  <div class="markdown level1 summary"><p>Returns the real file path of this file.</p>
+<p>This method is obsolete because it is unsafe to use,
+without going through the interface methods of 
+<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>, there is no guarantee that the parent
+<a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> instance will remain consistent.</p>
+<p>However, access to the underlying filesystem is necessary
+for the API to be remotely useful at the barrier.</p>
+<p>If <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_IsLink">IsLink</a> is true, then this returns the path that is linked to.</p>
+<p>Restrict usage to read-only unless absolutely necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Avoid accessing the underlying file path, and use the object methods instead.&quot;)]
+FileInfo UnsafeGetFilePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><p>The real file path of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Snowflake.Filesystem.FileExtensions.html#Snowflake_Filesystem_FileExtensions_ReadAllText_Snowflake_Filesystem_IReadOnlyFile_">FileExtensions.ReadAllText(IReadOnlyFile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Snowflake.Filesystem.FileExtensions.html#Snowflake_Filesystem_FileExtensions_ReadAllText_Snowflake_Filesystem_IReadOnlyFile_System_Text_Encoding_">FileExtensions.ReadAllText(IReadOnlyFile, Encoding)</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

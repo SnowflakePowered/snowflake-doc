@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-            
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -35,14 +35,19 @@
                 Mutation
             </a>
         </li>
+        <li  title="Subscription">
+            <a href="subscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Subscription
+            </a>
+        </li>
     </ul>
 </div>
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
     <ul>
-        <li  title="BigInt">
-            <a href="bigint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                BigInt
+        <li  title="Any">
+            <a href="any.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Any
             </a>
         </li>
         <li  title="Boolean">
@@ -50,14 +55,9 @@
                 Boolean
             </a>
         </li>
-        <li  title="Byte">
-            <a href="byte.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Byte
-            </a>
-        </li>
-        <li  title="Date">
-            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Date
+        <li  title="ControllerId">
+            <a href="controllerid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerId
             </a>
         </li>
         <li  title="DateTime">
@@ -65,24 +65,19 @@
                 DateTime
             </a>
         </li>
-        <li  title="DateTimeOffset">
-            <a href="datetimeoffset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                DateTimeOffset
+        <li  title="DirectoryPath">
+            <a href="directorypath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryPath
             </a>
         </li>
-        <li  title="Decimal">
-            <a href="decimal.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Decimal
+        <li  title="FilePath">
+            <a href="filepath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FilePath
             </a>
         </li>
         <li  title="Float">
             <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Float
-            </a>
-        </li>
-        <li  title="Guid">
-            <a href="guid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Guid
             </a>
         </li>
         <li  title="ID">
@@ -95,34 +90,29 @@
                 Int
             </a>
         </li>
-        <li  title="Long">
-            <a href="long.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Long
+        <li  title="OSDirectoryPath">
+            <a href="osdirectorypath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryPath
             </a>
         </li>
-        <li  title="Milliseconds">
-            <a href="milliseconds.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Milliseconds
+        <li  title="OSFilePath">
+            <a href="osfilepath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSFilePath
             </a>
         </li>
-        <li  title="Primitive">
-            <a href="primitive.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Primitive
+        <li  title="OSTaggedFileSystemPath">
+            <a href="ostaggedfilesystempath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSTaggedFileSystemPath
             </a>
         </li>
-        <li  title="SByte">
-            <a href="sbyte.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                SByte
+        <li  title="PaginationAmount">
+            <a href="paginationamount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaginationAmount
             </a>
         </li>
-        <li  title="Seconds">
-            <a href="seconds.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Seconds
-            </a>
-        </li>
-        <li  title="Short">
-            <a href="short.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Short
+        <li  title="PlatformId">
+            <a href="platformid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformId
             </a>
         </li>
         <li  title="String">
@@ -130,24 +120,9 @@
                 String
             </a>
         </li>
-        <li  title="UInt">
-            <a href="uint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UInt
-            </a>
-        </li>
-        <li  title="ULong">
-            <a href="ulong.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ULong
-            </a>
-        </li>
-        <li  title="Uri">
-            <a href="uri.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Uri
-            </a>
-        </li>
-        <li  title="UShort">
-            <a href="ushort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UShort
+        <li  title="Uuid">
+            <a href="uuid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Uuid
             </a>
         </li>
     </ul>
@@ -155,14 +130,9 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
-        <li  title="ConfigurationOptionPathTypeEnum">
-            <a href="configurationoptionpathtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ConfigurationOptionPathTypeEnum
-            </a>
-        </li>
-        <li  title="ConfigurationOptionTypeEnum">
-            <a href="configurationoptiontypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ConfigurationOptionTypeEnum
+        <li  title="ConfigurationOptionType">
+            <a href="configurationoptiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationOptionType
             </a>
         </li>
         <li class="slds-is-active" title="ControllerElement">
@@ -170,9 +140,24 @@
                 ControllerElement
             </a>
         </li>
+        <li  title="ControllerElementType">
+            <a href="controllerelementtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementType
+            </a>
+        </li>
         <li  title="DeviceCapability">
             <a href="devicecapability.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 DeviceCapability
+            </a>
+        </li>
+        <li  title="EmulatorCompatibility">
+            <a href="emulatorcompatibility.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatorCompatibility
+            </a>
+        </li>
+        <li  title="GameEmulationState">
+            <a href="gameemulationstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEmulationState
             </a>
         </li>
         <li  title="InputDriver">
@@ -180,9 +165,14 @@
                 InputDriver
             </a>
         </li>
-        <li  title="InputDriverType">
-            <a href="inputdrivertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputDriverType
+        <li  title="PathType">
+            <a href="pathtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PathType
+            </a>
+        </li>
+        <li  title="SaveManagementStrategy">
+            <a href="savemanagementstrategy.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveManagementStrategy
             </a>
         </li>
         <li  title="__DirectiveLocation">
@@ -200,14 +190,59 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
     <ul>
-        <li  title="PluginInterface">
-            <a href="plugininterface.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PluginInterface
+        <li  title="DirectoryContents">
+            <a href="directorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryContents
             </a>
         </li>
-        <li  title="Record">
-            <a href="record.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Record
+        <li  title="DirectoryInfo">
+            <a href="directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryInfo
+            </a>
+        </li>
+        <li  title="FileInfo">
+            <a href="fileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileInfo
+            </a>
+        </li>
+        <li  title="InstallationPayload">
+            <a href="installationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationPayload
+            </a>
+        </li>
+        <li  title="JobQueue">
+            <a href="jobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JobQueue
+            </a>
+        </li>
+        <li  title="Node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Node
+            </a>
+        </li>
+        <li  title="OSDirectoryContents">
+            <a href="osdirectorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryContents
+            </a>
+        </li>
+        <li  title="OSDirectoryInfo">
+            <a href="osdirectoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryInfo
+            </a>
+        </li>
+        <li  title="QueueableJob">
+            <a href="queueablejob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QueueableJob
+            </a>
+        </li>
+        <li  title="ScrapeContextPayload">
+            <a href="scrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextPayload
+            </a>
+        </li>
+        <li  title="TaskResult">
+            <a href="taskresult.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TaskResult
             </a>
         </li>
     </ul>
@@ -215,9 +250,9 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
     <ul>
-        <li  title="Value">
-            <a href="value.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Value
+        <li  title="ContextualFileInfoTaskResultValue">
+            <a href="contextualfileinfotaskresultvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfoTaskResultValue
             </a>
         </li>
     </ul>
@@ -225,9 +260,24 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li  title="BooleanValue">
-            <a href="booleanvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                BooleanValue
+        <li  title="ApplyScrapeContextPayload">
+            <a href="applyscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplyScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CancelScrapeContextPayload">
+            <a href="cancelscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CleanupEmulationPayload">
+            <a href="cleanupemulationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CleanupEmulationPayload
+            </a>
+        </li>
+        <li  title="ClearPortPayload">
+            <a href="clearportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ClearPortPayload
             </a>
         </li>
         <li  title="ConfigurationCollection">
@@ -235,14 +285,9 @@
                 ConfigurationCollection
             </a>
         </li>
-        <li  title="ConfigurationCollectionDescriptor">
-            <a href="configurationcollectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ConfigurationCollectionDescriptor
-            </a>
-        </li>
-        <li  title="ConfigurationOptionDescriptor">
-            <a href="configurationoptiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ConfigurationOptionDescriptor
+        <li  title="ConfigurationProfileType">
+            <a href="configurationprofiletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationProfileType
             </a>
         </li>
         <li  title="ConfigurationSection">
@@ -250,24 +295,119 @@
                 ConfigurationSection
             </a>
         </li>
-        <li  title="ConfigurationSectionDescriptor">
-            <a href="configurationsectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ConfigurationSectionDescriptor
-            </a>
-        </li>
         <li  title="ConfigurationValue">
             <a href="configurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ConfigurationValue
             </a>
         </li>
-        <li  title="ControllerElementMappings">
-            <a href="controllerelementmappings.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ControllerElementMappings
+        <li  title="ConnectedEmulatorController">
+            <a href="connectedemulatorcontroller.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConnectedEmulatorController
             </a>
         </li>
-        <li  title="CustomMetadata">
-            <a href="custommetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CustomMetadata
+        <li  title="ContextualDirectoryContents">
+            <a href="contextualdirectorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualDirectoryContents
+            </a>
+        </li>
+        <li  title="ContextualDirectoryInfo">
+            <a href="contextualdirectoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualDirectoryInfo
+            </a>
+        </li>
+        <li  title="ContextualFileInfo">
+            <a href="contextualfileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfo
+            </a>
+        </li>
+        <li  title="ContextualFileInfoTaskResult">
+            <a href="contextualfileinfotaskresult.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfoTaskResult
+            </a>
+        </li>
+        <li  title="ControllerElementCollection">
+            <a href="controllerelementcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementCollection
+            </a>
+        </li>
+        <li  title="ControllerElementInfo">
+            <a href="controllerelementinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementInfo
+            </a>
+        </li>
+        <li  title="ControllerElementInfoElement">
+            <a href="controllerelementinfoelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementInfoElement
+            </a>
+        </li>
+        <li  title="ControllerElementMapping">
+            <a href="controllerelementmapping.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMapping
+            </a>
+        </li>
+        <li  title="ControllerElementMappingProfile">
+            <a href="controllerelementmappingprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMappingProfile
+            </a>
+        </li>
+        <li  title="ControllerLayout">
+            <a href="controllerlayout.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerLayout
+            </a>
+        </li>
+        <li  title="CreateInstallationPayload">
+            <a href="createinstallationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInstallationPayload
+            </a>
+        </li>
+        <li  title="CreateSaveProfilePayload">
+            <a href="createsaveprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateSaveProfilePayload
+            </a>
+        </li>
+        <li  title="CreateScrapeContextPayload">
+            <a href="createscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CreateValidationPayload">
+            <a href="createvalidationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateValidationPayload
+            </a>
+        </li>
+        <li  title="DeleteGameConfigurationPayload">
+            <a href="deletegameconfigurationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameConfigurationPayload
+            </a>
+        </li>
+        <li  title="DeleteGameMetadataPayload">
+            <a href="deletegamemetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameMetadataPayload
+            </a>
+        </li>
+        <li  title="DeleteSaveProfilePayload">
+            <a href="deletesaveprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteSaveProfilePayload
+            </a>
+        </li>
+        <li  title="DeleteScrapeContextPayload">
+            <a href="deletescrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteScrapeContextPayload
+            </a>
+        </li>
+        <li  title="DeviceCapabilityElement">
+            <a href="devicecapabilityelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapabilityElement
+            </a>
+        </li>
+        <li  title="DeviceCapabilityLabels">
+            <a href="devicecapabilitylabels.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapabilityLabels
+            </a>
+        </li>
+        <li  title="DeviceLayoutMapping">
+            <a href="devicelayoutmapping.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceLayoutMapping
             </a>
         </li>
         <li  title="ElectronPackage">
@@ -275,39 +415,19 @@
                 ElectronPackage
             </a>
         </li>
-        <li  title="ElectronPackageConnection">
-            <a href="electronpackageconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ElectronPackageConnection
+        <li  title="EmulatedController">
+            <a href="emulatedcontroller.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatedController
             </a>
         </li>
-        <li  title="ElectronPackageEdge">
-            <a href="electronpackageedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ElectronPackageEdge
+        <li  title="EmulatedPortDeviceEntry">
+            <a href="emulatedportdeviceentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatedPortDeviceEntry
             </a>
         </li>
-        <li  title="EmulatorOrchestrator">
-            <a href="emulatororchestrator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                EmulatorOrchestrator
-            </a>
-        </li>
-        <li  title="EmulatorOrchestratorConnection">
-            <a href="emulatororchestratorconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                EmulatorOrchestratorConnection
-            </a>
-        </li>
-        <li  title="EmulatorOrchestratorEdge">
-            <a href="emulatororchestratoredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                EmulatorOrchestratorEdge
-            </a>
-        </li>
-        <li  title="EnumIntValue">
-            <a href="enumintvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                EnumIntValue
-            </a>
-        </li>
-        <li  title="File">
-            <a href="file.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                File
+        <li  title="EmulationInstancePayload">
+            <a href="emulationinstancepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulationInstancePayload
             </a>
         </li>
         <li  title="FileRecord">
@@ -320,19 +440,9 @@
                 FileType
             </a>
         </li>
-        <li  title="FloatValue">
-            <a href="floatvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                FloatValue
-            </a>
-        </li>
         <li  title="Game">
             <a href="game.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Game
-            </a>
-        </li>
-        <li  title="GameConfigurations">
-            <a href="gameconfigurations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                GameConfigurations
             </a>
         </li>
         <li  title="GameConnection">
@@ -345,9 +455,24 @@
                 GameEdge
             </a>
         </li>
+        <li  title="GameEmulation">
+            <a href="gameemulation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEmulation
+            </a>
+        </li>
         <li  title="GameFiles">
             <a href="gamefiles.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GameFiles
+            </a>
+        </li>
+        <li  title="GameOrchestratorQuery">
+            <a href="gameorchestratorquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameOrchestratorQuery
+            </a>
+        </li>
+        <li  title="GamePayload">
+            <a href="gamepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GamePayload
             </a>
         </li>
         <li  title="GameRecord">
@@ -360,19 +485,19 @@
                 InputDevice
             </a>
         </li>
-        <li  title="InputDeviceConnection">
-            <a href="inputdeviceconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputDeviceConnection
-            </a>
-        </li>
-        <li  title="InputDeviceEdge">
-            <a href="inputdeviceedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputDeviceEdge
-            </a>
-        </li>
         <li  title="InputDeviceInstance">
             <a href="inputdeviceinstance.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputDeviceInstance
+            </a>
+        </li>
+        <li  title="InputProfilePayload">
+            <a href="inputprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputProfilePayload
+            </a>
+        </li>
+        <li  title="InputProfileType">
+            <a href="inputprofiletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputProfileType
             </a>
         </li>
         <li  title="Installable">
@@ -380,39 +505,39 @@
                 Installable
             </a>
         </li>
-        <li  title="InstallableConnection">
-            <a href="installableconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InstallableConnection
+        <li  title="InstallationCancelledPayload">
+            <a href="installationcancelledpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationCancelledPayload
             </a>
         </li>
-        <li  title="InstallableEdge">
-            <a href="installableedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InstallableEdge
+        <li  title="InstallationCompletePayload">
+            <a href="installationcompletepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationCompletePayload
             </a>
         </li>
-        <li  title="IntValue">
-            <a href="intvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                IntValue
+        <li  title="InstallationException">
+            <a href="installationexception.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationException
             </a>
         </li>
-        <li  title="MappedControllerElement">
-            <a href="mappedcontrollerelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MappedControllerElement
+        <li  title="InstallationJob">
+            <a href="installationjob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationJob
             </a>
         </li>
-        <li  title="MappedControllerElementCollectionConnection">
-            <a href="mappedcontrollerelementcollectionconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MappedControllerElementCollectionConnection
+        <li  title="InstallationStepPayload">
+            <a href="installationsteppayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationStepPayload
             </a>
         </li>
-        <li  title="MappedControllerElementCollectionEdge">
-            <a href="mappedcontrollerelementcollectionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MappedControllerElementCollectionEdge
+        <li  title="InstallJobQueue">
+            <a href="installjobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallJobQueue
             </a>
         </li>
-        <li  title="Metadata">
-            <a href="metadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Metadata
+        <li  title="JobQuery">
+            <a href="jobquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JobQuery
             </a>
         </li>
         <li  title="Module">
@@ -420,14 +545,24 @@
                 Module
             </a>
         </li>
-        <li  title="ModuleConnection">
-            <a href="moduleconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ModuleConnection
+        <li  title="NamedConfigurationValue">
+            <a href="namedconfigurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NamedConfigurationValue
             </a>
         </li>
-        <li  title="ModuleEdge">
-            <a href="moduleedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ModuleEdge
+        <li  title="OptionDescriptor">
+            <a href="optiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OptionDescriptor
+            </a>
+        </li>
+        <li  title="OptionMetadata">
+            <a href="optionmetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OptionMetadata
+            </a>
+        </li>
+        <li  title="OSFileInfo">
+            <a href="osfileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSFileInfo
             </a>
         </li>
         <li  title="PageInfo">
@@ -435,19 +570,14 @@
                 PageInfo
             </a>
         </li>
+        <li  title="PersistEmulationSavePayload">
+            <a href="persistemulationsavepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersistEmulationSavePayload
+            </a>
+        </li>
         <li  title="PlatformInfo">
             <a href="platforminfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PlatformInfo
-            </a>
-        </li>
-        <li  title="PlatformInfoConnection">
-            <a href="platforminfoconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PlatformInfoConnection
-            </a>
-        </li>
-        <li  title="PlatformInfoEdge">
-            <a href="platforminfoedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PlatformInfoEdge
             </a>
         </li>
         <li  title="Plugin">
@@ -455,19 +585,9 @@
                 Plugin
             </a>
         </li>
-        <li  title="PluginConnection">
-            <a href="pluginconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PluginConnection
-            </a>
-        </li>
-        <li  title="PluginEdge">
-            <a href="pluginedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PluginEdge
-            </a>
-        </li>
-        <li  title="RawConfigurationValue">
-            <a href="rawconfigurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                RawConfigurationValue
+        <li  title="ProvisionedPlugin">
+            <a href="provisionedplugin.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProvisionedPlugin
             </a>
         </li>
         <li  title="RecordMetadata">
@@ -475,19 +595,49 @@
                 RecordMetadata
             </a>
         </li>
-        <li  title="Scraper">
-            <a href="scraper.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Scraper
+        <li  title="RuntimeQuery">
+            <a href="runtimequery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RuntimeQuery
             </a>
         </li>
-        <li  title="ScraperConnection">
-            <a href="scraperconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ScraperConnection
+        <li  title="SaveGame">
+            <a href="savegame.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveGame
             </a>
         </li>
-        <li  title="ScraperEdge">
-            <a href="scraperedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ScraperEdge
+        <li  title="SaveProfile">
+            <a href="saveprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveProfile
+            </a>
+        </li>
+        <li  title="ScrapeContext">
+            <a href="scrapecontext.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContext
+            </a>
+        </li>
+        <li  title="ScrapeContextCompletePayload">
+            <a href="scrapecontextcompletepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextCompletePayload
+            </a>
+        </li>
+        <li  title="ScrapeContextStepPayload">
+            <a href="scrapecontextsteppayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextStepPayload
+            </a>
+        </li>
+        <li  title="ScrapingJob">
+            <a href="scrapingjob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapingJob
+            </a>
+        </li>
+        <li  title="ScrapingJobQueue">
+            <a href="scrapingjobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapingJobQueue
+            </a>
+        </li>
+        <li  title="SectionDescriptor">
+            <a href="sectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SectionDescriptor
             </a>
         </li>
         <li  title="Seed">
@@ -500,29 +650,79 @@
                 SeedContent
             </a>
         </li>
+        <li  title="SeedRootContext">
+            <a href="seedrootcontext.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedRootContext
+            </a>
+        </li>
         <li  title="SelectionOptionDescriptor">
             <a href="selectionoptiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SelectionOptionDescriptor
             </a>
         </li>
-        <li  title="StringConnection">
-            <a href="stringconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                StringConnection
+        <li  title="StoneMetadata">
+            <a href="stonemetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StoneMetadata
             </a>
         </li>
-        <li  title="StringEdge">
-            <a href="stringedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                StringEdge
-            </a>
-        </li>
-        <li  title="StringValue">
-            <a href="stringvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                StringValue
+        <li  title="StoneQuery">
+            <a href="stonequery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StoneQuery
             </a>
         </li>
         <li  title="SystemFile">
             <a href="systemfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SystemFile
+            </a>
+        </li>
+        <li  title="UpdateGameConfigurationValuePayload">
+            <a href="updategameconfigurationvaluepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameConfigurationValuePayload
+            </a>
+        </li>
+        <li  title="UpdateGameMetadataPayload">
+            <a href="updategamemetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameMetadataPayload
+            </a>
+        </li>
+        <li  title="UpdatePluginConfigurationValuePayload">
+            <a href="updatepluginconfigurationvaluepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePluginConfigurationValuePayload
+            </a>
+        </li>
+        <li  title="UpdatePortPayload">
+            <a href="updateportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePortPayload
+            </a>
+        </li>
+        <li  title="ValueIdCollectionIdMappingPayload">
+            <a href="valueidcollectionidmappingpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ValueIdCollectionIdMappingPayload
+            </a>
+        </li>
+        <li  title="_DummyNodeType">
+            <a href="_dummynodetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _DummyNodeType
+            </a>
+        </li>
+        <li  title="_OSDirectoryContents__DirectoryInfo">
+            <a href="_osdirectorycontents__directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryContents__DirectoryInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryContents__DriveInfo">
+            <a href="_osdirectorycontents__driveinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryContents__DriveInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryInfo__DirectoryInfo">
+            <a href="_osdirectoryinfo__directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryInfo__DirectoryInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryInfo__DriveInfo">
+            <a href="_osdirectoryinfo__driveinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryInfo__DriveInfo
             </a>
         </li>
         <li  title="__Directive">
@@ -560,34 +760,179 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
+        <li  title="ApplyScrapeContextInput">
+            <a href="applyscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplyScrapeContextInput
+            </a>
+        </li>
+        <li  title="CancelScrapeContextInput">
+            <a href="cancelscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelScrapeContextInput
+            </a>
+        </li>
+        <li  title="ClearPortDeviceInput">
+            <a href="clearportdeviceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ClearPortDeviceInput
+            </a>
+        </li>
         <li  title="ConfigurationValueInput">
             <a href="configurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ConfigurationValueInput
             </a>
         </li>
-        <li  title="DefaultMappedControllerElementCollectionInput">
-            <a href="defaultmappedcontrollerelementcollectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                DefaultMappedControllerElementCollectionInput
+        <li  title="ControllerElementMappingInput">
+            <a href="controllerelementmappinginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMappingInput
             </a>
         </li>
-        <li  title="GameRecordInput">
-            <a href="gamerecordinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                GameRecordInput
+        <li  title="ControllerLayoutFilter">
+            <a href="controllerlayoutfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerLayoutFilter
             </a>
         </li>
-        <li  title="MappedControllerElementCollectionInput">
-            <a href="mappedcontrollerelementcollectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MappedControllerElementCollectionInput
+        <li  title="CreateEmulationInstanceInput">
+            <a href="createemulationinstanceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateEmulationInstanceInput
             </a>
         </li>
-        <li  title="MappedControllerElementInput">
-            <a href="mappedcontrollerelementinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MappedControllerElementInput
+        <li  title="CreateGameInput">
+            <a href="creategameinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateGameInput
             </a>
         </li>
-        <li  title="RecordMetadataInput">
-            <a href="recordmetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                RecordMetadataInput
+        <li  title="CreateInputProfileInputType">
+            <a href="createinputprofileinputtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInputProfileInputType
+            </a>
+        </li>
+        <li  title="CreateInstallationInput">
+            <a href="createinstallationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInstallationInput
+            </a>
+        </li>
+        <li  title="CreateSaveProfileInput">
+            <a href="createsaveprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateSaveProfileInput
+            </a>
+        </li>
+        <li  title="CreateScrapeContextInput">
+            <a href="createscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateScrapeContextInput
+            </a>
+        </li>
+        <li  title="CreateValidationInput">
+            <a href="createvalidationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateValidationInput
+            </a>
+        </li>
+        <li  title="DeleteGameConfigurationInput">
+            <a href="deletegameconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameConfigurationInput
+            </a>
+        </li>
+        <li  title="DeleteGameInput">
+            <a href="deletegameinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameInput
+            </a>
+        </li>
+        <li  title="DeleteGameMetadataInput">
+            <a href="deletegamemetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameMetadataInput
+            </a>
+        </li>
+        <li  title="DeleteInputProfileInput">
+            <a href="deleteinputprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteInputProfileInput
+            </a>
+        </li>
+        <li  title="DeleteSaveProfileInput">
+            <a href="deletesaveprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteSaveProfileInput
+            </a>
+        </li>
+        <li  title="DeleteScrapeContextInput">
+            <a href="deletescrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteScrapeContextInput
+            </a>
+        </li>
+        <li  title="DeviceIdentifierInput">
+            <a href="deviceidentifierinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceIdentifierInput
+            </a>
+        </li>
+        <li  title="EmulationInstanceInput">
+            <a href="emulationinstanceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulationInstanceInput
+            </a>
+        </li>
+        <li  title="GameFilter">
+            <a href="gamefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameFilter
+            </a>
+        </li>
+        <li  title="IRecordMetadataFilter">
+            <a href="irecordmetadatafilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IRecordMetadataFilter
+            </a>
+        </li>
+        <li  title="NextInstallationStepInput">
+            <a href="nextinstallationstepinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NextInstallationStepInput
+            </a>
+        </li>
+        <li  title="NextScrapeContextStepInput">
+            <a href="nextscrapecontextstepinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NextScrapeContextStepInput
+            </a>
+        </li>
+        <li  title="PlatformInfoFilter">
+            <a href="platforminfofilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfoFilter
+            </a>
+        </li>
+        <li  title="RecordMetadataFilter">
+            <a href="recordmetadatafilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecordMetadataFilter
+            </a>
+        </li>
+        <li  title="RetrieveGameConfigurationInput">
+            <a href="retrievegameconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RetrieveGameConfigurationInput
+            </a>
+        </li>
+        <li  title="SeedTreeGraftInput">
+            <a href="seedtreegraftinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedTreeGraftInput
+            </a>
+        </li>
+        <li  title="SeedTreeInput">
+            <a href="seedtreeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedTreeInput
+            </a>
+        </li>
+        <li  title="UpdateGameConfigurationValueInput">
+            <a href="updategameconfigurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameConfigurationValueInput
+            </a>
+        </li>
+        <li  title="UpdateGameMetadataInput">
+            <a href="updategamemetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameMetadataInput
+            </a>
+        </li>
+        <li  title="UpdateInputProfileInput">
+            <a href="updateinputprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateInputProfileInput
+            </a>
+        </li>
+        <li  title="UpdatePluginConfigurationValueInput">
+            <a href="updatepluginconfigurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePluginConfigurationValueInput
+            </a>
+        </li>
+        <li  title="UpdatePortDeviceInput">
+            <a href="updateportdeviceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePortDeviceInput
             </a>
         </li>
     </ul>
@@ -622,22 +967,35 @@
             <span class="slds-text-title--caps">Types<span>
         </button>
         </div>
+        </div>
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
         <h1 class="slds-text-heading--large">ControllerElement</h1>
-        <div class="slds-text-body--regular"><p>A Stone Controller Element</p>
+        <div class="slds-text-body--regular"><p>Stone-defined semantic Controller Elements. A Controller Element is a semantic name given to a capability of a defined Stone controller layout.</p>
 </div>
     </div>
 </section>
 <section>
     <div class="container">
-        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">enum</span> <span class="identifier">ControllerElement</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   No element</span></span></li><li><span class="tab"><span class="meta">NO_ELEMENT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'A' or confirm face button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_A</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'B' or back face button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_B</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 'C'-labeled, or 3rd button in a 6-face button layout or similar</span></span></li><li><span class="tab"><span class="meta">BUTTON_C</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'X' button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'Y' button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 'Z'-labeled or 6th button in a 6-face button layout or similar</span></span></li><li><span class="tab"><span class="meta">BUTTON_Z</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The shoulder button registering a digital signal on the left side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_L</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The shoulder button registering a digital signal on the right side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">BUTTON_R</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The traditional 'Start' button on a conventional controller that usually pauses </span></span></li><li><span class="tab"><span class="comment line">#   or starts the game</span></span></li><li><span class="tab"><span class="meta">BUTTON_START</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The traditional 'Select' button on a conventional controller that provides </span></span></li><li><span class="tab"><span class="comment line">#   auxillary functions</span></span></li><li><span class="tab"><span class="meta">BUTTON_SELECT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A guide button featured on modern controllers that bring up a pause or guide </span></span></li><li><span class="tab"><span class="comment line">#   overlay outside of the game itself</span></span></li><li><span class="tab"><span class="meta">BUTTON_GUIDE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A depression on the left analog stick that registers a digital signal. Usually </span></span></li><li><span class="tab"><span class="comment line">#   labeled as L3</span></span></li><li><span class="tab"><span class="meta">BUTTON_CLICK_L</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A depression on the Right analog stick that registers a digital signal. Usually </span></span></li><li><span class="tab"><span class="comment line">#   labeled as R3</span></span></li><li><span class="tab"><span class="meta">BUTTON_CLICK_R</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON_9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_10</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_11</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_12</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_13</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_14</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_15</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_16</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_17</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_18</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_19</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_20</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_21</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_22</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_23</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_24</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_25</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_26</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_27</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_28</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_29</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_30</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON_31</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Directional button indicating the north or upwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_N</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Directional button indicating the east or rightwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_E</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Direction button indicating the south or downwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_S</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Direction button indicating the west or leftwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_W</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the northeast, or upwards and right </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_NE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the northwest, or upwards and left </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_NW</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the southeast, or downwards and right </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_SE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the southwest, or downwards and left </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONAL_SW</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   An analog shoulder trigger, able to be depressed smoothly with varying degrees </span></span></li><li><span class="tab"><span class="comment line">#   of pressure</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   from undepressed (0%) to fully depressed (100%), on the left side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller, usually marked L2</span></span></li><li><span class="tab"><span class="meta">TRIGGER_LEFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   An analog shoulder trigger, able to be depressed smoothly with varying degrees </span></span></li><li><span class="tab"><span class="comment line">#   of pressure</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   from undepressed (0%) to fully depressed (100%), on the right side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller, usually marked R2</span></span></li><li><span class="tab"><span class="meta">TRIGGER_RIGHT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Rightwards movement of the left analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXIS_LEFT_ANALOG_POSITIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Leftwards movement of the left analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXIS_LEFT_ANALOG_NEGATIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Upwards movement of the left analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXIS_LEFT_ANALOG_POSITIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Downwards movement of the left analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXIS_LEFT_ANALOG_NEGATIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Rightwards movement of the right analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXIS_RIGHT_ANALOG_POSITIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Leftwards movement of the right analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXIS_RIGHT_ANALOG_NEGATIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Upwards movement of the right analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXIS_RIGHT_ANALOG_POSITIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Downwards movement of the right analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXIS_RIGHT_ANALOG_NEGATIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A large rumble action (usually through the larger of two rumble motors in a </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">RUMBLE_BIG</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A smaller rumble action (usually through the smaller of two rumble motors in a </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">RUMBLE_SMALL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A pointing device that can express position in the form of a contiguous set of </span></span></li><li><span class="tab"><span class="comment line">#   coordinates on a</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   2 dimensional cartesian plane. Examples include a mouse, or the Wii Remote IR</span></span></li><li><span class="tab"><span class="meta">POINTER_2_D</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A pointing device that can express position in the form of a contiguous set of </span></span></li><li><span class="tab"><span class="comment line">#   coordinates in 3 dimensional space.</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   Examples include the Oculus Touch device, or the Playstation Move</span></span></li><li><span class="tab"><span class="meta">POINTER_3_D</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous rightwards movement of a pointer device on the X axis (horizontal)</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_POSITIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous leftwards movement of a pointer device on the X axis (horizontal)</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_NEGATIVE_X</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous upwards movement of a pointer device on the Y axis (vertical)</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_POSITIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous downwards movement of a pointer device on the Y axis (vertical)</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_NEGATIVE_Y</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous forwards movement of a pointer device on the Z axis</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_POSITIVE_Z</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous backwards movement of a pointer device on the Z axis</span></span></li><li><span class="tab"><span class="meta">POINTER_AXIS_NEGATIVE_Z</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A keyboad with an unspecified amount of keys. Intended for emulated computers </span></span></li><li><span class="tab"><span class="comment line">#   such as the Commodore 64</span></span></li><li><span class="tab"><span class="meta">KEYBOARD</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A touch sensitive surface of unspecified size and precision,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   where input can be expressed as a non-contiguous matrix of coordinates on a 2</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   dimentional cartesian plane. However, most touchscreens in video game </span></span></li><li><span class="tab"><span class="comment line">#   controllers</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   are only concerned with a single matrix due to the lack of multi-touch</span></span></li><li><span class="tab"><span class="meta">TOUCHSCREEN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A 3 axis rotation gyroscope of unspecified precision,</span></span></li><li><span class="tab"><span class="comment line">#             </span></span></li><li><span class="tab"><span class="comment line">#   where input can be expressed as a vector of 3 coordinates X, Y, and Z</span></span></li><li><span class="tab"><span class="meta">GYROSCOPE</span></span></li><li>}</li></ul></code>
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">enum</span> <span class="identifier">ControllerElement</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   No element</span></span></li><li><span class="tab"><span class="meta">NOELEMENT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'A' or confirm face button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTONA</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'B' or back face button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTONB</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 'C'-labeled, or 3rd button in a 6-face button layout or similar</span></span></li><li><span class="tab"><span class="meta">BUTTONC</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'X' button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTONX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The conventional 'Y' button in a controller</span></span></li><li><span class="tab"><span class="meta">BUTTONY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The 'Z'-labeled or 6th button in a 6-face button layout or similar</span></span></li><li><span class="tab"><span class="meta">BUTTONZ</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The shoulder button registering a digital signal on the left side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">BUTTONL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The shoulder button registering a digital signal on the right side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">BUTTONR</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The traditional 'Start' button on a conventional controller that usually pauses </span></span></li><li><span class="tab"><span class="comment line">#   or starts the game</span></span></li><li><span class="tab"><span class="meta">BUTTONSTART</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The traditional 'Select' button on a conventional controller that provides </span></span></li><li><span class="tab"><span class="comment line">#   auxillary functions</span></span></li><li><span class="tab"><span class="meta">BUTTONSELECT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A guide button featured on modern controllers that bring up a pause or guide </span></span></li><li><span class="tab"><span class="comment line">#   overlay outside of the game itself</span></span></li><li><span class="tab"><span class="meta">BUTTONGUIDE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A depression on the left analog stick that registers a digital signal. Usually </span></span></li><li><span class="tab"><span class="comment line">#   labeled as L3</span></span></li><li><span class="tab"><span class="meta">BUTTONCLICKL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A depression on the Right analog stick that registers a digital signal. Usually </span></span></li><li><span class="tab"><span class="comment line">#   labeled as R3</span></span></li><li><span class="tab"><span class="meta">BUTTONCLICKR</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON0</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON1</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON3</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON4</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON5</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON6</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON7</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON8</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit</span></span></li><li><span class="tab"><span class="comment line">#   within the other semantic buttons,</span></span></li><li><span class="tab"><span class="comment line">#   or as a numeric pad key on certain controllers</span></span></li><li><span class="tab"><span class="meta">BUTTON9</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON10</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON11</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON12</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON13</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON14</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON15</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON16</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON17</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON18</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON19</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON20</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON21</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON22</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON23</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON24</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON25</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON26</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON27</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON28</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON29</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON30</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Numbered button without semantic value.</span></span></li><li><span class="tab"><span class="comment line">#   Used as a placeholder for buttons that do not fit within the other semantic </span></span></li><li><span class="tab"><span class="comment line">#   buttons.</span></span></li><li><span class="tab"><span class="meta">BUTTON31</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Directional button indicating the north or upwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Directional button indicating the east or rightwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Direction button indicating the south or downwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Direction button indicating the west or leftwards direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALW</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the northeast, or upwards and right </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALNE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the northwest, or upwards and left </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALNW</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the southeast, or downwards and right </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALSE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Auxillary directional button indicating the southwest, or downwards and left </span></span></li><li><span class="tab"><span class="comment line">#   direction</span></span></li><li><span class="tab"><span class="meta">DIRECTIONALSW</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   An analog shoulder trigger, able to be depressed smoothly with varying degrees </span></span></li><li><span class="tab"><span class="comment line">#   of pressure</span></span></li><li><span class="tab"><span class="comment line">#   from undepressed (0%) to fully depressed (100%), on the left side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller, usually marked L2</span></span></li><li><span class="tab"><span class="meta">TRIGGERLEFT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   An analog shoulder trigger, able to be depressed smoothly with varying degrees </span></span></li><li><span class="tab"><span class="comment line">#   of pressure</span></span></li><li><span class="tab"><span class="comment line">#   from undepressed (0%) to fully depressed (100%), on the right side of the </span></span></li><li><span class="tab"><span class="comment line">#   controller, usually marked R2</span></span></li><li><span class="tab"><span class="meta">TRIGGERRIGHT</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Rightwards movement of the left analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXISLEFTANALOGPOSITIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Leftwards movement of the left analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXISLEFTANALOGNEGATIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Upwards movement of the left analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXISLEFTANALOGPOSITIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Downwards movement of the left analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXISLEFTANALOGNEGATIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Rightwards movement of the right analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXISRIGHTANALOGPOSITIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Leftwards movement of the right analog stick along the X axis (horizontally)</span></span></li><li><span class="tab"><span class="meta">AXISRIGHTANALOGNEGATIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Upwards movement of the right analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXISRIGHTANALOGPOSITIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Downwards movement of the right analog stick along the Y axis (vertically)</span></span></li><li><span class="tab"><span class="meta">AXISRIGHTANALOGNEGATIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A large rumble action (usually through the larger of two rumble motors in a </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">RUMBLEBIG</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A smaller rumble action (usually through the smaller of two rumble motors in a </span></span></li><li><span class="tab"><span class="comment line">#   controller</span></span></li><li><span class="tab"><span class="meta">RUMBLESMALL</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A pointing device that can express position in the form of a contiguous set of </span></span></li><li><span class="tab"><span class="comment line">#   coordinates on a</span></span></li><li><span class="tab"><span class="comment line">#   2 dimensional cartesian plane. Examples include a mouse, or the Wii Remote IR</span></span></li><li><span class="tab"><span class="meta">POINTER2D</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A pointing device that can express position in the form of a contiguous set of </span></span></li><li><span class="tab"><span class="comment line">#   coordinates in 3 dimensional space.</span></span></li><li><span class="tab"><span class="comment line">#   Examples include the Oculus Touch device, or the Playstation Move</span></span></li><li><span class="tab"><span class="meta">POINTER3D</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous rightwards movement of a pointer device on the X axis (horizontal)</span></span></li><li><span class="tab"><span class="meta">POINTERAXISPOSITIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous leftwards movement of a pointer device on the X axis (horizontal)</span></span></li><li><span class="tab"><span class="meta">POINTERAXISNEGATIVEX</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous upwards movement of a pointer device on the Y axis (vertical)</span></span></li><li><span class="tab"><span class="meta">POINTERAXISPOSITIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous downwards movement of a pointer device on the Y axis (vertical)</span></span></li><li><span class="tab"><span class="meta">POINTERAXISNEGATIVEY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous forwards movement of a pointer device on the Z axis</span></span></li><li><span class="tab"><span class="meta">POINTERAXISPOSITIVEZ</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   Continous backwards movement of a pointer device on the Z axis</span></span></li><li><span class="tab"><span class="meta">POINTERAXISNEGATIVEZ</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A keyboad with an unspecified amount of keys. Intended for emulated computers </span></span></li><li><span class="tab"><span class="comment line">#   such as the Commodore 64</span></span></li><li><span class="tab"><span class="meta">KEYBOARD</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A touch sensitive surface of unspecified size and precision,</span></span></li><li><span class="tab"><span class="comment line">#   where input can be expressed as a non-contiguous matrix of coordinates on a 2</span></span></li><li><span class="tab"><span class="comment line">#   dimentional cartesian plane. However, most touchscreens in video game </span></span></li><li><span class="tab"><span class="comment line">#   controllers</span></span></li><li><span class="tab"><span class="comment line">#   are only concerned with a single matrix due to the lack of multi-touch</span></span></li><li><span class="tab"><span class="meta">TOUCHSCREEN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   A 3 axis rotation gyroscope of unspecified precision,</span></span></li><li><span class="tab"><span class="comment line">#   where input can be expressed as a vector of 3 coordinates X, Y, and Z</span></span></li><li><span class="tab"><span class="meta">GYROSCOPE</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
     <div class="container">
-        <ul class="require-by"><li><a href="mappedcontrollerelement.doc.html" title="MappedControllerElement - Decribes a mapping between a capability on a real input device to an element on an emulated controller.">MappedControllerElement<em>Decribes a mapping between a capability on a real input device to an element on an emulated controller.</em></a><li><li><a href="mappedcontrollerelementinput.doc.html" title="MappedControllerElementInput - ">MappedControllerElementInput<em>null</em></a><li></ul>
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="controllerelementinfoelement.doc.html" title="ControllerElementInfoElement - Defines a single element/capability of a controller layout by the semantic element, and its type.">ControllerElementInfoElement<em>Defines a single element/capability of a controller layout by the semantic element, and its type.</em></a><li><li><a href="controllerelementmapping.doc.html" title="ControllerElementMapping - Decribes a mapping between a capability on a real input device to an element on an emulated controller.">ControllerElementMapping<em>Decribes a mapping between a capability on a real input device to an element on an emulated controller.</em></a><li><li><a href="controllerelementmappinginput.doc.html" title="ControllerElementMappingInput - ">ControllerElementMappingInput<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

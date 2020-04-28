@@ -72,6 +72,8 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Snowflake.Filesystem.DirectoryExtensions.html">DirectoryExtensions</a></h4>
+      <section></section>
       <h4><a class="xref" href="Snowflake.Filesystem.FileExtensions.html">FileExtensions</a></h4>
       <section></section>
     <h3 id="interfaces">Interfaces
@@ -87,6 +89,12 @@ Thus, metadata can be preserved throughout.</p>
 metadata potentially attached to it by a unique <span class="xref">System.Guid</span> that tracks the file
 within the file system, as long as the <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a> API methods
 are used.</p>
+</section>
+      <h4><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></h4>
+      <section><p>Represents the root of a Directory that can not be deleted, where each file that is access through a directory is
+associated with a GUID in the directory&apos;s manifest.</p>
+<p>When files are moved between IDirectories, the files GUID is preserved. 
+Thus, metadata can be preserved throughout.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></h4>
       <section><p>Represents a readonly view over the root of a Directory, where each file that is access through a directory is

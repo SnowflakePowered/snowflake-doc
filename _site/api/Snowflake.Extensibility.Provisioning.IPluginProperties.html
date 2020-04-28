@@ -150,12 +150,12 @@
   </table>
   <a id="Snowflake_Extensibility_Provisioning_IPluginProperties_GetDictionary_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProperties.GetDictionary*"></a>
   <h4 id="Snowflake_Extensibility_Provisioning_IPluginProperties_GetDictionary_System_String_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProperties.GetDictionary(System.String)">GetDictionary(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a dictionary of properties</p>
+  <div class="markdown level1 summary"><p>Gets a dictionary of properties. If it does not exist returns the empty dictionary.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, string&gt; GetDictionary(string key)</code></pre>
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, string&gt; GetDictionary(string key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,7 +185,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><p>The dictionary of properties</p>
 </td>
       </tr>
@@ -193,7 +193,7 @@
   </table>
   <a id="Snowflake_Extensibility_Provisioning_IPluginProperties_GetEnumerable_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProperties.GetEnumerable*"></a>
   <h4 id="Snowflake_Extensibility_Provisioning_IPluginProperties_GetEnumerable_System_String_" data-uid="Snowflake.Extensibility.Provisioning.IPluginProperties.GetEnumerable(System.String)">GetEnumerable(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a list of properties</p>
+  <div class="markdown level1 summary"><p>Gets a list of properties. If it does not exist, returns the empty enumerable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

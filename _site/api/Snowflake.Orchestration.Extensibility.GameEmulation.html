@@ -114,12 +114,12 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Snowflake_Orchestration_Extensibility_GameEmulation__ctor_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.#ctor*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation__ctor_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_Snowflake_Orchestration_Extensibility_IEmulatedController__Snowflake_Orchestration_Saving_ISaveGame_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.#ctor(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{Snowflake.Orchestration.Extensibility.IEmulatedController},Snowflake.Orchestration.Saving.ISaveGame)">GameEmulation(IGame, IEnumerable&lt;IEmulatedController&gt;, ISaveGame)</h4>
+  <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation__ctor_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_Snowflake_Orchestration_Extensibility_IEmulatedController__Snowflake_Orchestration_Saving_ISaveProfile_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.#ctor(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{Snowflake.Orchestration.Extensibility.IEmulatedController},Snowflake.Orchestration.Saving.ISaveProfile)">GameEmulation(IGame, IEnumerable&lt;IEmulatedController&gt;, ISaveProfile)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameEmulation(IGame game, IEnumerable&lt;IEmulatedController&gt; controllerPorts, ISaveGame initialSave)</code></pre>
+    <pre><code class="lang-csharp hljs">public GameEmulation(IGame game, IEnumerable&lt;IEmulatedController&gt; controllerPorts, ISaveProfile saveProfile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -142,8 +142,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></td>
-        <td><span class="parametername">initialSave</span></td>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveProfile.html">ISaveProfile</a></td>
+        <td><span class="parametername">saveProfile</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -173,6 +173,29 @@
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Orchestration_Extensibility_GameEmulation_EmulationState_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.EmulationState*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation_EmulationState" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.EmulationState">EmulationState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEmulationState EmulationState { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.GameEmulationState.html">GameEmulationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Orchestration_Extensibility_GameEmulation_Game_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.Game*"></a>
   <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation_Game" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.Game">Game</h4>
   <div class="markdown level1 summary"></div>
@@ -196,13 +219,13 @@
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Extensibility_GameEmulation_InitialSave_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.InitialSave*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation_InitialSave" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.InitialSave">InitialSave</h4>
+  <a id="Snowflake_Orchestration_Extensibility_GameEmulation_SaveProfile_" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.SaveProfile*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_GameEmulation_SaveProfile" data-uid="Snowflake.Orchestration.Extensibility.GameEmulation.SaveProfile">SaveProfile</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISaveGame InitialSave { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ISaveProfile SaveProfile { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,7 +237,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></td>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveProfile.html">ISaveProfile</a></td>
         <td></td>
       </tr>
     </tbody>

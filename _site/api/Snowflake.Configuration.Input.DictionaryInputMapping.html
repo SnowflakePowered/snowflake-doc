@@ -68,7 +68,9 @@
   
   <h1 id="Snowflake_Configuration_Input_DictionaryInputMapping" data-uid="Snowflake.Configuration.Input.DictionaryInputMapping" class="text-break">Class DictionaryInputMapping
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A JSON deseriazable input mapping backed by a simple dictionary lookup.
+todo: make this free from newtonsoft.json</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,7 +116,8 @@ public class DictionaryInputMapping : IDeviceInputMapping</code></pre>
   </h3>
   <a id="Snowflake_Configuration_Input_DictionaryInputMapping__ctor_" data-uid="Snowflake.Configuration.Input.DictionaryInputMapping.#ctor*"></a>
   <h4 id="Snowflake_Configuration_Input_DictionaryInputMapping__ctor_System_Collections_Generic_IDictionary_Snowflake_Input_Device_DeviceCapability_System_String__" data-uid="Snowflake.Configuration.Input.DictionaryInputMapping.#ctor(System.Collections.Generic.IDictionary{Snowflake.Input.Device.DeviceCapability,System.String})">DictionaryInputMapping(IDictionary&lt;DeviceCapability, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instantiate an input mapping with the given dictionary of mappings.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -133,7 +136,8 @@ public class DictionaryInputMapping : IDeviceInputMapping</code></pre>
       <tr>
         <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">elementMappings</span></td>
-        <td></td>
+        <td><p>The dictionary of mappings from <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a> to input configuration string.</p>
+</td>
       </tr>
     </tbody>
   </table>

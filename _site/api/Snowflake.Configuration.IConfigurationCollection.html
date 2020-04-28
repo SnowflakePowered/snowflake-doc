@@ -91,6 +91,30 @@ filename for the configuration collection.</p>
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Snowflake_Configuration_IConfigurationCollection_CollectionGuid_" data-uid="Snowflake.Configuration.IConfigurationCollection.CollectionGuid*"></a>
+  <h4 id="Snowflake_Configuration_IConfigurationCollection_CollectionGuid" data-uid="Snowflake.Configuration.IConfigurationCollection.CollectionGuid">CollectionGuid</h4>
+  <div class="markdown level1 summary"><p>The unique GUID of the collection is defined by its value collection GUID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual Guid CollectionGuid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Configuration_IConfigurationCollection_Descriptor_" data-uid="Snowflake.Configuration.IConfigurationCollection.Descriptor*"></a>
   <h4 id="Snowflake_Configuration_IConfigurationCollection_Descriptor" data-uid="Snowflake.Configuration.IConfigurationCollection.Descriptor">Descriptor</h4>
   <div class="markdown level1 summary"><p>Gets the descriptor that describes this configuration collection.</p>
@@ -122,7 +146,7 @@ filename for the configuration collection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConfigurationSection this[string sectionName] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IConfigurationSection this[string sectionKey] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,7 +160,7 @@ filename for the configuration collection.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sectionName</span></td>
+        <td><span class="parametername">sectionKey</span></td>
         <td><p>The property name of the section</p>
 </td>
       </tr>

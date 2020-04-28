@@ -24,7 +24,7 @@
           "hash": "iaNqLVS6kEbkqfdUh2SpoA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,43 +36,7 @@
           "hash": "KXllUESsruYGSKOZmUApYg=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Caching.ImageMetadataKeys.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Caching.ImageMetadataKeys.html",
-          "hash": "ctl4fSbJT1VvrIpXUST+BQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Caching.ImageTypes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Caching.ImageTypes.html",
-          "hash": "U+xNLFAXv7AmVbKvv/P23g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Caching.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Caching.html",
-          "hash": "JvH97RtEnjmP4bJCKGQxSg=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +48,7 @@
           "hash": "jVTRR0cXpvsHhzjkVMyW8Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +60,7 @@
           "hash": "agbG8kgeP4UCnG+Ea01jFA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +72,7 @@
           "hash": "vgik75jFRH68gMV9PiOHkw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +84,7 @@
           "hash": "jThw5LtCbjj9wr++SQdcLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +96,7 @@
           "hash": "su8nQMCg9RFptqWLN0dvNQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +108,7 @@
           "hash": "2ABsS4ThSXGxzjkCa1tqXQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +120,7 @@
           "hash": "tvHZgXPcSPqGI5+ujIJr3w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -168,7 +132,7 @@
           "hash": "trJBHDh3rM1bwT3jmpuPqA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.ConfigurationCollection-1.html",
-          "hash": "ltEv/rZUFejldI8aC9hAvw=="
+          "hash": "Pp/RJ7GYdWkqXxDOlihLEw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -192,7 +156,7 @@
           "hash": "5ghLeFViawe14J6m7iv4Jg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,7 +168,7 @@
           "hash": "9Epd/gTHCloSuRBG/Uh3Jg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -216,7 +180,7 @@
           "hash": "8SVGKlNHu9Y2G4LH/BLxbw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +192,7 @@
           "hash": "b4pTmHpFKbQrsvA6Iv1LLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +204,7 @@
           "hash": "y25+HlJPYLtehsoUy2V9NA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.ConfigurationValueCollection.html",
-          "hash": "brOy0C2yeie6j/vS+dhUUw=="
+          "hash": "DLc9IvaJRfob6TFC+4QS/g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.IConfigurationCollection-1.html",
-          "hash": "2ZI7hESA0rFtqCQOg2iKwQ=="
+          "hash": "k6ltaXYKZQQDLkT9Ue5e8w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.IConfigurationCollection.html",
-          "hash": "g1i01KGrru6vEwaRJ3yA7w=="
+          "hash": "yKPqe3uTZ/Qj0nrm0GVFZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +252,7 @@
           "hash": "FELii/LNyQ+QU5RHE7VNJw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,7 +264,7 @@
           "hash": "cEx3PGA5ZzeusD8BoivU7g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -312,7 +276,7 @@
           "hash": "zsWkrym7wwKhsdDxutlqIA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -324,7 +288,7 @@
           "hash": "p8trpDYziV6mFUDV9llb8w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -336,7 +300,7 @@
           "hash": "QftjjeKn/n90v3rJ4/m4YQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -348,7 +312,7 @@
           "hash": "pCCzzScHi5l44lK4rkU7ag=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -360,7 +324,7 @@
           "hash": "gicX+1KbeGphwVvz+f6q7A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -372,7 +336,7 @@
           "hash": "Xbl19EWFuxQ84y1BZOh57Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.IConfigurationValueCollection.html",
-          "hash": "xcB+XY8Vo1obqHN3ORMxtQ=="
+          "hash": "jLpdTLvXI7mdzwk1CmEJ0w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -396,7 +360,7 @@
           "hash": "sDFNySH7GgEnAZtNQyv+PQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.Input.DictionaryInputMapping.html",
-          "hash": "A4gK+sDPzWVMhCvXWkYI2g=="
+          "hash": "dhEJ7pcd7QlXMVV7f2iwOw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -420,7 +384,7 @@
           "hash": "+JA7irAbrVkknbjaV5h5ug=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,7 +396,7 @@
           "hash": "sMU/mU4KkAP7Sv2vC2GIjA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,7 +408,7 @@
           "hash": "S4+slWcTJnF7Xget/K8QGQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -456,7 +420,7 @@
           "hash": "CSX/L7I+9znnaP+rdY34Jg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,7 +432,7 @@
           "hash": "pW/qC8fiOHsJgoSkyISF1g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -480,7 +444,7 @@
           "hash": "AGkxA+3A+45hOfqQ75RCww=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -492,7 +456,7 @@
           "hash": "xtLymVp49jZxQhnaqwp59A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -504,7 +468,7 @@
           "hash": "5zGj7PyD3hevV6KRZXzjig=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -513,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.Input.InputTemplate-1.html",
-          "hash": "rhGwdx7Y6jqPMyAK3s0m8w=="
+          "hash": "kypkoWq2NR2mKI2SmGqBUw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -525,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Configuration.Input.html",
-          "hash": "pZ8AhtV1+UoYA1MHO/ZSLw=="
+          "hash": "WrxCVsEtNT4qm43npUj1Cw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -540,7 +504,7 @@
           "hash": "mJHhWECDX/m4mBccuNOIJA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -552,7 +516,7 @@
           "hash": "jl6MMZyetO2AIjVcUBq6VA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -564,7 +528,7 @@
           "hash": "24lLp/gJ7JYeU9HiOX2xkQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -576,7 +540,7 @@
           "hash": "EFG/iRmhaBWE3WtX8N4TAA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -588,7 +552,7 @@
           "hash": "6xb+V5PiQAr9JV+miLb/5w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -600,7 +564,7 @@
           "hash": "+sQxDk6gR7SbXhw8+NhFHQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -612,7 +576,7 @@
           "hash": "c7H5l80MdtZI1/YfgJbLyQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -624,7 +588,7 @@
           "hash": "ILd+y3PwuRJIYSGLm+2mbA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -636,7 +600,7 @@
           "hash": "Jo3nUl9pTgoVcvsb2fz1aA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -648,7 +612,7 @@
           "hash": "DORXRVs2fCHUZ2ozGe51Dw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -660,7 +624,7 @@
           "hash": "Q+HViSUP22SXWOCXeqmtCw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -672,7 +636,7 @@
           "hash": "Jgsb2gK6wChHzZFwhw58nQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -684,7 +648,7 @@
           "hash": "hogQP031wz/dHeFk0jNIdA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -696,7 +660,7 @@
           "hash": "1k8gNllB98+KD89YAwAqxg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -708,7 +672,7 @@
           "hash": "KHpipsST8keescqPmVPmcw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -720,7 +684,7 @@
           "hash": "DztRMA73kZ9G9OwtCjcY3A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -732,7 +696,7 @@
           "hash": "xxWi5N1iQg+YA6s0rzSTJA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -744,7 +708,7 @@
           "hash": "v68o2gaf9rP0iszn/Sg44g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -756,7 +720,7 @@
           "hash": "Sv5jqgZXTvbZ9WKqqs+Dcw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -768,7 +732,7 @@
           "hash": "RxOkWjIpPMl6/iarVzgPrg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -780,7 +744,7 @@
           "hash": "7EzaryeAGEwhwQphmbbITA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -792,7 +756,7 @@
           "hash": "nx+bMxitJOIHmmHA4cWCSw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -804,7 +768,7 @@
           "hash": "DRElrNBYacYiKyHZe2dN+Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -816,7 +780,7 @@
           "hash": "gLJM7/SOT5Q/entU4fYnQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -828,7 +792,7 @@
           "hash": "ZdHeF2A0VxqOZhP2Fu0rqw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -840,7 +804,7 @@
           "hash": "UzeHgHmkJ667AT2OyfZkQw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -852,7 +816,7 @@
           "hash": "zCW0X3lByvmPbUY3Q598sw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -864,7 +828,7 @@
           "hash": "MVx+U9uuBS6L96cNg1nAuQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -876,7 +840,7 @@
           "hash": "3+gigx2lMFPwfPP9kwdrVA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -888,7 +852,7 @@
           "hash": "hikx26/C8q704uWp9BPDDg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -900,7 +864,7 @@
           "hash": "BJLKayLCQjO8y5sQM47zNA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -912,7 +876,7 @@
           "hash": "pP4W+oCiuBHrYTl6BId9KQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -924,7 +888,7 @@
           "hash": "wiQeKDtb92TwvZMWWssD4Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -936,7 +900,7 @@
           "hash": "5klueeUcglFt6Yd1OKHhHw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -948,7 +912,7 @@
           "hash": "9y7mLviveWHA5Ct1j4P70Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -960,7 +924,7 @@
           "hash": "uSjYQjebTFAGQbu1N62iZg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -972,7 +936,7 @@
           "hash": "GKyUz8IDyKikyyoBJ7UlpQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -984,7 +948,7 @@
           "hash": "RIu0sfeq9TFCezex0+ZLZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -996,7 +960,7 @@
           "hash": "XeC4QRtdO07G07pkADPjOA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1008,7 +972,7 @@
           "hash": "4xEht3a8W78rZcF/Yw3lLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1020,7 +984,7 @@
           "hash": "gKTjlqEsQkD+2S3z0M20pQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1032,7 +996,7 @@
           "hash": "8lNeQZrb3QxkzUU74yzrhg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1044,7 +1008,7 @@
           "hash": "+E5DNUL6aFr374WccWkSAw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1053,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Extensibility.Provisioning.IPluginProperties.html",
-          "hash": "dgAvRc76GU5cEh6STSxUrA=="
+          "hash": "K323wCXErb7Tk+z//JN+Sw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1068,7 +1032,7 @@
           "hash": "XV8omkxYwhLM5QYvzvJ5Ow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1080,19 +1044,7 @@
           "hash": "R1SmtOsZqqCc6/Y11fMPUA=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Extensibility.Provisioning.JsonPluginProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Extensibility.Provisioning.JsonPluginProperties.html",
-          "hash": "JxgbUcGzzh6BTweddkjyxA=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1104,7 +1056,7 @@
           "hash": "/rEgG+9jp4eRT52GoBTtMg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1116,7 +1068,7 @@
           "hash": "b/YYRSq88txr7SlRnOx4MQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1128,7 +1080,7 @@
           "hash": "/l/g3Ovk76YMQ1WMED3K4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1140,7 +1092,7 @@
           "hash": "lbGG9kKoq7dOgCQPJ2UcnQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1152,7 +1104,7 @@
           "hash": "pIAQN9WWSz211wsBc9k5gA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1161,10 +1113,70 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Extensibility.Provisioning.html",
-          "hash": "/wwbvE84w6TZicjr8BHR0w=="
+          "hash": "8tXhCttvl7dKcPyheTDLtA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Queueing.IAsyncJobQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Queueing.IAsyncJobQueue-1.html",
+          "hash": "1YhKkPKbC0KFYACzFm2phw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Queueing.IAsyncJobQueue-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Queueing.IAsyncJobQueue-2.html",
+          "hash": "iVyrz2o8qqWUrSLTo+Q8LA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Queueing.IAsyncJobQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Queueing.IAsyncJobQueue.html",
+          "hash": "7bVX1pQVYzvCaLBL1GqlIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Queueing.IAsyncJobQueueFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Queueing.IAsyncJobQueueFactory.html",
+          "hash": "k8yUF+pDHzcd5kh4ijTL9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Extensibility.Queueing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Extensibility.Queueing.html",
+          "hash": "2PELzRHbg5woH5EXpSlfiA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1176,7 +1188,19 @@
           "hash": "1WmZJxzCHYoGDF16vYQxtg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Filesystem.DirectoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Filesystem.DirectoryExtensions.html",
+          "hash": "kGP4groNe1pvd47zLPHtNQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1188,7 +1212,7 @@
           "hash": "s9devLB1wlPG89YDZdo3GQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1197,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Filesystem.IDirectory.html",
-          "hash": "VmHMDph4ChDARklbsdIttA=="
+          "hash": "/VG7fRFhUEkXKXmYdpJQuA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1209,10 +1233,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Filesystem.IFile.html",
-          "hash": "szU7hk31llERO9ZYSwqE2w=="
+          "hash": "78ORClPLaFpogBCx393PIg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Filesystem.IIndelibleDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Filesystem.IIndelibleDirectory.html",
+          "hash": "drTxiof41HGQ4rhyT+oomg=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1221,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Filesystem.IReadOnlyDirectory.html",
-          "hash": "kr36go0TXb+inll7bpMiBA=="
+          "hash": "j7/gG+7E+1R7JoH5G2L8GA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1233,10 +1269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Filesystem.IReadOnlyFile.html",
-          "hash": "WZ2X1zZ/6OFMcCfBgQUrHg=="
+          "hash": "gmn4aAa8IZD8OUQ2UXzkbw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1245,226 +1281,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Filesystem.html",
-          "hash": "6WLHzwLoHbFQwK9ftasytg=="
+          "hash": "N6c/FLtSxSxRNq+DxgW8cw=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Extensibility.AsyncJobQueue-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Extensibility.AsyncJobQueue-1.html",
-          "hash": "JxKtlAcb8IeyX8m8uoSoqQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Extensibility.IAsyncJobQueue-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Extensibility.IAsyncJobQueue-1.html",
-          "hash": "u3yU1O7bvHa76Y4pSg3YPA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Extensibility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Extensibility.html",
-          "hash": "nFebb60nNUikiGSFfkwRQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Electron.IElectronPackage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Electron.IElectronPackage.html",
-          "hash": "WUQbzymMCbgZLthlkJ2oSg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Electron.IElectronPackageProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Electron.IElectronPackageProvider.html",
-          "hash": "WU/a1urM0MZIuduoQSadRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Electron.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Electron.html",
-          "hash": "9h0rMV9dXB5HTdGqQH8LJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Attributes.ConnectionAttribute.html",
-          "hash": "VD/dfxRK6NP5NQF8vzWY1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Attributes.MutationAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Attributes.MutationAttribute.html",
-          "hash": "aoVICLQZWDuMm0liIJI30w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Attributes.ParameterAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Attributes.ParameterAttribute.html",
-          "hash": "34qcPF1C4iHqT9gnDzuWwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Attributes.QueryAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Attributes.QueryAttribute.html",
-          "hash": "O/i3jZD5ViQZpaEWozfp2g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Attributes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Attributes.html",
-          "hash": "WLoNbzv8VRnZxRKhYDddug=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.IGraphQLService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.IGraphQLService.html",
-          "hash": "XKJOxzU+Cu16B67DF2AZcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Query.QueryBuilder.html",
-          "hash": "RMhek2Ph4Dk0dE7o3eDRoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.Query.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.Query.html",
-          "hash": "sUbmpY80EYd+FrtzaQ1BKg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.GraphQL.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.GraphQL.html",
-          "hash": "t+rCCzIiZ2K6tgZHXbMBdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Kestrel.IKestrelServerMiddlewareProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Kestrel.IKestrelServerMiddlewareProvider.html",
-          "hash": "oFnw0LxDgJJC5XKzhTEIPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Kestrel.IKestrelWebServerService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Kestrel.IKestrelWebServerService.html",
-          "hash": "vQZjTw0msmOXK8IxBr1shg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Framework.Remoting.Kestrel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Framework.Remoting.Kestrel.html",
-          "hash": "JXpo5smGQzmiBmXnx8jaFw=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1473,10 +1293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.ControllerElement.html",
-          "hash": "ai+gyHnG8kbYtl4fcb6dhA=="
+          "hash": "QXt+MvOuPhowj9jHBC1VqQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1488,7 +1308,19 @@
           "hash": "bxbAsFICoVWglGA/FMwVGg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.ControllerElementExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.ControllerElementExtensions.html",
+          "hash": "htZSnmHUZ8Hem9P3PrR1eQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1500,7 +1332,7 @@
           "hash": "l8CHlQ/Z6/BB/Fh9fc1ukw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1509,10 +1341,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.ControllerElementType.html",
-          "hash": "s9Kd7fbhY0YZxEA8eCBCDw=="
+          "hash": "NJsn6rEV6jpZfqWidAX+gg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.ControllerElementTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Controller.ControllerElementTypeExtensions.html",
+          "hash": "UAPTfZKRT6KWtPip4l0PBA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1524,7 +1368,7 @@
           "hash": "c2ZPScKBhbIEvvUNRc1B2w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1536,7 +1380,7 @@
           "hash": "6khoT/wj8RmLzfUqE96IaQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1548,7 +1392,7 @@
           "hash": "B2mZcByY7Jss7J80v34LRQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1557,10 +1401,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.IControllerLayout.html",
-          "hash": "6YzJw7Vd83nMPYYx0xSe/A=="
+          "hash": "uI2tBdh3RsVS6a0VbUSRkg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1569,58 +1413,58 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.InvalidControllerIdException.html",
-          "hash": "ISKeFO8sZbRTDaqdO9IVNA=="
+          "hash": "3fIuuQxShPekF30cMwl36Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.ControllerElementMappings.yml",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.ControllerElementMapping.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Input.Controller.Mapped.ControllerElementMappings.html",
-          "hash": "uytyGVbiFc+nnKh1DUfkMA=="
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.ControllerElementMapping.html",
+          "hash": "4JkxZVAuFUc6VCLfD0LH3A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IControllerElementMappings.yml",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.ControllerElementMappingProfile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Input.Controller.Mapped.IControllerElementMappings.html",
-          "hash": "6heErZRcUyvHDQEqn079hw=="
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.ControllerElementMappingProfile.html",
+          "hash": "1/sumUvvloDSbuIbKW7+PQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IControllerElementMappingsStore.yml",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Input.Controller.Mapped.IControllerElementMappingsStore.html",
-          "hash": "zjkr9hx6djqj4WTyjk02Vg=="
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html",
+          "hash": "ZWgPBIVA++CUXEUn9lgJpA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.MappedControllerElement.yml",
+      "source_relative_path": "obj/api/Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Input.Controller.Mapped.MappedControllerElement.html",
-          "hash": "tvwhE16aZuFCZu0xDomByA=="
+          "relative_path": "api/Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.html",
+          "hash": "rp9YfDZoTeL4wQH8dJJN3w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1629,10 +1473,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.Mapped.html",
-          "hash": "9QnQR2mS2M4EsQzb7lVMqg=="
+          "hash": "3UM6Iy2dzVDdSy1bjYD0aA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1641,10 +1485,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Controller.html",
-          "hash": "u4A08/kFLwA2dJR6mSWu9w=="
+          "hash": "4E2YvU5QyPvZlyyq+/zSMw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.DefaultDeviceCapabilityLabels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.DefaultDeviceCapabilityLabels.html",
+          "hash": "OV0PCv2gHwK3a/f9oA9GWA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1656,7 +1512,7 @@
           "hash": "/Esb5OjKM8liSO0bbie8NQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1668,7 +1524,7 @@
           "hash": "fdxyaddGP80fWnlggE0Rhg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1680,7 +1536,7 @@
           "hash": "Ct6f1uBQAL+htm+BWgqI0w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1689,10 +1545,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.DeviceCapabilityExtensions.html",
-          "hash": "u1gimBaAzdMqa1QD8YaJmQ=="
+          "hash": "/7pWjIDpE45SPXlKseMUPA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1701,10 +1557,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.DeviceLayoutMapping.html",
-          "hash": "20HJqu6aAiCAoBaIxXwFig=="
+          "hash": "1dgNFO4OOzfNg5laf42yjg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.DictionaryDeviceCapabilityLabels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.DictionaryDeviceCapabilityLabels.html",
+          "hash": "dOjjeL9HxeJ2PY5sGzH8yQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1713,10 +1581,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.DirectInputDeviceInstance.html",
-          "hash": "A3oO6EXxEE8iepOwj5tFNA=="
+          "hash": "QSLqgHkcAb2MeKLTDDGuHg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.IDeviceCapabilityLabels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Input.Device.IDeviceCapabilityLabels.html",
+          "hash": "uxQ0NA2zf1m2860u0wZmww=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1725,10 +1605,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.IDeviceLayoutMapping.html",
-          "hash": "Bt5EQIUenfqMLkjiDyDmEQ=="
+          "hash": "oWS6paozWHocq3/WMGFYlg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1740,7 +1620,7 @@
           "hash": "hDIIsOr/bOjKiJxp/mg69A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1749,22 +1629,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.IInputDeviceInstance.html",
-          "hash": "7JMJLEal3frzKESgyJVFAw=="
+          "hash": "PUUNBK42ftOZcrQ2bMa/4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Input.Device.InputDriverType.yml",
+      "source_relative_path": "obj/api/Snowflake.Input.Device.InputDriver.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Input.Device.InputDriverType.html",
-          "hash": "A5XWDKbM9etmYwA8kFC+Fw=="
+          "relative_path": "api/Snowflake.Input.Device.InputDriver.html",
+          "hash": "274S6fZwzwJJQQTBfVShSA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1773,10 +1653,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.KeyboardDeviceInstance.html",
-          "hash": "yLP5lfD9RWS4bAH+XWowBw=="
+          "hash": "gWaXGHVdzPW3SWTawacHGA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1785,10 +1665,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.PassthroughDeviceInstance.html",
-          "hash": "DDQQiGYgQpcdVgB8TM0ViQ=="
+          "hash": "Y9O/Ns36d4YSvtUBPtiPXg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1797,10 +1677,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.XInputDeviceInstance.html",
-          "hash": "L/qMGXsj5f8DZqcXYHAMow=="
+          "hash": "hehHRCpsdQaPsjW7BNNnFA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1809,10 +1689,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Input.Device.html",
-          "hash": "O2KOG5nbs00YUDV0dHyulA=="
+          "hash": "MUivbL4DxSblrVKWHT9peg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1821,10 +1701,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.AsyncInstallTask-1.html",
-          "hash": "fgGkXiUAoGG2DHCG3WdGXA=="
+          "hash": "GauYeMTUALTrhM/IvGxoDA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1833,10 +1713,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.AsyncInstallTaskEnumerable-1.html",
-          "hash": "1UCJUO4PuF1IZMY54SQsMw=="
+          "hash": "IvPI5MHFiYR9nupKe8Izdg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1845,10 +1725,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Extensibility.GameInstaller.html",
-          "hash": "3tE44gqr7E8A5CiWJ+zaeg=="
+          "hash": "2I1stp+2PGfV5e/w8SSt8g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1857,10 +1737,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Extensibility.IGameInstaller.html",
-          "hash": "LdrNodhZ0JsEOA5L8xO1Cg=="
+          "hash": "95ei1/oP2J/qPzivJhaOIQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1869,10 +1749,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Extensibility.IInstallable.html",
-          "hash": "87n0KraN0fPtu0mhyk6f5g=="
+          "hash": "L7sjSObZnf3l2xdSt7WDng=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1881,10 +1761,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Extensibility.Installable.html",
-          "hash": "853VpgdfE/j+gSVgTY8EOQ=="
+          "hash": "wFh7oL7ZHIAZ2/b2x8FX4w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1896,7 +1776,7 @@
           "hash": "SSGKYvzmZMGFrjDqvnE12g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1905,10 +1785,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Extensibility.html",
-          "hash": "7TkVnBjr5MwmmtzBldAH9g=="
+          "hash": "FZLGTejUWzCmj2aHV4nWLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1917,10 +1797,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.ITaskResult.html",
-          "hash": "gShBWnr02rQwM1gB8diR5Q=="
+          "hash": "302ZuH4jCnlLzktH9Jhk9w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1929,10 +1809,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.TaskResult-1.html",
-          "hash": "+iNin2CUZVx/iTPGlPlWvA=="
+          "hash": "UcT8Wi1GNX7YuGbIGnBpjQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1941,10 +1821,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.TaskResult.html",
-          "hash": "y2LT0rvWuZGoYvSktNz46Q=="
+          "hash": "AbDBQ7rtbaMWX38F0jVwQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1953,10 +1833,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Tasks.CopyDirectoryContentsTask.html",
-          "hash": "iwIDJNaYe2JAYlgK+Jo5VQ=="
+          "hash": "jbrwMxsxdp37ri3sAY1UVw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1965,10 +1845,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Tasks.CopyFileTask.html",
-          "hash": "EX/2xv+jJawMtT9Jd/KkFQ=="
+          "hash": "WUx6qvZFGP8Ifg4hb4t0IA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Installation.Tasks.ExecuteAsyncTask-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Installation.Tasks.ExecuteAsyncTask-1.html",
+          "hash": "BdvYHAteFQrfHyitzum1ZQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1977,10 +1869,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Tasks.ExtractZipTask.html",
-          "hash": "pmzqRRVLebzftmJXYBW1wQ=="
+          "hash": "XoRDpEuXrGeY8UKD7Su4Xg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Installation.Tasks.FailureTask-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Installation.Tasks.FailureTask-1.html",
+          "hash": "MbOm6G27eJPw1xXp81/RLQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1989,10 +1893,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.Tasks.html",
-          "hash": "FeVkPJxI9O/4mwwpUUKDrg=="
+          "hash": "DrFZoNlxdu3dcdkuV1WIDw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2001,10 +1905,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Installation.html",
-          "hash": "sMXWhuJ+cOgCXLjg7nIdeA=="
+          "hash": "+PmFILjVyzuJFmWScLkRZg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2016,7 +1920,7 @@
           "hash": "LfnN+X95DajmwXAflyk9jw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2025,10 +1929,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Loader.IModule.html",
-          "hash": "kNt33CGpT1uM+VSdpbaqQg=="
+          "hash": "YOD7gnaPNzf3em/uu53Eug=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2040,7 +1944,7 @@
           "hash": "HcASeKRymN6eELhOmRkHRA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2052,7 +1956,7 @@
           "hash": "2AyWobLRoTMeHn0akCUKkg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2061,10 +1965,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Loader.IServiceRepository.html",
-          "hash": "F9MuEhSBkD9v0GKz0osKQA=="
+          "hash": "zoHzWJsbfIKjjosGkhFjJw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2076,7 +1980,7 @@
           "hash": "ZTxn4ZzYttaTT0rpcCT+/w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2085,10 +1989,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Loader.Module.html",
-          "hash": "hMB/+BzC9V27LYqigImHUA=="
+          "hash": "cX9oJ4hpn+Dxf6jZrQCEXQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2100,31 +2004,7 @@
           "hash": "sd15Z6zoCCuL5XXrhvleSQ=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Migrations.InitialCreate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Migrations.InitialCreate.html",
-          "hash": "rnBhYgWc7TDps+FWL3FavA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Migrations.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Migrations.html",
-          "hash": "ownLtQSbXeoHujrn2owpyw=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2136,7 +2016,7 @@
           "hash": "jtfRA+Nf/VHStGmKj2i5zg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2148,7 +2028,7 @@
           "hash": "Og5L0Lv5xGCyY9BGwHcrDQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2160,7 +2040,43 @@
           "hash": "AliQbnjjwAi7cEhSL8tUyA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Model.Database.Migrations.Empty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Model.Database.Migrations.Empty.html",
+          "hash": "a8Mc0mByV+a4xXlGQYp4lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Model.Database.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Model.Database.Migrations.InitialCreate.html",
+          "hash": "SFHPvpgaFfjKFLJJkIYWUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Model.Database.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Model.Database.Migrations.html",
+          "hash": "sDRuAdR2irfY5oLSvHfqlw=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2172,7 +2088,7 @@
           "hash": "NDaZDP5xut/MsNKWWn619g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2184,7 +2100,7 @@
           "hash": "cq2gQSPlA8Mp6xOpLfV45A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2196,7 +2112,7 @@
           "hash": "E9Q+Cu8t8JYsK5emk6hr4Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2205,10 +2121,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Game.IGameLibrary.html",
-          "hash": "u7jejgaFaL4u4k3+XvmIkQ=="
+          "hash": "4Nnf5C7FXWxwzHD/q/c14A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2220,7 +2136,7 @@
           "hash": "NtZ6WQFW7SkZG1/0dZFmAQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2232,7 +2148,7 @@
           "hash": "jBC4tis+PwYW/KRKQwQQ8A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2244,7 +2160,7 @@
           "hash": "PW/0wTHm7TGLPQp+STRxCA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2256,7 +2172,7 @@
           "hash": "mNU7yX6W5lnvxJBOuDwNcg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2265,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtension.html",
-          "hash": "6Quj7j4Dvo0QvNuIomWyOg=="
+          "hash": "xUPToxjaPCSo8/vBpoeabQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2277,10 +2193,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.html",
-          "hash": "oMjnqEzm0LG4oJhjCB8fQg=="
+          "hash": "8yGpqapIldjnuwZbDICK0Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2292,7 +2208,7 @@
           "hash": "RApUAA7boFZglIyQ3Ur7Pw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2304,7 +2220,7 @@
           "hash": "nfQsp0LNLptCclOOvXrfzg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2313,10 +2229,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html",
-          "hash": "nSftlzYEHyRq7VBHOF8RPA=="
+          "hash": "qF3LiBWUGOjTNsFvynuGWQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2328,7 +2244,7 @@
           "hash": "AgBogBGX/bw2/GzyrkAoRg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2340,7 +2256,7 @@
           "hash": "qQTW7QPbERlmYBGap1WJcg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2352,7 +2268,7 @@
           "hash": "muDqeQ+Jiw0rHICtSTfxYw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2364,7 +2280,7 @@
           "hash": "ROTWKgMtHr/4k/8wjr4vfQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2376,7 +2292,7 @@
           "hash": "1jBC78p0uwkvnHqsTwlvmA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2388,7 +2304,31 @@
           "hash": "5OnBZjbR7FMcxFBSknJIYA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Model.Records.File.ImageMetadataKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Model.Records.File.ImageMetadataKeys.html",
+          "hash": "XdAFqS0N98qAw18v+UFV5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Model.Records.File.ImageTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Model.Records.File.ImageTypes.html",
+          "hash": "02W994kE4v4ZZNYzCt47TA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2397,10 +2337,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Records.File.html",
-          "hash": "1M3giThCwZng0Izg8YArlw=="
+          "hash": "0YBxefyZoUQlaVEmRQuQBQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2412,7 +2352,7 @@
           "hash": "f+JlVqKQKL9wEQmMLTpvZw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2421,10 +2361,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Model.Records.Game.GameMetadataKeys.html",
-          "hash": "OTdLGZCroCcfqFS+04lS/g=="
+          "hash": "5VSYmp/egmG5B6t/+FoYNQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2436,7 +2376,7 @@
           "hash": "04oVaIaciDw/8pfxmkr94w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2448,7 +2388,7 @@
           "hash": "E+ETLEfLr8Keac/zR1yJag=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2460,7 +2400,7 @@
           "hash": "3Y27qsuJAZhrACKiM0KtrA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2472,7 +2412,7 @@
           "hash": "0MOU5lwVCCwiTSzpXjqb4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2484,7 +2424,7 @@
           "hash": "sxUhGVpFzOFh4Awye76/ZQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2496,7 +2436,7 @@
           "hash": "sUMl0lsEdFB9w115F6Wujg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2508,7 +2448,7 @@
           "hash": "aIfwg9SUFlu93MEsKDMYmQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2520,7 +2460,7 @@
           "hash": "tGIgr3NShqiZpiw+8IiFpA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2532,7 +2472,7 @@
           "hash": "BLKJ4eIZPDgXza6xzjm9bQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2544,7 +2484,7 @@
           "hash": "6MQ+H38v9UtxF76Ej0+SeA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2556,7 +2496,7 @@
           "hash": "L7dYAhE+mw2/fveqYZ/ETA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2565,10 +2505,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.EmulatedController.html",
-          "hash": "2mEO0Tt5aWRwWI298jRNWA=="
+          "hash": "26Ppy5VmvS3DX/xsKrFtGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2577,10 +2517,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.EmulatedPortsManager.html",
-          "hash": "fMnswSx4nqtW1YCO1a9+ag=="
+          "hash": "yls4Pvz6j09CK41G4qJ5lw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Extensibility.EmulatorCompatibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Orchestration.Extensibility.EmulatorCompatibility.html",
+          "hash": "x81YlB26FRIiIZDHOufolw=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2589,10 +2541,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.EmulatorOrchestrator.html",
-          "hash": "QBLH8z4ZRapwCN+uLqpg2w=="
+          "hash": "n0ocuHGhnGPUH0H61Afn/A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2604,7 +2556,7 @@
           "hash": "1zA6lKYzAUdUQebYZPL0yg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2616,7 +2568,7 @@
           "hash": "dOTK/GH8VvpXRNvGoWtVww=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2625,10 +2577,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.GameEmulation-1.html",
-          "hash": "6hdNyyOYHiLaYUJGCrppZw=="
+          "hash": "M2Azqk8X9FT+/zEXcL8nsg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2637,10 +2589,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.GameEmulation.html",
-          "hash": "WOje7/XmF+kz4zL7rbKwlA=="
+          "hash": "tssI3kYvTh5fJ7rmUA9U2g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Extensibility.GameEmulationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Orchestration.Extensibility.GameEmulationState.html",
+          "hash": "jbG31BCN/2zenQDIlO4HwA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2649,10 +2613,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.IEmulatedController.html",
-          "hash": "wXtTcr2/+NUM2fQUpufkmw=="
+          "hash": "CQ24r6h6iHK6+ntVoYBGTw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2661,10 +2625,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html",
-          "hash": "eFvOgf9QHYnFRvqJHY+3dQ=="
+          "hash": "bbQWtVf97urp/se9vL8vMw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2673,10 +2637,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.IEmulatedPortStore.html",
-          "hash": "25Iru3yFexidqRiBssERTA=="
+          "hash": "I+phrFmXt6TBizRbU8x6IQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2688,7 +2652,7 @@
           "hash": "muWQefVS9oEnygJDkEi6ag=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2697,10 +2661,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html",
-          "hash": "x8/SySV1dirQEp6ldN/WXQ=="
+          "hash": "xl7nSDPCR6YNwGAA0jHvdg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2709,10 +2673,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.IGameEmulation.html",
-          "hash": "H4vdctcv2wobts7w0TkTXA=="
+          "hash": "Z5znjJTtSXPVhmXVXtDU8Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2721,10 +2685,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Extensibility.html",
-          "hash": "TPCeREymKqXnjSang3ZMcA=="
+          "hash": "hmh59tfl0L9bUbPxr+vZTQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2736,7 +2700,7 @@
           "hash": "swzMiFvjwv3HZWBZb/zXvw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2748,7 +2712,7 @@
           "hash": "+Zk7aAzWWpTGzOcKB820Yg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2760,7 +2724,7 @@
           "hash": "ifkR1rELfx1DJMN6q0Kh/Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2772,7 +2736,7 @@
           "hash": "xgl20mFuPj/ROsOUKbxT+Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2784,19 +2748,31 @@
           "hash": "U4d9nzqtr/K8KVUbFDwcBQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.GameFileExtensionSaveGameManagerExtensions.yml",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.GameFileExtensionGameSaveManagerExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Orchestration.Saving.GameFileExtensionSaveGameManagerExtensions.html",
-          "hash": "/+c5y4tlXOBgRzk3gBe5tg=="
+          "relative_path": "api/Snowflake.Orchestration.Saving.GameFileExtensionGameSaveManagerExtensions.html",
+          "hash": "D0p59RJUpdUBJGHlVqyykA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.IGameSaveManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Orchestration.Saving.IGameSaveManager.html",
+          "hash": "AHBHraiYRHbGxE8n5LmyHQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2805,22 +2781,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Saving.ISaveGame.html",
-          "hash": "ZvGQKHwFDK/cfLqRfxvdWw=="
+          "hash": "ZSdIA553OdnuTX874q1Gjw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.ISaveGameManager.yml",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.ISaveProfile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Orchestration.Saving.ISaveGameManager.html",
-          "hash": "buV0nqsK5L7KgRdZ4eugOg=="
+          "relative_path": "api/Snowflake.Orchestration.Saving.ISaveProfile.html",
+          "hash": "lPBG6k6ywKTTUUn0IZb/Kw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2829,22 +2805,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Saving.SaveGame.html",
-          "hash": "C5r5rHN3XGYy/THEcR34+Q=="
+          "hash": "4+wopMwTMPeUHl/JrJ5UWA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.SaveGameManager.yml",
+      "source_relative_path": "obj/api/Snowflake.Orchestration.Saving.SaveManagementStrategy.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Snowflake.Orchestration.Saving.SaveGameManager.html",
-          "hash": "9SAytHjYWDJpy+bHB3a3tA=="
+          "relative_path": "api/Snowflake.Orchestration.Saving.SaveManagementStrategy.html",
+          "hash": "FZOQjWhtL3r0W9UnF7KfKQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2853,10 +2829,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Orchestration.Saving.html",
-          "hash": "P3ni9kOjcEnkr/m1YYsNeg=="
+          "hash": "vsfI5GdZvWrIOFtcWoA1Xw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2868,7 +2844,7 @@
           "hash": "s3U5s+Kn/sc6P3C/+V7pyA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2880,7 +2856,7 @@
           "hash": "TqkfG/Xawug2cQpo7ZPQkA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2892,7 +2868,7 @@
           "hash": "a6koMhiAopbQm5JugRteVw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2904,7 +2880,7 @@
           "hash": "kVfCi00s5oE95Dp4ve0drQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2916,7 +2892,7 @@
           "hash": "d2DO5oB+rZqT0Y0XrX9vUA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2928,7 +2904,79 @@
           "hash": "Yk46Dsh4sU56I0YrmGE/ow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Electron.IElectronPackage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Electron.IElectronPackage.html",
+          "hash": "CpUtb9w98hgO6AF2vIgj/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Electron.IElectronPackageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Electron.IElectronPackageProvider.html",
+          "hash": "9NM5qzmaa1U7HwChqg2YKw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Electron.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Electron.html",
+          "hash": "VP+SOiGYEzKO8N+HPQlBig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Kestrel.IKestrelServerMiddlewareProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Kestrel.IKestrelServerMiddlewareProvider.html",
+          "hash": "XH3WbEPTxw2pbJeo0fwlOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Kestrel.IKestrelWebServerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Kestrel.IKestrelWebServerService.html",
+          "hash": "JwnbwknNxkair+Vh6Gk8Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Snowflake.Remoting.Kestrel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snowflake.Remoting.Kestrel.html",
+          "hash": "2lbGS4pTvmxRIoioDQuTZA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2940,7 +2988,7 @@
           "hash": "gnrZxPtP48b0jqHkf1zSRg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2952,7 +3000,7 @@
           "hash": "K9c9/DYxK4n08XPctmp9zg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2964,7 +3012,7 @@
           "hash": "BNHKbrz8ls+U7ceGAZpWlg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2976,7 +3024,7 @@
           "hash": "CIdqGgfHDKhCj6e5hVo96w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2988,7 +3036,7 @@
           "hash": "DpsxUZFQooMeyO08P8WKUQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3000,7 +3048,7 @@
           "hash": "Lmi+HsSd9eP85OlpDqx8KA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3012,7 +3060,7 @@
           "hash": "kzEwBPbVAeRH2OBe/l8YXg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3024,7 +3072,7 @@
           "hash": "Br496X/fhUNInqjXiuhsfw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3036,7 +3084,7 @@
           "hash": "rnJPOU+dEynv9j2ChYybZw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3048,7 +3096,7 @@
           "hash": "SdC/M6IwSFZg3NRpyMA7Qg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3060,7 +3108,7 @@
           "hash": "5OljINUKgQvsBckhGm5ncQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3072,7 +3120,7 @@
           "hash": "juhS9Blgir1pB89MtLrdcA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3084,7 +3132,7 @@
           "hash": "kTMqFPtXsQUmImzdS5J2HQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3096,7 +3144,7 @@
           "hash": "7XzKL9qui2c0GUuMLujmFQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3108,7 +3156,7 @@
           "hash": "kQJlQ9or27XGvCDLNyodjQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3120,7 +3168,7 @@
           "hash": "YnRTkWVaX39zGnKNExQEUw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3132,7 +3180,7 @@
           "hash": "CjgCqHw1ZohmpiYN3DKjaw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3144,7 +3192,7 @@
           "hash": "H4ldO/U62Kb3GfVEThCVQQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3153,10 +3201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.FileInstallationTraverserBase.html",
-          "hash": "nUUlNxR9EoIEhFEg0HOrNQ=="
+          "hash": "4yUMbq35OsnaoocRvilihA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3165,10 +3213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.GameMetadataTraverserBase.html",
-          "hash": "+qGt0PZDWuwJrGW/jhmWmQ=="
+          "hash": "aYiVOXUIbWgGbRZro2Ip5w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3180,7 +3228,7 @@
           "hash": "Fa6/iLeEKnmIeBZrdblCLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3189,10 +3237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.IFileInstallationTraverser.html",
-          "hash": "f6YYsEOAjmu2/vRqUdbf+Q=="
+          "hash": "xHMxKYS/nqtGN3M0pTb/Eg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3201,10 +3249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.IGameMetadataTraverser.html",
-          "hash": "uh4twDUqQlzE3oXWHQW9bw=="
+          "hash": "RQRhROzOuNGdiIeqFL02og=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3213,10 +3261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.IScraper.html",
-          "hash": "2RUqyqBweuA4sI/l+icPFA=="
+          "hash": "7gUyLOVnw86VWX9BSB9MxA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3228,7 +3276,7 @@
           "hash": "8uasJEKw7bFOa3iFsJSmug=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3237,10 +3285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.ITraverser-2.html",
-          "hash": "E2EQqgBYflmk9FqeFisPsQ=="
+          "hash": "WTx3bMcVO3OT/eHJrxoHWA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3249,10 +3297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.Scraper.html",
-          "hash": "+SRbetwEBwJI+4i258oVwg=="
+          "hash": "iAaOOJaXGv5N+o/FyhtJPA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3264,7 +3312,7 @@
           "hash": "FDbPx3oY9oOeR2rIlt9Pjg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3276,7 +3324,7 @@
           "hash": "nzwl94TgzwkQSs4aAM1qrA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3285,10 +3333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.Extensibility.Traverser-2.html",
-          "hash": "qRA4qG+Ij2mIdSFsUjfCSg=="
+          "hash": "oHnc8nUd0Tpa5KcbhgSEBg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3300,7 +3348,7 @@
           "hash": "8B2bjwtKXjVy2SMqJtt31A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3309,10 +3357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.GameScrapeContext.html",
-          "hash": "Zlcl7s/GH4FTHDzxKfRIJg=="
+          "hash": "doL/mOsKniMd1vXIGuHbMA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3321,10 +3369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.IScrapeContext.html",
-          "hash": "Zh137xQISKLVIlTxU1R0Sg=="
+          "hash": "s6zqFihPiNdXPiiBNOSdeA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3333,10 +3381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.ISeed.html",
-          "hash": "Cau52pf690t7N5v5ctr2wg=="
+          "hash": "qV84w241dzkaKZC5DWgu4A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3345,10 +3393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Scraping.ISeedRootContext.html",
-          "hash": "kpyIf4IdCil/+iP96P9txg=="
+          "hash": "uY6XC6W/cTloPZz+dt4imw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3360,7 +3408,7 @@
           "hash": "1bcaU7DbVmGpcibwfDO3Ew=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3372,7 +3420,7 @@
           "hash": "YUMZbtWxfTTBRuosebg8QQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3384,7 +3432,7 @@
           "hash": "JnQgp3RoTQQoB04cwVPi0g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3396,7 +3444,7 @@
           "hash": "Ab+VHl+HLP5emEW4oAkkQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3408,7 +3456,7 @@
           "hash": "E+zW0z3s8Vi4OkMq9UnJyg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3417,10 +3465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Services.IDeviceEnumerator.html",
-          "hash": "ME8X5nGhp8jyTcSfrx0h8Q=="
+          "hash": "ox8opv+y/aGh+rastD96xw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3432,7 +3480,7 @@
           "hash": "9u5/mTmiwpi8Gwftrj8RlQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3444,19 +3492,7 @@
           "hash": "lb+cwRqREDO4HeRTh1Frtg=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Snowflake.Services.IServiceContainer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Snowflake.Services.IServiceContainer.html",
-          "hash": "Elt2SuJ+19LRO0n+h9LIeg=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3468,7 +3504,7 @@
           "hash": "pMA0+nSwF0LPRG4xl1fvYA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3477,10 +3513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Services.IServiceRegistrationProvider.html",
-          "hash": "AZ3NrcdYda/G8sTG2EmFjw=="
+          "hash": "ZUn+03lAC4luyTYPm4Z90Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3489,10 +3525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Services.IStoneProvider.html",
-          "hash": "DlgUaT5SGCRIM31crdBgRA=="
+          "hash": "FEFSaxbFrCJ8vOIi8FOj+g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3501,10 +3537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Snowflake.Services.html",
-          "hash": "vSJxxbTt+ZLlSfqr8jgzsg=="
+          "hash": "ltUFuyM1/gAKwVUAu27LWQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3516,7 +3552,7 @@
           "hash": "twlDdNqZP7JqMwoTmFBAGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3528,7 +3564,7 @@
           "hash": "cPA8hiyRcv057P8O+Rs42w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3540,7 +3576,7 @@
           "hash": "k47+LLsV2sSG3/e3oUAdoA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3552,7 +3588,7 @@
           "hash": "7X6sccOnGM+scQMQM5PGbA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3564,7 +3600,7 @@
           "hash": "PfM0uCQahK5AApgaapwKYg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3576,7 +3612,7 @@
           "hash": "8xxk+tdAyjOlK0QQkTXuGg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3585,7 +3621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lyw6/GZ6hl1mY+9dfxk4VA=="
+          "hash": "9ecRoieCbe8nouuwKvzliw=="
         }
       },
       "is_incremental": false,
@@ -3597,7 +3633,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "7Mbk9fJ8yu0AYBu1hLljKw=="
+          "hash": "UEUQLkFe+ND0N21ZRICIXA=="
         }
       },
       "is_incremental": false,
@@ -3620,17 +3656,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 295,
-          "skipped_file_count": 295
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
           "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 298,
+          "skipped_file_count": 298
         }
       }
     },

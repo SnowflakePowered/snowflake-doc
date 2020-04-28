@@ -113,14 +113,14 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Snowflake_Installation_Tasks_CopyFileTask__ctor_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.#ctor*"></a>
-  <h4 id="Snowflake_Installation_Tasks_CopyFileTask__ctor_Snowflake_Installation_TaskResult_System_IO_FileInfo__Snowflake_Filesystem_IDirectory_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.#ctor(Snowflake.Installation.TaskResult{System.IO.FileInfo},Snowflake.Filesystem.IDirectory)">CopyFileTask(TaskResult&lt;FileInfo&gt;, IDirectory)</h4>
+  <h4 id="Snowflake_Installation_Tasks_CopyFileTask__ctor_Snowflake_Installation_TaskResult_System_IO_FileInfo__Snowflake_Filesystem_IIndelibleDirectory_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.#ctor(Snowflake.Installation.TaskResult{System.IO.FileInfo},Snowflake.Filesystem.IIndelibleDirectory)">CopyFileTask(TaskResult&lt;FileInfo&gt;, IIndelibleDirectory)</h4>
   <div class="markdown level1 summary"><p>Describe a file copy with the given source file and the target directory.
 The resultant file will have the same file name as the source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CopyFileTask(TaskResult&lt;FileInfo&gt; source, IDirectory destinationDirectory)</code></pre>
+    <pre><code class="lang-csharp hljs">public CopyFileTask(TaskResult&lt;FileInfo&gt; source, IIndelibleDirectory destinationDirectory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,7 +139,7 @@ The resultant file will have the same file name as the source.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td><span class="parametername">destinationDirectory</span></td>
         <td><p>The target directory.</p>
 </td>
@@ -175,6 +175,73 @@ The resultant file will have the same file name as the source.</p>
   <div><span class="xref">Snowflake.Installation.AsyncInstallTask&lt;Snowflake.Filesystem.IFile&gt;.TaskName</span></div>
   <h3 id="methods">Methods
   </h3>
+  <a id="Snowflake_Installation_Tasks_CopyFileTask_CreateFailureDescription_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.CreateFailureDescription*"></a>
+  <h4 id="Snowflake_Installation_Tasks_CopyFileTask_CreateFailureDescription_System_AggregateException_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.CreateFailureDescription(System.AggregateException)">CreateFailureDescription(AggregateException)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ValueTask&lt;string&gt; CreateFailureDescription(AggregateException _)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.AggregateException</span></td>
+        <td><span class="parametername">_</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Installation.AsyncInstallTask&lt;Snowflake.Filesystem.IFile&gt;.CreateFailureDescription(System.AggregateException)</span></div>
+  <a id="Snowflake_Installation_Tasks_CopyFileTask_CreateSuccessDescription_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.CreateSuccessDescription*"></a>
+  <h4 id="Snowflake_Installation_Tasks_CopyFileTask_CreateSuccessDescription" data-uid="Snowflake.Installation.Tasks.CopyFileTask.CreateSuccessDescription">CreateSuccessDescription()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ValueTask&lt;string&gt; CreateSuccessDescription()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Snowflake.Installation.AsyncInstallTask&lt;Snowflake.Filesystem.IFile&gt;.CreateSuccessDescription()</span></div>
   <a id="Snowflake_Installation_Tasks_CopyFileTask_ExecuteOnce_" data-uid="Snowflake.Installation.Tasks.CopyFileTask.ExecuteOnce*"></a>
   <h4 id="Snowflake_Installation_Tasks_CopyFileTask_ExecuteOnce" data-uid="Snowflake.Installation.Tasks.CopyFileTask.ExecuteOnce">ExecuteOnce()</h4>
   <div class="markdown level1 summary"></div>

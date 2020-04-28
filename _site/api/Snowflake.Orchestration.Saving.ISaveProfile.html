@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISaveProfile
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISaveProfile
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Orchestration.Saving.ISaveProfile">
+  
+  
+  <h1 id="Snowflake_Orchestration_Saving_ISaveProfile" data-uid="Snowflake.Orchestration.Saving.ISaveProfile" class="text-break">Interface ISaveProfile
+  </h1>
+  <div class="markdown level0 summary"><p>A save profile represents one, or a collection of individual save games that canonically represent the lineage of
+a single save instance for one type of save. It may or may not manage a history of save instances, but must be able
+to produce one canonical &quot;head&quot; save for a profile regardless of how history is implemented or managed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Orchestration.Saving.html">Snowflake.Orchestration.Saving</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Orchestration_Saving_ISaveProfile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISaveProfile</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_Guid_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.Guid*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_Guid" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>A unique ID used to identify this save profile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid Guid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_ManagementStrategy_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ManagementStrategy*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_ManagementStrategy" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ManagementStrategy">ManagementStrategy</h4>
+  <div class="markdown level1 summary"><p>The strategy this profile uses to persist saves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SaveManagementStrategy ManagementStrategy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.SaveManagementStrategy.html">SaveManagementStrategy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_ProfileName_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ProfileName*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_ProfileName" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ProfileName">ProfileName</h4>
+  <div class="markdown level1 summary"><p>The name of this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ProfileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_SaveType_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.SaveType*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_SaveType" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.SaveType">SaveType</h4>
+  <div class="markdown level1 summary"><p>A unique name for the format of the save this save profile produces.
+Two profiles with the same save type have the identical file and folder structure
+for a save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SaveType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_ClearHistory_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ClearHistory*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_ClearHistory" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.ClearHistory">ClearHistory()</h4>
+  <div class="markdown level1 summary"><p>Clears the history, leaving only the head.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearHistory()</code></pre>
+  </div>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_CreateSave_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.CreateSave*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_CreateSave_Snowflake_Filesystem_IIndelibleDirectory_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.CreateSave(Snowflake.Filesystem.IIndelibleDirectory)">CreateSave(IIndelibleDirectory)</h4>
+  <div class="markdown level1 summary"><p>Creates a new immutable save game. This function should be atomic, and if creating the save fails
+should not add a save. The new savegame becomes the &quot;head&quot; save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ISaveGame&gt; CreateSave(IIndelibleDirectory saveContents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
+        <td><span class="parametername">saveContents</span></td>
+        <td><p>The directory of save contents to process in accordance with the <a class="xref" href="Snowflake.Orchestration.Saving.SaveManagementStrategy.html">SaveManagementStrategy</a>.
+<p>
+For single-file saves in particular, it is important that the save file produced by the emulator
+is renamed to &quot;savecontent&quot; to ensure compatibility between emulators that use the same save type.</p>
+<p>If for some reason this is not desireable, do not use a generic save type such as &quot;sram&quot;. If implementing
+save-sharing, it is very important to ensure conventions remain identical across all orchestration plugins
+that implement the same save type.
+</p></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a>&gt;</td>
+        <td><p>A new <a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_CreateSave_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.CreateSave*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_CreateSave_Snowflake_Orchestration_Saving_ISaveGame_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.CreateSave(Snowflake.Orchestration.Saving.ISaveGame)">CreateSave(ISaveGame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ISaveGame&gt; CreateSave(ISaveGame saveGame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></td>
+        <td><span class="parametername">saveGame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_GetHeadSave_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.GetHeadSave*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_GetHeadSave" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.GetHeadSave">GetHeadSave()</h4>
+  <div class="markdown level1 summary"><p>Gets the &quot;head&quot; save of this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISaveGame GetHeadSave()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></td>
+        <td><p>The most recently created savegame, or null if none were created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Saving_ISaveProfile_GetHistory_" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.GetHistory*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveProfile_GetHistory" data-uid="Snowflake.Orchestration.Saving.ISaveProfile.GetHistory">GetHistory()</h4>
+  <div class="markdown level1 summary"><p>If supported, returns the saves that make up the history of this profile.</p>
+<p>This is only supported for <a class="xref" href="Snowflake.Orchestration.Saving.SaveManagementStrategy.html#Snowflake_Orchestration_Saving_SaveManagementStrategy_Copy">Copy</a> and <a class="xref" href="Snowflake.Orchestration.Saving.SaveManagementStrategy.html#Snowflake_Orchestration_Saving_SaveManagementStrategy_Diff">Diff</a>,
+for all other strategies, this will only return an enumerable of the head save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ISaveGame&gt; GetHistory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a>&gt;</td>
+        <td><p>All saves registered under this <a class="xref" href="Snowflake.Orchestration.Saving.ISaveProfile.html">ISaveProfile</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

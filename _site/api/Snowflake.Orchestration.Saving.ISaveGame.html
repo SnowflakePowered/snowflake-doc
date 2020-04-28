@@ -105,55 +105,6 @@ a given emulation that stores game resume data (savedata).</p>
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Saving_ISaveGame_Guid_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.Guid*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_ISaveGame_Guid" data-uid="Snowflake.Orchestration.Saving.ISaveGame.Guid">Guid</h4>
-  <div class="markdown level1 summary"><p>A unique GUID used to identify this <a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a> within the context of an
-<a class="xref" href="Snowflake.Orchestration.Saving.ISaveGameManager.html">ISaveGameManager</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Guid Guid { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Guid</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Snowflake_Orchestration_Saving_ISaveGame_SaveContents_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.SaveContents*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_ISaveGame_SaveContents" data-uid="Snowflake.Orchestration.Saving.ISaveGame.SaveContents">SaveContents</h4>
-  <div class="markdown level1 summary"><p>The read-only contents of the save.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IReadOnlyDirectory SaveContents { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Snowflake_Orchestration_Saving_ISaveGame_SaveType_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.SaveType*"></a>
   <h4 id="Snowflake_Orchestration_Saving_ISaveGame_SaveType" data-uid="Snowflake.Orchestration.Saving.ISaveGame.SaveType">SaveType</h4>
   <div class="markdown level1 summary"><p>A unique identifier that identifies all saves of this particular type.
@@ -179,16 +130,35 @@ Saves with the same identifier are expected to have the same folder and file str
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Saving_ISaveGame_Tags_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.Tags*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_ISaveGame_Tags" data-uid="Snowflake.Orchestration.Saving.ISaveGame.Tags">Tags</h4>
-  <div class="markdown level1 summary"><p>Any string tags used to identify this save.</p>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Orchestration_Saving_ISaveGame_ExtractSave_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.ExtractSave*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_ISaveGame_ExtractSave_Snowflake_Filesystem_IIndelibleDirectory_" data-uid="Snowflake.Orchestration.Saving.ISaveGame.ExtractSave(Snowflake.Filesystem.IIndelibleDirectory)">ExtractSave(IIndelibleDirectory)</h4>
+  <div class="markdown level1 summary"><p>Writes the content of the save to the given directory</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; Tags { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">Task ExtractSave(IIndelibleDirectory outputDirectory)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
+        <td><span class="parametername">outputDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -198,7 +168,7 @@ Saves with the same identifier are expected to have the same folder and file str
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>

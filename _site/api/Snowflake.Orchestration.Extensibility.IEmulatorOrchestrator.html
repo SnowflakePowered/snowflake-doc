@@ -99,6 +99,49 @@ but this is abstracted using the provisioning of <a class="xref" href="Snowflake
   </div>
   <h3 id="methods">Methods
   </h3>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_CheckCompatibility_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.CheckCompatibility*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_CheckCompatibility_Snowflake_Model_Game_IGame_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.CheckCompatibility(Snowflake.Model.Game.IGame)">CheckCompatibility(IGame)</h4>
+  <div class="markdown level1 summary"><p>Checks if a certain game is compatible with this emulator, or if some extra work is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EmulatorCompatibility CheckCompatibility(IGame game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The game to check compatibility for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Orchestration.Extensibility.EmulatorCompatibility.html">EmulatorCompatibility</a></td>
+        <td><p>The compatibility level this emulator has with the game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_CheckMissingSystemFiles_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.CheckMissingSystemFiles*"></a>
   <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_CheckMissingSystemFiles_Snowflake_Model_Game_IGame_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.CheckMissingSystemFiles(Snowflake.Model.Game.IGame)">CheckMissingSystemFiles(IGame)</h4>
   <div class="markdown level1 summary"><p>Gets a list of BIOS files that are missing from the <a class="xref" href="Snowflake.Orchestration.SystemFiles.ISystemFileProvider.html">ISystemFileProvider</a> service that
@@ -152,7 +195,7 @@ returning the inner-type erased generic  <a class="xref" href="Snowflake.Configu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConfigurationCollection CreateGameConfiguration(IGame game, string profile)</code></pre>
+    <pre><code class="lang-csharp hljs">IConfigurationCollection CreateGameConfiguration(IGame game, string profileName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,8 +215,8 @@ returning the inner-type erased generic  <a class="xref" href="Snowflake.Configu
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">profile</span></td>
-        <td><p>The configuration profile.</p>
+        <td><span class="parametername">profileName</span></td>
+        <td><p>The profile name of the new configuration collection.</p>
 </td>
       </tr>
     </tbody>
@@ -193,15 +236,58 @@ returning the inner-type erased generic  <a class="xref" href="Snowflake.Configu
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetGameConfigurationValues_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetGameConfigurationValues*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetGameConfigurationValues_Snowflake_Model_Game_IGame_System_String_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetGameConfigurationValues(Snowflake.Model.Game.IGame,System.String)">GetGameConfigurationValues(IGame, String)</h4>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetConfigurationProfiles_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetConfigurationProfiles*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetConfigurationProfiles_Snowflake_Model_Game_IGame_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetConfigurationProfiles(Snowflake.Model.Game.IGame)">GetConfigurationProfiles(IGame)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the names of configuration profiles for this game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;(string profileName, Guid collectionGuid)&gt; GetConfigurationProfiles(IGame game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The game to retrieve configuration profiles for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Guid</span>&gt;&gt;</td>
+        <td><p>A list of configuration profile names saved for this game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetGameConfiguration_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetGameConfiguration*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_GetGameConfiguration_Snowflake_Model_Game_IGame_System_Guid_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.GetGameConfiguration(Snowflake.Model.Game.IGame,System.Guid)">GetGameConfiguration(IGame, Guid)</h4>
   <div class="markdown level1 summary"><p>Gets the inner-type erased generic <a class="xref" href="Snowflake.Configuration.IConfigurationCollection.html">IConfigurationCollection</a> for this game, used
 to configure the game for this orchestrator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConfigurationCollection GetGameConfigurationValues(IGame game, string profile)</code></pre>
+    <pre><code class="lang-csharp hljs">IConfigurationCollection GetGameConfiguration(IGame game, Guid collectionGuid)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,9 +306,9 @@ to configure the game for this orchestrator.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">profile</span></td>
-        <td><p>The configuration profile.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">collectionGuid</span></td>
+        <td><p>The value collection GUID of the target configuration.</p>
 </td>
       </tr>
     </tbody>
@@ -243,13 +329,13 @@ to configure the game for this orchestrator.</p>
     </tbody>
   </table>
   <a id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_ProvisionEmulationInstance_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.ProvisionEmulationInstance*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_ProvisionEmulationInstance_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_Snowflake_Orchestration_Extensibility_IEmulatedController__System_String_Snowflake_Orchestration_Saving_ISaveGame_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.ProvisionEmulationInstance(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{Snowflake.Orchestration.Extensibility.IEmulatedController},System.String,Snowflake.Orchestration.Saving.ISaveGame)">ProvisionEmulationInstance(IGame, IEnumerable&lt;IEmulatedController&gt;, String, ISaveGame)</h4>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_ProvisionEmulationInstance_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_Snowflake_Orchestration_Extensibility_IEmulatedController__System_Guid_Snowflake_Orchestration_Saving_ISaveProfile_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.ProvisionEmulationInstance(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{Snowflake.Orchestration.Extensibility.IEmulatedController},System.Guid,Snowflake.Orchestration.Saving.ISaveProfile)">ProvisionEmulationInstance(IGame, IEnumerable&lt;IEmulatedController&gt;, Guid, ISaveProfile)</h4>
   <div class="markdown level1 summary"><p>Provision the emulation instance to run the game.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGameEmulation ProvisionEmulationInstance(IGame game, IEnumerable&lt;IEmulatedController&gt; controllerPorts, string configurationProfileName, ISaveGame initialSave)</code></pre>
+    <pre><code class="lang-csharp hljs">IGameEmulation ProvisionEmulationInstance(IGame game, IEnumerable&lt;IEmulatedController&gt; controllerPorts, Guid configurationProfile, ISaveProfile saveProfile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -274,15 +360,15 @@ to configure the game for this orchestrator.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">configurationProfileName</span></td>
-        <td><p>The name of the configuration profile used in this emulation.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">configurationProfile</span></td>
+        <td><p>The collection GUID of the configuration profile.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></td>
-        <td><span class="parametername">initialSave</span></td>
-        <td><p>The initial save, if any, to resume the emulation from.</p>
+        <td><a class="xref" href="Snowflake.Orchestration.Saving.ISaveProfile.html">ISaveProfile</a></td>
+        <td><span class="parametername">saveProfile</span></td>
+        <td><p>The save profile to manage savedata with.</p>
 </td>
       </tr>
     </tbody>

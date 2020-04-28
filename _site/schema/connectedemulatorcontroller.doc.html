@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>ConnectedEmulatorController</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+        <li  title="Subscription">
+            <a href="subscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Subscription
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Any">
+            <a href="any.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Any
+            </a>
+        </li>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="ControllerId">
+            <a href="controllerid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerId
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="DirectoryPath">
+            <a href="directorypath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryPath
+            </a>
+        </li>
+        <li  title="FilePath">
+            <a href="filepath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FilePath
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="OSDirectoryPath">
+            <a href="osdirectorypath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryPath
+            </a>
+        </li>
+        <li  title="OSFilePath">
+            <a href="osfilepath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSFilePath
+            </a>
+        </li>
+        <li  title="OSTaggedFileSystemPath">
+            <a href="ostaggedfilesystempath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSTaggedFileSystemPath
+            </a>
+        </li>
+        <li  title="PaginationAmount">
+            <a href="paginationamount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaginationAmount
+            </a>
+        </li>
+        <li  title="PlatformId">
+            <a href="platformid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformId
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+        <li  title="Uuid">
+            <a href="uuid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Uuid
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ConfigurationOptionType">
+            <a href="configurationoptiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationOptionType
+            </a>
+        </li>
+        <li  title="ControllerElement">
+            <a href="controllerelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElement
+            </a>
+        </li>
+        <li  title="ControllerElementType">
+            <a href="controllerelementtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementType
+            </a>
+        </li>
+        <li  title="DeviceCapability">
+            <a href="devicecapability.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapability
+            </a>
+        </li>
+        <li  title="EmulatorCompatibility">
+            <a href="emulatorcompatibility.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatorCompatibility
+            </a>
+        </li>
+        <li  title="GameEmulationState">
+            <a href="gameemulationstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEmulationState
+            </a>
+        </li>
+        <li  title="InputDriver">
+            <a href="inputdriver.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDriver
+            </a>
+        </li>
+        <li  title="PathType">
+            <a href="pathtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PathType
+            </a>
+        </li>
+        <li  title="SaveManagementStrategy">
+            <a href="savemanagementstrategy.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveManagementStrategy
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="DirectoryContents">
+            <a href="directorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryContents
+            </a>
+        </li>
+        <li  title="DirectoryInfo">
+            <a href="directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectoryInfo
+            </a>
+        </li>
+        <li  title="FileInfo">
+            <a href="fileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileInfo
+            </a>
+        </li>
+        <li  title="InstallationPayload">
+            <a href="installationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationPayload
+            </a>
+        </li>
+        <li  title="JobQueue">
+            <a href="jobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JobQueue
+            </a>
+        </li>
+        <li  title="Node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Node
+            </a>
+        </li>
+        <li  title="OSDirectoryContents">
+            <a href="osdirectorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryContents
+            </a>
+        </li>
+        <li  title="OSDirectoryInfo">
+            <a href="osdirectoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSDirectoryInfo
+            </a>
+        </li>
+        <li  title="QueueableJob">
+            <a href="queueablejob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QueueableJob
+            </a>
+        </li>
+        <li  title="ScrapeContextPayload">
+            <a href="scrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextPayload
+            </a>
+        </li>
+        <li  title="TaskResult">
+            <a href="taskresult.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TaskResult
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
+    <ul>
+        <li  title="ContextualFileInfoTaskResultValue">
+            <a href="contextualfileinfotaskresultvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfoTaskResultValue
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="ApplyScrapeContextPayload">
+            <a href="applyscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplyScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CancelScrapeContextPayload">
+            <a href="cancelscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CleanupEmulationPayload">
+            <a href="cleanupemulationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CleanupEmulationPayload
+            </a>
+        </li>
+        <li  title="ClearPortPayload">
+            <a href="clearportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ClearPortPayload
+            </a>
+        </li>
+        <li  title="ConfigurationCollection">
+            <a href="configurationcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationCollection
+            </a>
+        </li>
+        <li  title="ConfigurationProfileType">
+            <a href="configurationprofiletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationProfileType
+            </a>
+        </li>
+        <li  title="ConfigurationSection">
+            <a href="configurationsection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationSection
+            </a>
+        </li>
+        <li  title="ConfigurationValue">
+            <a href="configurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationValue
+            </a>
+        </li>
+        <li class="slds-is-active" title="ConnectedEmulatorController">
+            <a href="connectedemulatorcontroller.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConnectedEmulatorController
+            </a>
+        </li>
+        <li  title="ContextualDirectoryContents">
+            <a href="contextualdirectorycontents.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualDirectoryContents
+            </a>
+        </li>
+        <li  title="ContextualDirectoryInfo">
+            <a href="contextualdirectoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualDirectoryInfo
+            </a>
+        </li>
+        <li  title="ContextualFileInfo">
+            <a href="contextualfileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfo
+            </a>
+        </li>
+        <li  title="ContextualFileInfoTaskResult">
+            <a href="contextualfileinfotaskresult.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContextualFileInfoTaskResult
+            </a>
+        </li>
+        <li  title="ControllerElementCollection">
+            <a href="controllerelementcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementCollection
+            </a>
+        </li>
+        <li  title="ControllerElementInfo">
+            <a href="controllerelementinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementInfo
+            </a>
+        </li>
+        <li  title="ControllerElementInfoElement">
+            <a href="controllerelementinfoelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementInfoElement
+            </a>
+        </li>
+        <li  title="ControllerElementMapping">
+            <a href="controllerelementmapping.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMapping
+            </a>
+        </li>
+        <li  title="ControllerElementMappingProfile">
+            <a href="controllerelementmappingprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMappingProfile
+            </a>
+        </li>
+        <li  title="ControllerLayout">
+            <a href="controllerlayout.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerLayout
+            </a>
+        </li>
+        <li  title="CreateInstallationPayload">
+            <a href="createinstallationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInstallationPayload
+            </a>
+        </li>
+        <li  title="CreateSaveProfilePayload">
+            <a href="createsaveprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateSaveProfilePayload
+            </a>
+        </li>
+        <li  title="CreateScrapeContextPayload">
+            <a href="createscrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateScrapeContextPayload
+            </a>
+        </li>
+        <li  title="CreateValidationPayload">
+            <a href="createvalidationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateValidationPayload
+            </a>
+        </li>
+        <li  title="DeleteGameConfigurationPayload">
+            <a href="deletegameconfigurationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameConfigurationPayload
+            </a>
+        </li>
+        <li  title="DeleteGameMetadataPayload">
+            <a href="deletegamemetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameMetadataPayload
+            </a>
+        </li>
+        <li  title="DeleteSaveProfilePayload">
+            <a href="deletesaveprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteSaveProfilePayload
+            </a>
+        </li>
+        <li  title="DeleteScrapeContextPayload">
+            <a href="deletescrapecontextpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteScrapeContextPayload
+            </a>
+        </li>
+        <li  title="DeviceCapabilityElement">
+            <a href="devicecapabilityelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapabilityElement
+            </a>
+        </li>
+        <li  title="DeviceCapabilityLabels">
+            <a href="devicecapabilitylabels.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceCapabilityLabels
+            </a>
+        </li>
+        <li  title="DeviceLayoutMapping">
+            <a href="devicelayoutmapping.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceLayoutMapping
+            </a>
+        </li>
+        <li  title="ElectronPackage">
+            <a href="electronpackage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ElectronPackage
+            </a>
+        </li>
+        <li  title="EmulatedController">
+            <a href="emulatedcontroller.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatedController
+            </a>
+        </li>
+        <li  title="EmulatedPortDeviceEntry">
+            <a href="emulatedportdeviceentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulatedPortDeviceEntry
+            </a>
+        </li>
+        <li  title="EmulationInstancePayload">
+            <a href="emulationinstancepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulationInstancePayload
+            </a>
+        </li>
+        <li  title="FileRecord">
+            <a href="filerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileRecord
+            </a>
+        </li>
+        <li  title="FileType">
+            <a href="filetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileType
+            </a>
+        </li>
+        <li  title="Game">
+            <a href="game.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Game
+            </a>
+        </li>
+        <li  title="GameConnection">
+            <a href="gameconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameConnection
+            </a>
+        </li>
+        <li  title="GameEdge">
+            <a href="gameedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEdge
+            </a>
+        </li>
+        <li  title="GameEmulation">
+            <a href="gameemulation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameEmulation
+            </a>
+        </li>
+        <li  title="GameFiles">
+            <a href="gamefiles.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameFiles
+            </a>
+        </li>
+        <li  title="GameOrchestratorQuery">
+            <a href="gameorchestratorquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameOrchestratorQuery
+            </a>
+        </li>
+        <li  title="GamePayload">
+            <a href="gamepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GamePayload
+            </a>
+        </li>
+        <li  title="GameRecord">
+            <a href="gamerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameRecord
+            </a>
+        </li>
+        <li  title="InputDevice">
+            <a href="inputdevice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDevice
+            </a>
+        </li>
+        <li  title="InputDeviceInstance">
+            <a href="inputdeviceinstance.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputDeviceInstance
+            </a>
+        </li>
+        <li  title="InputProfilePayload">
+            <a href="inputprofilepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputProfilePayload
+            </a>
+        </li>
+        <li  title="InputProfileType">
+            <a href="inputprofiletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputProfileType
+            </a>
+        </li>
+        <li  title="Installable">
+            <a href="installable.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Installable
+            </a>
+        </li>
+        <li  title="InstallationCancelledPayload">
+            <a href="installationcancelledpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationCancelledPayload
+            </a>
+        </li>
+        <li  title="InstallationCompletePayload">
+            <a href="installationcompletepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationCompletePayload
+            </a>
+        </li>
+        <li  title="InstallationException">
+            <a href="installationexception.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationException
+            </a>
+        </li>
+        <li  title="InstallationJob">
+            <a href="installationjob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationJob
+            </a>
+        </li>
+        <li  title="InstallationStepPayload">
+            <a href="installationsteppayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallationStepPayload
+            </a>
+        </li>
+        <li  title="InstallJobQueue">
+            <a href="installjobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstallJobQueue
+            </a>
+        </li>
+        <li  title="JobQuery">
+            <a href="jobquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JobQuery
+            </a>
+        </li>
+        <li  title="Module">
+            <a href="module.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Module
+            </a>
+        </li>
+        <li  title="NamedConfigurationValue">
+            <a href="namedconfigurationvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NamedConfigurationValue
+            </a>
+        </li>
+        <li  title="OptionDescriptor">
+            <a href="optiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OptionDescriptor
+            </a>
+        </li>
+        <li  title="OptionMetadata">
+            <a href="optionmetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OptionMetadata
+            </a>
+        </li>
+        <li  title="OSFileInfo">
+            <a href="osfileinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OSFileInfo
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PersistEmulationSavePayload">
+            <a href="persistemulationsavepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersistEmulationSavePayload
+            </a>
+        </li>
+        <li  title="PlatformInfo">
+            <a href="platforminfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfo
+            </a>
+        </li>
+        <li  title="Plugin">
+            <a href="plugin.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Plugin
+            </a>
+        </li>
+        <li  title="ProvisionedPlugin">
+            <a href="provisionedplugin.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProvisionedPlugin
+            </a>
+        </li>
+        <li  title="RecordMetadata">
+            <a href="recordmetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecordMetadata
+            </a>
+        </li>
+        <li  title="RuntimeQuery">
+            <a href="runtimequery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RuntimeQuery
+            </a>
+        </li>
+        <li  title="SaveGame">
+            <a href="savegame.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveGame
+            </a>
+        </li>
+        <li  title="SaveProfile">
+            <a href="saveprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SaveProfile
+            </a>
+        </li>
+        <li  title="ScrapeContext">
+            <a href="scrapecontext.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContext
+            </a>
+        </li>
+        <li  title="ScrapeContextCompletePayload">
+            <a href="scrapecontextcompletepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextCompletePayload
+            </a>
+        </li>
+        <li  title="ScrapeContextStepPayload">
+            <a href="scrapecontextsteppayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapeContextStepPayload
+            </a>
+        </li>
+        <li  title="ScrapingJob">
+            <a href="scrapingjob.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapingJob
+            </a>
+        </li>
+        <li  title="ScrapingJobQueue">
+            <a href="scrapingjobqueue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScrapingJobQueue
+            </a>
+        </li>
+        <li  title="SectionDescriptor">
+            <a href="sectiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SectionDescriptor
+            </a>
+        </li>
+        <li  title="Seed">
+            <a href="seed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Seed
+            </a>
+        </li>
+        <li  title="SeedContent">
+            <a href="seedcontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedContent
+            </a>
+        </li>
+        <li  title="SeedRootContext">
+            <a href="seedrootcontext.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedRootContext
+            </a>
+        </li>
+        <li  title="SelectionOptionDescriptor">
+            <a href="selectionoptiondescriptor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SelectionOptionDescriptor
+            </a>
+        </li>
+        <li  title="StoneMetadata">
+            <a href="stonemetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StoneMetadata
+            </a>
+        </li>
+        <li  title="StoneQuery">
+            <a href="stonequery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StoneQuery
+            </a>
+        </li>
+        <li  title="SystemFile">
+            <a href="systemfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SystemFile
+            </a>
+        </li>
+        <li  title="UpdateGameConfigurationValuePayload">
+            <a href="updategameconfigurationvaluepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameConfigurationValuePayload
+            </a>
+        </li>
+        <li  title="UpdateGameMetadataPayload">
+            <a href="updategamemetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameMetadataPayload
+            </a>
+        </li>
+        <li  title="UpdatePluginConfigurationValuePayload">
+            <a href="updatepluginconfigurationvaluepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePluginConfigurationValuePayload
+            </a>
+        </li>
+        <li  title="UpdatePortPayload">
+            <a href="updateportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePortPayload
+            </a>
+        </li>
+        <li  title="ValueIdCollectionIdMappingPayload">
+            <a href="valueidcollectionidmappingpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ValueIdCollectionIdMappingPayload
+            </a>
+        </li>
+        <li  title="_DummyNodeType">
+            <a href="_dummynodetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _DummyNodeType
+            </a>
+        </li>
+        <li  title="_OSDirectoryContents__DirectoryInfo">
+            <a href="_osdirectorycontents__directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryContents__DirectoryInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryContents__DriveInfo">
+            <a href="_osdirectorycontents__driveinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryContents__DriveInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryInfo__DirectoryInfo">
+            <a href="_osdirectoryinfo__directoryinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryInfo__DirectoryInfo
+            </a>
+        </li>
+        <li  title="_OSDirectoryInfo__DriveInfo">
+            <a href="_osdirectoryinfo__driveinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _OSDirectoryInfo__DriveInfo
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="ApplyScrapeContextInput">
+            <a href="applyscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplyScrapeContextInput
+            </a>
+        </li>
+        <li  title="CancelScrapeContextInput">
+            <a href="cancelscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelScrapeContextInput
+            </a>
+        </li>
+        <li  title="ClearPortDeviceInput">
+            <a href="clearportdeviceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ClearPortDeviceInput
+            </a>
+        </li>
+        <li  title="ConfigurationValueInput">
+            <a href="configurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfigurationValueInput
+            </a>
+        </li>
+        <li  title="ControllerElementMappingInput">
+            <a href="controllerelementmappinginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerElementMappingInput
+            </a>
+        </li>
+        <li  title="ControllerLayoutFilter">
+            <a href="controllerlayoutfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ControllerLayoutFilter
+            </a>
+        </li>
+        <li  title="CreateEmulationInstanceInput">
+            <a href="createemulationinstanceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateEmulationInstanceInput
+            </a>
+        </li>
+        <li  title="CreateGameInput">
+            <a href="creategameinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateGameInput
+            </a>
+        </li>
+        <li  title="CreateInputProfileInputType">
+            <a href="createinputprofileinputtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInputProfileInputType
+            </a>
+        </li>
+        <li  title="CreateInstallationInput">
+            <a href="createinstallationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateInstallationInput
+            </a>
+        </li>
+        <li  title="CreateSaveProfileInput">
+            <a href="createsaveprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateSaveProfileInput
+            </a>
+        </li>
+        <li  title="CreateScrapeContextInput">
+            <a href="createscrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateScrapeContextInput
+            </a>
+        </li>
+        <li  title="CreateValidationInput">
+            <a href="createvalidationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateValidationInput
+            </a>
+        </li>
+        <li  title="DeleteGameConfigurationInput">
+            <a href="deletegameconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameConfigurationInput
+            </a>
+        </li>
+        <li  title="DeleteGameInput">
+            <a href="deletegameinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameInput
+            </a>
+        </li>
+        <li  title="DeleteGameMetadataInput">
+            <a href="deletegamemetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteGameMetadataInput
+            </a>
+        </li>
+        <li  title="DeleteInputProfileInput">
+            <a href="deleteinputprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteInputProfileInput
+            </a>
+        </li>
+        <li  title="DeleteSaveProfileInput">
+            <a href="deletesaveprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteSaveProfileInput
+            </a>
+        </li>
+        <li  title="DeleteScrapeContextInput">
+            <a href="deletescrapecontextinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteScrapeContextInput
+            </a>
+        </li>
+        <li  title="DeviceIdentifierInput">
+            <a href="deviceidentifierinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeviceIdentifierInput
+            </a>
+        </li>
+        <li  title="EmulationInstanceInput">
+            <a href="emulationinstanceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmulationInstanceInput
+            </a>
+        </li>
+        <li  title="GameFilter">
+            <a href="gamefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GameFilter
+            </a>
+        </li>
+        <li  title="IRecordMetadataFilter">
+            <a href="irecordmetadatafilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IRecordMetadataFilter
+            </a>
+        </li>
+        <li  title="NextInstallationStepInput">
+            <a href="nextinstallationstepinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NextInstallationStepInput
+            </a>
+        </li>
+        <li  title="NextScrapeContextStepInput">
+            <a href="nextscrapecontextstepinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NextScrapeContextStepInput
+            </a>
+        </li>
+        <li  title="PlatformInfoFilter">
+            <a href="platforminfofilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformInfoFilter
+            </a>
+        </li>
+        <li  title="RecordMetadataFilter">
+            <a href="recordmetadatafilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecordMetadataFilter
+            </a>
+        </li>
+        <li  title="RetrieveGameConfigurationInput">
+            <a href="retrievegameconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RetrieveGameConfigurationInput
+            </a>
+        </li>
+        <li  title="SeedTreeGraftInput">
+            <a href="seedtreegraftinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedTreeGraftInput
+            </a>
+        </li>
+        <li  title="SeedTreeInput">
+            <a href="seedtreeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SeedTreeInput
+            </a>
+        </li>
+        <li  title="UpdateGameConfigurationValueInput">
+            <a href="updategameconfigurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameConfigurationValueInput
+            </a>
+        </li>
+        <li  title="UpdateGameMetadataInput">
+            <a href="updategamemetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateGameMetadataInput
+            </a>
+        </li>
+        <li  title="UpdateInputProfileInput">
+            <a href="updateinputprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateInputProfileInput
+            </a>
+        </li>
+        <li  title="UpdatePluginConfigurationValueInput">
+            <a href="updatepluginconfigurationvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePluginConfigurationValueInput
+            </a>
+        </li>
+        <li  title="UpdatePortDeviceInput">
+            <a href="updateportdeviceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePortDeviceInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ConnectedEmulatorController</h1>
+        <div class="slds-text-body--regular"><p>Describe the connection state of the physical device plugged into an emulated port.</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ConnectedEmulatorController</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The emulated controller plugged into the port.</span></span></li><li><span class="tab"><span class="meta">controller</span>: <a class="support type" href="emulatedcontroller.doc.html">EmulatedController</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the physical device of the emulated controller is connected.</span></span></li><li><span class="tab"><span class="meta">isConnected</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The emulated port device entry.</span></span></li><li><span class="tab"><span class="meta">portDeviceEntry</span>: <a class="support type" href="emulatedportdeviceentry.doc.html">EmulatedPortDeviceEntry</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The port index.</span></span></li><li><span class="tab"><span class="meta">portIndex</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="clearportpayload.doc.html" title="ClearPortPayload - ">ClearPortPayload<em>null</em></a><li><li><a href="gameorchestratorquery.doc.html" title="GameOrchestratorQuery - A query type that provides access to Game-dependent emulator orchestrator information.">GameOrchestratorQuery<em>A query type that provides access to Game-dependent emulator orchestrator information.</em></a><li><li><a href="updateportpayload.doc.html" title="UpdatePortPayload - ">UpdatePortPayload<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>

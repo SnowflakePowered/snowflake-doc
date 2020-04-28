@@ -107,17 +107,17 @@
   <h6><strong>Assembly</strong>: Snowflake.Framework.dll</h6>
   <h5 id="Snowflake_Orchestration_Saving_SaveGame_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SaveGame : ISaveGame</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SaveGame : ISaveGame</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Snowflake_Orchestration_Saving_SaveGame__ctor_" data-uid="Snowflake.Orchestration.Saving.SaveGame.#ctor*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_SaveGame__ctor_Snowflake_Filesystem_IReadOnlyDirectory_System_DateTimeOffset_System_Guid_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="Snowflake.Orchestration.Saving.SaveGame.#ctor(Snowflake.Filesystem.IReadOnlyDirectory,System.DateTimeOffset,System.Guid,System.String,System.Collections.Generic.IEnumerable{System.String})">SaveGame(IReadOnlyDirectory, DateTimeOffset, Guid, String, IEnumerable&lt;String&gt;)</h4>
+  <h4 id="Snowflake_Orchestration_Saving_SaveGame__ctor_System_DateTimeOffset_System_Guid_System_String_" data-uid="Snowflake.Orchestration.Saving.SaveGame.#ctor(System.DateTimeOffset,System.Guid,System.String)">SaveGame(DateTimeOffset, Guid, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SaveGame(IReadOnlyDirectory saveDirectory, DateTimeOffset createdTime, Guid saveGuid, string saveType, IEnumerable&lt;string&gt; tags)</code></pre>
+    <pre><code class="lang-csharp hljs">protected SaveGame(DateTimeOffset createdTime, Guid saveGuid, string saveType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,11 +129,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
-        <td><span class="parametername">saveDirectory</span></td>
-        <td></td>
-      </tr>
       <tr>
         <td><span class="xref">System.DateTimeOffset</span></td>
         <td><span class="parametername">createdTime</span></td>
@@ -147,11 +142,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">saveType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">tags</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -204,29 +194,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Saving_SaveGame_SaveContents_" data-uid="Snowflake.Orchestration.Saving.SaveGame.SaveContents*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_SaveGame_SaveContents" data-uid="Snowflake.Orchestration.Saving.SaveGame.SaveContents">SaveContents</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyDirectory SaveContents { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Snowflake_Orchestration_Saving_SaveGame_SaveType_" data-uid="Snowflake.Orchestration.Saving.SaveGame.SaveType*"></a>
   <h4 id="Snowflake_Orchestration_Saving_SaveGame_SaveType" data-uid="Snowflake.Orchestration.Saving.SaveGame.SaveType">SaveType</h4>
   <div class="markdown level1 summary"></div>
@@ -250,15 +217,34 @@
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Saving_SaveGame_Tags_" data-uid="Snowflake.Orchestration.Saving.SaveGame.Tags*"></a>
-  <h4 id="Snowflake_Orchestration_Saving_SaveGame_Tags" data-uid="Snowflake.Orchestration.Saving.SaveGame.Tags">Tags</h4>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Orchestration_Saving_SaveGame_ExtractSave_" data-uid="Snowflake.Orchestration.Saving.SaveGame.ExtractSave*"></a>
+  <h4 id="Snowflake_Orchestration_Saving_SaveGame_ExtractSave_Snowflake_Filesystem_IIndelibleDirectory_" data-uid="Snowflake.Orchestration.Saving.SaveGame.ExtractSave(Snowflake.Filesystem.IIndelibleDirectory)">ExtractSave(IIndelibleDirectory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; Tags { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task ExtractSave(IIndelibleDirectory outputDirectory)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
+        <td><span class="parametername">outputDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -268,7 +254,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>

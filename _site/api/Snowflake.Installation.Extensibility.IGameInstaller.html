@@ -128,7 +128,7 @@ ROM files for that platform.</p>
   <a id="Snowflake_Installation_Extensibility_IGameInstaller_GetInstallables_" data-uid="Snowflake.Installation.Extensibility.IGameInstaller.GetInstallables*"></a>
   <h4 id="Snowflake_Installation_Extensibility_IGameInstaller_GetInstallables_Snowflake_Model_Game_PlatformId_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__" data-uid="Snowflake.Installation.Extensibility.IGameInstaller.GetInstallables(Snowflake.Model.Game.PlatformId,System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo})">GetInstallables(PlatformId, IEnumerable&lt;FileSystemInfo&gt;)</h4>
   <div class="markdown level1 summary"><p>Queries all installable file system entries in a given parent directory.</p>
-<p>This method should not do any write file operations.</p>
+<p>This method should not perform any file write operations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -172,21 +172,24 @@ a list of file entries in a directory.</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Installation.Extensibility.IInstallable.html">IInstallable</a>&gt;</td>
         <td><p>A list of installables that can be used with 
-<a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html#Snowflake_Installation_Extensibility_IGameInstaller_Install_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__">Install(IGame, IEnumerable&lt;FileSystemInfo&gt;)</a></p>
+<a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html#Snowflake_Installation_Extensibility_IGameInstaller_Install_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_Threading_CancellationToken_">Install(IGame, IEnumerable&lt;FileSystemInfo&gt;, CancellationToken)</a></p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Snowflake_Installation_Extensibility_IGameInstaller_Install_" data-uid="Snowflake.Installation.Extensibility.IGameInstaller.Install*"></a>
-  <h4 id="Snowflake_Installation_Extensibility_IGameInstaller_Install_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__" data-uid="Snowflake.Installation.Extensibility.IGameInstaller.Install(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo})">Install(IGame, IEnumerable&lt;FileSystemInfo&gt;)</h4>
+  <h4 id="Snowflake_Installation_Extensibility_IGameInstaller_Install_Snowflake_Model_Game_IGame_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_Threading_CancellationToken_" data-uid="Snowflake.Installation.Extensibility.IGameInstaller.Install(Snowflake.Model.Game.IGame,System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo},System.Threading.CancellationToken)">Install(IGame, IEnumerable&lt;FileSystemInfo&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Installs files to an <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a> by yielding instances of <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a>.
 Instead of doing manual file manipulation, use installation tasks. <a class="xref" href="Snowflake.Installation.AsyncInstallTask-1.html">AsyncInstallTask&lt;T&gt;</a>
 and <a class="xref" href="Snowflake.Installation.AsyncInstallTaskEnumerable-1.html">AsyncInstallTaskEnumerable&lt;T&gt;</a>.</p>
+<p>This method <strong>is not allowed to throw.</strong> Exceptions may only occur within <a class="xref" href="Snowflake.Installation.AsyncInstallTask-1.html">AsyncInstallTask&lt;T&gt;</a>
+and <a class="xref" href="Snowflake.Installation.AsyncInstallTaskEnumerable-1.html">AsyncInstallTaskEnumerable&lt;T&gt;</a> awaited by this <span class="xref">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</span> to yield
+<a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;TaskResult&lt;IFile&gt;&gt; Install(IGame game, IEnumerable&lt;FileSystemInfo&gt; files)</code></pre>
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;TaskResult&lt;IFile&gt;&gt; Install(IGame game, IEnumerable&lt;FileSystemInfo&gt; files, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,7 +211,13 @@ and <a class="xref" href="Snowflake.Installation.AsyncInstallTaskEnumerable-1.ht
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.IO.FileSystemInfo</span>&gt;</td>
         <td><span class="parametername">files</span></td>
         <td><p>The list of files to install. Use <a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html#Snowflake_Installation_Extensibility_IGameInstaller_GetInstallables_Snowflake_Model_Game_PlatformId_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__">GetInstallables(PlatformId, IEnumerable&lt;FileSystemInfo&gt;)</a>
-to ensure that this installer can properly install the given files. Theoretically </p>
+to ensure that this installer can properly install the given files.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to pass to the installer.</p>
 </td>
       </tr>
     </tbody>

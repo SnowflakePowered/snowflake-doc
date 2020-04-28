@@ -226,7 +226,7 @@ instead of enumerating all possible games.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;IGame&gt; GetAllGames()</code></pre>
+    <pre><code class="lang-csharp hljs">IQueryable&lt;IGame&gt; GetAllGames()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,7 +238,7 @@ instead of enumerating all possible games.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
         <td><p>All games in the library.</p>
 </td>
       </tr>
@@ -455,7 +455,7 @@ using <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Mod
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;IGame&gt; QueryGames(Expression&lt;Func&lt;IGameRecordQuery, bool&gt;&gt; predicate)</code></pre>
+    <pre><code class="lang-csharp hljs">IQueryable&lt;IGame&gt; QueryGames(Expression&lt;Func&lt;IGameRecordQuery, bool&gt;&gt; predicate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -485,7 +485,7 @@ using <a class="xref" href="Snowflake.Model.Game.IGameLibrary.html#Snowflake_Mod
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>&gt;</td>
         <td><p>All games in the library that fulfill the provided predicate.</p>
 </td>
       </tr>

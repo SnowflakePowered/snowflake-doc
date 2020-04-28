@@ -80,6 +80,61 @@ Thus, metadata can be preserved throughout.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IReadOnlyDirectory</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_Name_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.Name*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_Name" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IReadOnlyDirectory_RootedPath_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.RootedPath*"></a>
+  <h4 id="Snowflake_Filesystem_IReadOnlyDirectory_RootedPath" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.RootedPath">RootedPath</h4>
+  <div class="markdown level1 summary"><p>Gets the contextual path of the directory, relative to the root of the directory provider context.
+For example, with paths produced by <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html">IGameFileExtension</a>,
+the rooted path would be relative to <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html#Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_Root">Root</a>. Keep in mind, these paths do
+not have meaning outside of the context of the directory, which may or may not be known. They are also not
+entirely compatible with <span class="xref">System.IO.Path</span> APIs, and are only meaningfull within the <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a>
+API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RootedPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Snowflake_Filesystem_IReadOnlyDirectory_ContainsDirectory_" data-uid="Snowflake.Filesystem.IReadOnlyDirectory.ContainsDirectory*"></a>

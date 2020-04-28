@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IControllerElementMappingProfileStore
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IControllerElementMappingProfileStore
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore">
+  
+  
+  <h1 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore" class="text-break">Interface IControllerElementMappingProfileStore
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a store for <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Input.Controller.Mapped.html">Snowflake.Input.Controller.Mapped</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IControllerElementMappingProfileStore</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_AddMappings_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.AddMappings*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_AddMappings_Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_System_String_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.AddMappings(Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile,System.String)">AddMappings(IControllerElementMappingProfile, String)</h4>
+  <div class="markdown level1 summary"><p>Add the given mappings under the given profile name. Profile names do not have to be unique
+across mappings between different spec controllers and real devices, but must be unique
+for the same controller ID and device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddMappings(IControllerElementMappingProfile mappings, string profileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a> to store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">profileName</span></td>
+        <td><p>The profile name to store the mappings under.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_AddMappingsAsync_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.AddMappingsAsync*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_AddMappingsAsync_Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_System_String_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.AddMappingsAsync(Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile,System.String)">AddMappingsAsync(IControllerElementMappingProfile, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously add the given mappings under the given profile name. Profile names do not have to be unique
+across mappings between different spec controllers and real devices, but must be unique
+for the same controller ID and device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMappingsAsync(IControllerElementMappingProfile mappings, string profileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a> to store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">profileName</span></td>
+        <td><p>The profile name to store the mappings under.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappings_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappings*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappings_Snowflake_Input_Controller_ControllerId_System_String_System_Int32_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappings(Snowflake.Input.Controller.ControllerId,System.String,System.Int32)">DeleteMappings(ControllerId, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Deletes all mappings from the provided controller ID to device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteMappings(ControllerId controllerId, string deviceName, int vendorId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a></td>
+        <td><span class="parametername">controllerId</span></td>
+        <td><p>The Stone controller ID that maps to the real device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>The name of the device to delete mappings.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">vendorId</span></td>
+        <td><p>The vendor ID of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappings_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappings*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappings_System_Guid_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappings(System.Guid)">DeleteMappings(Guid)</h4>
+  <div class="markdown level1 summary"><p>Deletes the mapping profile from the provided controller ID to device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteMappings(Guid profileGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">profileGuid</span></td>
+        <td><p>The [rofile GUID of the mapping profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappingsAsync_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappingsAsync*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappingsAsync_Snowflake_Input_Controller_ControllerId_System_String_System_Int32_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappingsAsync(Snowflake.Input.Controller.ControllerId,System.String,System.Int32)">DeleteMappingsAsync(ControllerId, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously deletes all mappings from the provided controller ID to device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteMappingsAsync(ControllerId controllerId, string deviceName, int vendorId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a></td>
+        <td><span class="parametername">controllerId</span></td>
+        <td><p>The Stone controller ID that maps to the real device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>The name of the device to delete mappings.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">vendorId</span></td>
+        <td><p>The vendor ID of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappingsAsync_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappingsAsync*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_DeleteMappingsAsync_System_Guid_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.DeleteMappingsAsync(System.Guid)">DeleteMappingsAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously deletes the mapping profile from the provided controller ID to device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteMappingsAsync(Guid profileGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">profileGuid</span></td>
+        <td><p>The [rofile GUID of the mapping profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetMappings_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetMappings*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetMappings_System_Guid_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetMappings(System.Guid)">GetMappings(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the saved mapping profile from the provided controller ID to device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IControllerElementMappingProfile GetMappings(Guid profileGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">profileGuid</span></td>
+        <td><p>The [rofile GUID of the mapping profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a></td>
+        <td><p>The saved mapping profile from the provided controller ID to device ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetMappingsAsync_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetMappingsAsync*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetMappingsAsync_System_Guid_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetMappingsAsync(System.Guid)">GetMappingsAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously gets the saved mapping profile from the provided controller ID to device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IControllerElementMappingProfile&gt; GetMappingsAsync(Guid profileGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">profileGuid</span></td>
+        <td><p>The [rofile GUID of the mapping profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a>&gt;</td>
+        <td><p>The saved mapping profile from the provided controller ID to device ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetProfileNames_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetProfileNames*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_GetProfileNames_Snowflake_Input_Controller_ControllerId_Snowflake_Input_Device_InputDriver_System_String_System_Int32_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.GetProfileNames(Snowflake.Input.Controller.ControllerId,Snowflake.Input.Device.InputDriver,System.String,System.Int32)">GetProfileNames(ControllerId, InputDriver, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the profile names of all saved mappings from the provided controller ID to device ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;(string profileName, Guid profileGuid)&gt; GetProfileNames(ControllerId controllerId, InputDriver driverType, string deviceName, int vendorId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.ControllerId.html">ControllerId</a></td>
+        <td><span class="parametername">controllerId</span></td>
+        <td><p>The Stone controller ID that maps to the real device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.InputDriver.html">InputDriver</a></td>
+        <td><span class="parametername">driverType</span></td>
+        <td><p>The driver for which the mapping is for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>The device ID that maps from the spec controller.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">vendorId</span></td>
+        <td><p>The vendor ID of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Guid</span>&gt;&gt;</td>
+        <td><p>All saved mappings from the provided controller ID to device ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_UpdateMappings_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.UpdateMappings*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_UpdateMappings_Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.UpdateMappings(Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile)">UpdateMappings(IControllerElementMappingProfile)</h4>
+  <div class="markdown level1 summary"><p>Updates the specific mapping profile with the given profile name. A profile with the 
+same <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html#Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_ProfileGuid">ProfileGuid</a> must be already in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateMappings(IControllerElementMappingProfile mappings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a> to store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_UpdateMappingsAsync_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.UpdateMappingsAsync*"></a>
+  <h4 id="Snowflake_Input_Controller_Mapped_IControllerElementMappingProfileStore_UpdateMappingsAsync_Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_" data-uid="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfileStore.UpdateMappingsAsync(Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile)">UpdateMappingsAsync(IControllerElementMappingProfile)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously updates the specific mapping profile with the given profile name.
+A profile with the 
+same <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html#Snowflake_Input_Controller_Mapped_IControllerElementMappingProfile_ProfileGuid">ProfileGuid</a> must be already in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateMappingsAsync(IControllerElementMappingProfile mappings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Controller.Mapped.IControllerElementMappingProfile.html">IControllerElementMappingProfile</a> to store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

@@ -103,6 +103,31 @@
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Input_Device_IInputDeviceInstance_CapabilityLabels_" data-uid="Snowflake.Input.Device.IInputDeviceInstance.CapabilityLabels*"></a>
+  <h4 id="Snowflake_Input_Device_IInputDeviceInstance_CapabilityLabels" data-uid="Snowflake.Input.Device.IInputDeviceInstance.CapabilityLabels">CapabilityLabels</h4>
+  <div class="markdown level1 summary"><p>Gets the friendly label names for capabilities this device instance supports.
+This collection must at least have labels for all supported capabilities in <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html#Snowflake_Input_Device_IInputDeviceInstance_Capabilities">Capabilities</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDeviceCapabilityLabels CapabilityLabels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Input.Device.IDeviceCapabilityLabels.html">IDeviceCapabilityLabels</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Input_Device_IInputDeviceInstance_ClassEnumerationIndex_" data-uid="Snowflake.Input.Device.IInputDeviceInstance.ClassEnumerationIndex*"></a>
   <h4 id="Snowflake_Input_Device_IInputDeviceInstance_ClassEnumerationIndex" data-uid="Snowflake.Input.Device.IInputDeviceInstance.ClassEnumerationIndex">ClassEnumerationIndex</h4>
   <div class="markdown level1 summary"><p>When enumerating devices with a given driver, the index of enumeration for this driver,
@@ -165,7 +190,7 @@ the natural mapping from controller element to a device capability.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">InputDriverType Driver { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">InputDriver Driver { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +202,7 @@ the natural mapping from controller element to a device capability.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.InputDriverType.html">InputDriverType</a></td>
+        <td><a class="xref" href="Snowflake.Input.Device.InputDriver.html">InputDriver</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -185,8 +210,8 @@ the natural mapping from controller element to a device capability.</p>
   <a id="Snowflake_Input_Device_IInputDeviceInstance_EnumerationIndex_" data-uid="Snowflake.Input.Device.IInputDeviceInstance.EnumerationIndex*"></a>
   <h4 id="Snowflake_Input_Device_IInputDeviceInstance_EnumerationIndex" data-uid="Snowflake.Input.Device.IInputDeviceInstance.EnumerationIndex">EnumerationIndex</h4>
   <div class="markdown level1 summary"><p>When enumerating devices with a given driver, the index of enumeration for this driver.</p>
-<p>If <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html#Snowflake_Input_Device_IInputDeviceInstance_Driver">Driver</a> is <a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Passthrough">Passthrough</a>, or
-<a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Keyboard">Keyboard</a>, the index is always 0.</p>
+<p>If <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html#Snowflake_Input_Device_IInputDeviceInstance_Driver">Driver</a> is <a class="xref" href="Snowflake.Input.Device.InputDriver.html#Snowflake_Input_Device_InputDriver_Passthrough">Passthrough</a>, or
+<a class="xref" href="Snowflake.Input.Device.InputDriver.html#Snowflake_Input_Device_InputDriver_Keyboard">Keyboard</a>, the index is always 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

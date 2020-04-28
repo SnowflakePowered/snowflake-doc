@@ -94,8 +94,8 @@ for that operating system.
 
 <p>
 All <a class="xref" href="Snowflake.Services.IDeviceEnumerator.html">IDeviceEnumerator</a> must provide a keyboard device that implements the
-driver instance for <a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Keyboard">Keyboard</a> and a passthrough device that
-implements the <a class="xref" href="Snowflake.Input.Device.InputDriverType.html#Snowflake_Input_Device_InputDriverType_Passthrough">Passthrough</a> driver instance at a minimum, otherwise
+driver instance for <a class="xref" href="Snowflake.Input.Device.InputDriver.html#Snowflake_Input_Device_InputDriver_Keyboard">Keyboard</a> and a passthrough device that
+implements the <a class="xref" href="Snowflake.Input.Device.InputDriver.html#Snowflake_Input_Device_InputDriver_Passthrough">Passthrough</a> driver instance at a minimum, otherwise
 emulators will be unable to map inputs.
 </p>
 </section>
@@ -104,13 +104,6 @@ emulators will be unable to map inputs.
 </section>
       <h4><a class="xref" href="Snowflake.Services.IPluginManager.html">IPluginManager</a></h4>
       <section><p>The IPluginManager manages all plugins.</p>
-</section>
-      <h4><a class="xref" href="Snowflake.Services.IServiceContainer.html">IServiceContainer</a></h4>
-      <section><p>The core frontend service that handles all the functions of the frontend core.
-Acts as a dependency injection container for all <a class="xref" href="Snowflake.Loader.IComposable.html">IComposable</a> modules.
-An instance of <a class="xref" href="Snowflake.Services.IServiceContainer.html">IServiceContainer</a> can not be directly obtained. Instead,
-services within it must be requested using <a class="xref" href="Snowflake.Loader.ImportServiceAttribute.html">ImportServiceAttribute</a>, and
-new services can be registered using the <a class="xref" href="Snowflake.Services.IServiceRegistrationProvider.html">IServiceRegistrationProvider</a> service.</p>
 </section>
       <h4><a class="xref" href="Snowflake.Services.IServiceEnumerator.html">IServiceEnumerator</a></h4>
       <section><p>Enumerates all available services.</p>

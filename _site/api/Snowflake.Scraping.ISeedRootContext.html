@@ -82,7 +82,7 @@ parent-child relationships.</p>
   </h3>
   <a id="Snowflake_Scraping_ISeedRootContext_Item_" data-uid="Snowflake.Scraping.ISeedRootContext.Item*"></a>
   <h4 id="Snowflake_Scraping_ISeedRootContext_Item_System_Guid_" data-uid="Snowflake.Scraping.ISeedRootContext.Item(System.Guid)">Item[Guid]</h4>
-  <div class="markdown level1 summary"><p>Returns the seed with the given GUID. If it does not exists, returns the root.</p>
+  <div class="markdown level1 summary"><p>Returns the seed with the given GUID. If it does not exists, returns null.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -429,7 +429,7 @@ value of <a class="xref" href="Snowflake.Scraping.ISeedRootContext.html#Snowflak
   </table>
   <a id="Snowflake_Scraping_ISeedRootContext_GetChildren_" data-uid="Snowflake.Scraping.ISeedRootContext.GetChildren*"></a>
   <h4 id="Snowflake_Scraping_ISeedRootContext_GetChildren_Snowflake_Scraping_ISeed_" data-uid="Snowflake.Scraping.ISeedRootContext.GetChildren(Snowflake.Scraping.ISeed)">GetChildren(ISeed)</h4>
-  <div class="markdown level1 summary"><p>Gets all the children of the given seed relative to this context, not
+  <div class="markdown level1 summary"><p>Gets all the unculled children of the given seed relative to this context, not
 including the given seed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -473,7 +473,7 @@ including the given seed.</p>
   </table>
   <a id="Snowflake_Scraping_ISeedRootContext_GetDescendants_" data-uid="Snowflake.Scraping.ISeedRootContext.GetDescendants*"></a>
   <h4 id="Snowflake_Scraping_ISeedRootContext_GetDescendants_Snowflake_Scraping_ISeed_" data-uid="Snowflake.Scraping.ISeedRootContext.GetDescendants(Snowflake.Scraping.ISeed)">GetDescendants(ISeed)</h4>
-  <div class="markdown level1 summary"><p>Gets all the descendants of a given seed.</p>
+  <div class="markdown level1 summary"><p>Gets all the unculled descendants of a given seed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -516,7 +516,7 @@ including the given seed.</p>
   </table>
   <a id="Snowflake_Scraping_ISeedRootContext_GetRootSeeds_" data-uid="Snowflake.Scraping.ISeedRootContext.GetRootSeeds*"></a>
   <h4 id="Snowflake_Scraping_ISeedRootContext_GetRootSeeds" data-uid="Snowflake.Scraping.ISeedRootContext.GetRootSeeds">GetRootSeeds()</h4>
-  <div class="markdown level1 summary"><p>Gets all the children of the root.</p>
+  <div class="markdown level1 summary"><p>Gets all the unculled children of the root.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -541,7 +541,7 @@ including the given seed.</p>
   </table>
   <a id="Snowflake_Scraping_ISeedRootContext_GetSiblings_" data-uid="Snowflake.Scraping.ISeedRootContext.GetSiblings*"></a>
   <h4 id="Snowflake_Scraping_ISeedRootContext_GetSiblings_Snowflake_Scraping_ISeed_" data-uid="Snowflake.Scraping.ISeedRootContext.GetSiblings(Snowflake.Scraping.ISeed)">GetSiblings(ISeed)</h4>
-  <div class="markdown level1 summary"><p>Gets all the siblings of the given seed relative to this context,
+  <div class="markdown level1 summary"><p>Gets all the unculled siblings of the given seed relative to this context,
 not including the given seed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

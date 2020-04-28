@@ -225,7 +225,7 @@ records or other metadata.</p>
   <h4 id="Snowflake_Scraping_IScrapeContext_GetAwaiter" data-uid="Snowflake.Scraping.IScrapeContext.GetAwaiter">GetAwaiter()</h4>
   <div class="markdown level1 summary"><p>Automatically gets the awaiter for the final, automatically culled, flattened seed tree state.
 Use the <span class="xref">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</span> API if you want finer control over the seed tree state, or
-directly call the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Proceed">Proceed()</a> methods for even finer control over the tree state.</p>
+directly call the <see cref="!:Proceed()"></see> methods for even finer control over the tree state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -249,14 +249,38 @@ directly call the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#S
     </tbody>
   </table>
   <a id="Snowflake_Scraping_IScrapeContext_Proceed_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed*"></a>
-  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed" data-uid="Snowflake.Scraping.IScrapeContext.Proceed">Proceed()</h4>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed_System_Collections_Generic_IEnumerable_Snowflake_Scraping_SeedContent__System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed(System.Collections.Generic.IEnumerable{Snowflake.Scraping.SeedContent},System.Threading.CancellationToken)">Proceed(IEnumerable&lt;SeedContent&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Proceed with populating the seed tree using the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed()</code></pre>
+    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed(IEnumerable&lt;SeedContent&gt; seedsToAdd, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a>&gt;</td>
+        <td><span class="parametername">seedsToAdd</span></td>
+        <td><p>Adds seeds to the root of the tree before running scrapers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token used to halt this step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -274,13 +298,13 @@ directly call the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#S
     </tbody>
   </table>
   <a id="Snowflake_Scraping_IScrapeContext_Proceed_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed*"></a>
-  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed_System_Collections_Generic_IEnumerable_Snowflake_Scraping_SeedContent__" data-uid="Snowflake.Scraping.IScrapeContext.Proceed(System.Collections.Generic.IEnumerable{Snowflake.Scraping.SeedContent})">Proceed(IEnumerable&lt;SeedContent&gt;)</h4>
+  <h4 id="Snowflake_Scraping_IScrapeContext_Proceed_System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.IScrapeContext.Proceed(System.Threading.CancellationToken)">Proceed(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Proceed with populating the seed tree using the given <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#Snowflake_Scraping_IScrapeContext_Scrapers">Scrapers</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed(IEnumerable&lt;SeedContent&gt; seedsToAdd)</code></pre>
+    <pre><code class="lang-csharp hljs">ValueTask&lt;bool&gt; Proceed(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,9 +317,9 @@ directly call the <a class="xref" href="Snowflake.Scraping.IScrapeContext.html#S
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Scraping.SeedContent.html">SeedContent</a>&gt;</td>
-        <td><span class="parametername">seedsToAdd</span></td>
-        <td><p>Adds seeds to the root of the tree before running scrapers.</p>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token used to halt this step.</p>
 </td>
       </tr>
     </tbody>

@@ -122,20 +122,20 @@ information available in the seed tree.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Snowflake_Scraping_Extensibility_ITraverser_2_Traverse_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.Traverse*"></a>
-  <h4 id="Snowflake_Scraping_Extensibility_ITraverser_2_Traverse__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.Traverse(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext)">Traverse(TEffectTarget, ISeed, ISeedRootContext)</h4>
+  <h4 id="Snowflake_Scraping_Extensibility_ITraverser_2_Traverse__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.Traverse(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext,System.Threading.CancellationToken)">Traverse(TEffectTarget, ISeed, ISeedRootContext, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Traverses the seed tree to yield objects of type <code data-dev-comment-type="typeparamref" class="typeparamref">TProducts</code>,
 which, while being enumerated, may cause side effects to the provided <code data-dev-comment-type="paramref" class="paramref">sideEffectContext</code>.</p>
 <p>This may mean that the provided products are already applied to the <code data-dev-comment-type="paramref" class="paramref">sideEffectContext</code>,
 and should not be reapplied as enumerated.
 <p>
-Although the full seed root context is provied, it is best practice for traversers to
+Although the full seed root context is provided, it is best practice for traversers to
 traverse relative to the given <code data-dev-comment-type="paramref" class="paramref">relativeRoot</code>.
 </p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;TProducts&gt; Traverse(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;TProducts&gt; Traverse(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,6 +163,12 @@ traverse relative to the given <code data-dev-comment-type="paramref" class="par
         <td><a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The seed context within where the seeds can be traversed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token passed to the async enumerable.</p>
 </td>
       </tr>
     </tbody>
@@ -184,7 +190,7 @@ traverse relative to the given <code data-dev-comment-type="paramref" class="par
     </tbody>
   </table>
   <a id="Snowflake_Scraping_Extensibility_ITraverser_2_TraverseAll_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.TraverseAll*"></a>
-  <h4 id="Snowflake_Scraping_Extensibility_ITraverser_2_TraverseAll__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.TraverseAll(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext)">TraverseAll(TEffectTarget, ISeed, ISeedRootContext)</h4>
+  <h4 id="Snowflake_Scraping_Extensibility_ITraverser_2_TraverseAll__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.Extensibility.ITraverser`2.TraverseAll(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext,System.Threading.CancellationToken)">TraverseAll(TEffectTarget, ISeed, ISeedRootContext, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the task awaiter for traversers.
 Traversers must be awaited context free and thus is always configured to not continue
 on captured context.</p>
@@ -192,7 +198,7 @@ on captured context.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TProducts&gt;&gt; TraverseAll(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TProducts&gt;&gt; TraverseAll(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,6 +227,11 @@ on captured context.</p>
         <td><span class="parametername">context</span></td>
         <td><p>The seed context within where the seeds can be traversed.</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -156,6 +156,91 @@ specific to a certain <a class="xref" href="Snowflake.Model.Game.IGame.html">IGa
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetOwningValueCollection_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetOwningValueCollection*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetOwningValueCollection_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetOwningValueCollection(System.Guid)">GetOwningValueCollection(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the Guid of the value collection of the value in the in the database with the given
+<code data-dev-comment-type="paramref" class="paramref">valueGuid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid GetOwningValueCollection(Guid valueGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueGuid</span></td>
+        <td><p>The unique GUID of the configuration value to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetOwningValueCollectionAsync_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetOwningValueCollectionAsync*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetOwningValueCollectionAsync_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetOwningValueCollectionAsync(System.Guid)">GetOwningValueCollectionAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the Guid of the value collection of the value in the in the database with the given <code data-dev-comment-type="paramref" class="paramref">valueGuid</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Guid&gt; GetOwningValueCollectionAsync(Guid valueGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">valueGuid</span></td>
+        <td><p>The unique GUID of the configuration value to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfile_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfile*"></a>
   <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameConfigurationExtensionProvider_GetProfile__1_System_Guid_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameConfigurationExtensionProvider.GetProfile``1(System.Guid)">GetProfile&lt;T&gt;(Guid)</h4>
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Snowflake.Configuration.IConfigurationCollection-1.html">IConfigurationCollection&lt;T&gt;</a> configuration profile

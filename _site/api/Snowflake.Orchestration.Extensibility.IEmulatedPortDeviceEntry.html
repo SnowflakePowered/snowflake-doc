@@ -112,7 +112,7 @@ the corresponding <a class="xref" href="Snowflake.Input.Device.IInputDeviceInsta
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">InputDriverType Driver { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">InputDriver Driver { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,7 +124,7 @@ the corresponding <a class="xref" href="Snowflake.Input.Device.IInputDeviceInsta
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.InputDriverType.html">InputDriverType</a></td>
+        <td><a class="xref" href="Snowflake.Input.Device.InputDriver.html">InputDriver</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -201,15 +201,15 @@ the corresponding <a class="xref" href="Snowflake.Input.Device.IInputDeviceInsta
       </tr>
     </tbody>
   </table>
-  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortDeviceEntry_ProfileName_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.ProfileName*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortDeviceEntry_ProfileName" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.ProfileName">ProfileName</h4>
-  <div class="markdown level1 summary"><p>The name of the input mappings profile that maps the real <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a> of the
+  <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortDeviceEntry_ProfileGuid_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.ProfileGuid*"></a>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortDeviceEntry_ProfileGuid" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.ProfileGuid">ProfileGuid</h4>
+  <div class="markdown level1 summary"><p>The GUID of the input mappings profile that maps the real <a class="xref" href="Snowflake.Input.Device.DeviceCapability.html">DeviceCapability</a> of the
 real device to the <a class="xref" href="Snowflake.Input.Controller.ControllerElement.html">ControllerElement</a> of the virtual device for this port.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string ProfileName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">Guid ProfileGuid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +221,7 @@ real device to the <a class="xref" href="Snowflake.Input.Controller.ControllerEl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>

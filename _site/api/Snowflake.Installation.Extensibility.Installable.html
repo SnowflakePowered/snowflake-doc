@@ -112,14 +112,14 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Snowflake_Installation_Extensibility_Installable__ctor_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor*"></a>
-  <h4 id="Snowflake_Installation_Extensibility_Installable__ctor_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_IO_FileSystemInfo_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor(System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo},System.IO.FileSystemInfo)">Installable(IEnumerable&lt;FileSystemInfo&gt;, FileSystemInfo)</h4>
+  <h4 id="Snowflake_Installation_Extensibility_Installable__ctor_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_IO_FileSystemInfo_Snowflake_Installation_Extensibility_IGameInstaller_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor(System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo},System.IO.FileSystemInfo,Snowflake.Installation.Extensibility.IGameInstaller)">Installable(IEnumerable&lt;FileSystemInfo&gt;, FileSystemInfo, IGameInstaller)</h4>
   <div class="markdown level1 summary"><p>Creates an <a class="xref" href="Snowflake.Installation.Extensibility.IInstallable.html">IInstallable</a> with the provided artifacts and uses
 the file path as a display name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Installable(IEnumerable&lt;FileSystemInfo&gt; artifacts, FileSystemInfo source)</code></pre>
+    <pre><code class="lang-csharp hljs">public Installable(IEnumerable&lt;FileSystemInfo&gt; artifacts, FileSystemInfo source, IGameInstaller gameInstaller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,16 +143,21 @@ the file path as a display name.</p>
         <td><p>The source file system info of the installable.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html">IGameInstaller</a></td>
+        <td><span class="parametername">gameInstaller</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <a id="Snowflake_Installation_Extensibility_Installable__ctor_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor*"></a>
-  <h4 id="Snowflake_Installation_Extensibility_Installable__ctor_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_String_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor(System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo},System.String)">Installable(IEnumerable&lt;FileSystemInfo&gt;, String)</h4>
+  <h4 id="Snowflake_Installation_Extensibility_Installable__ctor_System_Collections_Generic_IEnumerable_System_IO_FileSystemInfo__System_String_Snowflake_Installation_Extensibility_IGameInstaller_" data-uid="Snowflake.Installation.Extensibility.Installable.#ctor(System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo},System.String,Snowflake.Installation.Extensibility.IGameInstaller)">Installable(IEnumerable&lt;FileSystemInfo&gt;, String, IGameInstaller)</h4>
   <div class="markdown level1 summary"><p>Creates an <a class="xref" href="Snowflake.Installation.Extensibility.IInstallable.html">IInstallable</a> with the provided artifacts and display name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Installable(IEnumerable&lt;FileSystemInfo&gt; artifacts, string displayName)</code></pre>
+    <pre><code class="lang-csharp hljs">public Installable(IEnumerable&lt;FileSystemInfo&gt; artifacts, string displayName, IGameInstaller gameInstaller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,6 +179,12 @@ the file path as a display name.</p>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">displayName</span></td>
         <td><p>The display name of the installable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.Extensibility.IGameInstaller.html">IGameInstaller</a></td>
+        <td><span class="parametername">gameInstaller</span></td>
+        <td><p>The installer that produced this installable.</p>
 </td>
       </tr>
     </tbody>
@@ -210,6 +221,29 @@ the file path as a display name.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string DisplayName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Installation_Extensibility_Installable_Source_" data-uid="Snowflake.Installation.Extensibility.Installable.Source*"></a>
+  <h4 id="Snowflake_Installation_Extensibility_Installable_Source" data-uid="Snowflake.Installation.Extensibility.Installable.Source">Source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Source { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

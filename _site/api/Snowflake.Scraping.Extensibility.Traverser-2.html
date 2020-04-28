@@ -213,12 +213,12 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Snowflake_Scraping_Extensibility_Traverser_2_Traverse_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.Traverse*"></a>
-  <h4 id="Snowflake_Scraping_Extensibility_Traverser_2_Traverse__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.Traverse(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext)">Traverse(TEffectTarget, ISeed, ISeedRootContext)</h4>
+  <h4 id="Snowflake_Scraping_Extensibility_Traverser_2_Traverse__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.Traverse(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext,System.Threading.CancellationToken)">Traverse(TEffectTarget, ISeed, ISeedRootContext, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract IAsyncEnumerable&lt;TProducts&gt; Traverse(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract IAsyncEnumerable&lt;TProducts&gt; Traverse(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,6 +243,11 @@
       <tr>
         <td><a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a></td>
         <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -263,12 +268,12 @@
     </tbody>
   </table>
   <a id="Snowflake_Scraping_Extensibility_Traverser_2_TraverseAll_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.TraverseAll*"></a>
-  <h4 id="Snowflake_Scraping_Extensibility_Traverser_2_TraverseAll__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.TraverseAll(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext)">TraverseAll(TEffectTarget, ISeed, ISeedRootContext)</h4>
+  <h4 id="Snowflake_Scraping_Extensibility_Traverser_2_TraverseAll__1_Snowflake_Scraping_ISeed_Snowflake_Scraping_ISeedRootContext_System_Threading_CancellationToken_" data-uid="Snowflake.Scraping.Extensibility.Traverser`2.TraverseAll(`1,Snowflake.Scraping.ISeed,Snowflake.Scraping.ISeedRootContext,System.Threading.CancellationToken)">TraverseAll(TEffectTarget, ISeed, ISeedRootContext, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TProducts&gt;&gt; TraverseAll(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TProducts&gt;&gt; TraverseAll(TEffectTarget sideEffectContext, ISeed relativeRoot, ISeedRootContext context, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,6 +298,11 @@
       <tr>
         <td><a class="xref" href="Snowflake.Scraping.ISeedRootContext.html">ISeedRootContext</a></td>
         <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
     </tbody>

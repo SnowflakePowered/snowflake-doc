@@ -224,16 +224,16 @@ platform, and port number combination.</p>
     </tbody>
   </table>
   <a id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_SetPort_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.SetPort*"></a>
-  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_SetPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_Snowflake_Input_Controller_ControllerId_Snowflake_Input_Device_IInputDevice_Snowflake_Input_Device_IInputDeviceInstance_System_String_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.SetPort(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId,System.Int32,Snowflake.Input.Controller.ControllerId,Snowflake.Input.Device.IInputDevice,Snowflake.Input.Device.IInputDeviceInstance,System.String)">SetPort(IEmulatorOrchestrator, PlatformId, Int32, ControllerId, IInputDevice, IInputDeviceInstance, String)</h4>
+  <h4 id="Snowflake_Orchestration_Extensibility_IEmulatedPortStore_SetPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_Snowflake_Input_Controller_ControllerId_System_Guid_Snowflake_Input_Device_InputDriver_System_Guid_" data-uid="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.SetPort(Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator,Snowflake.Model.Game.PlatformId,System.Int32,Snowflake.Input.Controller.ControllerId,System.Guid,Snowflake.Input.Device.InputDriver,System.Guid)">SetPort(IEmulatorOrchestrator, PlatformId, Int32, ControllerId, Guid, InputDriver, Guid)</h4>
   <div class="markdown level1 summary"><p>Sets the saved <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortDeviceEntry.html">IEmulatedPortDeviceEntry</a> for the given <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatorOrchestrator.html">IEmulatorOrchestrator</a>,
 platform, and port number combination.</p>
-<p>Only connected devices can be set to a port. Use <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.html#Snowflake_Orchestration_Extensibility_IEmulatedPortStore_ClearPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_">ClearPort(IEmulatorOrchestrator, PlatformId, Int32)</a> to
+<p>Use <a class="xref" href="Snowflake.Orchestration.Extensibility.IEmulatedPortStore.html#Snowflake_Orchestration_Extensibility_IEmulatedPortStore_ClearPort_Snowflake_Orchestration_Extensibility_IEmulatorOrchestrator_Snowflake_Model_Game_PlatformId_System_Int32_">ClearPort(IEmulatorOrchestrator, PlatformId, Int32)</a> to
 &quot;disconnect&quot; or unassign a port entry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetPort(IEmulatorOrchestrator orchestrator, PlatformId platform, int portNumber, ControllerId controller, IInputDevice device, IInputDeviceInstance instance, string inputProfile)</code></pre>
+    <pre><code class="lang-csharp hljs">void SetPort(IEmulatorOrchestrator orchestrator, PlatformId platform, int portNumber, ControllerId controller, Guid deviceInstanceGuid, InputDriver instanceDriver, Guid inputProfile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,21 +270,22 @@ platform, and port number combination.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a></td>
-        <td><span class="parametername">device</span></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">deviceInstanceGuid</span></td>
         <td><p>The real <a class="xref" href="Snowflake.Input.Device.IInputDevice.html">IInputDevice</a> that this port originates from.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a></td>
-        <td><span class="parametername">instance</span></td>
-        <td><p>The <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a> of the device to use for this port.</p>
+        <td><a class="xref" href="Snowflake.Input.Device.InputDriver.html">InputDriver</a></td>
+        <td><span class="parametername">instanceDriver</span></td>
+        <td><p>The <a class="xref" href="Snowflake.Input.Device.InputDriver.html">InputDriver</a> of the <a class="xref" href="Snowflake.Input.Device.IInputDeviceInstance.html">IInputDeviceInstance</a>
+    of the device to use for this port.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">inputProfile</span></td>
-        <td><p>The name of the input profile to use.</p>
+        <td><p>The Profile GUID of the input profile to use.</p>
 </td>
       </tr>
     </tbody>

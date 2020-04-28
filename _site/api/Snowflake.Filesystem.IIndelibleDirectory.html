@@ -1,0 +1,1378 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IIndelibleDirectory
+   | Snowflake Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IIndelibleDirectory
+   | Snowflake Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar bg-primary">
+          <a class="navbar-brand mr-0 mr-md-2" aria-label="Snowflake" href="https://snowflakepowe.red"><img src="/svg/banner.svg" style="height:63px;width:300px;pointer-events:none;padding:0;margin:0"></a>
+          <div class="container flex-md-row flex-column">
+            <div class="navbar-nav-scroll mr-md-auto" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+           
+            <div class="navbar-nav-scroll ml-md-auto">
+                <ul class="navbar-nav bd-navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://snowflakepowe.red/blog/">Blog</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/">Docs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/SnowflakePowered">GitHub</a></li>
+                </ul>
+            </div>
+           </div>
+        </header>      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+         <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>      <div class="container-fluid" style="display: flex;">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+            <div class="col-md-10">
+              <article class="content wrap" id="_content" data-uid="Snowflake.Filesystem.IIndelibleDirectory">
+  
+  
+  <h1 id="Snowflake_Filesystem_IIndelibleDirectory" data-uid="Snowflake.Filesystem.IIndelibleDirectory" class="text-break">Interface IIndelibleDirectory
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the root of a Directory that can not be deleted, where each file that is access through a directory is
+associated with a GUID in the directory&apos;s manifest.</p>
+<p>When files are moved between IDirectories, the files GUID is preserved. 
+Thus, metadata can be preserved throughout.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Snowflake.Filesystem.html">Snowflake.Filesystem</a></h6>
+  <h6><strong>Assembly</strong>: Snowflake.Framework.Primitives.dll</h6>
+  <h5 id="Snowflake_Filesystem_IIndelibleDirectory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IIndelibleDirectory</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_Name_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.Name*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_Name" data-uid="Snowflake.Filesystem.IIndelibleDirectory.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_AsReadOnly_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.AsReadOnly*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_AsReadOnly" data-uid="Snowflake.Filesystem.IIndelibleDirectory.AsReadOnly">AsReadOnly()</h4>
+  <div class="markdown level1 summary"><p>Returns a read only view over this directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory AsReadOnly()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
+        <td><p>A read only view over this directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_ContainsDirectory_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.ContainsDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_ContainsDirectory_System_String_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.ContainsDirectory(System.String)">ContainsDirectory(String)</h4>
+  <div class="markdown level1 summary"><p>Whether or not this directory contains directory as a direct child.
+full path, this will truncate the path using <span class="xref">System.IO.Path.GetDirectoryName(System.String)</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsDirectory(string directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The name of the directory to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not this directory contains the given directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_ContainsFile_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.ContainsFile*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_ContainsFile_System_String_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.ContainsFile(System.String)">ContainsFile(String)</h4>
+  <div class="markdown level1 summary"><p>Whether or not this directory contains a file in its manifest. If provided a
+full path, this will truncate the path using <span class="xref">System.IO.Path.GetFileName(System.String)</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The name of the file to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not this directory contains the given file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom(Snowflake.Filesystem.IReadOnlyFile)">CopyFrom(IReadOnlyFile)</h4>
+  <div class="markdown level1 summary"><p>Copies a file from a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> from another <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile CopyFrom(IReadOnlyFile source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_System_Boolean_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom(Snowflake.Filesystem.IReadOnlyFile,System.Boolean)">CopyFrom(IReadOnlyFile, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Copies a file from a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> from another <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile CopyFrom(IReadOnlyFile source, bool overwrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_System_IO_FileInfo_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom(System.IO.FileInfo)">CopyFrom(FileInfo)</h4>
+  <div class="markdown level1 summary"><p>Copies a file from an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Do not use this method to copy from a managed <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile CopyFrom(FileInfo source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_System_IO_FileInfo_System_Boolean_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFrom(System.IO.FileInfo,System.Boolean)">CopyFrom(FileInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Copies a file from an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Do not use this method to copy from a managed <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile CopyFrom(FileInfo source, bool overwrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Boolean_System_Threading_CancellationToken_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync(Snowflake.Filesystem.IReadOnlyFile,System.Boolean,System.Threading.CancellationToken)">CopyFromAsync(IReadOnlyFile, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Copies a file asynchronously from a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> from another <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFile&gt; CopyFromAsync(IReadOnlyFile source, bool overwrite, CancellationToken cancellation = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Cancellation token for the asynchronous task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Threading_CancellationToken_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync(Snowflake.Filesystem.IReadOnlyFile,System.Threading.CancellationToken)">CopyFromAsync(IReadOnlyFile, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Copies a file asynchronously from a <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> from another <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFile&gt; CopyFromAsync(IReadOnlyFile source, CancellationToken cancellation = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html">IReadOnlyFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Cancellation token for the asynchronous task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_System_IO_FileInfo_System_Boolean_System_Threading_CancellationToken_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync(System.IO.FileInfo,System.Boolean,System.Threading.CancellationToken)">CopyFromAsync(FileInfo, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Copies a file asynchronously from an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Do not use this method to copy from a managed <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFile&gt; CopyFromAsync(FileInfo source, bool overwrite, CancellationToken cancellation = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>A cancellation token that is forwarded to the underlying <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_System_IO_FileInfo_System_Threading_CancellationToken_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.CopyFromAsync(System.IO.FileInfo,System.Threading.CancellationToken)">CopyFromAsync(FileInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Copies a file asynchronously from an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Do not use this method to copy from a managed <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+Instead, use <see cref="!:IDirectory.CopyFrom(IReadOnlyFile)"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFile&gt; CopyFromAsync(FileInfo source, CancellationToken cancellation = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>A cancellation token that is forwarded to the underlying <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateDirectories_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateDirectories*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateDirectories" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateDirectories">EnumerateDirectories()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all direct child directories of this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IDirectory&gt; EnumerateDirectories()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>&gt;</td>
+        <td><p>All direct children directories.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateFiles_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateFiles*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateFiles" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateFiles">EnumerateFiles()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all files in this directory,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IFile&gt; EnumerateFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>All direct children files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateFilesRecursive_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateFilesRecursive*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_EnumerateFilesRecursive" data-uid="Snowflake.Filesystem.IIndelibleDirectory.EnumerateFilesRecursive">EnumerateFilesRecursive()</h4>
+  <div class="markdown level1 summary"><p>Recursively enumerates all files that are contained in this directory.</p>
+<p>This method is usually implemented as a Breadth-first search, but no order is guaranteed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IFile&gt; EnumerateFilesRecursive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>&gt;</td>
+        <td><p>All files contained within this directory, including descendant subfolders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.LinkFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_System_IO_FileInfo_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.LinkFrom(System.IO.FileInfo)">LinkFrom(FileInfo)</h4>
+  <div class="markdown level1 summary"><p>
+Creates a link to an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>. Links are akin to shortcuts more than symbolic links,
+being represented as a text file with a real file path to another file on the file system.
+ Do not ever link to another <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>. Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a>.
+</p>
+<p>
+Links are transparent, i.e. <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> will open a stream to the linked file, and
+<a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_UnsafeGetFilePath">UnsafeGetFilePath()</a> will return the path of the linked file. The path of the shortcut
+remains inaccessible except for the internal method <span class="xref">Snowflake.Filesystem.IReadOnlyFile.UnsafeGetFilePointerPath</span>. 
+<a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> methods like <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a> and <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_">MoveFrom(IFile)</a> work as 
+expected.
+</p>
+<p>
+Links differ semantically from Files in two ways: <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_IsLink">IsLink</a> is always true for links,
+and always false for Files, and <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> on a non existing file throws <span class="xref">System.IO.FileNotFoundException</span>
+instead of creating a new file. The reasoning behind throwing an exception is that links should always point to 
+a real file on the filesystem, and not be used as a method to escape the directory jail (although <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_">OpenStream(FileMode, FileAccess, FileShare)</a>
+will work as expected. The intended action when encountering a broken link is not to create a new file, but instead to
+repair the link by recreating it with <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_System_IO_FileInfo_">LinkFrom(FileInfo)</a>.
+</p>
+<p>
+The underlying file that a link points to can only be modified through the stream.
+Calling <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Delete">Delete()</a> or <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Rename_System_String_">Rename(String)</a> will only rename
+or delete the link. If the file the link points to does not exist, 
+calling <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> will throw <span class="xref">System.IO.FileNotFoundException</span>.
+</p>
+<p>
+Links are very powerful and allow a way for plugins to escape the filesystem jail that an <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>
+creates. Because they present the potential to modify files outside of the allocated directory, be very careful
+when using them. Prefer read-only access by using <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_AsReadOnly">AsReadOnly()</a> whenever possible.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile LinkFrom(FileInfo source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.LinkFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_System_IO_FileInfo_System_Boolean_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.LinkFrom(System.IO.FileInfo,System.Boolean)">LinkFrom(FileInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>
+Creates a link to an unmanaged <span class="xref">System.IO.FileInfo</span> that exists outside of
+a <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>. Links are akin to shortcuts more than symbolic links,
+being represented as a text file with a real file path to another file on the file system.
+ Do not ever link to another <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a>. Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a>.
+</p>
+<p>
+Links are transparent, i.e. <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> will open a stream to the linked file, and
+<a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_UnsafeGetFilePath">UnsafeGetFilePath()</a> will return the path of the linked file. The path of the shortcut
+remains inaccessible except for the internal method <span class="xref">Snowflake.Filesystem.IReadOnlyFile.UnsafeGetFilePointerPath</span>. 
+<a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> methods like <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFrom_Snowflake_Filesystem_IReadOnlyFile_">CopyFrom(IReadOnlyFile)</a> and <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_">MoveFrom(IFile)</a> work as 
+expected.
+</p>
+<p>
+Links differ semantically from Files in two ways: <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_IsLink">IsLink</a> is always true for links,
+and always false for Files, and <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> on a non existing file throws <span class="xref">System.IO.FileNotFoundException</span>
+instead of creating a new file. The reasoning behind throwing an exception is that links should always point to 
+a real file on the filesystem, and not be used as a method to escape the directory jail (although <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_">OpenStream(FileMode, FileAccess, FileShare)</a>
+will work as expected. The intended action when encountering a broken link is not to create a new file, but instead to
+repair the link by recreating it with <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_LinkFrom_System_IO_FileInfo_System_Boolean_">LinkFrom(FileInfo, Boolean)</a>
+</p>
+<p>
+The underlying file that a link points to can only be modified through the stream.
+Calling <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Delete">Delete()</a> or <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Rename_System_String_">Rename(String)</a> will only rename
+or delete the link. If the file the link points to does not exist, 
+calling <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> will throw <span class="xref">System.IO.FileNotFoundException</span>.
+</p>
+<p>
+Links are very powerful and allow a way for plugins to escape the filesystem jail that an <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>
+creates. Because they present the potential to modify files outside of the allocated directory, be very careful
+when using them. Prefer read-only access by using <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_AsReadOnly">AsReadOnly()</a> whenever possible.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile LinkFrom(FileInfo source, bool overwrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.
+The new link will inherit the GUID of the previously existing file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.MoveFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.MoveFrom(Snowflake.Filesystem.IFile)">MoveFrom(IFile)</h4>
+  <div class="markdown level1 summary"><p>Moves a file between <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the 
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+<p>The source file will cease to exist in its original <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+<p>There is no asychronous equivalent by design, since <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_System_Boolean_">MoveFrom(IFile, Boolean)</a> is intended to
+be faster than <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Threading_CancellationToken_">CopyFromAsync(IReadOnlyFile, CancellationToken)</a> if the <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> instances
+are on the same file system. Otherwise, you should use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Threading_CancellationToken_">CopyFromAsync(IReadOnlyFile, CancellationToken)</a>,
+then <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Delete">Delete()</a> the old file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile MoveFrom(IFile source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.MoveFrom*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_System_Boolean_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.MoveFrom(Snowflake.Filesystem.IFile,System.Boolean)">MoveFrom(IFile, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Moves a file between <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>, updating the 
+manifests such that the resulting file has the same <a class="xref" href="Snowflake.Filesystem.IReadOnlyFile.html#Snowflake_Filesystem_IReadOnlyFile_FileGuid">FileGuid</a> as the source file.</p>
+<p>The source file will cease to exist in its original <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+<p>There is no asychronous equivalent by design, since <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_MoveFrom_Snowflake_Filesystem_IFile_System_Boolean_">MoveFrom(IFile, Boolean)</a> is intended to
+be faster than <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Boolean_System_Threading_CancellationToken_">CopyFromAsync(IReadOnlyFile, Boolean, CancellationToken)</a> if the <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a> instances
+are on the same file system. Otherwise, you should use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_CopyFromAsync_Snowflake_Filesystem_IReadOnlyFile_System_Boolean_System_Threading_CancellationToken_">CopyFromAsync(IReadOnlyFile, Boolean, CancellationToken)</a>,
+then <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_Delete">Delete()</a> the old file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile MoveFrom(IFile source, bool overwrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <span class="xref">System.IO.FileInfo</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>Overwrite the file if it already exists in this <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>The <a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a> that describes the file in the current <a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>If a file with the same name exists in the target destination and <code data-dev-comment-type="paramref" class="paramref">overwrite</code> is false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>If the source file can not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_OpenDirectory_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.OpenDirectory*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_OpenDirectory_System_String_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.OpenDirectory(System.String)">OpenDirectory(String)</h4>
+  <div class="markdown level1 summary"><p>Opens an existing descendant directory with the given name.
+If the directory does not exist, creates the directory.
+You can open a nested directory using &apos;/&apos; as the path separator, and it 
+will be created relative to this current directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDirectory OpenDirectory(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the existing directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><p>The directory if it exists, or null if it does not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_OpenFile_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.OpenFile*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_OpenFile_System_String_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.OpenFile(System.String)">OpenFile(String)</h4>
+  <div class="markdown level1 summary"><p>Opens or creates a file, adding it to the manifest and assigning it a
+unique <span class="xref">System.Guid</span>.</p>
+<p>Unlike <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a>, you can not use the path separator to
+open a nested file. Paths will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span>.</p>
+<p>Instead, use <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_OpenDirectory_System_String_">OpenDirectory(String)</a> to open the directory of the desired file,
+then call <a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html#Snowflake_Filesystem_IIndelibleDirectory_OpenFile_System_String_">OpenFile(String)</a> on the returned instance.</p>
+<p>Keep in mind this does not actually create a file on the underlying file system. 
+However, you can use <a class="xref" href="Snowflake.Filesystem.IFile.html#Snowflake_Filesystem_IFile_OpenStream">OpenStream()</a> and friends to create the file
+if it does not yet exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFile OpenFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The name of the file. If this is a path, will be truncated with <span class="xref">System.IO.Path.GetFileName(System.String)</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IFile.html">IFile</a></td>
+        <td><p>An object that associates a given file with a with a unique <span class="xref">System.Guid</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Filesystem_IIndelibleDirectory_UnsafeGetPath_" data-uid="Snowflake.Filesystem.IIndelibleDirectory.UnsafeGetPath*"></a>
+  <h4 id="Snowflake_Filesystem_IIndelibleDirectory_UnsafeGetPath" data-uid="Snowflake.Filesystem.IIndelibleDirectory.UnsafeGetPath">UnsafeGetPath()</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying <span class="xref">System.IO.DirectoryInfo</span> where files are contained.</p>
+<p>This is very rarely necessary, and most IO tasks can be done efficiently and safely using the
+provided API. Manipulating the underlying file system will potentially desync the manifest,
+and cause loss of associated metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Avoid accessing the underlying file path, and use the object methods instead.&quot;)]
+DirectoryInfo UnsafeGetPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><p>The underlying <span class="xref">System.IO.DirectoryInfo</span> where files are contained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Snowflake.Filesystem.DirectoryExtensions.html#Snowflake_Filesystem_DirectoryExtensions_CopyFromDirectory_Snowflake_Filesystem_IIndelibleDirectory_Snowflake_Filesystem_IIndelibleDirectory_">DirectoryExtensions.CopyFromDirectory(IIndelibleDirectory, IIndelibleDirectory)</a>
+  </div>
+  <div>
+      <a class="xref" href="Snowflake.Filesystem.DirectoryExtensions.html#Snowflake_Filesystem_DirectoryExtensions_CopyFromDirectory_Snowflake_Filesystem_IIndelibleDirectory_Snowflake_Filesystem_IIndelibleDirectory_System_Boolean_">DirectoryExtensions.CopyFromDirectory(IIndelibleDirectory, IIndelibleDirectory, Boolean)</a>
+  </div>
+</article>
+            </div>
+            
+            <div class="hidden-sm col-md-2" role="complementary">
+              <div class="sideaffix">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <div class="container text-left">
+            <div>Built with ❤️ by <a href="https://twitter.com/chyyran">@chyyran</a>. Text content licensed under CC-BY-SA 4.0.</div>
+         </div>
+      </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

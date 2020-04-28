@@ -72,23 +72,29 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Snowflake.Orchestration.Saving.GameFileExtensionSaveGameManagerExtensions.html">GameFileExtensionSaveGameManagerExtensions</a></h4>
+      <h4><a class="xref" href="Snowflake.Orchestration.Saving.GameFileExtensionGameSaveManagerExtensions.html">GameFileExtensionGameSaveManagerExtensions</a></h4>
       <section></section>
       <h4><a class="xref" href="Snowflake.Orchestration.Saving.SaveGame.html">SaveGame</a></h4>
       <section></section>
-      <h4><a class="xref" href="Snowflake.Orchestration.Saving.SaveGameManager.html">SaveGameManager</a></h4>
-      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
+      <h4><a class="xref" href="Snowflake.Orchestration.Saving.IGameSaveManager.html">IGameSaveManager</a></h4>
+      <section><p>Provides management services for a specific game.</p>
+</section>
       <h4><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a></h4>
       <section><p>An immutable snapshot of the contents of a save for
 a given emulation that stores game resume data (savedata).</p>
 <p><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a> instances are immutable</p>
 </section>
-      <h4><a class="xref" href="Snowflake.Orchestration.Saving.ISaveGameManager.html">ISaveGameManager</a></h4>
-      <section><p>Stores and manages <a class="xref" href="Snowflake.Orchestration.Saving.ISaveGame.html">ISaveGame</a> representations on disk for a given <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a>.
-Each <a class="xref" href="Snowflake.Orchestration.Saving.ISaveGameManager.html">ISaveGameManager</a> is scoped to its own <a class="xref" href="Snowflake.Model.Game.IGame.html">IGame</a> context, and one
-game may contain many, and many types of saves.</p>
+      <h4><a class="xref" href="Snowflake.Orchestration.Saving.ISaveProfile.html">ISaveProfile</a></h4>
+      <section><p>A save profile represents one, or a collection of individual save games that canonically represent the lineage of
+a single save instance for one type of save. It may or may not manage a history of save instances, but must be able
+to produce one canonical &quot;head&quot; save for a profile regardless of how history is implemented or managed.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Snowflake.Orchestration.Saving.SaveManagementStrategy.html">SaveManagementStrategy</a></h4>
+      <section><p>Different management strategies used to manage save histories.</p>
 </section>
 </article>
             </div>

@@ -86,7 +86,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory MediaRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory MediaRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -98,7 +98,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -110,7 +110,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory MiscRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory MiscRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,7 +122,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -134,7 +134,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory ProgramRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory ProgramRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,7 +146,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -158,7 +158,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory ResourceRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory ResourceRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,7 +170,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_Root_" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.Root*"></a>
+  <h4 id="Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_Root" data-uid="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.Root">Root</h4>
+  <div class="markdown level1 summary"><p>A read only view on the root path of the game directory context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDirectory Root { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Filesystem.IReadOnlyDirectory.html">IReadOnlyDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -180,12 +204,11 @@
   <div class="markdown level1 summary"><p>The directory to store temporary files during the execution of the game.
 This directory is cleared before an emulator is run, and the required files
 for the emulator can be copied here.</p>
-<p>Afterwards, saves should be copied out from here into <a class="xref" href="Snowflake.Model.Game.LibraryExtensions.IGameFileExtension.html#Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_SavesRoot">SavesRoot</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory RuntimeRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory RuntimeRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,7 +220,7 @@ for the emulator can be copied here.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -209,7 +232,7 @@ for the emulator can be copied here.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDirectory SavesRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IIndelibleDirectory SavesRoot { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +244,7 @@ for the emulator can be copied here.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Snowflake.Filesystem.IDirectory.html">IDirectory</a></td>
+        <td><a class="xref" href="Snowflake.Filesystem.IIndelibleDirectory.html">IIndelibleDirectory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -497,7 +520,7 @@ new mimetype, but no other existing metadata will be changed.</p>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Snowflake.Orchestration.Saving.GameFileExtensionSaveGameManagerExtensions.html#Snowflake_Orchestration_Saving_GameFileExtensionSaveGameManagerExtensions_WithSaves_Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_">GameFileExtensionSaveGameManagerExtensions.WithSaves(IGameFileExtension)</a>
+      <a class="xref" href="Snowflake.Orchestration.Saving.GameFileExtensionGameSaveManagerExtensions.html#Snowflake_Orchestration_Saving_GameFileExtensionGameSaveManagerExtensions_WithSaves_Snowflake_Model_Game_LibraryExtensions_IGameFileExtension_">GameFileExtensionGameSaveManagerExtensions.WithSaves(IGameFileExtension)</a>
   </div>
 </article>
             </div>

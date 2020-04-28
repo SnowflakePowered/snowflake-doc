@@ -250,6 +250,153 @@
       </tr>
     </tbody>
   </table>
+  <a id="Snowflake_Installation_TaskResult_Failure_" data-uid="Snowflake.Installation.TaskResult.Failure*"></a>
+  <h4 id="Snowflake_Installation_TaskResult_Failure__1_System_String_System_Threading_Tasks_ValueTask_System_String__System_Threading_Tasks_Task___0__System_Exception_" data-uid="Snowflake.Installation.TaskResult.Failure``1(System.String,System.Threading.Tasks.ValueTask{System.String},System.Threading.Tasks.Task{``0},System.Exception)">Failure&lt;TResult&gt;(String, ValueTask&lt;String&gt;, Task&lt;TResult&gt;, Exception)</h4>
+  <div class="markdown level1 summary"><p>Creates a failed <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> with a <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span> that may or may not throw.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TaskResult&lt;TResult&gt; Failure&lt;TResult&gt;(string name, ValueTask&lt;string&gt; description, Task&lt;TResult&gt; result, Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>A string identifier for the <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">description</span></td>
+        <td><p>A description of the task failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The task that yields the result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td><p>The exception to be returned when this <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> is checked for errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> that represents the yielded result, with the provided exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Installation_TaskResult_Failure_" data-uid="Snowflake.Installation.TaskResult.Failure*"></a>
+  <h4 id="Snowflake_Installation_TaskResult_Failure__1_System_String_System_Threading_Tasks_ValueTask_System_String__System_Threading_Tasks_ValueTask___0__System_Exception_" data-uid="Snowflake.Installation.TaskResult.Failure``1(System.String,System.Threading.Tasks.ValueTask{System.String},System.Threading.Tasks.ValueTask{``0},System.Exception)">Failure&lt;TResult&gt;(String, ValueTask&lt;String&gt;, ValueTask&lt;TResult&gt;, Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TaskResult&lt;TResult&gt; Failure&lt;TResult&gt;(string name, ValueTask&lt;string&gt; description, ValueTask&lt;TResult&gt; result, Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Snowflake_Installation_TaskResult_Success_" data-uid="Snowflake.Installation.TaskResult.Success*"></a>
   <h4 id="Snowflake_Installation_TaskResult_Success__1_System_String_System_Threading_Tasks_Task___0__" data-uid="Snowflake.Installation.TaskResult.Success``1(System.String,System.Threading.Tasks.Task{``0})">Success&lt;TResult&gt;(String, Task&lt;TResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> with a non-throwing <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
@@ -338,6 +485,148 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
         <td><p>A string identifier for the <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The task that yields the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> that represents the yielded result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Installation_TaskResult_Success_" data-uid="Snowflake.Installation.TaskResult.Success*"></a>
+  <h4 id="Snowflake_Installation_TaskResult_Success__1_System_String_System_Threading_Tasks_ValueTask_System_String__System_Threading_Tasks_Task___0__" data-uid="Snowflake.Installation.TaskResult.Success``1(System.String,System.Threading.Tasks.ValueTask{System.String},System.Threading.Tasks.Task{``0})">Success&lt;TResult&gt;(String, ValueTask&lt;String&gt;, Task&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> with a non-throwing <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TaskResult&lt;TResult&gt; Success&lt;TResult&gt;(string name, ValueTask&lt;string&gt; description, Task&lt;TResult&gt; result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>A string identifier for the <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">description</span></td>
+        <td><p>A description of the task executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The task that yields the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> that represents the yielded result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Snowflake_Installation_TaskResult_Success_" data-uid="Snowflake.Installation.TaskResult.Success*"></a>
+  <h4 id="Snowflake_Installation_TaskResult_Success__1_System_String_System_Threading_Tasks_ValueTask_System_String__System_Threading_Tasks_ValueTask___0__" data-uid="Snowflake.Installation.TaskResult.Success``1(System.String,System.Threading.Tasks.ValueTask{System.String},System.Threading.Tasks.ValueTask{``0})">Success&lt;TResult&gt;(String, ValueTask&lt;String&gt;, ValueTask&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a> with a non-throwing <span class="xref">System.Threading.Tasks.ValueTask&lt;TResult&gt;</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TaskResult&lt;TResult&gt; Success&lt;TResult&gt;(string name, ValueTask&lt;string&gt; description, ValueTask&lt;TResult&gt; result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>A string identifier for the <a class="xref" href="Snowflake.Installation.TaskResult-1.html">TaskResult&lt;T&gt;</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">description</span></td>
+        <td><p>A description of the task executed.</p>
 </td>
       </tr>
       <tr>
